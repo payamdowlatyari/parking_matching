@@ -2,7 +2,7 @@
 
 from abc import ABC, abstractmethod
 
-from app.models import ParkingLot
+from app.models import NormalizedFacility
 
 
 class BaseProvider(ABC):
@@ -11,5 +11,5 @@ class BaseProvider(ABC):
     name: str = "base"
 
     @abstractmethod
-    def fetch(self) -> list[ParkingLot]:
+    def fetch(self) -> list[NormalizedFacility]:
         """Return parking lots from this provider."""

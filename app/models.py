@@ -5,26 +5,36 @@ from typing import Optional
 
 
 @dataclass
-class ParkingLot:
-    """Represents a single parking lot entry from a provider."""
-
+class NormalizedFacility:
     provider: str
-    lot_id: str
-    name: str
-    address: str
-    city: str
-    state: str
-    zip_code: str
-    latitude: Optional[float] = None
-    longitude: Optional[float] = None
-    price_per_day: Optional[float] = None
-    amenities: list[str] = field(default_factory=list)
+    provider_facility_id: str
+    airport_code: str
+    facility_name: str
+    address1: Optional[str]
+    city: Optional[str]
+    state: Optional[str]
+    postal_code: Optional[str]
+    latitude: Optional[float]
+    longitude: Optional[float]
+    raw_payload: dict
 
 
 @dataclass
-class MatchedLot:
-    """A group of ParkingLot entries that refer to the same physical lot."""
+class NormalizedQuote:
+    provider: str
+    provider_quote_id: str
+    provider_facility_id: str
+    airport_code: str
+    start_utc: str
+    end_utc: str
+    currency: str
+    price_total: Optional[float]
+    raw_payload: dict
 
+
+@dataclass
+class MatchedFacility:
     canonical_name: str
     canonical_address: str
-    entries: list[ParkingLot] = field(default_factory=list)
+    entries: list[NormalizedFacility] = field(default_factory=list)
+    

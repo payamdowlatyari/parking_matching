@@ -1,13 +1,15 @@
-"""Parking lot matcher: groups ParkingLot entries that represent the same physical lot."""
+"""Parking lot matcher: groups NormalizedFacility entries that represent the same physical lot."""
 
-from app.models import MatchedLot, ParkingLot
+from itertools import combinations
+
+from app.models import MatchedFacility, NormalizedFacility
 from app.normalize.text import normalize_address, normalize_name
 
 # Maximum distance (degrees lat/lng) used for geo proximity matching.
 _GEO_THRESHOLD = 0.002  # roughly 200 m
 
 
-def _geo_close(a: ParkingLot, b: ParkingLot) -> bool:
+def _geo_close(a: NormalizedFacility, b: NormalizedFacility) -> bool:
     """Return True when both lots have coordinates within *_GEO_THRESHOLD*."""
     if None in (a.latitude, a.longitude, b.latitude, b.longitude):
         return False
@@ -17,45 +19,31 @@ def _geo_close(a: ParkingLot, b: ParkingLot) -> bool:
     )
 
 
-def _address_match(a: ParkingLot, b: ParkingLot) -> bool:
+def _address_match(a: NormalizedFacility, b: NormalizedFacility) -> bool:
     """Return True when both lots share the same normalised address."""
-    return normalize_address(a.address) == normalize_address(b.address)
+    return normalize_address(a.address1) == normalize_address(b.address1)
 
 
-def _name_match(a: ParkingLot, b: ParkingLot) -> bool:
+def _name_match(a: NormalizedFacility, b: NormalizedFacility) -> bool:
     """Return True when both lots share the same normalised name."""
-    return normalize_name(a.name) == normalize_name(b.name)
+    return normalize_name(a.facility_name) == normalize_name(b.facility_name)
 
 
-def match(lots: list[ParkingLot]) -> list[MatchedLot]:
-    """Group *lots* into MatchedLot clusters using address + geo proximity.
-
-    Two lots are considered the same physical location when they share the
-    same city/state, have a matching normalised address **or** are
-    geographically close (within *_GEO_THRESHOLD* degrees).
+def match(facilities: list[NormalizedFacility]) -> list[MatchedFacility]:
+    """Compare all cross-provider facility pairs and return FacilityMatch objects.
+    Matching is based on a combination of geo proximity, address similarity, and name similarity.
     """
-    clusters: list[list[ParkingLot]] = []
+    matched_results: list[MatchedFacility] = []
 
-    for lot in lots:
-        placed = False
-        for cluster in clusters:
-            representative = cluster[0]
-            same_city = (
-                lot.city.lower() == representative.city.lower()
-                and lot.state.lower() == representative.state.lower()
-            )
-            if same_city and (_address_match(lot, representative) or _geo_close(lot, representative)):
-                cluster.append(lot)
-                placed = True
-                break
-        if not placed:
-            clusters.append([lot])
+    for fac_a, fac_b in combinations(facilities, 2):
+        if fac_a.airport_code != fac_b.airport_code:
+            continue  # Only compare lots at the same airport
 
-    matched: list[MatchedLot] = []
-    for cluster in clusters:
-        # Use the longest name as canonical (more descriptive)
-        canonical_name = normalize_name(max(cluster, key=lambda l: len(l.name)).name)
-        canonical_address = normalize_address(cluster[0].address)
-        matched.append(MatchedLot(canonical_name=canonical_name, canonical_address=canonical_address, entries=cluster))
+        if _geo_close(fac_a, fac_b) and _address_match(fac_a, fac_b) and _name_match(fac_a, fac_b):
+            matched_results.append(MatchedFacility(
+                canonical_name=normalize_name(fac_a.facility_name),
+                canonical_address=normalize_address(fac_a.address1),
+                entries=[fac_a, fac_b],
+            ))
 
-    return matched
+    return matched_results  

@@ -5,7 +5,7 @@ from contextlib import contextmanager
 from typing import Generator
 
 from app.config import DATABASE_URL
-from app.models import ParkingLot
+from app.models import NormalizedFacility
 
 
 def get_connection(db_path: str = DATABASE_URL) -> sqlite3.Connection:
@@ -31,65 +31,74 @@ def init_db(db_path: str = DATABASE_URL) -> None:
     with managed_connection(db_path) as conn:
         conn.executescript(
             """
-            CREATE TABLE IF NOT EXISTS parking_lots (
-                id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                provider    TEXT    NOT NULL,
-                lot_id      TEXT    NOT NULL,
-                name        TEXT    NOT NULL,
-                address     TEXT    NOT NULL,
-                city        TEXT    NOT NULL,
-                state       TEXT    NOT NULL,
-                zip_code    TEXT    NOT NULL,
-                latitude    REAL,
-                longitude   REAL,
-                price_per_day REAL,
-                amenities   TEXT,
-                UNIQUE(provider, lot_id)
+            CREATE TABLE IF NOT EXISTS facilities (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            provider TEXT NOT NULL,
+            provider_facility_id TEXT NOT NULL,
+            airport_code TEXT NOT NULL,
+            facility_name TEXT NOT NULL,
+            address1 TEXT,
+            city TEXT,
+            state TEXT,
+            postal_code TEXT,
+            latitude REAL,
+            longitude REAL,
+            raw_payload TEXT NOT NULL,
+            UNIQUE(provider, provider_facility_id)
             );
 
-            CREATE TABLE IF NOT EXISTS matched_lots (
-                id               INTEGER PRIMARY KEY AUTOINCREMENT,
-                canonical_name   TEXT NOT NULL,
-                canonical_address TEXT NOT NULL
+            CREATE TABLE IF NOT EXISTS quotes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            provider TEXT NOT NULL,
+            provider_quote_id TEXT NOT NULL,
+            provider_facility_id TEXT NOT NULL,
+            airport_code TEXT NOT NULL,
+            start_utc TEXT NOT NULL,
+            end_utc TEXT NOT NULL,
+            currency TEXT,
+            price_total REAL,
+            raw_payload TEXT NOT NULL,
+            UNIQUE(provider, provider_quote_id)
             );
 
-            CREATE TABLE IF NOT EXISTS matched_lot_entries (
-                matched_lot_id  INTEGER NOT NULL REFERENCES matched_lots(id),
-                parking_lot_id  INTEGER NOT NULL REFERENCES parking_lots(id),
-                PRIMARY KEY (matched_lot_id, parking_lot_id)
+            CREATE TABLE IF NOT EXISTS matches (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            facility_id INTEGER NOT NULL,
+            quote_id INTEGER NOT NULL,
+            FOREIGN KEY(facility_id) REFERENCES facilities(id),
+            FOREIGN KEY(quote_id) REFERENCES quotes(id)
             );
             """
         )
 
 
-def insert_parking_lot(conn: sqlite3.Connection, lot: ParkingLot) -> int:
-    """Insert a ParkingLot row (or ignore if duplicate). Returns the row id."""
+def insert_parking_lot(conn: sqlite3.Connection, lot: NormalizedFacility) -> int:
+    """Insert a NormalizedFacility row (or ignore if duplicate). Returns the row id."""
     cursor = conn.execute(
         """
-        INSERT OR IGNORE INTO parking_lots
-            (provider, lot_id, name, address, city, state, zip_code,
-             latitude, longitude, price_per_day, amenities)
+        INSERT OR IGNORE INTO facilities
+        (provider, provider_facility_id, airport_code, facility_name, address1, city, state, postal_code, latitude, longitude, raw_payload)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             lot.provider,
-            lot.lot_id,
-            lot.name,
-            lot.address,
+            lot.provider_facility_id,
+            lot.airport_code,
+            lot.facility_name,
+            lot.address1,
             lot.city,
             lot.state,
-            lot.zip_code,
+            lot.postal_code,
             lot.latitude,
             lot.longitude,
-            lot.price_per_day,
-            ",".join(lot.amenities),
+            str(lot.raw_payload),
         ),
     )
     if cursor.lastrowid:
         return cursor.lastrowid
     # Row already existed – fetch existing id
     row = conn.execute(
-        "SELECT id FROM parking_lots WHERE provider=? AND lot_id=?",
-        (lot.provider, lot.lot_id),
+        "SELECT id FROM facilities WHERE provider=? AND provider_facility_id=?",
+        (lot.provider, lot.provider_facility_id),
     ).fetchone()
     return row["id"]
