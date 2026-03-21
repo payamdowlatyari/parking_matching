@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local database files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlitedb
+
+# Local output folder
+output/
