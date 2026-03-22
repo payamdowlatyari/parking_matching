@@ -1,55 +1,68 @@
-"""Text normalization utilities for parking lot names and addresses."""
-
 import re
-import unicodedata
 
+ABBREVIATIONS = {
+    "st": "street",
+    "rd": "road",
+    "ave": "avenue",
+    "blvd": "boulevard",
+    "dr": "drive",
+    "ln": "lane",
+    "ct": "court",
+    "intl": "international",
+    "apt": "airport",
+}
 
-# Common street-type abbreviations to expand for consistent comparison
-_STREET_ABBREVIATIONS: dict[str, str] = {
-    r"\bst\.?\b": "street",
-    r"\bave\.?\b": "avenue",
-    r"\bblvd\.?\b": "boulevard",
-    r"\bdr\.?\b": "drive",
-    r"\brd\.?\b": "road",
-    r"\bln\.?\b": "lane",
-    r"\bct\.?\b": "court",
-    r"\bpl\.?\b": "place",
-    r"\bhwy\.?\b": "highway",
-    r"\bpkwy\.?\b": "parkway",
+WEAK_NAME_TOKENS = {
+    "parking",
+    "airport",
+    "lot",
+    "garage",
+    "self",
+    "park",
 }
 
 
-def normalize(text: str) -> str:
-    """Return a cleaned, lower-cased version of *text* suitable for matching.
-
-    Steps applied:
-    1. Unicode NFKD normalization + ASCII-only encoding.
-    2. Lower-case.
-    3. Expand common street abbreviations.
-    4. Remove punctuation except hyphens and spaces.
-    5. Collapse whitespace.
+def normalize_text(value: str | None) -> str:
     """
-    # 1. Unicode normalize
-    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
-    # 2. Lower-case
-    text = text.lower()
-    # 3. Expand abbreviations
-    for pattern, replacement in _STREET_ABBREVIATIONS.items():
-        text = re.sub(pattern, replacement, text)
-    # 4. Remove punctuation except hyphens and spaces
-    text = re.sub(r"[^\w\s-]", " ", text)
-    # 5. Collapse whitespace
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    Normalize general text fields for comparison.
+
+    Steps:
+    - lowercase
+    - remove punctuation
+    - collapse repeated whitespace
+    - expand common abbreviations
+    """
+    if not value:
+        return ""
+
+    value = value.lower().strip()
+    value = re.sub(r"[^\w\s]", " ", value)
+    value = re.sub(r"\s+", " ", value).strip()
+
+    parts = value.split()
+    normalized_parts = [ABBREVIATIONS.get(part, part) for part in parts]
+
+    return " ".join(normalized_parts)
 
 
-def normalize_name(name: str) -> str:
-    """Normalize a parking lot name, stripping provider prefixes if present."""
-    # Remove common provider suffixes like "– ParkWhiz" or "- SpotHero"
-    name = re.sub(r"[-–]\s*(parkwhiz|spothero|cheap airport parking)\s*$", "", name, flags=re.IGNORECASE)
-    return normalize(name)
+def normalize_name(value: str | None) -> str:
+    """
+    Normalize facility names and remove weak/common tokens that often
+    do not help distinguish one parking lot from another.
+    """
+    normalized = normalize_text(value)
+    parts = [part for part in normalized.split() if part not in WEAK_NAME_TOKENS]
+    return " ".join(parts)
 
 
-def normalize_address(address: str) -> str:
-    """Normalize a street address string."""
-    return normalize(address)
+def normalize_postal_code(value: str | None) -> str:
+    """
+    Normalize postal code by stripping whitespace and punctuation-like
+    characters, keeping only letters, numbers, and hyphens.
+    """
+    if not value:
+        return ""
+
+    value = value.strip().upper()
+    value = re.sub(r"[^A-Z0-9\-]", "", value)
+    return value
