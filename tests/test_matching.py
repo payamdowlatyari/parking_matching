@@ -1,84 +1,178 @@
-"""Tests for app.matching.matcher."""
+from app.matching.matcher import (
+    classify_match,
+    match_parking_lots,
+    score_pair,
+)
+from app.models import ParkingLot
 
-import pytest
 
-from app.matching.matcher import match
-from app.models import MatchedLot, ParkingLot
-
-
-def _lot(provider: str, lot_id: str, name: str, address: str, city: str = "Chicago", state: str = "IL",
-         lat: float = 41.88, lng: float = -87.63, price: float = 20.0) -> ParkingLot:
+def make_lot(
+    *,
+    provider: str,
+    provider_lot_id: str,
+    airport_code: str,
+    name: str,
+    address1: str | None,
+    city: str | None,
+    state: str | None,
+    postal_code: str | None,
+    latitude: float | None,
+    longitude: float | None,
+) -> ParkingLot:
     return ParkingLot(
         provider=provider,
-        lot_id=lot_id,
+        provider_lot_id=provider_lot_id,
+        airport_code=airport_code,
         name=name,
-        address=address,
+        address1=address1,
         city=city,
         state=state,
-        zip_code="60601",
-        latitude=lat,
-        longitude=lng,
-        price_per_day=price,
+        postal_code=postal_code,
+        latitude=latitude,
+        longitude=longitude,
+        raw_payload={},
     )
 
 
-class TestMatch:
-    def test_empty_input(self):
-        assert match([]) == []
+def test_similar_lots_score_as_match():
+    left = make_lot(
+        provider="parkwhiz",
+        provider_lot_id="pw_1",
+        airport_code="ORD",
+        name="Joes Airport Parking",
+        address1="123 Main St",
+        city="Chicago",
+        state="IL",
+        postal_code="60666",
+        latitude=41.9742,
+        longitude=-87.9073,
+    )
+    right = make_lot(
+        provider="spothero",
+        provider_lot_id="sh_1",
+        airport_code="ORD",
+        name="Joe's Airport Parking",
+        address1="123 Main Street",
+        city="Chicago",
+        state="IL",
+        postal_code="60666",
+        latitude=41.9743,
+        longitude=-87.9071,
+    )
 
-    def test_single_lot(self):
-        lot = _lot("pw", "1", "Garage A", "123 Main St")
-        result = match([lot])
-        assert len(result) == 1
-        assert result[0].entries == [lot]
+    score, reason = score_pair(left, right)
 
-    def test_same_address_different_providers_merged(self):
-        lot_a = _lot("pw", "1", "Downtown Garage - ParkWhiz", "123 Main St")
-        lot_b = _lot("sh", "2", "Downtown Garage - SpotHero", "123 Main Street")
-        result = match([lot_a, lot_b])
-        # Both share same city and normalised address → 1 cluster
-        assert len(result) == 1
-        assert len(result[0].entries) == 2
+    assert score >= 0.85
+    assert classify_match(score) == "match"
+    assert "name similarity" in reason
+    assert "address similarity" in reason
 
-    def test_different_addresses_not_merged(self):
-        lot_a = _lot("pw", "1", "Garage A", "123 Main St", lat=41.88, lng=-87.63)
-        lot_b = _lot("sh", "2", "Garage B", "999 Oak Ave", lat=41.80, lng=-87.70)
-        result = match([lot_a, lot_b])
-        assert len(result) == 2
 
-    def test_geo_proximity_merges_lots(self):
-        # Lat/lng very close but slightly different addresses (typo)
-        lot_a = _lot("pw", "1", "Airport Lot", "10000 W OHare Ave", lat=41.974, lng=-87.907)
-        lot_b = _lot("cap", "2", "Airport Lot 2", "10000 W O'Hare Ave", lat=41.974, lng=-87.907)
-        result = match([lot_a, lot_b])
-        assert len(result) == 1
+def test_different_lots_score_as_no_match():
+    left = make_lot(
+        provider="parkwhiz",
+        provider_lot_id="pw_2",
+        airport_code="ORD",
+        name="Skyline Valet Garage",
+        address1="500 Remote Rd",
+        city="Chicago",
+        state="IL",
+        postal_code="60666",
+        latitude=41.9815,
+        longitude=-87.9012,
+    )
+    right = make_lot(
+        provider="spothero",
+        provider_lot_id="sh_3",
+        airport_code="ORD",
+        name="River North Event Parking",
+        address1="10 Arena Blvd",
+        city="Chicago",
+        state="IL",
+        postal_code="60610",
+        latitude=41.9010,
+        longitude=-87.6375,
+    )
 
-    def test_different_cities_not_merged(self):
-        lot_a = _lot("pw", "1", "Garage A", "123 Main St", city="Chicago", state="IL")
-        lot_b = _lot("sh", "2", "Garage A", "123 Main St", city="New York", state="NY")
-        result = match([lot_a, lot_b])
-        assert len(result) == 2
+    score, _ = score_pair(left, right)
 
-    def test_canonical_name_set(self):
-        lot = _lot("pw", "1", "My Garage", "1 Park Ave")
-        result = match([lot])
-        assert isinstance(result[0].canonical_name, str)
-        assert len(result[0].canonical_name) > 0
+    assert score < 0.65
+    assert classify_match(score) == "no_match"
 
-    def test_multiple_providers_placeholder_data(self):
-        """Integration-style: run the matcher against all provider placeholder data."""
-        from app.providers.cheap_airport_parking import CheapAirportParkingProvider
-        from app.providers.parkwhiz import ParkWhizProvider
-        from app.providers.spothero import SpotHeroProvider
 
-        lots = (
-            ParkWhizProvider().fetch()
-            + SpotHeroProvider().fetch()
-            + CheapAirportParkingProvider().fetch()
-        )
-        result = match(lots)
-        # All 6 placeholder lots; expect some clusters (at least 2)
-        assert len(result) >= 2
-        # Total entries across all clusters equals total lots
-        total_entries = sum(len(m.entries) for m in result)
-        assert total_entries == len(lots)
+def test_missing_geo_can_still_match_based_on_name_and_address():
+    left = make_lot(
+        provider="parkwhiz",
+        provider_lot_id="pw_3",
+        airport_code="LAX",
+        name="Pacific Park and Fly",
+        address1="900 Sepulveda Blvd",
+        city="Los Angeles",
+        state="CA",
+        postal_code="90045",
+        latitude=None,
+        longitude=None,
+    )
+    right = make_lot(
+        provider="cheap_airport_parking",
+        provider_lot_id="cap_2",
+        airport_code="LAX",
+        name="Pacific Park and Fly",
+        address1="900 Sepulveda Boulevard",
+        city="Los Angeles",
+        state="CA",
+        postal_code="90045",
+        latitude=None,
+        longitude=None,
+    )
+
+    score, _ = score_pair(left, right)
+
+    assert score >= 0.65
+    assert classify_match(score) in {"possible_match", "match"}
+
+
+def test_match_parking_lots_skips_same_provider_pairs():
+    lots = [
+        make_lot(
+            provider="parkwhiz",
+            provider_lot_id="pw_1",
+            airport_code="ORD",
+            name="Joes Airport Parking",
+            address1="123 Main St",
+            city="Chicago",
+            state="IL",
+            postal_code="60666",
+            latitude=41.9742,
+            longitude=-87.9073,
+        ),
+        make_lot(
+            provider="parkwhiz",
+            provider_lot_id="pw_2",
+            airport_code="ORD",
+            name="Skyline Valet Garage",
+            address1="500 Remote Rd",
+            city="Chicago",
+            state="IL",
+            postal_code="60666",
+            latitude=41.9815,
+            longitude=-87.9012,
+        ),
+        make_lot(
+            provider="spothero",
+            provider_lot_id="sh_1",
+            airport_code="ORD",
+            name="Joe's Airport Parking",
+            address1="123 Main Street",
+            city="Chicago",
+            state="IL",
+            postal_code="60666",
+            latitude=41.9743,
+            longitude=-87.9071,
+        ),
+    ]
+
+    matches = match_parking_lots(lots)
+
+    assert len(matches) == 2
+    assert all(match.left_provider != match.right_provider for match in matches)
