@@ -1,15 +1,22 @@
-"""Abstract base class that every parking provider must implement."""
-
 from abc import ABC, abstractmethod
-
-from app.models import NormalizedFacility
+from typing import Any
 
 
 class BaseProvider(ABC):
-    """Fetch and return a list of ParkingLot records."""
+    """
+    Abstract base class for parking data providers.
+    """
 
-    name: str = "base"
+    provider_name: str
 
     @abstractmethod
-    def fetch(self) -> list[NormalizedFacility]:
-        """Return parking lots from this provider."""
+    def fetch_quotes(
+        self, airport_code: str, start_dt: str, end_dt: str
+    ) -> list[dict[str, Any]]:
+        """
+        Fetch raw parking quote/location records for an airport and time range.
+
+        Returns provider-specific raw records. Normalization into the shared
+        internal schema happens outside the provider class.
+        """
+        raise NotImplementedError
