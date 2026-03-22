@@ -177,6 +177,90 @@ pytest
 - Matching prioritizes precision over recall
 - Mock data is used instead of real APIs
 
+## 🔍 API Discovery Notes
+
+To simulate real-world provider integrations, I explored how each recommended provider exposes search/quote data. The goal was to understand how their APIs differ and design a system that can handle those inconsistencies.
+
+### ParkWhiz
+
+- Discovery method: Official documentation and public developer resources
+- Observations:
+  - Structured API with clear concepts like listings and quotes
+  - Consistent use of IDs for facilities and rates
+  - Includes geolocation and pricing in a predictable format
+- Takeaway:
+  - Easiest provider to integrate due to relatively clean schema
+
+---
+
+### SpotHero
+
+- Discovery method: Public developer platform and browser network inspection
+- Observations:
+  - Uses “facility” and “rate” concepts similar to ParkWhiz but with different field names
+  - Address and location fields differ slightly (e.g., municipality vs city)
+  - Some fields (e.g., postal code) may be missing or null
+- Takeaway:
+  - Structurally similar to ParkWhiz but requires field mapping and null handling
+
+---
+
+### Cheap Airport Parking
+
+- Discovery method: Browser network panel (XHR requests from search flow)
+- Observations:
+  - Less formalized API surface compared to other providers
+  - Nested structures (e.g., geo and pricing objects)
+  - Inconsistent naming conventions (e.g., `title`, `address_1`, `city_name`)
+  - Some fields may be optional or missing
+- Takeaway:
+  - Represents a more “messy” real-world integration where normalization is critical
+
+---
+
+### Key Challenges Identified
+
+Across providers, several inconsistencies required normalization:
+
+- **No shared facility identifiers**
+  → Required heuristic matching instead of direct joins
+
+- **Different field names**
+  → e.g., `location_name` vs `facility_name` vs `title`
+
+- **Address formatting differences**
+  → `St` vs `Street`, punctuation, casing
+
+- **Geolocation variance**
+  → Slight differences in lat/lng precision across providers
+
+- **Missing or partial data**
+  → Some providers omit postal codes or coordinates
+
+---
+
+### Design Implications
+
+These observations directly informed the system design:
+
+- Introduced a **provider abstraction layer**
+- Built a **normalization step** before any matching
+- Used **weighted heuristic scoring** instead of relying on IDs
+- Preserved **raw payloads** for traceability and debugging
+
+---
+
+### Note on Implementation
+
+For this take-home, I implemented **mocked provider responses** that reflect real-world inconsistencies observed during API discovery.
+
+The architecture is designed so that:
+
+- mocked providers can be easily replaced with real HTTP integrations
+- normalization and matching logic remain unchanged
+
+---
+
 ### 🔮 Future Improvements
 
 - Replace mocked providers with real API integrations
@@ -184,6 +268,8 @@ pytest
 - Introduce clustering (multi-provider grouping)
 - Add confidence calibration or ML-based matching
 - Visualize matches on a map
+
+---
 
 ### 🤖 AI Usage
 
@@ -195,6 +281,8 @@ AI tools (ChatGPT / Copilot) were used to:
 
 All final implementation decisions, schema design, and matching logic were
 validated and adjusted manually.
+
+---
 
 ### 📌 Summary
 
