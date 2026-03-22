@@ -1,59 +1,32 @@
-"""Tests for app.normalize.text."""
-
-import pytest
-
-from app.normalize.text import normalize, normalize_address, normalize_name
+from app.normalize.text import normalize_name, normalize_postal_code, normalize_text
 
 
-class TestNormalize:
-    def test_lowercases(self):
-        assert normalize("HELLO WORLD") == "hello world"
-
-    def test_strips_whitespace(self):
-        assert normalize("  hello   world  ") == "hello world"
-
-    def test_removes_punctuation(self):
-        # Apostrophe becomes a space; commas and periods are stripped
-        assert normalize("O'Hare, Airport.") == "o hare airport"
-
-    def test_expands_street_abbreviation(self):
-        assert normalize("123 Main St.") == "123 main street"
-
-    def test_expands_avenue_abbreviation(self):
-        assert normalize("456 Oak Ave") == "456 oak avenue"
-
-    def test_unicode_normalization(self):
-        # Accented characters should be transliterated to ASCII
-        result = normalize("Café Résumé")
-        assert "e" in result  # accent stripped
-
-    def test_collapses_inner_whitespace(self):
-        assert normalize("a  b   c") == "a b c"
+def test_normalize_text_removes_punctuation():
+    assert normalize_text("Joe's Airport Parking!") == "joe s airport parking"
 
 
-class TestNormalizeName:
-    def test_strips_parkwhiz_suffix(self):
-        name = "O'Hare Airport Parking – ParkWhiz"
-        result = normalize_name(name)
-        assert "parkwhiz" not in result
-
-    def test_strips_spothero_suffix(self):
-        name = "Downtown Garage - SpotHero"
-        result = normalize_name(name)
-        assert "spothero" not in result
-
-    def test_preserves_core_name(self):
-        result = normalize_name("Downtown Garage - SpotHero")
-        assert "downtown" in result
-        assert "garage" in result
+def test_normalize_text_collapses_whitespace():
+    assert normalize_text("  123   Main   St  ") == "123 main street"
 
 
-class TestNormalizeAddress:
-    def test_expands_street(self):
-        assert normalize_address("123 Main St") == "123 main street"
+def test_normalize_text_expands_abbreviations():
+    assert normalize_text("456 Elm Rd") == "456 elm road"
+    assert normalize_text("789 Sunset Blvd") == "789 sunset boulevard"
+    assert normalize_text("LAX Intl Parking") == "lax international parking"
 
-    def test_expands_avenue(self):
-        assert normalize_address("456 Oak Ave") == "456 oak avenue"
 
-    def test_handles_period_abbreviation(self):
-        assert normalize_address("5700 S. Cicero Ave.") == "5700 s cicero avenue"
+def test_normalize_name_removes_weak_tokens():
+    assert normalize_name("Joe's Airport Parking") == "joe s"
+    assert normalize_name("Main Street Garage") == "main street"
+
+
+def test_normalize_postal_code_cleans_value():
+    assert normalize_postal_code(" 60666 ") == "60666"
+    assert normalize_postal_code("60666-1234") == "60666-1234"
+    assert normalize_postal_code(" 60 666 ") == "60666"
+
+
+def test_normalize_helpers_handle_none():
+    assert normalize_text(None) == ""
+    assert normalize_name(None) == ""
+    assert normalize_postal_code(None) == ""
