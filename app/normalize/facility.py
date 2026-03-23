@@ -1,11 +1,18 @@
+from copy import deepcopy
+
 from app.models import ParkingLot
 
 
 def normalize_parking_lot(provider: str, raw_record: dict, airport_code: str) -> ParkingLot:
     """
     Convert a provider-specific raw record into the shared ParkingLot model.
+
+    The normalized fields are kept intentionally small for matching, while the
+    full provider-specific payload is preserved in raw_payload for traceability
+    and downstream enrichment.
     """
     provider = provider.lower()
+    raw_payload = deepcopy(raw_record)
 
     if provider == "parkwhiz":
         return ParkingLot(
@@ -17,9 +24,9 @@ def normalize_parking_lot(provider: str, raw_record: dict, airport_code: str) ->
             city=raw_record.get("city"),
             state=raw_record.get("state"),
             postal_code=raw_record.get("postal_code"),
-            latitude=raw_record.get("lat"),
-            longitude=raw_record.get("lng"),
-            raw_payload=raw_record,
+            latitude=_to_float(raw_record.get("lat")),
+            longitude=_to_float(raw_record.get("lng")),
+            raw_payload=raw_payload,
         )
 
     if provider == "spothero":
@@ -32,9 +39,9 @@ def normalize_parking_lot(provider: str, raw_record: dict, airport_code: str) ->
             city=raw_record.get("municipality"),
             state=raw_record.get("region"),
             postal_code=raw_record.get("zip"),
-            latitude=raw_record.get("latitude"),
-            longitude=raw_record.get("longitude"),
-            raw_payload=raw_record,
+            latitude=_to_float(raw_record.get("latitude")),
+            longitude=_to_float(raw_record.get("longitude")),
+            raw_payload=raw_payload,
         )
 
     if provider == "cheap_airport_parking":
@@ -48,9 +55,21 @@ def normalize_parking_lot(provider: str, raw_record: dict, airport_code: str) ->
             city=raw_record.get("city_name"),
             state=raw_record.get("state_code"),
             postal_code=raw_record.get("zip_code"),
-            latitude=geo.get("lat"),
-            longitude=geo.get("lng"),
-            raw_payload=raw_record,
+            latitude=_to_float(geo.get("lat")),
+            longitude=_to_float(geo.get("lng")),
+            raw_payload=raw_payload,
         )
 
     raise ValueError(f"Unsupported provider: {provider}")
+
+
+def _to_float(value):
+    """
+    Safely convert numeric-like provider fields to float.
+    """
+    if value is None or value == "":
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None

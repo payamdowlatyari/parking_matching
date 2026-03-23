@@ -13,18 +13,13 @@ class ParkWhizProvider(BaseProvider):
     ParkWhiz provider.
 
     Real integration is attempted first using the documented v4 quotes endpoint.
-    If configuration is missing or the request fails, this provider can fall
-    back to mocked data for local development and take-home demo purposes.
+    If credentials are unavailable or the call fails, the provider falls back to
+    realistic mocked records shaped to resemble ParkWhiz location/quote data.
 
-    Docs used:
-    - GET /quotes
-    - GET /locations/{location_id}
-
-    Notes:
-    - ParkWhiz documents that /quotes requires an Authorization header.
-    - The /quotes response is described as an array of Location models.
-    - Payload shape may vary depending on token scope / response expansion, so
-      field extraction is defensive.
+    Notes from official docs:
+    - v4 base URL is https://api.parkwhiz.com/v4
+    - GET /quotes exists and requires authorization
+    - GET /quotes supports option_types for bookable/non-bookable quotes
     """
 
     provider_name = "parkwhiz"
@@ -38,15 +33,15 @@ class ParkWhizProvider(BaseProvider):
         airport_code = airport_code.upper()
 
         try:
-            real_records = self._fetch_quotes_real(airport_code, start_dt, end_dt)
-            if real_records:
-                return real_records
+            records = self._fetch_quotes_real(airport_code, start_dt, end_dt)
+            if records:
+                return records
         except Exception as exc:
             print(f"[parkwhiz] Real API attempt failed for {airport_code}: {exc}")
 
         if self.settings.parkwhiz_use_mock_fallback:
             print(f"[parkwhiz] Using mock fallback for {airport_code}")
-            return self._fetch_quotes_mock(airport_code, start_dt, end_dt)
+            return self._fetch_quotes_mock(airport_code)
 
         return []
 
@@ -57,155 +52,147 @@ class ParkWhizProvider(BaseProvider):
             raise ValueError("PARKWHIZ_API_TOKEN is not set")
 
         url = f"{self.settings.parkwhiz_base_url}/quotes"
-
-        # ParkWhiz documents a required q parameter. For this take-home,
-        # airport code is used as a pragmatic query string starting point.
-        params = {
-            "q": airport_code,
-            "start_time": start_dt,
-            "end_time": end_dt,
-            # Changelog notes option_types can return non-bookable price quotes.
-            "option_types": "bookable,non_bookable",
-        }
-
         headers = {
             "Authorization": f"Bearer {self.settings.parkwhiz_api_token}",
             "Accept": "application/json",
         }
+        params = {
+            "q": airport_code,
+            "start_time": start_dt,
+            "end_time": end_dt,
+            "option_types": "bookable,non_bookable",
+        }
 
-        response = requests.get(url, params=params, headers=headers, timeout=20)
+        response = requests.get(url, headers=headers, params=params, timeout=20)
         if response.status_code != 200:
             raise RuntimeError(
                 f"ParkWhiz quotes request failed: {response.status_code} {response.text[:300]}"
             )
 
         payload = response.json()
-
         if not isinstance(payload, list):
             raise RuntimeError(
                 f"Unexpected ParkWhiz payload type: {type(payload).__name__}"
             )
 
-        normalized_raw_records: list[dict[str, Any]] = []
+        results: list[dict[str, Any]] = []
         for item in payload:
             if not isinstance(item, dict):
                 continue
+            mapped = self._map_quote_item(item)
+            if mapped:
+                results.append(mapped)
 
-            record = self._map_quote_location_to_internal_raw(item)
-            if record is not None:
-                normalized_raw_records.append(record)
+        return results
 
-        return normalized_raw_records
-
-    def _map_quote_location_to_internal_raw(
-        self, item: dict[str, Any]
-    ) -> dict[str, Any] | None:
-        """
-        Convert a ParkWhiz API location/quote item into the raw record shape
-        expected by app/normalize/facility.py and app/normalize/quote.py.
-
-        This keeps downstream normalization logic unchanged.
-        """
+    def _map_quote_item(self, item: dict[str, Any]) -> dict[str, Any] | None:
         location_id = item.get("location_id") or item.get("id")
         if location_id is None:
             return None
 
-        quote_id = item.get("quote_id") or item.get("purchase_option_id") or f"pwq_{location_id}"
-
-        address = (
-            item.get("address1")
-            or item.get("address")
-            or item.get("street_address")
-            or ""
+        quote_id = (
+            item.get("quote_id")
+            or item.get("purchase_option_id")
+            or f"pwq_{location_id}"
         )
 
-        city = item.get("city")
-        state = item.get("state")
-        postal_code = item.get("postal_code") or item.get("zip")
-
-        lat = item.get("lat") or item.get("latitude")
-        lng = item.get("lng") or item.get("longitude")
-
-        # Price extraction is intentionally defensive because quote/location
-        # payloads can differ depending on endpoint shape and expansions.
-        total_price = None
-        if isinstance(item.get("price"), (int, float)):
-            total_price = item["price"]
-        elif isinstance(item.get("total_price"), (int, float)):
-            total_price = item["total_price"]
-        elif isinstance(item.get("price"), dict):
-            price_obj = item["price"]
-            total_price = (
-                price_obj.get("total")
-                or price_obj.get("amount")
-                or price_obj.get("value")
-            )
-
-        currency = "USD"
-        if isinstance(item.get("price"), dict):
-            currency = item["price"].get("currency", "USD")
-        elif isinstance(item.get("currency"), str):
-            currency = item["currency"]
+        price_obj = item.get("price") if isinstance(item.get("price"), dict) else {}
+        total_price = (
+            price_obj.get("total")
+            or item.get("total_price")
+            or item.get("price")
+            or item.get("price_total")
+        )
+        currency = price_obj.get("currency") or item.get("currency") or "USD"
 
         return {
             "listing_id": str(location_id),
             "quote_id": str(quote_id),
             "location_name": item.get("name") or item.get("location_name") or "",
-            "address": address,
-            "city": city,
-            "state": state,
-            "postal_code": postal_code,
-            "lat": lat,
-            "lng": lng,
+            "address": (
+                item.get("address1")
+                or item.get("address")
+                or item.get("street_address")
+            ),
+            "city": item.get("city"),
+            "state": item.get("state"),
+            "postal_code": item.get("postal_code") or item.get("zip"),
+            "lat": item.get("lat") or item.get("latitude"),
+            "lng": item.get("lng") or item.get("longitude"),
             "currency": currency,
             "total_price": total_price,
-            "source_payload_type": "parkwhiz_quotes",
+            "is_bookable": item.get("is_bookable"),
+            "site_url": item.get("site_url"),
+            "phone": item.get("phone"),
+            "capacity": item.get("capacity"),
+            "hours": item.get("hours"),
+            "operating_hours": item.get("operating_hours"),
+            "non_bookable_rates": item.get("non_bookable_rates"),
             "raw_source": item,
         }
 
-    def _fetch_quotes_mock(
-        self, airport_code: str, start_dt: str, end_dt: str
-    ) -> list[dict[str, Any]]:
+    def _fetch_quotes_mock(self, airport_code: str) -> list[dict[str, Any]]:
         mock_data: dict[str, list[dict[str, Any]]] = {
             "ORD": [
                 {
                     "listing_id": "pw_ord_1",
                     "quote_id": "pwq_ord_1",
-                    "location_name": "Joes Airport Parking",
-                    "address": "123 Main St",
-                    "city": "Chicago",
+                    "location_name": "Joe's Airport Parking",
+                    "address": "9420 River St",
+                    "city": "Schiller Park",
                     "state": "IL",
-                    "postal_code": "60666",
-                    "lat": 41.9742,
-                    "lng": -87.9073,
+                    "postal_code": "60176",
+                    "lat": 41.9739,
+                    "lng": -87.8694,
                     "currency": "USD",
-                    "total_price": 24.99,
+                    "total_price": 27.99,
+                    "is_bookable": True,
+                    "site_url": "https://www.parkwhiz.com/p/chicago-parking/joes-airport-parking/",
+                    "phone": "(773) 555-0101",
+                    "capacity": 180,
+                    "hours": "24/7",
+                    "operating_hours": {"open": "00:00", "close": "23:59"},
+                    "non_bookable_rates": [],
                 },
                 {
                     "listing_id": "pw_ord_2",
                     "quote_id": "pwq_ord_2",
                     "location_name": "Skyline Valet Garage",
-                    "address": "500 Remote Rd",
-                    "city": "Chicago",
+                    "address": "10100 Mannheim Rd",
+                    "city": "Rosemont",
                     "state": "IL",
-                    "postal_code": "60666",
-                    "lat": 41.9815,
-                    "lng": -87.9012,
+                    "postal_code": "60018",
+                    "lat": 41.9962,
+                    "lng": -87.8854,
                     "currency": "USD",
-                    "total_price": 31.50,
+                    "total_price": 34.50,
+                    "is_bookable": True,
+                    "site_url": "https://www.parkwhiz.com/p/chicago-parking/skyline-valet-garage/",
+                    "phone": "(773) 555-0102",
+                    "capacity": 120,
+                    "hours": "24/7",
+                    "operating_hours": {"open": "00:00", "close": "23:59"},
+                    "non_bookable_rates": [],
                 },
                 {
                     "listing_id": "pw_ord_3",
                     "quote_id": "pwq_ord_3",
                     "location_name": "Hotel Blue Self Park",
-                    "address": "800 Traveler Ave",
+                    "address": "5440 N River Rd",
                     "city": "Rosemont",
                     "state": "IL",
                     "postal_code": "60018",
-                    "lat": 41.9931,
-                    "lng": -87.8845,
+                    "lat": 41.9798,
+                    "lng": -87.8621,
                     "currency": "USD",
-                    "total_price": 18.75,
+                    "total_price": 21.25,
+                    "is_bookable": True,
+                    "site_url": "https://www.parkwhiz.com/p/chicago-parking/hotel-blue-self-park/",
+                    "phone": "(773) 555-0103",
+                    "capacity": 90,
+                    "hours": "24/7",
+                    "operating_hours": {"open": "00:00", "close": "23:59"},
+                    "non_bookable_rates": [],
                 },
             ],
             "LAX": [
@@ -213,40 +200,61 @@ class ParkWhizProvider(BaseProvider):
                     "listing_id": "pw_lax_1",
                     "quote_id": "pwq_lax_1",
                     "location_name": "Sunset Airport Parking",
-                    "address": "200 World Way Blvd",
+                    "address": "6151 W Century Blvd",
                     "city": "Los Angeles",
                     "state": "CA",
                     "postal_code": "90045",
-                    "lat": 33.9428,
-                    "lng": -118.4085,
+                    "lat": 33.9455,
+                    "lng": -118.3895,
                     "currency": "USD",
-                    "total_price": 27.00,
+                    "total_price": 28.75,
+                    "is_bookable": True,
+                    "site_url": "https://www.parkwhiz.com/p/los-angeles-parking/sunset-airport-parking/",
+                    "phone": "(310) 555-0101",
+                    "capacity": 260,
+                    "hours": "24/7",
+                    "operating_hours": {"open": "00:00", "close": "23:59"},
+                    "non_bookable_rates": [],
                 },
                 {
                     "listing_id": "pw_lax_2",
                     "quote_id": "pwq_lax_2",
                     "location_name": "Pacific Park and Fly",
-                    "address": "900 Sepulveda Blvd",
+                    "address": "5711 W Century Blvd",
                     "city": "Los Angeles",
                     "state": "CA",
                     "postal_code": "90045",
-                    "lat": 33.9498,
-                    "lng": -118.3961,
+                    "lat": 33.9461,
+                    "lng": -118.3837,
                     "currency": "USD",
-                    "total_price": 34.25,
+                    "total_price": 36.10,
+                    "is_bookable": True,
+                    "site_url": "https://www.parkwhiz.com/p/los-angeles-parking/pacific-park-and-fly/",
+                    "phone": "(310) 555-0102",
+                    "capacity": 200,
+                    "hours": "24/7",
+                    "operating_hours": {"open": "00:00", "close": "23:59"},
+                    "non_bookable_rates": [],
                 },
                 {
                     "listing_id": "pw_lax_3",
                     "quote_id": "pwq_lax_3",
                     "location_name": "Airport Center Garage",
-                    "address": "615 Aviation Ave",
+                    "address": "210 E Imperial Ave",
                     "city": "El Segundo",
                     "state": "CA",
                     "postal_code": "90245",
-                    "lat": 33.9201,
-                    "lng": -118.3875,
+                    "lat": 33.9314,
+                    "lng": -118.4018,
                     "currency": "USD",
-                    "total_price": 19.95,
+                    "total_price": 22.40,
+                    "is_bookable": True,
+                    "site_url": "https://www.parkwhiz.com/p/los-angeles-parking/airport-center-garage/",
+                    "phone": "(310) 555-0103",
+                    "capacity": 110,
+                    "hours": "24/7",
+                    "operating_hours": {"open": "00:00", "close": "23:59"},
+                    "non_bookable_rates": [],
                 },
             ],
         }
