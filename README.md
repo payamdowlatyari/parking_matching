@@ -63,6 +63,7 @@ parking_matching/
   - quotes
   - match results
 - Stores raw payloads for traceability/debugging
+- Raw provider responses are also persisted under `data/raw/` for reproducibility, debugging, and inspection of provider-specific payloads.
 
 #### Matching (`app/matching/`)
 
@@ -126,13 +127,31 @@ Each pair is scored using:
 
 ## ⚙️ Setup
 
+**Prerequisites:**
+
+- Python 3.11+
+- pip (or any virtual-environment tool)
+
+**Install:**
+
 ```bash
+git clone https://github.com/payamdowlatyari/parking_matching.git
+cd parking_quote_matching
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+**Configure credentials**
+
+```
+cp .env.example .env
+# Edit .env and fill in your API keys
 ```
 
 ## ▶️ Usage
 
-Run the full pipeline:
+**Run the full pipeline:**
 
 ```
 python run.py pipeline \
@@ -141,7 +160,7 @@ python run.py pipeline \
   --end "2026-03-30T18:00:00"
 ```
 
-Run individual steps:
+**Run individual steps:**
 
 ```
 # Fetch + normalize + store
@@ -161,6 +180,8 @@ Generated under `data/output/:`
 - `parking_lots.csv / .json`
 - `parking_quotes.csv / .json`
 - `matched_lots.csv / .json`
+
+Raw fetch artifacts under `data/raw/`
 
 ## 🧪 Testing
 
@@ -267,7 +288,7 @@ The ParkWhiz provider is structured to attempt a real API call first using the d
 
 ---
 
-### 🔮 Future Improvements
+### Future Improvements
 
 - Replace mocked providers with real API integrations
 - Add geospatial indexing for faster matching
@@ -277,7 +298,7 @@ The ParkWhiz provider is structured to attempt a real API call first using the d
 
 ---
 
-### 🤖 AI Usage
+### AI Usage
 
 AI tools (ChatGPT / Copilot) were used to:
 
@@ -290,7 +311,7 @@ validated and adjusted manually.
 
 ---
 
-### 📌 Summary
+### Summary
 
 This project demonstrates:
 

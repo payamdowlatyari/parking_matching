@@ -1,4 +1,7 @@
 import argparse
+import json
+from datetime import datetime, timezone
+from pathlib import Path
 
 from app.db import Database
 from app.export.exporter import (
@@ -6,12 +9,15 @@ from app.export.exporter import (
     export_parking_lots,
     export_parking_quotes,
 )
+from app.matching.matcher import match_parking_lots
 from app.normalize.facility import normalize_parking_lot
 from app.normalize.quote import normalize_parking_quote
 from app.providers.cheap_airport_parking import CheapAirportParkingProvider
 from app.providers.parkwhiz import ParkWhizProvider
 from app.providers.spothero import SpotHeroProvider
-from app.matching.matcher import match_parking_lots
+
+
+RAW_DATA_DIR = Path("data/raw")
 
 
 def get_providers():
@@ -25,9 +31,44 @@ def get_providers():
     ]
 
 
+def save_raw_records(
+    provider_name: str,
+    airport_code: str,
+    start_dt: str,
+    end_dt: str,
+    records: list[dict],
+) -> Path:
+    """
+    Persist raw provider response records to disk for traceability/debugging.
+    """
+    RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    filename = (
+        f"{provider_name}_{airport_code}_{timestamp}.json"
+    )
+    output_path = RAW_DATA_DIR / filename
+
+    payload = {
+        "provider": provider_name,
+        "airport_code": airport_code,
+        "start_dt": start_dt,
+        "end_dt": end_dt,
+        "fetched_at_utc": timestamp,
+        "record_count": len(records),
+        "records": records,
+    }
+
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(payload, file, indent=2)
+
+    return output_path
+
+
 def run_fetch(db: Database, airports: list[str], start_dt: str, end_dt: str) -> None:
     """
     Fetch raw records from all providers, normalize them, and store them.
+    Also persist raw provider responses to data/raw/.
     """
     providers = get_providers()
 
@@ -36,6 +77,14 @@ def run_fetch(db: Database, airports: list[str], start_dt: str, end_dt: str) -> 
 
         for provider in providers:
             raw_records = provider.fetch_quotes(airport_code, start_dt, end_dt)
+
+            raw_path = save_raw_records(
+                provider_name=provider.provider_name,
+                airport_code=airport_code,
+                start_dt=start_dt,
+                end_dt=end_dt,
+                records=raw_records,
+            )
 
             for raw_record in raw_records:
                 lot = normalize_parking_lot(
@@ -55,7 +104,8 @@ def run_fetch(db: Database, airports: list[str], start_dt: str, end_dt: str) -> 
                 db.upsert_parking_quote(quote)
 
             print(
-                f"Fetched {len(raw_records)} records from {provider.provider_name} for {airport_code}"
+                f"Fetched {len(raw_records)} records from {provider.provider_name} "
+                f"for {airport_code} -> raw saved to {raw_path}"
             )
 
 
@@ -101,7 +151,11 @@ def run_export(db: Database) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     """
-    Build the CLI parser. 
+    Build the CLI parser.
+        - fetch: Fetch provider data and store normalized records
+        - match: Run matching using stored parking lots
+        - export: Export stored lots, quotes, and matches to JSON and CSV
+        - pipeline: Run fetch, match, and export in sequence
     """
     parser = argparse.ArgumentParser(
         description="Parking location quote matching pipeline"
