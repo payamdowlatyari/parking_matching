@@ -213,5 +213,6 @@ __marimo__/
 *.sqlite3
 *.sqlitedb
 
-# Local output folder
-output/
+# Data files
+*.json
+*.csv

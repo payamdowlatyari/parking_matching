@@ -261,6 +261,12 @@ The architecture is designed so that:
 
 ---
 
+### Real ParkWhiz integration
+
+The ParkWhiz provider is structured to attempt a real API call first using the documented v4 `GET /quotes` endpoint, then fall back to mocked data if credentials are unavailable or the request fails. This keeps the demo runnable while preserving a clean migration path to real provider integrations.
+
+---
+
 ### 🔮 Future Improvements
 
 - Replace mocked providers with real API integrations
