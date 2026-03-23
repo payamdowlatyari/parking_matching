@@ -1,6 +1,7 @@
 from copy import deepcopy
 
 from app.models import ParkingQuote
+from app.normalize.utils import _to_float
 
 
 def normalize_parking_quote(
@@ -60,15 +61,3 @@ def normalize_parking_quote(
         )
 
     raise ValueError(f"Unsupported provider: {provider}")
-
-
-def _to_float(value):
-    """
-    Safely convert numeric-like provider fields to float.
-    """
-    if value is None or value == "":
-        return None
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return None
