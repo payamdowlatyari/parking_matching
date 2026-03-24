@@ -11,6 +11,8 @@ def haversine_meters(
 ) -> float:
     """
     Calculate distance between two latitude/longitude points in meters.
+
+    Source: https://en.wikipedia.org/wiki/Haversine_formula
     """
     earth_radius_m = 6_371_000
 
@@ -29,6 +31,13 @@ def haversine_meters(
 def geolocation_similarity(left: ParkingLot, right: ParkingLot) -> float:
     """
     Convert geographic distance into a 0-1 similarity score.
+
+    Distance is measured in meters.
+    - 1.0 for <= 50m
+    - 0.85 for <= 150m
+    - 0.6 for <= 400m
+    - 0.3 for <= 800m
+    - 0.0 for > 800m or missing geolocation
     """
     if (
         left.latitude is None
@@ -82,6 +91,15 @@ def postal_code_score(left_value: str | None, right_value: str | None) -> float:
 def score_pair(left: ParkingLot, right: ParkingLot) -> tuple[float, str]:
     """
     Score a pair of parking lots using weighted similarity signals.
+
+    Weights:
+    - 0.40: Name similarity
+    - 0.30: Address similarity
+    - 0.20: Geo similarity
+    - 0.10: Locality similarity
+
+    Returns:
+        A tuple containing the total similarity score (0.0-1.0) and a reason string.
     """
     name_score = (
         fuzz.token_set_ratio(normalize_name(left.name), normalize_name(right.name)) / 100
@@ -144,6 +162,10 @@ def score_pair(left: ParkingLot, right: ParkingLot) -> tuple[float, str]:
 def classify_match(score: float) -> str:
     """
     Convert a numeric similarity score into a match label.
+
+    - "match" for scores >= 0.85
+    - "possible_match" for scores >= 0.65
+    - "no_match" for scores < 0.65
     """
     if score >= 0.85:
         return "match"
@@ -155,6 +177,9 @@ def classify_match(score: float) -> str:
 def match_parking_lots(parking_lots: list[ParkingLot]) -> list[MatchedLot]:
     """
     Compare parking lots pairwise within the same airport across different providers.
+
+    Returns:
+        A list of MatchedLot instances.
     """
     matches: list[MatchedLot] = []
 

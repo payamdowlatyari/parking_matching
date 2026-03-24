@@ -86,26 +86,12 @@ parking_matching/
   - CSV
   - JSON
 
----
+#### Models (`app/models.py`)
 
-### 📄 Example Normalized Record
-
-Below is an example of how different provider payloads are converted into a unified schema:
-
-```json
-{
-  "provider": "parkwhiz",
-  "provider_lot_id": "pw_ord_1",
-  "airport_code": "ORD",
-  "name": "Joe's Airport Parking",
-  "address1": "9420 River St",
-  "city": "Schiller Park",
-  "state": "IL",
-  "postal_code": "60176",
-  "latitude": 41.9739,
-  "longitude": -87.8694
-}
-```
+- Data models
+  - ParkingLot
+  - ParkingQuote
+  - MatchedLot
 
 ---
 
@@ -141,7 +127,7 @@ Each pair is scored using:
 
 ---
 
-### 🔗 Example Match Output
+### Example Match Output
 
 Example of matched facilities across providers:
 
@@ -172,7 +158,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Configure credentials**
+**Configure credentials:**
 
 ```
 cp .env.example .env
@@ -205,13 +191,71 @@ python run.py export
 
 ## 📦 Outputs
 
-Generated under `data/output/:`
+**Results:**
 
-- `parking_lots.csv`/`.json`
-- `parking_quotes.csv`/`.json`
-- `matched_lots.csv`/`.json`
+- `data/output/`: Lots, quotes, and matched parkings
+- `data/raw/`: Raw fetch artifacts
 
-Raw fetch artifacts under `data/raw/`
+**Console Output:**
+
+```
+Fetched 3 records from parkwhiz for ORD -> raw saved to data/raw/parkwhiz_ORD_20260324T001526Z.json
+Fetched 3 records from spothero for ORD -> raw saved to data/raw/spothero_ORD_20260324T001526Z.json
+Fetched 3 records from cheap_airport_parking for ORD -> raw saved to data/raw/cheap_airport_parking_ORD_20260324T001526Z.json
+[parkwhiz] Real API attempt failed for LAX: PARKWHIZ_API_TOKEN is not set
+[parkwhiz] Using mock fallback for LAX
+Fetched 3 records from parkwhiz for LAX -> raw saved to data/raw/parkwhiz_LAX_20260324T001526Z.json
+Fetched 3 records from spothero for LAX -> raw saved to data/raw/spothero_LAX_20260324T001526Z.json
+Fetched 3 records from cheap_airport_parking for LAX -> raw saved to data/raw/cheap_airport_parking_LAX_20260324T001526Z.json
+Stored 54 match results
+Exported parking lots to:
+  - data/output/parking_lots.json
+  - data/output/parking_lots.csv
+Exported parking quotes to:
+  - data/output/parking_quotes.json
+  - data/output/parking_quotes.csv
+Exported matched lots to:
+  - data/output/matched_lots.json
+  - data/output/matched_lots.csv
+```
+
+**Example Matched Results:**
+
+```
+[
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 0.3891,
+    "decision": "no_match",
+    "reason": "same city; same state; same postal code"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.8467,
+    "decision": "possible_match",
+    "reason": "high address similarity; near-identical geolocation; same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 0.9556,
+    "decision": "match",
+    "reason": "moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  ...
+]
+```
 
 ## 🧪 Testing
 
