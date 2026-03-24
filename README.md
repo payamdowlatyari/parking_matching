@@ -453,9 +453,17 @@ The ParkWhiz provider is structured to attempt a real API call first using the d
 
 ---
 
-## ⚡ Performance & Scalability Considerations
+## ⚡ Performance, Scalability & Deployment Strategy
 
-The current implementation performs pairwise comparisons (O(n²)) within each airport.
+The parking matching pipeline is designed as a modular, event-driven data workflow that separates ingestion, normalization, matching, and export into independent stages. This architecture ensures the system is reliable, scalable, and easy to extend as new providers are added.
+
+Rather than running as a single monolithic script, the pipeline can be deployed as a series of orchestrated steps using cloud-native services.
+
+---
+
+### Performance & Scalability
+
+The current implementation performs pairwise comparisons `(O(n²))` within each airport.
 
 For larger datasets, this can be optimized by:
 
@@ -467,6 +475,108 @@ For larger datasets, this can be optimized by:
   - Run matching jobs per airport or batch in parallel
 
 The architecture isolates matching logic, making these optimizations easy to introduce without changing ingestion or normalization layers.
+
+---
+
+### Proposed Cloud Architecture (AWS)
+
+#### Core components:
+
+- **Amazon S3** — stores raw, normalized, and final datasets
+- **AWS Lambda** — executes lightweight processing steps (provider ingestion, normalization)
+- **AWS Step Functions** — orchestrates the pipeline workflow
+- **Amazon SQS** — buffers tasks and enables retries between stages
+- **Database (PostgreSQL / DynamoDB)** — stores matched parking lots and pipeline metadata
+- **CloudWatch** — logging, monitoring, and alerting
+
+#### Pipeline flow:
+
+1. **Trigger**
+   - Scheduled via EventBridge (cron) or manual trigger
+2. **Ingestion**
+   - Fetch data from providers (SpotHero, ParkWhiz, etc.)
+   - Store raw responses in S3
+3. **Normalization**
+   - Convert provider-specific formats into a unified schema
+   - Output normalized data to S3
+4. **Matching / Deduplication**
+   - Identify duplicate parking lots across providers
+   - Apply matching logic (e.g., location proximity, name similarity)
+5. **Export**
+   - Write results to CSV/JSON or persist in a database
+
+---
+
+### Reliability Considerations
+
+The system is designed to handle failures gracefully and ensure data integrity:
+
+- **Idempotent processing:**
+  Re-running any stage does not create duplicate records
+- **Retry mechanisms:**
+  Transient API failures are retried with exponential backoff
+- **Fault isolation:**
+  Each provider ingestion runs independently (one failure doesn’t break the pipeline)
+- **Checkpointing:**
+  Intermediate outputs are stored in S3, allowing partial restarts
+- **Dead-letter queues (DLQ):**
+  Failed messages are captured for later inspection
+- **Run metadata tracking:**
+  Each pipeline execution includes run IDs, timestamps, and status logs
+
+---
+
+### Scalability Strategy
+
+The architecture is designed to scale with increasing data volume and provider count:
+
+- **Parallel ingestion:**
+  Each provider is processed independently and concurrently
+- **Distributed normalization:**
+  Data transformations scale horizontally via Lambda or batch jobs
+- **Partitioned matching:**
+  Matching can be segmented by geography (e.g., airport/city) or dataset size
+- **Stateless compute:**
+  Lambda-based processing enables automatic scaling without infrastructure management
+- **Storage-first design:**
+  Intermediate data persisted in S3 avoids memory bottlenecks
+
+---
+
+### Extensibility
+
+The pipeline is built to easily support additional providers and features:
+
+- **Provider adapter pattern:**
+  Each provider implements a standard interface (fetch → normalize)
+- **Config-driven providers:**
+  Providers can be enabled/disabled without code changes
+- **Versioned matching logic:**
+  Matching algorithms can evolve while maintaining reproducibility
+- **Schema standardization:**
+  Ensures consistent downstream processing
+
+---
+
+### Local vs Production Setup
+
+- **Local development**
+  - Run pipeline as a CLI script
+  - Use SQLite or local files for storage
+- **Production**
+  - Deploy using **AWS services (Step Functions + Lambda)**
+  - Use **S3** for storage and **Postgres/DynamoDB** for persistence
+
+---
+
+### Design Philosophy
+
+This system prioritizes:
+
+- Separation of concerns (clear pipeline stages)
+- Observability (logs, metrics, traceable runs)
+- Resilience (retries, fault isolation)
+- Scalability (parallel and distributed processing)
 
 ---
 
