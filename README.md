@@ -9,6 +9,22 @@ a core problem in real-world integrations.
 
 ---
 
+## Table of Contents
+
+- [Overview](#-overview)
+- [Architecture](#%EF%B8%8F-architecture)
+- [Matching Approach](#-matching-approach)
+- [Setup](#%EF%B8%8F-setup)
+- [Usage](#%EF%B8%8F-usage)
+- [Outputs](#-outputs)
+- [Testing](#-testing)
+- [Assumptions & Limitations](#%EF%B8%8F-assumptions--limitations)
+- [API Discovery Notes](#-api-discovery-notes)
+- [Provider Schema Notes](#-provider-schema-notes)
+- [Performance, Scalability & Deployment](#-performance-scalability--deployment-strategy)
+
+---
+
 ## 🚀 Overview
 
 Parking providers expose inconsistent APIs with:
@@ -31,17 +47,32 @@ This pipeline:
 
 ```
 parking_matching/
-├── run.py
+├── run.py                  # CLI entry point and pipeline orchestration
+├── requirements.txt
+├── .env.example
 ├── app/
-│ ├── db.py
-│ ├── models.py
-│ ├── config.py
-│ ├── providers/
-│ ├── normalize/
-│ ├── matching/
-│ └── export/
+│   ├── config.py           # Environment-driven settings
+│   ├── db.py               # SQLite storage layer
+│   ├── models.py           # ParkingLot, ParkingQuote, MatchedLot dataclasses
+│   ├── providers/          # Provider fetch implementations
+│   │   ├── base.py         # Abstract base provider interface
+│   │   ├── parkwhiz.py     # ParkWhiz (real API + mock fallback)
+│   │   ├── spothero.py     # SpotHero (mock)
+│   │   └── cheap_airport_parking.py  # CheapAirportParking (mock)
+│   ├── normalize/          # Schema normalization
+│   │   ├── text.py         # Text cleaning, abbreviation expansion
+│   │   ├── facility.py     # Raw record → ParkingLot
+│   │   └── quote.py        # Raw record → ParkingQuote
+│   ├── matching/
+│   │   └── matcher.py      # Pairwise scoring and classification
+│   └── export/
+│       └── exporter.py     # CSV + JSON export
 ├── data/
+│   ├── raw/                # Raw provider responses (timestamped)
+│   └── output/             # Exported CSV and JSON files
 └── tests/
+    ├── test_matching.py
+    └── test_text_normalization.py
 ```
 
 ### Key components
@@ -160,16 +191,20 @@ pip install -r requirements.txt
 
 **Configure credentials:**
 
-```
+```bash
 cp .env.example .env
 # Edit .env and fill in your API keys
 ```
 
+> **Note:** The pipeline works out of the box without any API keys.
+> All providers fall back to realistic mock data when credentials are missing.
+> Set `*_USE_MOCK_FALLBACK=true` in `.env` to explicitly use mock data for a provider.
+
 ## ▶️ Usage
 
-**Run the full pipeline:**
+**Run the full pipeline** (fetch → match → export):
 
-```
+```bash
 python run.py pipeline \
   --airports ORD LAX \
   --start "2026-03-28T10:00:00" \
@@ -178,16 +213,19 @@ python run.py pipeline \
 
 **Run individual steps:**
 
-```
-# Fetch + normalize + store
-python run.py fetch --airports ORD LAX --start ... --end ...
+```bash
+# Fetch from providers, normalize, and store in SQLite
+python run.py fetch --airports ORD LAX \
+  --start "2026-03-28T10:00:00" --end "2026-03-30T18:00:00"
 
-# Run matching
+# Run pairwise matching on stored lots
 python run.py match
 
-# Export results
+# Export lots, quotes, and matches to CSV + JSON
 python run.py export
 ```
+
+All commands accept `--db-path` to specify a custom database file (default: `parking_matching.db`).
 
 ## 📦 Outputs
 
@@ -259,18 +297,36 @@ Exported matched lots to:
 
 ## 🧪 Testing
 
-```
+Run the full test suite:
+
+```bash
 pytest
 ```
 
-### ⚠️ Assumptions & Limitations
+Run with verbose output:
 
-- Matching is heuristic, not guaranteed perfect
-  - Some facilities may:
-  - have missing addresses or coordinates
-- represent multiple parking products (valet vs self-park)
-- Matching is tuned to prioritize **precision over recall**, ensuring high-confidence matches are reliable while ambiguous cases are surfaced as `possible_match`.
-- Mock data is used instead of real APIs
+```bash
+pytest -v
+```
+
+### What's tested
+
+| Area               | Tests   | Description                                                                                                                  |
+| ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Text normalization | 7 tests | Punctuation removal, whitespace collapsing, abbreviation expansion, weak token removal, postal code cleanup, `None` handling |
+| Matching scoring   | 4 tests | Similar lots → `match`, different lots → `no_match`, missing geo data handling, same-provider pair skipping                  |
+
+---
+
+## ⚠️ Assumptions & Limitations
+
+- Matching is heuristic-based, not guaranteed perfect
+- Some facilities may have missing addresses or coordinates
+- Some facilities may represent multiple parking products (valet vs self-park) under one location
+- Matching is tuned to prioritize **precision over recall** — high-confidence matches are reliable while ambiguous cases are surfaced as `possible_match`
+- Mock data is used instead of real APIs (except ParkWhiz, which attempts real API calls before falling back to mocks)
+
+---
 
 ## 🔍 API Discovery Notes
 
@@ -397,10 +453,10 @@ Example provider-specific fields preserved in `raw_payload`:
 
 Keeping the full raw provider payload makes the system easier to:
 
-- debug when upstream schemas change
-- inspect mapping assumptions
-- enrich the normalized model later without re-fetching data
-- explain matching decisions using source-specific context
+- **Debug** when upstream schemas change
+- **Inspect** mapping assumptions during development
+- **Enrich** the normalized model later without re-fetching data
+- **Explain** matching decisions using source-specific context
 
 ---
 
@@ -505,6 +561,37 @@ The architecture isolates matching logic, making these optimizations easy to int
 5. **Export**
    - Write results to CSV/JSON or persist in a database
 
+#### Pipeline Diagram:
+
+```
+Trigger (EventBridge / Manual)
+            │
+            ▼
+   Step Functions Orchestrator
+            │
+    ┌───────┼────────┐
+    ▼       ▼        ▼
+Provider  Provider  Provider
+  A         B         C
+    \       |        /
+     ▼      ▼       ▼
+        Raw Data (S3)
+              │
+              ▼
+     Normalization Step
+              │
+              ▼
+      Normalized Data (S3)
+              │
+              ▼
+     Matching / Deduplication
+              │
+              ▼
+        Final Results
+        /           \
+   CSV/JSON        Database
+```
+
 ---
 
 ### Reliability Considerations
@@ -592,7 +679,7 @@ This system prioritizes:
 
 ### AI Usage
 
-AI tools (ChatGPT / Copilot) were used to:
+AI tools (ChatGPT / Copilot / Claude) were used to:
 
 - scaffold project structure
 - suggest normalization and matching strategies
