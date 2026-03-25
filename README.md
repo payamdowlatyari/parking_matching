@@ -679,14 +679,17 @@ This system prioritizes:
 
 ### AI Usage
 
-AI tools (ChatGPT / Copilot / Claude) were used to:
+- **ChatGPT / GitHub Copilot**
+  - Assisted with high-level architecture exploration and iterative development
+  - Helped refine data modeling, pipeline structure, and documentation clarity
+  - Accelerated implementation of well-understood patterns without replacing core reasoning
+- **Claude**
+  - Used primarily as a code reviewer and design sounding board
+  - Identified potential edge cases, failure scenarios, and areas for improvement
+  - Provided alternative implementations and highlighted trade-offs between approaches
+  - Helped validate that the solution aligns with production-oriented best practices
 
-- scaffold project structure
-- suggest normalization and matching strategies
-- review and refine code
-
-All final implementation decisions, schema design, and matching logic were
-validated and adjusted manually.
+AI tools were used as engineering assistants, not as sources of truth. All key decisions, system design, and implementation details were critically evaluated and finalized independently to ensure correctness, reliability, and clarity.
 
 ---
 
