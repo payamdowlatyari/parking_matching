@@ -679,17 +679,21 @@ This system prioritizes:
 
 ### AI Usage
 
+AI tools were used selectively to support development of the parking matching pipeline, with a focus on improving code quality, validating matching logic, and refining system design.
+
 - **ChatGPT / GitHub Copilot**
-  - Assisted with high-level architecture exploration and iterative development
-  - Helped refine data modeling, pipeline structure, and documentation clarity
-  - Accelerated implementation of well-understood patterns without replacing core reasoning
+  - Assisted with designing the overall pipeline architecture (ingestion → normalization → matching → export)
+  - Helped refine the data model, including separation between provider records and canonical parking lots
+  - Accelerated implementation of common patterns such as data transformation, scoring logic, and modular structure
+  - Improved documentation clarity and organization of the `README`
 - **Claude**
   - Used primarily as a code reviewer and design sounding board
-  - Identified potential edge cases, failure scenarios, and areas for improvement
-  - Provided alternative implementations and highlighted trade-offs between approaches
-  - Helped validate that the solution aligns with production-oriented best practices
+  - Reviewed the matching strategy, including scoring signals (name, address, geo) and threshold decisions
+  - Identified edge cases such as inconsistent provider data, missing fields, and false-positive matches
+  - Suggested alternative approaches for entity resolution and pipeline structuring
+  - Helped validate that the solution is robust, extensible, and aligned with production-oriented data pipelines
 
-AI tools were used as engineering assistants, not as sources of truth. All key decisions, system design, and implementation details were critically evaluated and finalized independently to ensure correctness, reliability, and clarity.
+AI tools were used as engineering assistants, not as sources of truth. All matching logic, system design decisions, and final implementations were critically evaluated and validated independently to ensure correctness, reliability, and clarity.
 
 ---
 
