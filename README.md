@@ -1,11 +1,6 @@
-# Parking Location Quote Matching
+# 🚗 Parking Location Quote Matching
 
-A Python pipeline that aggregates airport parking data from multiple providers,
-normalizes inconsistent schemas, matches equivalent facilities across providers,
-and exports structured datasets.
-
-This project demonstrates **entity resolution over messy third-party APIs** —
-a core problem in real-world integrations.
+A data pipeline that aggregates parking availability from multiple providers, normalizes inconsistent schemas, and matches facilities across providers into canonical parking locations.
 
 ---
 
@@ -19,27 +14,20 @@ a core problem in real-world integrations.
 - [Outputs](#-outputs)
 - [Testing](#-testing)
 - [Assumptions & Limitations](#%EF%B8%8F-assumptions--limitations)
-- [API Discovery Notes](#-api-discovery-notes)
-- [Provider Schema Notes](#-provider-schema-notes)
+- [API Discovery & Provider Schemas](#-api-discovery--provider-schemas)
 - [Performance, Scalability & Deployment](#-performance-scalability--deployment-strategy)
 
 ---
 
 ## 🚀 Overview
 
-Parking providers expose inconsistent APIs with:
+Parking providers expose inconsistent APIs with no shared identifiers. This pipeline:
 
-- different field names and formats
-- no shared facility identifiers
-- varying address and naming conventions
-
-This pipeline:
-
-1. Fetches parking data from multiple providers
-2. Normalizes provider-specific payloads into a shared schema
-3. Stores normalized data in SQLite
-4. Matches facilities across providers using heuristic scoring
-5. Exports results to CSV and JSON
+1. **Fetches** parking data from multiple providers (ParkWhiz, SpotHero, CheapAirportParking)
+2. **Normalizes** provider-specific payloads into a unified schema
+3. **Stores** normalized data in SQLite
+4. **Matches** equivalent facilities across providers using heuristic scoring
+5. **Exports** deduplicated results to CSV and JSON
 
 ---
 
@@ -120,9 +108,9 @@ parking_matching/
 #### Models (`app/models.py`)
 
 - Data models
-  - ParkingLot
-  - ParkingQuote
-  - MatchedLot
+  - **ParkingLot**
+  - **ParkingQuote**
+  - **MatchedLot**
 
 ---
 
@@ -155,8 +143,6 @@ Each pair is scored using:
 | ≥ 0.85      | match          |
 | 0.65 – 0.85 | possible_match |
 | < 0.65      | no_match       |
-
----
 
 ### Example Match Output
 
@@ -200,6 +186,8 @@ cp .env.example .env
 > All providers fall back to realistic mock data when credentials are missing.
 > Set `*_USE_MOCK_FALLBACK=true` in `.env` to explicitly use mock data for a provider.
 
+---
+
 ## ▶️ Usage
 
 **Run the full pipeline** (fetch → match → export):
@@ -227,6 +215,8 @@ python run.py export
 
 All commands accept `--db-path` to specify a custom database file (default: `parking_matching.db`).
 
+---
+
 ## 📦 Outputs
 
 **Results:**
@@ -237,63 +227,35 @@ All commands accept `--db-path` to specify a custom database file (default: `par
 **Console Output:**
 
 ```
-Fetched 3 records from parkwhiz for ORD -> raw saved to data/raw/parkwhiz_ORD_20260324T001526Z.json
-Fetched 3 records from spothero for ORD -> raw saved to data/raw/spothero_ORD_20260324T001526Z.json
-Fetched 3 records from cheap_airport_parking for ORD -> raw saved to data/raw/cheap_airport_parking_ORD_20260324T001526Z.json
-[parkwhiz] Real API attempt failed for LAX: PARKWHIZ_API_TOKEN is not set
-[parkwhiz] Using mock fallback for LAX
-Fetched 3 records from parkwhiz for LAX -> raw saved to data/raw/parkwhiz_LAX_20260324T001526Z.json
-Fetched 3 records from spothero for LAX -> raw saved to data/raw/spothero_LAX_20260324T001526Z.json
-Fetched 3 records from cheap_airport_parking for LAX -> raw saved to data/raw/cheap_airport_parking_LAX_20260324T001526Z.json
+Fetched 3 records from parkwhiz for ORD -> raw saved to data/raw/parkwhiz_ORD_...json
+Fetched 3 records from spothero for ORD -> ...
+Fetched 3 records from cheap_airport_parking for ORD -> ...
+...
 Stored 54 match results
 Exported parking lots to:
   - data/output/parking_lots.json
   - data/output/parking_lots.csv
-Exported parking quotes to:
-  - data/output/parking_quotes.json
-  - data/output/parking_quotes.csv
 Exported matched lots to:
   - data/output/matched_lots.json
   - data/output/matched_lots.csv
 ```
 
-**Example Matched Results:**
+**Example Match Result:**
 
+```json
+{
+  "airport_code": "ORD",
+  "left_provider": "spothero",
+  "left_lot_id": "sh_ord_1",
+  "right_provider": "cheap_airport_parking",
+  "right_lot_id": "cap_ord_1",
+  "score": 0.9556,
+  "decision": "match",
+  "reason": "moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+}
 ```
-[
-  {
-    "airport_code": "ORD",
-    "left_provider": "parkwhiz",
-    "left_lot_id": "pw_ord_3",
-    "right_provider": "cheap_airport_parking",
-    "right_lot_id": "cap_ord_2",
-    "score": 0.3891,
-    "decision": "no_match",
-    "reason": "same city; same state; same postal code"
-  },
-  {
-    "airport_code": "ORD",
-    "left_provider": "parkwhiz",
-    "left_lot_id": "pw_ord_3",
-    "right_provider": "cheap_airport_parking",
-    "right_lot_id": "cap_ord_3",
-    "score": 0.8467,
-    "decision": "possible_match",
-    "reason": "high address similarity; near-identical geolocation; same city; same state"
-  },
-  {
-    "airport_code": "ORD",
-    "left_provider": "spothero",
-    "left_lot_id": "sh_ord_1",
-    "right_provider": "cheap_airport_parking",
-    "right_lot_id": "cap_ord_1",
-    "score": 0.9556,
-    "decision": "match",
-    "reason": "moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
-  },
-  ...
-]
-```
+
+---
 
 ## 🧪 Testing
 
@@ -328,184 +290,37 @@ pytest -v
 
 ---
 
-## 🔍 API Discovery Notes
+## 🔍 API Discovery & Provider Schemas
 
-To simulate real-world provider integrations, I explored how each recommended provider exposes search/quote data. The goal was to understand how their APIs differ and design a system that can handle those inconsistencies.
-
-### ParkWhiz
-
-- Discovery method: Official documentation and public developer resources
-- Observations:
-  - Structured API with clear concepts like listings and quotes
-  - Consistent use of IDs for facilities and rates
-  - Includes geolocation and pricing in a predictable format
-- Takeaway:
-  - Easiest provider to integrate due to relatively clean schema
-
----
-
-### SpotHero
-
-- Discovery method: Public developer platform and browser network inspection
-- Observations:
-  - Uses “facility” and “rate” concepts similar to ParkWhiz but with different field names
-  - Address and location fields differ slightly (e.g., municipality vs city)
-  - Some fields (e.g., postal code) may be missing or null
-- Takeaway:
-  - Structurally similar to ParkWhiz but requires field mapping and null handling
-
----
-
-### Cheap Airport Parking
-
-- Discovery method: Browser network panel (XHR requests from search flow)
-- Observations:
-  - Less formalized API surface compared to other providers
-  - Nested structures (e.g., geo and pricing objects)
-  - Inconsistent naming conventions (e.g., `title`, `address_1`, `city_name`)
-  - Some fields may be optional or missing
-- Takeaway:
-  - Represents a more “messy” real-world integration where normalization is critical
-
----
-
-## 📓 Provider Schema Notes
-
-Although all providers are normalized into a shared internal schema, each one exposes different provider-specific fields. The normalization layer extracts the stable fields needed for matching and storage, while preserving the full source payload in `raw_payload`.
+Parking providers do not consistently expose public or well-documented APIs. To integrate multiple providers, I used a combination of official documentation and browser network inspection (DevTools) to identify usable endpoints and data structures.
 
 ### ParkWhiz
 
-Modeled to reflect a documented quote/location-style API.
-
-Typical fields include:
-
-- facility/location identifiers
-- quote identifiers
-- address and geolocation
-- total price and currency
-- bookability
-- site URL
-- phone
-- capacity
-- hours / operating hours
-- non-bookable rates
-
-Example provider-specific fields preserved in `raw_payload`:
-
-- `is_bookable`
-- `site_url`
-- `phone`
-- `capacity`
-- `hours`
-- `operating_hours`
-- `non_bookable_rates`
+- **Discovery:** Official API documentation at https://developer.parkwhiz.com/
+- **Schema:** Well-structured JSON with consistent field names for locations, quotes, and pricing
+- **Integration:** Real API calls supported; falls back to mock data when credentials are missing
 
 ### SpotHero
 
-Modeled to reflect a partner-style marketplace search result.
-
-Typical fields include:
-
-- facility and rate identifiers
-- formatted pricing
-- amenities
-- refundability
-- inventory status
-- review metadata
-- shuttle cadence
-- distance to airport
-
-Example provider-specific fields preserved in `raw_payload`:
-
-- `display_price`
-- `amenities`
-- `review_score`
-- `review_count`
-- `shuttle_frequency_minutes`
-- `distance_to_airport_miles`
-- `is_refundable`
-- `inventory_status`
+- **Discovery:** Developer platform (https://spothero.com/developers) requires partner access; used Chrome DevTools to inspect XHR requests during search flows
+- **Schema:** Nested response structure requiring flattening; uses different field names (e.g., `municipality` vs `city`); some fields like postal code may be null
+- **Integration:** Mock data based on observed response patterns
 
 ### Cheap Airport Parking
 
-Modeled to reflect a website-driven airport parking comparison result.
+- **Discovery:** No public API documentation; no clear XHR/Fetch requests found via DevTools — data appears to be server-rendered or embedded in HTML
+- **Schema:** Inferred from UI observations; nested pricing objects, inconsistent naming (e.g., `title`, `address_1`, `city_name`)
+- **Integration:** Flexible adapter with mock data; designed to support real integration when endpoints become available
 
-Typical fields include:
+### Key Challenges
 
-- lot identifiers
-- nested pricing data
-- parking type
-- shuttle details
-- reviews
-- cancellation policy
-
-Example provider-specific fields preserved in `raw_payload`:
-
-- `pricing.display_total`
-- `pricing.daily_from`
-- `lot_type`
-- `parking_type`
-- `airport_shuttle`
-- `reviews`
-- `free_cancellation`
-
-### Why preserve provider-specific fields?
-
-Keeping the full raw provider payload makes the system easier to:
-
-- **Debug** when upstream schemas change
-- **Inspect** mapping assumptions during development
-- **Enrich** the normalized model later without re-fetching data
-- **Explain** matching decisions using source-specific context
-
----
-
-### Key Challenges Identified
-
-Across providers, several inconsistencies required normalization:
-
-- **No shared facility identifiers**
-  → Required heuristic matching instead of direct joins
-
-- **Different field names**
-  → e.g., `location_name` vs `facility_name` vs `title`
-
-- **Address formatting differences**
-  → `St` vs `Street`, punctuation, casing
-
-- **Geolocation variance**
-  → Slight differences in lat/lng precision across providers
-
-- **Missing or partial data**
-  → Some providers omit postal codes or coordinates
-
----
-
-### Design Implications
-
-These observations directly informed the system design:
-
-- Introduced a **provider abstraction layer**
-- Built a **normalization step** before any matching
-- Used **weighted heuristic scoring** instead of relying on IDs
-- Preserved **raw payloads** for traceability and debugging
-
----
-
-### Note on Implementation
-
-For this take-home, I implemented **mocked provider responses** that reflect real-world inconsistencies observed during API discovery.
-
-The architecture is designed so that:
-
-- mocked providers can be easily replaced with real HTTP integrations
-- normalization and matching logic remain unchanged
-
----
-
-### Real ParkWhiz integration
-
-The ParkWhiz provider is structured to attempt a real API call first using the documented v4 `GET /quotes` endpoint, then fall back to mocked data if credentials are unavailable or the request fails. This keeps the demo runnable while preserving a clean migration path to real provider integrations.
+| Challenge                      | Example                                         | Solution                                         |
+| ------------------------------ | ----------------------------------------------- | ------------------------------------------------ |
+| No shared facility identifiers | Each provider uses its own ID scheme            | Heuristic matching instead of direct joins       |
+| Different field names          | `location_name` vs `facility_name` vs `title`   | Provider-specific normalization layer            |
+| Address formatting differences | `St` vs `Street`, punctuation, casing           | Text normalization with abbreviation expansion   |
+| Geolocation variance           | Slight lat/lng precision differences            | Haversine distance with tolerance bands          |
+| Missing or partial data        | Some providers omit postal codes or coordinates | Graceful fallback (score 0.0 for missing fields) |
 
 ---
 
@@ -515,11 +330,17 @@ The parking matching pipeline is designed as a modular, event-driven data workfl
 
 Rather than running as a single monolithic script, the pipeline can be deployed as a series of orchestrated steps using cloud-native services.
 
+### Current Implementation
+
+The project uses **mocked provider responses** that reflect real-world inconsistencies observed during API discovery. The architecture is designed so that mocked providers can be replaced with real HTTP integrations without changing normalization or matching logic.
+
+The ParkWhiz provider already supports real API calls via the documented v4 `GET /quotes` endpoint, falling back to mock data if credentials are unavailable.
+
 ---
 
 ### Performance & Scalability
 
-The current implementation performs pairwise comparisons `(O(n²))` within each airport.
+The current implementation performs pairwise comparisons `O(n²)` within each airport.
 
 For larger datasets, this can be optimized by:
 
@@ -654,8 +475,6 @@ The pipeline is built to easily support additional providers and features:
   - Deploy using **AWS services (Step Functions + Lambda)**
   - Use **S3** for storage and **Postgres/DynamoDB** for persistence
 
----
-
 ### Design Philosophy
 
 This system prioritizes:
@@ -672,8 +491,53 @@ This system prioritizes:
 - Replace mocked providers with real API integrations
 - Add geospatial indexing for faster matching
 - Introduce clustering (multi-provider grouping)
-- Add confidence calibration or ML-based matching
 - Visualize matches on a map
+
+---
+
+### LLM-Assisted Matching
+
+The current matching system relies on deterministic rules and weighted scoring (name, address, geographic proximity), which provides strong reliability and explainability. However, this approach can struggle with highly inconsistent or ambiguous provider data.
+
+A natural evolution is to introduce a hybrid matching architecture that incorporates embeddings and LLMs to improve accuracy for edge cases.
+
+---
+
+### Hybrid Matching Architecture
+
+The proposed approach extends the existing pipeline rather than replacing it:
+
+1. **Deterministic Candidate Generation**
+   - Filter records by geography and metadata
+   - Limit comparisons to likely matches for efficiency
+2. **Rule-Based Scoring**
+   - Compute similarity using name, address, geographic distance
+   - Automatically accept or reject high-confidence cases
+3. **LLM / Embedding Layer (Selective)**
+   - Applied only to borderline matches
+   - Uses semantic similarity to evaluate ambiguous records
+4. **Final Decision Layer**
+   - Enforces hard constraints (e.g., geo distance thresholds)
+   - Ensures consistency and prevents incorrect matches
+
+---
+
+### Enhancements Enabled by LLMs
+
+**Semantic Similarity (Embeddings)**
+
+- Captures meaning beyond exact string matching
+- Handles variations like: “SFO Garage Parking” vs “San Francisco Airport Garage”
+
+**Pairwise Evaluation (LLM)**
+
+- Evaluates whether two records refer to the same real-world entity
+- Provides structured outputs (match, confidence, reasoning)
+
+**Data Normalization**
+
+- Standardizes messy provider inputs
+- Extracts structured fields (e.g., airport codes, address formats)
 
 ---
 
