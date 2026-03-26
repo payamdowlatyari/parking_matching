@@ -1,0 +1,542 @@
+[
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_1",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_1",
+    "score": 0.9556,
+    "decision": "match",
+    "reason": "moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_1",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_2",
+    "score": 0.2022,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_1",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_3",
+    "score": 0.2056,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 0.2022,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.3749,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_2",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_1",
+    "score": 0.1604,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_2",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_2",
+    "score": 0.98,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_2",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_3",
+    "score": 0.2826,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 0.2022,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.3485,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_1",
+    "score": 0.3208,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_2",
+    "score": 0.3691,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_ord_3",
+    "score": 0.3153,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 0.3131,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 0.3891,
+    "decision": "no_match",
+    "reason": "same city; same state; same postal code"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.8467,
+    "decision": "possible_match",
+    "reason": "high address similarity; near-identical geolocation; same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 0.9556,
+    "decision": "match",
+    "reason": "moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 0.1604,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.3398,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 0.2022,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 0.98,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.3485,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_1",
+    "score": 0.2056,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_2",
+    "score": 0.2826,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "ORD",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_ord_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_ord_3",
+    "score": 0.2962,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_1",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_2",
+    "score": 0.435,
+    "decision": "no_match",
+    "reason": "high address similarity; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_3",
+    "score": 0.2766,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_1",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_2",
+    "score": 0.4731,
+    "decision": "no_match",
+    "reason": "high address similarity; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_3",
+    "score": 0.2888,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_1",
+    "score": 0.4731,
+    "decision": "no_match",
+    "reason": "high address similarity; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_2",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_3",
+    "score": 0.3202,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_1",
+    "score": 0.4731,
+    "decision": "no_match",
+    "reason": "high address similarity; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_2",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_3",
+    "score": 0.3193,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_1",
+    "score": 0.2567,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_2",
+    "score": 0.1704,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "spothero",
+    "right_lot_id": "sh_lax_3",
+    "score": 0.2189,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_1",
+    "score": 0.2567,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_2",
+    "score": 0.1614,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_3",
+    "score": 0.294,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_1",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_2",
+    "score": 0.4731,
+    "decision": "no_match",
+    "reason": "high address similarity; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_3",
+    "score": 0.2888,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_1",
+    "score": 0.435,
+    "decision": "no_match",
+    "reason": "high address similarity; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_2",
+    "score": 1.0,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_3",
+    "score": 0.2741,
+    "decision": "no_match",
+    "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_1",
+    "score": 0.2766,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_2",
+    "score": 0.3202,
+    "decision": "no_match",
+    "reason": "same city; same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "cap_lax_3",
+    "score": 0.23,
+    "decision": "no_match",
+    "reason": "same state"
+  }
+]

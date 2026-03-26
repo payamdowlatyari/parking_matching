@@ -1,0 +1,687 @@
+[
+  {
+    "provider": "parkwhiz",
+    "provider_lot_id": "pw_ord_1",
+    "airport_code": "ORD",
+    "name": "Joe's Airport Parking",
+    "address1": "9420 River St",
+    "city": "Schiller Park",
+    "state": "IL",
+    "postal_code": "60176",
+    "latitude": 41.9739,
+    "longitude": -87.8694,
+    "raw_payload": {
+      "listing_id": "pw_ord_1",
+      "quote_id": "pwq_ord_1",
+      "location_name": "Joe's Airport Parking",
+      "address": "9420 River St",
+      "city": "Schiller Park",
+      "state": "IL",
+      "postal_code": "60176",
+      "lat": 41.9739,
+      "lng": -87.8694,
+      "currency": "USD",
+      "total_price": 27.99,
+      "is_bookable": true,
+      "site_url": "https://www.parkwhiz.com/p/chicago-parking/joes-airport-parking/",
+      "phone": "(773) 555-0101",
+      "capacity": 180,
+      "hours": "24/7",
+      "operating_hours": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "non_bookable_rates": []
+    }
+  },
+  {
+    "provider": "parkwhiz",
+    "provider_lot_id": "pw_ord_2",
+    "airport_code": "ORD",
+    "name": "Skyline Valet Garage",
+    "address1": "10100 Mannheim Rd",
+    "city": "Rosemont",
+    "state": "IL",
+    "postal_code": "60018",
+    "latitude": 41.9962,
+    "longitude": -87.8854,
+    "raw_payload": {
+      "listing_id": "pw_ord_2",
+      "quote_id": "pwq_ord_2",
+      "location_name": "Skyline Valet Garage",
+      "address": "10100 Mannheim Rd",
+      "city": "Rosemont",
+      "state": "IL",
+      "postal_code": "60018",
+      "lat": 41.9962,
+      "lng": -87.8854,
+      "currency": "USD",
+      "total_price": 34.5,
+      "is_bookable": true,
+      "site_url": "https://www.parkwhiz.com/p/chicago-parking/skyline-valet-garage/",
+      "phone": "(773) 555-0102",
+      "capacity": 120,
+      "hours": "24/7",
+      "operating_hours": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "non_bookable_rates": []
+    }
+  },
+  {
+    "provider": "parkwhiz",
+    "provider_lot_id": "pw_ord_3",
+    "airport_code": "ORD",
+    "name": "Hotel Blue Self Park",
+    "address1": "5440 N River Rd",
+    "city": "Rosemont",
+    "state": "IL",
+    "postal_code": "60018",
+    "latitude": 41.9798,
+    "longitude": -87.8621,
+    "raw_payload": {
+      "listing_id": "pw_ord_3",
+      "quote_id": "pwq_ord_3",
+      "location_name": "Hotel Blue Self Park",
+      "address": "5440 N River Rd",
+      "city": "Rosemont",
+      "state": "IL",
+      "postal_code": "60018",
+      "lat": 41.9798,
+      "lng": -87.8621,
+      "currency": "USD",
+      "total_price": 21.25,
+      "is_bookable": true,
+      "site_url": "https://www.parkwhiz.com/p/chicago-parking/hotel-blue-self-park/",
+      "phone": "(773) 555-0103",
+      "capacity": 90,
+      "hours": "24/7",
+      "operating_hours": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "non_bookable_rates": []
+    }
+  },
+  {
+    "provider": "spothero",
+    "provider_lot_id": "sh_ord_1",
+    "airport_code": "ORD",
+    "name": "Joes Airport Parking",
+    "address1": "9420 River Street",
+    "city": "Schiller Park",
+    "state": "IL",
+    "postal_code": "60176",
+    "latitude": 41.9741,
+    "longitude": -87.8692,
+    "raw_payload": {
+      "facility_id": "sh_ord_1",
+      "rate_id": "shr_ord_1",
+      "facility_name": "Joes Airport Parking",
+      "street_address": "9420 River Street",
+      "municipality": "Schiller Park",
+      "region": "IL",
+      "zip": "60176",
+      "latitude": 41.9741,
+      "longitude": -87.8692,
+      "currency_code": "USD",
+      "price": 28.49,
+      "display_price": "$28.49",
+      "review_score": 4.6,
+      "review_count": 318,
+      "amenities": [
+        "self_park",
+        "shuttle",
+        "covered_available"
+      ],
+      "shuttle_frequency_minutes": 15,
+      "distance_to_airport_miles": 2.4,
+      "is_refundable": true,
+      "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "spothero",
+    "provider_lot_id": "sh_ord_2",
+    "airport_code": "ORD",
+    "name": "Skyline Valet",
+    "address1": "10100 Mannheim Road",
+    "city": "Rosemont",
+    "state": "IL",
+    "postal_code": null,
+    "latitude": 41.996,
+    "longitude": -87.8853,
+    "raw_payload": {
+      "facility_id": "sh_ord_2",
+      "rate_id": "shr_ord_2",
+      "facility_name": "Skyline Valet",
+      "street_address": "10100 Mannheim Road",
+      "municipality": "Rosemont",
+      "region": "IL",
+      "zip": null,
+      "latitude": 41.996,
+      "longitude": -87.8853,
+      "currency_code": "USD",
+      "price": 34.95,
+      "display_price": "$34.95",
+      "review_score": 4.4,
+      "review_count": 190,
+      "amenities": [
+        "valet",
+        "shuttle"
+      ],
+      "shuttle_frequency_minutes": 10,
+      "distance_to_airport_miles": 2.9,
+      "is_refundable": true,
+      "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "spothero",
+    "provider_lot_id": "sh_ord_3",
+    "airport_code": "ORD",
+    "name": "River North Event Parking",
+    "address1": "10 Arena Boulevard",
+    "city": "Chicago",
+    "state": "IL",
+    "postal_code": "60610",
+    "latitude": 41.901,
+    "longitude": -87.6375,
+    "raw_payload": {
+      "facility_id": "sh_ord_3",
+      "rate_id": "shr_ord_3",
+      "facility_name": "River North Event Parking",
+      "street_address": "10 Arena Boulevard",
+      "municipality": "Chicago",
+      "region": "IL",
+      "zip": "60610",
+      "latitude": 41.901,
+      "longitude": -87.6375,
+      "currency_code": "USD",
+      "price": 22.0,
+      "display_price": "$22.00",
+      "review_score": 4.1,
+      "review_count": 74,
+      "amenities": [
+        "self_park"
+      ],
+      "shuttle_frequency_minutes": null,
+      "distance_to_airport_miles": 16.8,
+      "is_refundable": false,
+      "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_lot_id": "cap_ord_1",
+    "airport_code": "ORD",
+    "name": "Joe's Airport Parking",
+    "address1": "9420 River St.",
+    "city": "Schiller Park",
+    "state": "IL",
+    "postal_code": "60176",
+    "latitude": 41.9738,
+    "longitude": -87.8696,
+    "raw_payload": {
+      "id": "cap_ord_1",
+      "quote_ref": "capq_ord_1",
+      "title": "Joe's Airport Parking",
+      "address_1": "9420 River St.",
+      "city_name": "Schiller Park",
+      "state_code": "IL",
+      "zip_code": "60176",
+      "geo": {
+        "lat": 41.9738,
+        "lng": -87.8696
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 27.5,
+        "display_total": "$27.50",
+        "daily_from": 9.95
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.5,
+        "count": 205
+      },
+      "free_cancellation": true
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_lot_id": "cap_ord_2",
+    "airport_code": "ORD",
+    "name": "Skyline Valet Garage",
+    "address1": "10100 Mannheim Rd.",
+    "city": "Rosemont",
+    "state": "IL",
+    "postal_code": "60018",
+    "latitude": 41.9963,
+    "longitude": -87.8852,
+    "raw_payload": {
+      "id": "cap_ord_2",
+      "quote_ref": "capq_ord_2",
+      "title": "Skyline Valet Garage",
+      "address_1": "10100 Mannheim Rd.",
+      "city_name": "Rosemont",
+      "state_code": "IL",
+      "zip_code": "60018",
+      "geo": {
+        "lat": 41.9963,
+        "lng": -87.8852
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 34.0,
+        "display_total": "$34.00",
+        "daily_from": 11.5
+      },
+      "lot_type": "valet",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.3,
+        "count": 121
+      },
+      "free_cancellation": true
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_lot_id": "cap_ord_3",
+    "airport_code": "ORD",
+    "name": "Rosemont Hotel Parking",
+    "address1": "5440 N River Road",
+    "city": "Rosemont",
+    "state": "IL",
+    "postal_code": null,
+    "latitude": 41.9799,
+    "longitude": -87.862,
+    "raw_payload": {
+      "id": "cap_ord_3",
+      "quote_ref": "capq_ord_3",
+      "title": "Rosemont Hotel Parking",
+      "address_1": "5440 N River Road",
+      "city_name": "Rosemont",
+      "state_code": "IL",
+      "zip_code": null,
+      "geo": {
+        "lat": 41.9799,
+        "lng": -87.862
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 22.1,
+        "display_total": "$22.10",
+        "daily_from": 8.75
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.1,
+        "count": 88
+      },
+      "free_cancellation": true
+    }
+  },
+  {
+    "provider": "parkwhiz",
+    "provider_lot_id": "pw_lax_1",
+    "airport_code": "LAX",
+    "name": "Sunset Airport Parking",
+    "address1": "6151 W Century Blvd",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90045",
+    "latitude": 33.9455,
+    "longitude": -118.3895,
+    "raw_payload": {
+      "listing_id": "pw_lax_1",
+      "quote_id": "pwq_lax_1",
+      "location_name": "Sunset Airport Parking",
+      "address": "6151 W Century Blvd",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90045",
+      "lat": 33.9455,
+      "lng": -118.3895,
+      "currency": "USD",
+      "total_price": 28.75,
+      "is_bookable": true,
+      "site_url": "https://www.parkwhiz.com/p/los-angeles-parking/sunset-airport-parking/",
+      "phone": "(310) 555-0101",
+      "capacity": 260,
+      "hours": "24/7",
+      "operating_hours": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "non_bookable_rates": []
+    }
+  },
+  {
+    "provider": "parkwhiz",
+    "provider_lot_id": "pw_lax_2",
+    "airport_code": "LAX",
+    "name": "Pacific Park and Fly",
+    "address1": "5711 W Century Blvd",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90045",
+    "latitude": 33.9461,
+    "longitude": -118.3837,
+    "raw_payload": {
+      "listing_id": "pw_lax_2",
+      "quote_id": "pwq_lax_2",
+      "location_name": "Pacific Park and Fly",
+      "address": "5711 W Century Blvd",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90045",
+      "lat": 33.9461,
+      "lng": -118.3837,
+      "currency": "USD",
+      "total_price": 36.1,
+      "is_bookable": true,
+      "site_url": "https://www.parkwhiz.com/p/los-angeles-parking/pacific-park-and-fly/",
+      "phone": "(310) 555-0102",
+      "capacity": 200,
+      "hours": "24/7",
+      "operating_hours": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "non_bookable_rates": []
+    }
+  },
+  {
+    "provider": "parkwhiz",
+    "provider_lot_id": "pw_lax_3",
+    "airport_code": "LAX",
+    "name": "Airport Center Garage",
+    "address1": "210 E Imperial Ave",
+    "city": "El Segundo",
+    "state": "CA",
+    "postal_code": "90245",
+    "latitude": 33.9314,
+    "longitude": -118.4018,
+    "raw_payload": {
+      "listing_id": "pw_lax_3",
+      "quote_id": "pwq_lax_3",
+      "location_name": "Airport Center Garage",
+      "address": "210 E Imperial Ave",
+      "city": "El Segundo",
+      "state": "CA",
+      "postal_code": "90245",
+      "lat": 33.9314,
+      "lng": -118.4018,
+      "currency": "USD",
+      "total_price": 22.4,
+      "is_bookable": true,
+      "site_url": "https://www.parkwhiz.com/p/los-angeles-parking/airport-center-garage/",
+      "phone": "(310) 555-0103",
+      "capacity": 110,
+      "hours": "24/7",
+      "operating_hours": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "non_bookable_rates": []
+    }
+  },
+  {
+    "provider": "spothero",
+    "provider_lot_id": "sh_lax_1",
+    "airport_code": "LAX",
+    "name": "Sunset Airport Parking",
+    "address1": "6151 W Century Boulevard",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90045",
+    "latitude": 33.9456,
+    "longitude": -118.3894,
+    "raw_payload": {
+      "facility_id": "sh_lax_1",
+      "rate_id": "shr_lax_1",
+      "facility_name": "Sunset Airport Parking",
+      "street_address": "6151 W Century Boulevard",
+      "municipality": "Los Angeles",
+      "region": "CA",
+      "zip": "90045",
+      "latitude": 33.9456,
+      "longitude": -118.3894,
+      "currency_code": "USD",
+      "price": 29.1,
+      "display_price": "$29.10",
+      "review_score": 4.7,
+      "review_count": 412,
+      "amenities": [
+        "self_park",
+        "shuttle",
+        "ev_charging"
+      ],
+      "shuttle_frequency_minutes": 12,
+      "distance_to_airport_miles": 1.8,
+      "is_refundable": true,
+      "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "spothero",
+    "provider_lot_id": "sh_lax_2",
+    "airport_code": "LAX",
+    "name": "Pacific Park & Fly",
+    "address1": "5711 W Century Blvd",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90045",
+    "latitude": 33.9462,
+    "longitude": -118.3835,
+    "raw_payload": {
+      "facility_id": "sh_lax_2",
+      "rate_id": "shr_lax_2",
+      "facility_name": "Pacific Park & Fly",
+      "street_address": "5711 W Century Blvd",
+      "municipality": "Los Angeles",
+      "region": "CA",
+      "zip": "90045",
+      "latitude": 33.9462,
+      "longitude": -118.3835,
+      "currency_code": "USD",
+      "price": 35.95,
+      "display_price": "$35.95",
+      "review_score": 4.5,
+      "review_count": 265,
+      "amenities": [
+        "self_park",
+        "shuttle",
+        "covered_available"
+      ],
+      "shuttle_frequency_minutes": 15,
+      "distance_to_airport_miles": 1.5,
+      "is_refundable": true,
+      "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "spothero",
+    "provider_lot_id": "sh_lax_3",
+    "airport_code": "LAX",
+    "name": "Downtown LA Garage",
+    "address1": "700 Flower St",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90017",
+    "latitude": 34.0487,
+    "longitude": -118.2587,
+    "raw_payload": {
+      "facility_id": "sh_lax_3",
+      "rate_id": "shr_lax_3",
+      "facility_name": "Downtown LA Garage",
+      "street_address": "700 Flower St",
+      "municipality": "Los Angeles",
+      "region": "CA",
+      "zip": "90017",
+      "latitude": 34.0487,
+      "longitude": -118.2587,
+      "currency_code": "USD",
+      "price": 16.5,
+      "display_price": "$16.50",
+      "review_score": 4.0,
+      "review_count": 86,
+      "amenities": [
+        "self_park"
+      ],
+      "shuttle_frequency_minutes": null,
+      "distance_to_airport_miles": 16.1,
+      "is_refundable": false,
+      "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_lot_id": "cap_lax_1",
+    "airport_code": "LAX",
+    "name": "Sunset Airport Parking",
+    "address1": "6151 W Century Blvd.",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90045",
+    "latitude": 33.9454,
+    "longitude": -118.3896,
+    "raw_payload": {
+      "id": "cap_lax_1",
+      "quote_ref": "capq_lax_1",
+      "title": "Sunset Airport Parking",
+      "address_1": "6151 W Century Blvd.",
+      "city_name": "Los Angeles",
+      "state_code": "CA",
+      "zip_code": "90045",
+      "geo": {
+        "lat": 33.9454,
+        "lng": -118.3896
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 28.25,
+        "display_total": "$28.25",
+        "daily_from": 8.95
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.6,
+        "count": 301
+      },
+      "free_cancellation": true
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_lot_id": "cap_lax_2",
+    "airport_code": "LAX",
+    "name": "Pacific Park and Fly",
+    "address1": "5711 W Century Boulevard",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postal_code": "90045",
+    "latitude": 33.946,
+    "longitude": -118.3838,
+    "raw_payload": {
+      "id": "cap_lax_2",
+      "quote_ref": "capq_lax_2",
+      "title": "Pacific Park and Fly",
+      "address_1": "5711 W Century Boulevard",
+      "city_name": "Los Angeles",
+      "state_code": "CA",
+      "zip_code": "90045",
+      "geo": {
+        "lat": 33.946,
+        "lng": -118.3838
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 35.5,
+        "display_total": "$35.50",
+        "daily_from": 10.95
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.4,
+        "count": 198
+      },
+      "free_cancellation": true
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_lot_id": "cap_lax_3",
+    "airport_code": "LAX",
+    "name": "Marina Traveler Parking",
+    "address1": "1200 Lincoln Blvd",
+    "city": "Santa Monica",
+    "state": "CA",
+    "postal_code": "90401",
+    "latitude": 34.0195,
+    "longitude": -118.4912,
+    "raw_payload": {
+      "id": "cap_lax_3",
+      "quote_ref": "capq_lax_3",
+      "title": "Marina Traveler Parking",
+      "address_1": "1200 Lincoln Blvd",
+      "city_name": "Santa Monica",
+      "state_code": "CA",
+      "zip_code": "90401",
+      "geo": {
+        "lat": 34.0195,
+        "lng": -118.4912
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 16.25,
+        "display_total": "$16.25",
+        "daily_from": 7.95
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": 3.9,
+        "count": 42
+      },
+      "free_cancellation": false
+    }
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "provider": "cheap_airport_parking",
+  "airport_code": "LAX",
+  "start_dt": "2026-03-28T10:00:00",
+  "end_dt": "2026-03-30T18:00:00",
+  "fetched_at_utc": "20260326T172813Z",
+  "record_count": 3,
+  "records": [
+    {
+      "id": "cap_lax_1",
+      "quote_ref": "capq_lax_1",
+      "title": "Sunset Airport Parking",
+      "address_1": "6151 W Century Blvd.",
+      "city_name": "Los Angeles",
+      "state_code": "CA",
+      "zip_code": "90045",
+      "geo": {
+        "lat": 33.9454,
+        "lng": -118.3896
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 28.25,
+        "display_total": "$28.25",
+        "daily_from": 8.95
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.6,
+        "count": 301
+      },
+      "free_cancellation": true
+    },
+    {
+      "id": "cap_lax_2",
+      "quote_ref": "capq_lax_2",
+      "title": "Pacific Park and Fly",
+      "address_1": "5711 W Century Boulevard",
+      "city_name": "Los Angeles",
+      "state_code": "CA",
+      "zip_code": "90045",
+      "geo": {
+        "lat": 33.946,
+        "lng": -118.3838
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 35.5,
+        "display_total": "$35.50",
+        "daily_from": 10.95
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.4,
+        "count": 198
+      },
+      "free_cancellation": true
+    },
+    {
+      "id": "cap_lax_3",
+      "quote_ref": "capq_lax_3",
+      "title": "Marina Traveler Parking",
+      "address_1": "1200 Lincoln Blvd",
+      "city_name": "Santa Monica",
+      "state_code": "CA",
+      "zip_code": "90401",
+      "geo": {
+        "lat": 34.0195,
+        "lng": -118.4912
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 16.25,
+        "display_total": "$16.25",
+        "daily_from": 7.95
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": 3.9,
+        "count": 42
+      },
+      "free_cancellation": false
+    }
+  ]
+}

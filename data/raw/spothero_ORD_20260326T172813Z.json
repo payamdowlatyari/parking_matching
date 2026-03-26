@@ -1,0 +1,82 @@
+{
+  "provider": "spothero",
+  "airport_code": "ORD",
+  "start_dt": "2026-03-28T10:00:00",
+  "end_dt": "2026-03-30T18:00:00",
+  "fetched_at_utc": "20260326T172813Z",
+  "record_count": 3,
+  "records": [
+    {
+      "facility_id": "sh_ord_1",
+      "rate_id": "shr_ord_1",
+      "facility_name": "Joes Airport Parking",
+      "street_address": "9420 River Street",
+      "municipality": "Schiller Park",
+      "region": "IL",
+      "zip": "60176",
+      "latitude": 41.9741,
+      "longitude": -87.8692,
+      "currency_code": "USD",
+      "price": 28.49,
+      "display_price": "$28.49",
+      "review_score": 4.6,
+      "review_count": 318,
+      "amenities": [
+        "self_park",
+        "shuttle",
+        "covered_available"
+      ],
+      "shuttle_frequency_minutes": 15,
+      "distance_to_airport_miles": 2.4,
+      "is_refundable": true,
+      "inventory_status": "available"
+    },
+    {
+      "facility_id": "sh_ord_2",
+      "rate_id": "shr_ord_2",
+      "facility_name": "Skyline Valet",
+      "street_address": "10100 Mannheim Road",
+      "municipality": "Rosemont",
+      "region": "IL",
+      "zip": null,
+      "latitude": 41.996,
+      "longitude": -87.8853,
+      "currency_code": "USD",
+      "price": 34.95,
+      "display_price": "$34.95",
+      "review_score": 4.4,
+      "review_count": 190,
+      "amenities": [
+        "valet",
+        "shuttle"
+      ],
+      "shuttle_frequency_minutes": 10,
+      "distance_to_airport_miles": 2.9,
+      "is_refundable": true,
+      "inventory_status": "available"
+    },
+    {
+      "facility_id": "sh_ord_3",
+      "rate_id": "shr_ord_3",
+      "facility_name": "River North Event Parking",
+      "street_address": "10 Arena Boulevard",
+      "municipality": "Chicago",
+      "region": "IL",
+      "zip": "60610",
+      "latitude": 41.901,
+      "longitude": -87.6375,
+      "currency_code": "USD",
+      "price": 22.0,
+      "display_price": "$22.00",
+      "review_score": 4.1,
+      "review_count": 74,
+      "amenities": [
+        "self_park"
+      ],
+      "shuttle_frequency_minutes": null,
+      "distance_to_airport_miles": 16.8,
+      "is_refundable": false,
+      "inventory_status": "available"
+    }
+  ]
+}

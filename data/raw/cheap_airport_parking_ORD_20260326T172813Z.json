@@ -1,0 +1,103 @@
+{
+  "provider": "cheap_airport_parking",
+  "airport_code": "ORD",
+  "start_dt": "2026-03-28T10:00:00",
+  "end_dt": "2026-03-30T18:00:00",
+  "fetched_at_utc": "20260326T172813Z",
+  "record_count": 3,
+  "records": [
+    {
+      "id": "cap_ord_1",
+      "quote_ref": "capq_ord_1",
+      "title": "Joe's Airport Parking",
+      "address_1": "9420 River St.",
+      "city_name": "Schiller Park",
+      "state_code": "IL",
+      "zip_code": "60176",
+      "geo": {
+        "lat": 41.9738,
+        "lng": -87.8696
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 27.5,
+        "display_total": "$27.50",
+        "daily_from": 9.95
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.5,
+        "count": 205
+      },
+      "free_cancellation": true
+    },
+    {
+      "id": "cap_ord_2",
+      "quote_ref": "capq_ord_2",
+      "title": "Skyline Valet Garage",
+      "address_1": "10100 Mannheim Rd.",
+      "city_name": "Rosemont",
+      "state_code": "IL",
+      "zip_code": "60018",
+      "geo": {
+        "lat": 41.9963,
+        "lng": -87.8852
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 34.0,
+        "display_total": "$34.00",
+        "daily_from": 11.5
+      },
+      "lot_type": "valet",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.3,
+        "count": 121
+      },
+      "free_cancellation": true
+    },
+    {
+      "id": "cap_ord_3",
+      "quote_ref": "capq_ord_3",
+      "title": "Rosemont Hotel Parking",
+      "address_1": "5440 N River Road",
+      "city_name": "Rosemont",
+      "state_code": "IL",
+      "zip_code": null,
+      "geo": {
+        "lat": 41.9799,
+        "lng": -87.862
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 22.1,
+        "display_total": "$22.10",
+        "daily_from": 8.75
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": 4.1,
+        "count": 88
+      },
+      "free_cancellation": true
+    }
+  ]
+}

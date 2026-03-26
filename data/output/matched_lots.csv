@@ -1,0 +1,55 @@
+airport_code,left_provider,left_lot_id,right_provider,right_lot_id,score,decision,reason
+ORD,parkwhiz,pw_ord_1,spothero,sh_ord_1,0.9556,match,moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+ORD,parkwhiz,pw_ord_1,spothero,sh_ord_2,0.2022,no_match,same state
+ORD,parkwhiz,pw_ord_1,spothero,sh_ord_3,0.2056,no_match,same state
+ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_2,0.2022,no_match,same state
+ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_3,0.3749,no_match,same state
+ORD,parkwhiz,pw_ord_2,spothero,sh_ord_1,0.1604,no_match,same state
+ORD,parkwhiz,pw_ord_2,spothero,sh_ord_2,0.98,match,high name similarity; high address similarity; near-identical geolocation; same city; same state
+ORD,parkwhiz,pw_ord_2,spothero,sh_ord_3,0.2826,no_match,same state
+ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_1,0.2022,no_match,same state
+ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_3,0.3485,no_match,same city; same state
+ORD,parkwhiz,pw_ord_3,spothero,sh_ord_1,0.3208,no_match,same state
+ORD,parkwhiz,pw_ord_3,spothero,sh_ord_2,0.3691,no_match,same city; same state
+ORD,parkwhiz,pw_ord_3,spothero,sh_ord_3,0.3153,no_match,same state
+ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_1,0.3131,no_match,same state
+ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_2,0.3891,no_match,same city; same state; same postal code
+ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_3,0.8467,possible_match,high address similarity; near-identical geolocation; same city; same state
+ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_1,0.9556,match,moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_2,0.1604,no_match,same state
+ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_3,0.3398,no_match,same state
+ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_1,0.2022,no_match,same state
+ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_2,0.98,match,high name similarity; high address similarity; near-identical geolocation; same city; same state
+ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_3,0.3485,no_match,same city; same state
+ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_1,0.2056,no_match,same state
+ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_2,0.2826,no_match,same state
+ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_3,0.2962,no_match,same state
+LAX,parkwhiz,pw_lax_1,spothero,sh_lax_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_1,spothero,sh_lax_2,0.435,no_match,high address similarity; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_1,spothero,sh_lax_3,0.2766,no_match,same city; same state
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,cap_lax_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,cap_lax_2,0.4731,no_match,high address similarity; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,cap_lax_3,0.2888,no_match,same state
+LAX,parkwhiz,pw_lax_2,spothero,sh_lax_1,0.4731,no_match,high address similarity; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_2,spothero,sh_lax_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_2,spothero,sh_lax_3,0.3202,no_match,same city; same state
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,cap_lax_1,0.4731,no_match,high address similarity; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,cap_lax_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,cap_lax_3,0.3193,no_match,same state
+LAX,parkwhiz,pw_lax_3,spothero,sh_lax_1,0.2567,no_match,same state
+LAX,parkwhiz,pw_lax_3,spothero,sh_lax_2,0.1704,no_match,same state
+LAX,parkwhiz,pw_lax_3,spothero,sh_lax_3,0.2189,no_match,same state
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,cap_lax_1,0.2567,no_match,same state
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,cap_lax_2,0.1614,no_match,same state
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,cap_lax_3,0.294,no_match,same state
+LAX,spothero,sh_lax_1,cheap_airport_parking,cap_lax_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,spothero,sh_lax_1,cheap_airport_parking,cap_lax_2,0.4731,no_match,high address similarity; same city; same state; same postal code
+LAX,spothero,sh_lax_1,cheap_airport_parking,cap_lax_3,0.2888,no_match,same state
+LAX,spothero,sh_lax_2,cheap_airport_parking,cap_lax_1,0.435,no_match,high address similarity; same city; same state; same postal code
+LAX,spothero,sh_lax_2,cheap_airport_parking,cap_lax_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,spothero,sh_lax_2,cheap_airport_parking,cap_lax_3,0.2741,no_match,same state
+LAX,spothero,sh_lax_3,cheap_airport_parking,cap_lax_1,0.2766,no_match,same city; same state
+LAX,spothero,sh_lax_3,cheap_airport_parking,cap_lax_2,0.3202,no_match,same city; same state
+LAX,spothero,sh_lax_3,cheap_airport_parking,cap_lax_3,0.23,no_match,same state

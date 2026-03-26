@@ -1,0 +1,83 @@
+{
+  "provider": "spothero",
+  "airport_code": "LAX",
+  "start_dt": "2026-03-28T10:00:00",
+  "end_dt": "2026-03-30T18:00:00",
+  "fetched_at_utc": "20260326T172813Z",
+  "record_count": 3,
+  "records": [
+    {
+      "facility_id": "sh_lax_1",
+      "rate_id": "shr_lax_1",
+      "facility_name": "Sunset Airport Parking",
+      "street_address": "6151 W Century Boulevard",
+      "municipality": "Los Angeles",
+      "region": "CA",
+      "zip": "90045",
+      "latitude": 33.9456,
+      "longitude": -118.3894,
+      "currency_code": "USD",
+      "price": 29.1,
+      "display_price": "$29.10",
+      "review_score": 4.7,
+      "review_count": 412,
+      "amenities": [
+        "self_park",
+        "shuttle",
+        "ev_charging"
+      ],
+      "shuttle_frequency_minutes": 12,
+      "distance_to_airport_miles": 1.8,
+      "is_refundable": true,
+      "inventory_status": "available"
+    },
+    {
+      "facility_id": "sh_lax_2",
+      "rate_id": "shr_lax_2",
+      "facility_name": "Pacific Park & Fly",
+      "street_address": "5711 W Century Blvd",
+      "municipality": "Los Angeles",
+      "region": "CA",
+      "zip": "90045",
+      "latitude": 33.9462,
+      "longitude": -118.3835,
+      "currency_code": "USD",
+      "price": 35.95,
+      "display_price": "$35.95",
+      "review_score": 4.5,
+      "review_count": 265,
+      "amenities": [
+        "self_park",
+        "shuttle",
+        "covered_available"
+      ],
+      "shuttle_frequency_minutes": 15,
+      "distance_to_airport_miles": 1.5,
+      "is_refundable": true,
+      "inventory_status": "available"
+    },
+    {
+      "facility_id": "sh_lax_3",
+      "rate_id": "shr_lax_3",
+      "facility_name": "Downtown LA Garage",
+      "street_address": "700 Flower St",
+      "municipality": "Los Angeles",
+      "region": "CA",
+      "zip": "90017",
+      "latitude": 34.0487,
+      "longitude": -118.2587,
+      "currency_code": "USD",
+      "price": 16.5,
+      "display_price": "$16.50",
+      "review_score": 4.0,
+      "review_count": 86,
+      "amenities": [
+        "self_park"
+      ],
+      "shuttle_frequency_minutes": null,
+      "distance_to_airport_miles": 16.1,
+      "is_refundable": false,
+      "inventory_status": "available"
+    }
+  ]
+}
