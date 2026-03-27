@@ -3,7 +3,7 @@
   "airport_code": "SFO",
   "start_dt": "2026-03-28T10:00:00",
   "end_dt": "2026-03-30T18:00:00",
-  "fetched_at_utc": "20260327T193745Z",
+  "fetched_at_utc": "20260327T212159Z",
   "record_count": 22,
   "records": [
     {
@@ -30,7 +30,7 @@
       "review_score": 4.8,
       "review_count": 1399,
       "inventory_status": true,
-      "available_spaces": 404,
+      "available_spaces": 400,
       "raw_source": {
         "distance": {
           "linear_meters": 2519.423958337456
@@ -167,7 +167,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 404,
+          "available_spaces": 400,
           "available": true
         },
         "facility": {
@@ -396,7 +396,7 @@
       "review_score": 4.5,
       "review_count": 96,
       "inventory_status": true,
-      "available_spaces": 98,
+      "available_spaces": 100,
       "raw_source": {
         "distance": {
           "linear_meters": 2582.6234512756596
@@ -540,7 +540,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 98,
+          "available_spaces": 100,
           "available": true
         },
         "facility": {
@@ -3017,7 +3017,7 @@
       "review_score": 4.7,
       "review_count": 250,
       "inventory_status": true,
-      "available_spaces": 22,
+      "available_spaces": 21,
       "raw_source": {
         "distance": {
           "linear_meters": 3615.110029080391
@@ -3151,7 +3151,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 22,
+          "available_spaces": 21,
           "available": true
         },
         "facility": {
@@ -3389,7 +3389,7 @@
       "review_score": 4.7,
       "review_count": 425,
       "inventory_status": true,
-      "available_spaces": 276,
+      "available_spaces": 275,
       "raw_source": {
         "distance": {
           "linear_meters": 3714.5198083327937
@@ -3528,7 +3528,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 276,
+          "available_spaces": 275,
           "available": true
         },
         "facility": {
@@ -3810,7 +3810,7 @@
       "review_score": 4.1,
       "review_count": 23,
       "inventory_status": true,
-      "available_spaces": 47,
+      "available_spaces": 46,
       "raw_source": {
         "distance": {
           "linear_meters": 3852.2896806221943
@@ -3949,7 +3949,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 47,
+          "available_spaces": 46,
           "available": true
         },
         "facility": {
@@ -4348,7 +4348,7 @@
       "review_score": 5,
       "review_count": 5,
       "inventory_status": true,
-      "available_spaces": 28,
+      "available_spaces": 27,
       "raw_source": {
         "distance": {
           "linear_meters": 3953.2798476038533
@@ -4487,7 +4487,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 28,
+          "available_spaces": 27,
           "available": true
         },
         "facility": {
@@ -4975,7 +4975,7 @@
       "review_score": 4.8,
       "review_count": 304,
       "inventory_status": true,
-      "available_spaces": 116,
+      "available_spaces": 115,
       "raw_source": {
         "distance": {
           "linear_meters": 4068.781375215957
@@ -5109,7 +5109,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 116,
+          "available_spaces": 115,
           "available": true
         },
         "facility": {

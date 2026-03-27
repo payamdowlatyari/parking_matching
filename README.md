@@ -16,6 +16,7 @@ A data pipeline that aggregates parking availability from multiple providers, no
 - [Assumptions & Limitations](#%EF%B8%8F-assumptions--limitations)
 - [API Discovery & Provider Schemas](#-api-discovery--provider-schemas)
 - [Performance, Scalability & Deployment](#-performance-scalability--deployment-strategy)
+- [Summary](#-summary)
 
 ---
 
@@ -44,9 +45,9 @@ parking_matching/
 │   ├── models.py           # ParkingLot, ParkingQuote, MatchedLot dataclasses
 │   ├── providers/          # Provider fetch implementations
 │   │   ├── base.py         # Abstract base provider interface
-│   │   ├── parkwhiz.py     # ParkWhiz (real API + mock fallback)
-│   │   ├── spothero.py     # SpotHero (mock)
-│   │   └── cheap_airport_parking.py  # CheapAirportParking (mock)
+│   │   ├── parkwhiz.py     # ParkWhiz (live API)
+│   │   ├── spothero.py     # SpotHero (restricted API)
+│   │   └── cheap_airport_parking.py  # CheapAirportParking (HTML scrapping)
 │   ├── normalize/          # Schema normalization
 │   │   ├── text.py         # Text cleaning, abbreviation expansion
 │   │   ├── facility.py     # Raw record → ParkingLot
@@ -68,8 +69,9 @@ parking_matching/
 #### Providers (`app/providers/`)
 
 - Each provider implements a common interface
-- Currently uses **mocked data** simulating real API responses
-- Designed to be easily replaced with real API integrations
+- Use live API where available (ParkWhiz)
+- Handle restricted APIs (SpotHero) via scraping fallback
+- Adapt to fully unstructured sources (CheapAirportParking)
 
 #### Normalization (`app/normalize/`)
 
@@ -175,17 +177,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Configure credentials:**
-
-```bash
-cp .env.example .env
-# Edit .env and fill in your API keys
-```
-
-> **Note:** The pipeline works out of the box without any API keys.
-> All providers fall back to realistic mock data when credentials are missing.
-> Set `*_USE_MOCK_FALLBACK=true` in `.env` to explicitly use mock data for a provider.
-
 ---
 
 ## ▶️ Usage
@@ -275,7 +266,7 @@ pytest -v
 
 | Area               | Tests   | Description                                                                                                                  |
 | ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Text normalization | 7 tests | Punctuation removal, whitespace collapsing, abbreviation expansion, weak token removal, postal code cleanup, `None` handling |
+| Text normalization | 6 tests | Punctuation removal, whitespace collapsing, abbreviation expansion, weak token removal, postal code cleanup, `None` handling |
 | Matching scoring   | 4 tests | Similar lots → `match`, different lots → `no_match`, missing geo data handling, same-provider pair skipping                  |
 
 ---
@@ -286,41 +277,92 @@ pytest -v
 - Some facilities may have missing addresses or coordinates
 - Some facilities may represent multiple parking products (valet vs self-park) under one location
 - Matching is tuned to prioritize **precision over recall** — high-confidence matches are reliable while ambiguous cases are surfaced as `possible_match`
-- Mock data is used instead of real APIs (except ParkWhiz, which attempts real API calls before falling back to mocks)
 
 ---
 
 ## 🔍 API Discovery & Provider Schemas
 
-Parking providers do not consistently expose public or well-documented APIs. To integrate multiple providers, I used a combination of official documentation and browser network inspection (DevTools) to identify usable endpoints and data structures.
+Parking providers do not consistently expose public or well-documented APIs.
+
+To integrate multiple providers, this project uses a combination of:
+
+- Official documentation (when available)
+- Browser network inspection (Chrome DevTools)
+- Reverse-engineered API requests
+- HTML scraping as a fallback
 
 ### ParkWhiz
 
-- **Discovery:** Official API documentation at https://developer.parkwhiz.com/
-- **Schema:** Well-structured JSON with consistent field names for locations, quotes, and pricing
-- **Integration:** Real API calls supported; falls back to mock data when credentials are missing
+- **Discovery:** Official docs + network inspection of ParkWhiz search flows
+- **Endpoint:**:
+  - `GET https://api.parkwhiz.com/v4/quotes/`
+- **Schema:** Well-structured JSON with consistent fields:
+  - `location.name`
+  - `price`
+  - `distance`
+- **Integration:**
+  - Real API calls implemented and working
+  - No API key required for basic queries
+- **Notes:** Most reliable and complete data source in the pipeline
 
 ### SpotHero
 
-- **Discovery:** Developer platform (https://spothero.com/developers) requires partner access; used Chrome DevTools to inspect XHR requests during search flows
-- **Schema:** Nested response structure requiring flattening; uses different field names (e.g., `municipality` vs `city`); some fields like postal code may be null
-- **Integration:** Mock data based on observed response patterns
+- **Discovery:**
+  - SpotHero developer portal requires partner access
+  - Used DevTools to inspect XHR requests from the search page
+- **Observed Behavior:**
+  - Internal API endpoints exist but require:
+  - Session cookies
+  - Specific headers
+  - Direct requests return empty results
+- **Fallback Approach:**
+  - Scraped results from:
+    - `https://spothero.com/search?kind=airport&id=SFO&airport=true`
+- **Schema:**
+  - Nested structure requiring flattening
+  - Inconsistent fields:
+    - `municipality` vs `city`
+    - nullable postal codes
+- **Integration:**
+  - HTML scraping used as a fallback
+  - Parsed fields:
+    - `name`
+    - `price`
+    - `rating` (if available)
+- **Limitations:**
+  - Fragile to frontend changes
+  - Less structured than API-based providers
 
 ### Cheap Airport Parking
 
-- **Discovery:** No public API documentation; no clear XHR/Fetch requests found via DevTools — data appears to be server-rendered or embedded in HTML
-- **Schema:** Inferred from UI observations; nested pricing objects, inconsistent naming (e.g., `title`, `address_1`, `city_name`)
-- **Integration:** Flexible adapter with mock data; designed to support real integration when endpoints become available
+- **Discovery:**
+  - No public API or XHR endpoints found for CheapAirportParking
+  - Data appears server-rendered
+- **Approach:**
+  - HTML scraping with text parsing
+- **Schema:**
+  - Inferred from UI content
+  - Highly inconsistent fields:
+    - `title`
+    - `address_1`
+    - `city_name`
+- **Integration:**
+  - Flexible adapter designed to handle unstructured input
+  - Currently returns limited results depending on page structure
+- **Challenges:**
+  - Data embedded in raw text blocks
+  - Difficult to reliably extract structured listings
 
 ### Key Challenges
 
 | Challenge                      | Example                                         | Solution                                         |
 | ------------------------------ | ----------------------------------------------- | ------------------------------------------------ |
 | No shared facility identifiers | Each provider uses its own ID scheme            | Heuristic matching instead of direct joins       |
-| Different field names          | `location_name` vs `facility_name` vs `title`   | Provider-specific normalization layer            |
+| Different field names          | `location.name` vs `municipality` vs `title`    | Provider-specific normalization layer            |
 | Address formatting differences | `St` vs `Street`, punctuation, casing           | Text normalization with abbreviation expansion   |
 | Geolocation variance           | Slight lat/lng precision differences            | Haversine distance with tolerance bands          |
 | Missing or partial data        | Some providers omit postal codes or coordinates | Graceful fallback (score 0.0 for missing fields) |
+| Anti-scraping / blocked APIs   | SpotHero requires session headers               | Scraping fallback + resilient parsing            |
 
 ---
 
@@ -329,14 +371,6 @@ Parking providers do not consistently expose public or well-documented APIs. To 
 The parking matching pipeline is designed as a modular, event-driven data workflow that separates ingestion, normalization, matching, and export into independent stages. This architecture ensures the system is reliable, scalable, and easy to extend as new providers are added.
 
 Rather than running as a single monolithic script, the pipeline can be deployed as a series of orchestrated steps using cloud-native services.
-
-### Current Implementation
-
-The project uses **mocked provider responses** that reflect real-world inconsistencies observed during API discovery. The architecture is designed so that mocked providers can be replaced with real HTTP integrations without changing normalization or matching logic.
-
-The ParkWhiz provider already supports real API calls via the documented v4 `GET /quotes` endpoint, falling back to mock data if credentials are unavailable.
-
----
 
 ### Performance & Scalability
 
@@ -352,8 +386,6 @@ For larger datasets, this can be optimized by:
   - Run matching jobs per airport or batch in parallel
 
 The architecture isolates matching logic, making these optimizations easy to introduce without changing ingestion or normalization layers.
-
----
 
 ### Proposed Cloud Architecture (AWS)
 
@@ -413,8 +445,6 @@ Provider  Provider  Provider
    CSV/JSON        Database
 ```
 
----
-
 ### Reliability Considerations
 
 The system is designed to handle failures gracefully and ensure data integrity:
@@ -449,8 +479,6 @@ The architecture is designed to scale with increasing data volume and provider c
 - **Storage-first design:**
   Intermediate data persisted in S3 avoids memory bottlenecks
 
----
-
 ### Extensibility
 
 The pipeline is built to easily support additional providers and features:
@@ -463,8 +491,6 @@ The pipeline is built to easily support additional providers and features:
   Matching algorithms can evolve while maintaining reproducibility
 - **Schema standardization:**
   Ensures consistent downstream processing
-
----
 
 ### Local vs Production Setup
 
@@ -484,24 +510,18 @@ This system prioritizes:
 - Resilience (retries, fault isolation)
 - Scalability (parallel and distributed processing)
 
----
-
 ### Future Improvements
 
-- Replace mocked providers with real API integrations
 - Add geospatial indexing for faster matching
 - Introduce clustering (multi-provider grouping)
 - Visualize matches on a map
-
----
+- Implement hybrid matching using LLM
 
 ### LLM-Assisted Matching
 
 The current matching system relies on deterministic rules and weighted scoring (name, address, geographic proximity), which provides strong reliability and explainability. However, this approach can struggle with highly inconsistent or ambiguous provider data.
 
 A natural evolution is to introduce a hybrid matching architecture that incorporates embeddings and LLMs to improve accuracy for edge cases.
-
----
 
 ### Hybrid Matching Architecture
 
@@ -520,8 +540,6 @@ The proposed approach extends the existing pipeline rather than replacing it:
    - Enforces hard constraints (e.g., geo distance thresholds)
    - Ensures consistency and prevents incorrect matches
 
----
-
 ### Enhancements Enabled by LLMs
 
 **Semantic Similarity (Embeddings)**
@@ -538,8 +556,6 @@ The proposed approach extends the existing pipeline rather than replacing it:
 
 - Standardizes messy provider inputs
 - Extracts structured fields (e.g., airport codes, address formats)
-
----
 
 ### AI Usage
 
@@ -561,13 +577,18 @@ AI tools were used as engineering assistants, not as sources of truth. All match
 
 ---
 
-### Summary
+## ✅ Summary
 
-This project demonstrates:
+This project is a data pipeline that aggregates parking listings from multiple providers, normalizes inconsistent schemas, and matches duplicate facilities across sources.
 
-- API integration across heterogeneous providers
-- schema normalization and data modeling
-- entity resolution using explainable heuristics
-- pragmatic tradeoffs between accuracy, complexity, and scalability
+The system integrates data from ParkWhiz, SpotHero, and CheapAirportParking using a mix of real API calls, reverse-engineered endpoints, and HTML scraping. Because providers expose data differently (or not at all), the pipeline is designed to be resilient to incomplete, inconsistent, and unstructured inputs.
 
-The system is designed to be extensible, debuggable, and production-ready with minimal changes.
+Core capabilities include:
+
+- **Multi-source ingestion:** Fetches parking data from heterogeneous providers
+- **Schema normalization:** Standardizes fields like name, price, and location
+- **Deduplication & matching:** Uses heuristics (name similarity + geolocation) to identify the same facility across providers
+- **Extensible architecture:** Easily add new providers via a common interface
+- **Export support:** Outputs matched results to CSV or JSON
+
+This project demonstrates real-world challenges in third-party data integration, including API discovery, unreliable data sources, and entity resolution at scale.

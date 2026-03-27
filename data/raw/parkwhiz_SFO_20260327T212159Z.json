@@ -3,12 +3,12 @@
   "airport_code": "SFO",
   "start_dt": "2026-03-28T10:00:00",
   "end_dt": "2026-03-30T18:00:00",
-  "fetched_at_utc": "20260327T193745Z",
+  "fetched_at_utc": "20260327T212159Z",
   "record_count": 7,
   "records": [
     {
       "listing_id": "59539",
-      "quote_id": "82c48903-b39e-496f-bbf0-923441514ad3",
+      "quote_id": "221e9ad2-0902-45fd-94a2-990bca36bb5e",
       "location_name": "Aloft San Francisco Airport",
       "address": "401 E. Millbrae Ave.",
       "city": "Millbrae",
@@ -48,7 +48,7 @@
         },
         "purchase_options": [
           {
-            "id": "82c48903-b39e-496f-bbf0-923441514ad3",
+            "id": "221e9ad2-0902-45fd-94a2-990bca36bb5e",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",
@@ -525,7 +525,7 @@
     },
     {
       "listing_id": "56411",
-      "quote_id": "2410feee-7ca0-4d01-96e8-2acd5652b57b",
+      "quote_id": "950b51a2-39de-403e-8f57-03ca4ac1f658",
       "location_name": "SFO Marriott Waterfront",
       "address": "1800 Bayshore Hwy.",
       "city": "Burlingame",
@@ -565,7 +565,7 @@
         },
         "purchase_options": [
           {
-            "id": "2410feee-7ca0-4d01-96e8-2acd5652b57b",
+            "id": "950b51a2-39de-403e-8f57-03ca4ac1f658",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",
@@ -968,7 +968,7 @@
     },
     {
       "listing_id": "57728",
-      "quote_id": "2c9fc342-8516-4bf8-9c0a-7990b3034850",
+      "quote_id": "9a6c72fc-e644-4e10-8949-c5dc36a1842e",
       "location_name": "Hyatt Regency SFO Garage",
       "address": "1333 Bayshore Hwy.",
       "city": "Burlingame",
@@ -1008,7 +1008,7 @@
         },
         "purchase_options": [
           {
-            "id": "2c9fc342-8516-4bf8-9c0a-7990b3034850",
+            "id": "9a6c72fc-e644-4e10-8949-c5dc36a1842e",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",
@@ -1433,7 +1433,7 @@
     },
     {
       "listing_id": "63904",
-      "quote_id": "c27f359d-dafc-4bf4-9314-6910cd63ccae",
+      "quote_id": "058002af-e80c-471f-ae07-03b5e93967d0",
       "location_name": "Holiday Inn Express San Francisco-Airport South by IHG Lot",
       "address": "1250 Old Bayshore Hwy.",
       "city": "Burlingame",
@@ -1473,7 +1473,7 @@
         },
         "purchase_options": [
           {
-            "id": "c27f359d-dafc-4bf4-9314-6910cd63ccae",
+            "id": "058002af-e80c-471f-ae07-03b5e93967d0",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",
@@ -1941,7 +1941,7 @@
     },
     {
       "listing_id": "60625",
-      "quote_id": "1d32df35-48be-401c-8dd2-ef38ee6170d8",
+      "quote_id": "a5645381-7e8b-4b94-abe1-f773cb890fe4",
       "location_name": "DoubleTree Burlingame SFO",
       "address": "835 Airport Blvd.",
       "city": "Burlingame",
@@ -1981,7 +1981,7 @@
         },
         "purchase_options": [
           {
-            "id": "1d32df35-48be-401c-8dd2-ef38ee6170d8",
+            "id": "a5645381-7e8b-4b94-abe1-f773cb890fe4",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",
@@ -2412,7 +2412,7 @@
     },
     {
       "listing_id": "10824",
-      "quote_id": "4c1af6da-aefa-4aee-9542-e0d16c7a8476",
+      "quote_id": "182d82fb-4ea4-4e37-844f-c59a492a8169",
       "location_name": "Embassy Suites by Hilton San Francisco Airport Oyster Point",
       "address": "250 Gateway Blvd.",
       "city": "South San Francisco",
@@ -2452,7 +2452,7 @@
         },
         "purchase_options": [
           {
-            "id": "4c1af6da-aefa-4aee-9542-e0d16c7a8476",
+            "id": "182d82fb-4ea4-4e37-844f-c59a492a8169",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",
@@ -2843,7 +2843,7 @@
     },
     {
       "listing_id": "63516",
-      "quote_id": "9e6312b6-d794-422c-8b90-efea66e469cf",
+      "quote_id": "ebb9aa5c-cb60-452d-b31a-42b1981d7ccc",
       "location_name": "Sonesta Select San Francisco Airport Oyster Point Lot",
       "address": "1300 Veterans Blvd.",
       "city": "South San Francisco",
@@ -2883,7 +2883,7 @@
         },
         "purchase_options": [
           {
-            "id": "9e6312b6-d794-422c-8b90-efea66e469cf",
+            "id": "ebb9aa5c-cb60-452d-b31a-42b1981d7ccc",
             "start_time": "2026-03-28T10:00:00.000-07:00",
             "end_time": "2026-03-30T18:00:00.000-07:00",
             "min_start": "2026-03-28T10:00:00.000-07:00",

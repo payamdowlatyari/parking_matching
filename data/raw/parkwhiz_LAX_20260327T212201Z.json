@@ -3,12 +3,12 @@
   "airport_code": "LAX",
   "start_dt": "2026-03-28T10:00:00",
   "end_dt": "2026-03-30T18:00:00",
-  "fetched_at_utc": "20260327T193747Z",
+  "fetched_at_utc": "20260327T212201Z",
   "record_count": 17,
   "records": [
     {
       "listing_id": "12043",
-      "quote_id": "2d5a2ff3-0208-4ec7-bed9-3bf5b3895fd6",
+      "quote_id": "4f7a8713-b3f4-4014-8ed8-783a20725198",
       "location_name": "Embassy Suites LAX",
       "address": "1440 E. Imperial Ave.",
       "city": "El Segundo",
@@ -48,7 +48,7 @@
         },
         "purchase_options": [
           {
-            "id": "2d5a2ff3-0208-4ec7-bed9-3bf5b3895fd6",
+            "id": "4f7a8713-b3f4-4014-8ed8-783a20725198",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -478,7 +478,7 @@
     },
     {
       "listing_id": "60435",
-      "quote_id": "53e59608-bf4f-40e1-9c46-3a029c5784b4",
+      "quote_id": "82b843e8-9400-41a9-b784-673a820dba09",
       "location_name": "Courtyard LAX Lot",
       "address": "6161 W. Century Blvd.",
       "city": "Los Angeles",
@@ -518,7 +518,7 @@
         },
         "purchase_options": [
           {
-            "id": "53e59608-bf4f-40e1-9c46-3a029c5784b4",
+            "id": "82b843e8-9400-41a9-b784-673a820dba09",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -980,7 +980,7 @@
     },
     {
       "listing_id": "60204",
-      "quote_id": "16a7dd46-c1ae-4fe6-b1c3-6c1538172683",
+      "quote_id": "5310e1c1-8050-42f1-bc99-d526721cfb7a",
       "location_name": "Sheraton Gateway Parking LAX - Valet",
       "address": "6101 W. Century Blvd.",
       "city": "Los Angeles",
@@ -1020,7 +1020,7 @@
         },
         "purchase_options": [
           {
-            "id": "16a7dd46-c1ae-4fe6-b1c3-6c1538172683",
+            "id": "5310e1c1-8050-42f1-bc99-d526721cfb7a",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -1482,7 +1482,7 @@
     },
     {
       "listing_id": "57000",
-      "quote_id": "19d40819-0483-4236-9b89-87c129b7cd3d",
+      "quote_id": "c505acdd-1bc0-4376-b0b5-16f282945b1c",
       "location_name": "105 Airport Parking",
       "address": "1901 E. Walnut Ave.",
       "city": "El Segundo",
@@ -1522,7 +1522,7 @@
         },
         "purchase_options": [
           {
-            "id": "19d40819-0483-4236-9b89-87c129b7cd3d",
+            "id": "c505acdd-1bc0-4376-b0b5-16f282945b1c",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -1911,7 +1911,7 @@
     },
     {
       "listing_id": "9299",
-      "quote_id": "7a8dfcd6-663e-470b-b85f-c3e9a304af57",
+      "quote_id": "c5b56ee8-5c77-4817-9f64-ef500a20dc2e",
       "location_name": "Sam\u2019s Parking LAX - Valet",
       "address": "8923 S. Sepulveda Blvd.",
       "city": "Los Angeles",
@@ -1951,7 +1951,7 @@
         },
         "purchase_options": [
           {
-            "id": "7a8dfcd6-663e-470b-b85f-c3e9a304af57",
+            "id": "c5b56ee8-5c77-4817-9f64-ef500a20dc2e",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -2080,7 +2080,7 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "d038341e-7a1d-4c91-8b83-520b9536f795",
+                    "id": "5cf2e232-cf8c-4417-acc9-05c7726f1f2d",
                     "name": "Standard",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -2109,7 +2109,7 @@
                     }
                   },
                   {
-                    "id": "e765fffd-ca49-4450-8d62-e449bbb3f8be",
+                    "id": "8765ab87-ccf7-4919-99ff-bffe361efcee",
                     "name": "Oversize",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -2159,7 +2159,7 @@
             }
           },
           {
-            "id": "b8783df5-e995-4312-8bc9-b34a17cf48e2",
+            "id": "394c212f-1ac5-4268-b8e8-2c05dfea7729",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -2288,7 +2288,7 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "cbe7f98c-7580-487a-9e47-18bf7cf413bf",
+                    "id": "32571018-50f9-4dbd-a91c-7f3fe94e63a8",
                     "name": "Standard",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -2317,7 +2317,7 @@
                     }
                   },
                   {
-                    "id": "a7f57bc8-85b6-4e9d-8cc2-c9237b6761d6",
+                    "id": "30f53de8-3f15-4594-86bc-d0e1b784191f",
                     "name": "Oversize",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -2593,7 +2593,7 @@
     },
     {
       "listing_id": "9216",
-      "quote_id": "3222ad7a-b018-4c2c-9670-4271bf739f01",
+      "quote_id": "d6cb99d1-bd9d-4817-b71c-617f43d679f5",
       "location_name": "LAX Parking Curb Express - Valet",
       "address": "8923 S. Sepulveda",
       "city": "Los Angeles",
@@ -2633,7 +2633,7 @@
         },
         "purchase_options": [
           {
-            "id": "3222ad7a-b018-4c2c-9670-4271bf739f01",
+            "id": "d6cb99d1-bd9d-4817-b71c-617f43d679f5",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -2762,7 +2762,7 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "e40376c8-2f98-45c8-9fe5-0e02428e2cd1",
+                    "id": "dc75a6bb-c18e-420f-9bee-caf6ebae4572",
                     "name": "Standard",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -2792,7 +2792,7 @@
                     }
                   },
                   {
-                    "id": "dee7a64d-5fa5-41ae-8654-9c3b2d269e3c",
+                    "id": "2610ecec-2856-4eac-ab32-d858f3efe387",
                     "name": "Oversize",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -2841,7 +2841,7 @@
             }
           },
           {
-            "id": "ed06fa28-45a3-4a4c-91e3-c14a855fc450",
+            "id": "9635fcaa-b9bd-4fa8-ae77-44de494a48de",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -2970,7 +2970,7 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "45a55c6b-b089-4f49-8d9d-34f33dc6db81",
+                    "id": "0c76e9ac-ffab-479b-9f92-b73be54ffb65",
                     "name": "Standard",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -3000,7 +3000,7 @@
                     }
                   },
                   {
-                    "id": "afd8ae44-8c0b-432d-bb30-9e9d7bfe6c7d",
+                    "id": "8ae883c5-bd7f-43ea-a007-37042727c7f2",
                     "name": "Oversize",
                     "start_time": "2026-03-28T07:00:00.000-07:00",
                     "end_time": "2026-03-30T15:00:00.000-07:00",
@@ -3315,7 +3315,7 @@
     },
     {
       "listing_id": "10756",
-      "quote_id": "69824090-6a4d-4555-b92f-1b33e87654c8",
+      "quote_id": "bca5c9fd-57a2-4b5f-befb-847efa8b23da",
       "location_name": "Airport Center Parking LAX",
       "address": "5960 W. 98th St.",
       "city": "Los Angeles",
@@ -3355,7 +3355,7 @@
         },
         "purchase_options": [
           {
-            "id": "69824090-6a4d-4555-b92f-1b33e87654c8",
+            "id": "bca5c9fd-57a2-4b5f-befb-847efa8b23da",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -3528,7 +3528,7 @@
             }
           },
           {
-            "id": "ef33872d-6971-4457-87b9-ad4566b39a41",
+            "id": "c9913e0f-9340-40f0-814c-005b741de966",
             "start_time": "2026-03-28T07:00:00.000-07:00",
             "end_time": "2026-03-30T15:00:00.000-07:00",
             "min_start": "2026-03-28T07:00:00.000-07:00",
@@ -3545,21 +3545,21 @@
             "fees": [
               {
                 "price": {
-                  "USD": "2.02"
-                },
-                "type": "",
-                "label": "Sales Tax",
-                "parent_category": "Taxes & Fees",
-                "description": "Imposed by the local municipality."
-              },
-              {
-                "price": {
                   "USD": "10.36"
                 },
                 "type": "convenience_fee",
                 "label": "Service Fee",
                 "parent_category": "Service Fee",
                 "description": "This fee helps us run our platform, as well as partner with more locations to provide a better parking experience."
+              },
+              {
+                "price": {
+                  "USD": "2.02"
+                },
+                "type": "",
+                "label": "Sales Tax",
+                "parent_category": "Taxes & Fees",
+                "description": "Imposed by the local municipality."
               }
             ],
             "pricing_segments": [
@@ -4047,7 +4047,7 @@
     },
     {
       "listing_id": "63448",
-      "quote_id": "e5390194-3af3-423e-9627-1e7538a9b3f3",
+      "quote_id": "7614ed88-07a2-4f5b-8c67-5c63b0618859",
       "location_name": "Riverview Lot",
       "address": "351 Canal Rd.",
       "city": "Cleveland",
@@ -4087,7 +4087,7 @@
         },
         "purchase_options": [
           {
-            "id": "e5390194-3af3-423e-9627-1e7538a9b3f3",
+            "id": "7614ed88-07a2-4f5b-8c67-5c63b0618859",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -4474,7 +4474,7 @@
     },
     {
       "listing_id": "13198",
-      "quote_id": "063049e6-8b98-4474-a7b8-161ec4d9d88a",
+      "quote_id": "81a787bc-e413-49ba-a000-b55f04369dfc",
       "location_name": "Tower City Garage",
       "address": "1537 W. 6th St.",
       "city": "Cleveland",
@@ -4514,7 +4514,7 @@
         },
         "purchase_options": [
           {
-            "id": "063049e6-8b98-4474-a7b8-161ec4d9d88a",
+            "id": "81a787bc-e413-49ba-a000-b55f04369dfc",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -4981,7 +4981,7 @@
     },
     {
       "listing_id": "57298",
-      "quote_id": "febbd171-88c2-47d6-8381-6bc6c4688e4f",
+      "quote_id": "41f25cbb-3f1b-4e68-b0b3-c9c7780bc006",
       "location_name": "Public Square Self Park Garage",
       "address": "320 Superior Ave. E.",
       "city": "Cleveland",
@@ -5021,7 +5021,7 @@
         },
         "purchase_options": [
           {
-            "id": "febbd171-88c2-47d6-8381-6bc6c4688e4f",
+            "id": "41f25cbb-3f1b-4e68-b0b3-c9c7780bc006",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -5889,7 +5889,7 @@
     },
     {
       "listing_id": "56577",
-      "quote_id": "ee2fb6db-23bb-4fc1-a57d-016a4ca15a8a",
+      "quote_id": "120b3ceb-d848-417e-acf3-76b2dcfda653",
       "location_name": "May Company Garage",
       "address": "205 Prospect Ave. E.",
       "city": "Cleveland",
@@ -5929,7 +5929,7 @@
         },
         "purchase_options": [
           {
-            "id": "ee2fb6db-23bb-4fc1-a57d-016a4ca15a8a",
+            "id": "120b3ceb-d848-417e-acf3-76b2dcfda653",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -6316,7 +6316,7 @@
     },
     {
       "listing_id": "57299",
-      "quote_id": "fb009804-6bd2-4efc-96c6-a2fa15fd6b6b",
+      "quote_id": "c55e842e-90b2-430b-ba47-627e221b3457",
       "location_name": "Public Square Self Park Garage",
       "address": "333 Euclid Ave.",
       "city": "Cleveland",
@@ -6356,7 +6356,7 @@
         },
         "purchase_options": [
           {
-            "id": "fb009804-6bd2-4efc-96c6-a2fa15fd6b6b",
+            "id": "c55e842e-90b2-430b-ba47-627e221b3457",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -7183,7 +7183,7 @@
     },
     {
       "listing_id": "54804",
-      "quote_id": "c750f045-e1a5-49be-84d2-599b950ca918",
+      "quote_id": "91b541db-d665-4b34-9e99-b9a0a078a15d",
       "location_name": "777 Rockwell Garage",
       "address": "777 Rockwell Ave.",
       "city": "Cleveland",
@@ -7223,7 +7223,7 @@
         },
         "purchase_options": [
           {
-            "id": "c750f045-e1a5-49be-84d2-599b950ca918",
+            "id": "91b541db-d665-4b34-9e99-b9a0a078a15d",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -7610,7 +7610,7 @@
     },
     {
       "listing_id": "59019",
-      "quote_id": "7778a388-9a9f-4cac-bd69-3a2b23c76106",
+      "quote_id": "840fbf7b-09b3-459f-95ff-ffb312383be9",
       "location_name": "The Fidelity Hotel Garage - Valet",
       "address": "1940 E. 6th St.",
       "city": "Cleveland",
@@ -7650,7 +7650,7 @@
         },
         "purchase_options": [
           {
-            "id": "7778a388-9a9f-4cac-bd69-3a2b23c76106",
+            "id": "840fbf7b-09b3-459f-95ff-ffb312383be9",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -7791,7 +7791,7 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "2cd89dd3-2131-478a-8876-895924622123",
+                    "id": "940bd9cc-8bc2-4f72-ba7f-7a3d5e568423",
                     "name": "Standard",
                     "start_time": "2026-03-28T10:00:00.000-04:00",
                     "end_time": "2026-03-30T18:00:00.000-04:00",
@@ -7819,7 +7819,7 @@
                     }
                   },
                   {
-                    "id": "87470ea0-646e-4a82-9953-05f2f61e5408",
+                    "id": "d2c921b8-8fd6-4f41-85ea-65e1f0867588",
                     "name": "Oversize",
                     "start_time": "2026-03-28T10:00:00.000-04:00",
                     "end_time": "2026-03-30T18:00:00.000-04:00",
@@ -8094,7 +8094,7 @@
     },
     {
       "listing_id": "12980",
-      "quote_id": "ab27f2a8-c7f4-419c-bff6-85add360c062",
+      "quote_id": "d8a40cb9-9d2c-4f91-93ac-8a7832a933a7",
       "location_name": "515 Euclid Ave. Garage",
       "address": "1964 E. 6th St.",
       "city": "Cleveland",
@@ -8134,7 +8134,7 @@
         },
         "purchase_options": [
           {
-            "id": "ab27f2a8-c7f4-419c-bff6-85add360c062",
+            "id": "d8a40cb9-9d2c-4f91-93ac-8a7832a933a7",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -8509,7 +8509,7 @@
     },
     {
       "listing_id": "55192",
-      "quote_id": "d757cb7d-50f3-4276-af49-9a0e1bf71ade",
+      "quote_id": "c67f70af-cc78-4f8a-b2e3-deb4cefd5c5a",
       "location_name": "Kimpton Schofield - Valet Kiosk",
       "address": "2000 E. 9th St.",
       "city": "Cleveland",
@@ -8549,7 +8549,7 @@
         },
         "purchase_options": [
           {
-            "id": "d757cb7d-50f3-4276-af49-9a0e1bf71ade",
+            "id": "c67f70af-cc78-4f8a-b2e3-deb4cefd5c5a",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",
@@ -8701,7 +8701,7 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "5044dfe4-c848-4aca-ac35-8f955c6a6cfd",
+                    "id": "0700d6b9-0291-4e87-a073-bb8ae76838bb",
                     "name": "Standard",
                     "start_time": "2026-03-28T10:00:00.000-04:00",
                     "end_time": "2026-03-30T18:00:00.000-04:00",
@@ -8730,7 +8730,7 @@
                     }
                   },
                   {
-                    "id": "86168054-7c74-4d98-b372-8c2a64485388",
+                    "id": "9ed7c544-6ca2-4bf8-8163-20c3987e3aaa",
                     "name": "Oversize",
                     "start_time": "2026-03-28T10:00:00.000-04:00",
                     "end_time": "2026-03-30T18:00:00.000-04:00",
@@ -9044,7 +9044,7 @@
     },
     {
       "listing_id": "51955",
-      "quote_id": "cfa9986b-61f6-4eb5-b94b-e678989f4629",
+      "quote_id": "6dabcb84-feb5-4ac7-9e3a-b98f909fdcf7",
       "location_name": "Hilton Garden Inn Cleveland Downtown Lot",
       "address": "1100 Carnegie Ave.",
       "city": "Cleveland",
@@ -9084,7 +9084,7 @@
         },
         "purchase_options": [
           {
-            "id": "cfa9986b-61f6-4eb5-b94b-e678989f4629",
+            "id": "6dabcb84-feb5-4ac7-9e3a-b98f909fdcf7",
             "start_time": "2026-03-28T10:00:00.000-04:00",
             "end_time": "2026-03-30T18:00:00.000-04:00",
             "min_start": "2026-03-28T10:00:00.000-04:00",

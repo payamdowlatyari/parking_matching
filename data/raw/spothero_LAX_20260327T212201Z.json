@@ -3,7 +3,7 @@
   "airport_code": "LAX",
   "start_dt": "2026-03-28T10:00:00",
   "end_dt": "2026-03-30T18:00:00",
-  "fetched_at_utc": "20260327T193747Z",
+  "fetched_at_utc": "20260327T212201Z",
   "record_count": 51,
   "records": [
     {
@@ -30,7 +30,7 @@
       "review_score": 4.2,
       "review_count": 1881,
       "inventory_status": true,
-      "available_spaces": 240,
+      "available_spaces": 237,
       "raw_source": {
         "distance": {
           "linear_meters": 663.2090971555446
@@ -164,7 +164,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 240,
+          "available_spaces": 237,
           "available": true
         },
         "facility": {
@@ -1959,7 +1959,7 @@
       "review_score": 4.7,
       "review_count": 1355,
       "inventory_status": true,
-      "available_spaces": 846,
+      "available_spaces": 843,
       "raw_source": {
         "distance": {
           "linear_meters": 804.9100632008413
@@ -2098,7 +2098,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 846,
+          "available_spaces": 843,
           "available": true
         },
         "facility": {
@@ -8738,7 +8738,7 @@
       "review_score": 4.7,
       "review_count": 238,
       "inventory_status": true,
-      "available_spaces": 55,
+      "available_spaces": 54,
       "raw_source": {
         "distance": {
           "linear_meters": 1240.7813639045007
@@ -8877,7 +8877,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 55,
+          "available_spaces": 54,
           "available": true
         },
         "facility": {
@@ -9529,7 +9529,7 @@
       "review_score": 4.3,
       "review_count": 33,
       "inventory_status": true,
-      "available_spaces": 15,
+      "available_spaces": 14,
       "raw_source": {
         "distance": {
           "linear_meters": 1418.692436078546
@@ -9663,7 +9663,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 15,
+          "available_spaces": 14,
           "available": true
         },
         "facility": {
@@ -11104,7 +11104,7 @@
       "review_score": 4.7,
       "review_count": 233,
       "inventory_status": true,
-      "available_spaces": 23,
+      "available_spaces": 22,
       "raw_source": {
         "distance": {
           "linear_meters": 1456.4205689934106
@@ -11243,7 +11243,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 23,
+          "available_spaces": 22,
           "available": true
         },
         "facility": {
@@ -14793,7 +14793,7 @@
       "review_score": 3.1,
       "review_count": 57,
       "inventory_status": true,
-      "available_spaces": 114,
+      "available_spaces": 115,
       "raw_source": {
         "distance": {
           "linear_meters": 1725.5447213838843
@@ -14927,7 +14927,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 114,
+          "available_spaces": 115,
           "available": true
         },
         "facility": {
