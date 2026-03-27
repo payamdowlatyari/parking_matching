@@ -175,24 +175,24 @@
     "start_utc": "2026-03-28T10:00:00",
     "end_utc": "2026-03-30T18:00:00",
     "currency": "USD",
-    "price_total": 27.5,
+    "price_total": 26.99,
     "raw_payload": {
       "id": "cap_ord_1",
       "quote_ref": "capq_ord_1",
-      "title": "Joe's Airport Parking",
-      "address_1": "9420 River St.",
+      "title": "Joe's O'Hare Airport Parking",
+      "address_1": "9420 River Street",
       "city_name": "Schiller Park",
       "state_code": "IL",
       "zip_code": "60176",
       "geo": {
-        "lat": 41.9738,
-        "lng": -87.8696
+        "lat": 41.974,
+        "lng": -87.8693
       },
       "pricing": {
         "currency": "USD",
-        "total": 27.5,
-        "display_total": "$27.50",
-        "daily_from": 9.95
+        "total": 26.99,
+        "display_total": "$26.99",
+        "daily_from": 8.99
       },
       "lot_type": "self",
       "parking_type": "outdoor",
@@ -202,8 +202,8 @@
         "hours": "24/7"
       },
       "reviews": {
-        "rating": 4.5,
-        "count": 205
+        "rating": 4.7,
+        "count": 342
       },
       "free_cancellation": true
     }
@@ -216,24 +216,24 @@
     "start_utc": "2026-03-28T10:00:00",
     "end_utc": "2026-03-30T18:00:00",
     "currency": "USD",
-    "price_total": 34.0,
+    "price_total": 33.75,
     "raw_payload": {
       "id": "cap_ord_2",
       "quote_ref": "capq_ord_2",
-      "title": "Skyline Valet Garage",
-      "address_1": "10100 Mannheim Rd.",
+      "title": "Skyline Parking Valet",
+      "address_1": "10100 Mannheim Road",
       "city_name": "Rosemont",
       "state_code": "IL",
       "zip_code": "60018",
       "geo": {
-        "lat": 41.9963,
-        "lng": -87.8852
+        "lat": 41.9961,
+        "lng": -87.8855
       },
       "pricing": {
         "currency": "USD",
-        "total": 34.0,
-        "display_total": "$34.00",
-        "daily_from": 11.5
+        "total": 33.75,
+        "display_total": "$33.75",
+        "daily_from": 11.25
       },
       "lot_type": "valet",
       "parking_type": "indoor",
@@ -244,7 +244,7 @@
       },
       "reviews": {
         "rating": 4.3,
-        "count": 121
+        "count": 198
       },
       "free_cancellation": true
     }
@@ -257,24 +257,24 @@
     "start_utc": "2026-03-28T10:00:00",
     "end_utc": "2026-03-30T18:00:00",
     "currency": "USD",
-    "price_total": 22.1,
+    "price_total": 20.5,
     "raw_payload": {
       "id": "cap_ord_3",
       "quote_ref": "capq_ord_3",
-      "title": "Rosemont Hotel Parking",
-      "address_1": "5440 N River Road",
+      "title": "Blue Hotel Self-Park",
+      "address_1": "5440 N River Rd",
       "city_name": "Rosemont",
       "state_code": "IL",
       "zip_code": null,
       "geo": {
-        "lat": 41.9799,
-        "lng": -87.862
+        "lat": 41.98,
+        "lng": -87.8619
       },
       "pricing": {
         "currency": "USD",
-        "total": 22.1,
-        "display_total": "$22.10",
-        "daily_from": 8.75
+        "total": 20.5,
+        "display_total": "$20.50",
+        "daily_from": 6.83
       },
       "lot_type": "self",
       "parking_type": "outdoor",
@@ -285,9 +285,9 @@
       },
       "reviews": {
         "rating": 4.1,
-        "count": 88
+        "count": 87
       },
-      "free_cancellation": true
+      "free_cancellation": false
     }
   },
   {
@@ -784,6 +784,3778 @@
       "distance_to_airport_miles": 16.1,
       "is_refundable": false,
       "inventory_status": "available"
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAX-parking-center-Los-Angeles",
+    "provider_lot_id": "LAX-parking-center-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.74,
+    "raw_payload": {
+      "id": "LAX-parking-center-Los-Angeles",
+      "quote_ref": "LAX-parking-center-Los-Angeles",
+      "title": "Vpne Parking Garage",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.74,
+        "display_total": "$7.74",
+        "daily_from": 7.74
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Airpark-LAX-Los-Angeles",
+    "provider_lot_id": "Airpark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.19,
+    "raw_payload": {
+      "id": "Airpark-LAX-Los-Angeles",
+      "quote_ref": "Airpark-LAX-Los-Angeles",
+      "title": "405 Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.19,
+        "display_total": "$6.19",
+        "daily_from": 6.19
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "105-airport-parking-LAX-Los-Angeles",
+    "provider_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.72,
+    "raw_payload": {
+      "id": "105-airport-parking-LAX-Los-Angeles",
+      "quote_ref": "105-airport-parking-LAX-Los-Angeles",
+      "title": "105 Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.72,
+        "display_total": "$6.72",
+        "daily_from": 6.72
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "provider_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.0,
+    "raw_payload": {
+      "id": "FOX-auto-parks-LAX-Los-Angeles",
+      "quote_ref": "FOX-auto-parks-LAX-Los-Angeles",
+      "title": "FOX Auto Parks",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.0,
+        "display_total": "$7.00",
+        "daily_from": 7.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Quikpark-LAX-Los-Angeles",
+    "provider_lot_id": "Quikpark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.95,
+    "raw_payload": {
+      "id": "Quikpark-LAX-Los-Angeles",
+      "quote_ref": "Quikpark-LAX-Los-Angeles",
+      "title": "QuikPark LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.95,
+        "display_total": "$11.95",
+        "daily_from": 11.95
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAXpark-LAX-Los-Angeles",
+    "provider_lot_id": "LAXpark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "LAXpark-LAX-Los-Angeles",
+      "quote_ref": "LAXpark-LAX-Los-Angeles",
+      "title": "LAX Park",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Sunrise-LAX-Los-Angeles",
+    "provider_lot_id": "Sunrise-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 19.99,
+    "raw_payload": {
+      "id": "Sunrise-LAX-Los-Angeles",
+      "quote_ref": "Sunrise-LAX-Los-Angeles",
+      "title": "Sunrise LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 19.99,
+        "display_total": "$19.99",
+        "daily_from": 19.99
+      },
+      "lot_type": "valet",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Hyatt-LAX",
+    "provider_lot_id": "Hyatt-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 21.0,
+    "raw_payload": {
+      "id": "Hyatt-LAX",
+      "quote_ref": "Hyatt-LAX",
+      "title": "Hyatt Regency LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 21.0,
+        "display_total": "$21.00",
+        "daily_from": 21.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "WallyPark-LAX-Los-Angeles",
+    "provider_lot_id": "WallyPark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 14.95,
+    "raw_payload": {
+      "id": "WallyPark-LAX-Los-Angeles",
+      "quote_ref": "WallyPark-LAX-Los-Angeles",
+      "title": "WallyPark Premier Garage",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 14.95,
+        "display_total": "$14.95",
+        "daily_from": 14.95
+      },
+      "lot_type": "valet",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Hilton-LAX-Airport-Los-Angeles",
+    "provider_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.95,
+    "raw_payload": {
+      "id": "Hilton-LAX-Airport-Los-Angeles",
+      "quote_ref": "Hilton-LAX-Airport-Los-Angeles",
+      "title": "Hilton LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.95,
+        "display_total": "$9.95",
+        "daily_from": 9.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Westin-LAX-Los-Angeles",
+    "provider_lot_id": "Westin-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "Westin-LAX-Los-Angeles",
+      "quote_ref": "Westin-LAX-Los-Angeles",
+      "title": "Westin Los Angeles Airport",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": "valet",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "airport-center-LAX-Los-Angeles",
+    "provider_lot_id": "airport-center-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.95,
+    "raw_payload": {
+      "id": "airport-center-LAX-Los-Angeles",
+      "quote_ref": "airport-center-LAX-Los-Angeles",
+      "title": "Airport Center Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.95,
+        "display_total": "$7.95",
+        "daily_from": 7.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Custom-Hotel-LAX",
+    "provider_lot_id": "Custom-Hotel-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 4.0,
+    "raw_payload": {
+      "id": "Custom-Hotel-LAX",
+      "quote_ref": "Custom-Hotel-LAX",
+      "title": "June Hotel Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 4.0,
+        "display_total": "$4.00",
+        "daily_from": 4.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Renaissance-Montura-LAX",
+    "provider_lot_id": "Renaissance-Montura-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.95,
+    "raw_payload": {
+      "id": "Renaissance-Montura-LAX",
+      "quote_ref": "Renaissance-Montura-LAX",
+      "title": "Renaissance LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.95,
+        "display_total": "$7.95",
+        "daily_from": 7.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "park-place-LAX",
+    "provider_lot_id": "park-place-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.99,
+    "raw_payload": {
+      "id": "park-place-LAX",
+      "quote_ref": "park-place-LAX",
+      "title": "The Park at LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.99,
+        "display_total": "$12.99",
+        "daily_from": 12.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Sheraton-LAX-Airport",
+    "provider_lot_id": "Sheraton-LAX-Airport",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 20.0,
+    "raw_payload": {
+      "id": "Sheraton-LAX-Airport",
+      "quote_ref": "Sheraton-LAX-Airport",
+      "title": "Sheraton Gateway",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 20.0,
+        "display_total": "$20.00",
+        "daily_from": 20.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Joes-LAX",
+    "provider_lot_id": "Joes-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.95,
+    "raw_payload": {
+      "id": "Joes-LAX",
+      "quote_ref": "Joes-LAX",
+      "title": "Joe's Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.95,
+        "display_total": "$11.95",
+        "daily_from": 11.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Four-Points-LAX-parking",
+    "provider_lot_id": "Four-Points-LAX-parking",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.75,
+    "raw_payload": {
+      "id": "Four-Points-LAX-parking",
+      "quote_ref": "Four-Points-LAX-parking",
+      "title": "Four Points Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.75,
+        "display_total": "$6.75",
+        "daily_from": 6.75
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Sams-Park-LAX",
+    "provider_lot_id": "Sams-Park-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.99,
+    "raw_payload": {
+      "id": "Sams-Park-LAX",
+      "quote_ref": "Sams-Park-LAX",
+      "title": "Sams Park",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.99,
+        "display_total": "$12.99",
+        "daily_from": 12.99
+      },
+      "lot_type": "valet",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAXParking",
+    "provider_lot_id": "LAXParking",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 20.95,
+    "raw_payload": {
+      "id": "LAXParking",
+      "quote_ref": "LAXParking",
+      "title": "LAXParking.com",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 20.95,
+        "display_total": "$20.95",
+        "daily_from": 20.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "AC-hotel",
+    "provider_lot_id": "AC-hotel",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "AC-hotel",
+      "quote_ref": "AC-hotel",
+      "title": "AC Hotel by Marriott",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Marriott-LAX-Los-Angeles",
+    "provider_lot_id": "Marriott-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.0,
+    "raw_payload": {
+      "id": "Marriott-LAX-Los-Angeles",
+      "quote_ref": "Marriott-LAX-Los-Angeles",
+      "title": "Marriott LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.0,
+        "display_total": "$12.00",
+        "daily_from": 12.0
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAX-Crowne-Plaza",
+    "provider_lot_id": "LAX-Crowne-Plaza",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.0,
+    "raw_payload": {
+      "id": "LAX-Crowne-Plaza",
+      "quote_ref": "LAX-Crowne-Plaza",
+      "title": "Sonesta LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.0,
+        "display_total": "$12.00",
+        "daily_from": 12.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Park-Air-Express",
+    "provider_lot_id": "Park-Air-Express",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.97,
+    "raw_payload": {
+      "id": "Park-Air-Express",
+      "quote_ref": "Park-Air-Express",
+      "title": "Airport Spectrum Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.97,
+        "display_total": "$7.97",
+        "daily_from": 7.97
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAX-Parking-Curb-Express",
+    "provider_lot_id": "LAX-Parking-Curb-Express",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 24.99,
+    "raw_payload": {
+      "id": "LAX-Parking-Curb-Express",
+      "quote_ref": "LAX-Parking-Curb-Express",
+      "title": "LAX Parking Curb Express",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 24.99,
+        "display_total": "$24.99",
+        "daily_from": 24.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Top-Spots",
+    "provider_lot_id": "Top-Spots",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 8.95,
+    "raw_payload": {
+      "id": "Top-Spots",
+      "quote_ref": "Top-Spots",
+      "title": "Top Spots in QuikPark",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 8.95,
+        "display_total": "$8.95",
+        "daily_from": 8.95
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LA-self",
+    "provider_lot_id": "LA-self",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 4.99,
+    "raw_payload": {
+      "id": "LA-self",
+      "quote_ref": "LA-self",
+      "title": "UVP LAX Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 4.99,
+        "display_total": "$4.99",
+        "daily_from": 4.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "PrimePark-LAX",
+    "provider_lot_id": "PrimePark-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 8.99,
+    "raw_payload": {
+      "id": "PrimePark-LAX",
+      "quote_ref": "PrimePark-LAX",
+      "title": "PrimePark LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 8.99,
+        "display_total": "$8.99",
+        "daily_from": 8.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAX-Hyatt-Place",
+    "provider_lot_id": "LAX-Hyatt-Place",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 15.0,
+    "raw_payload": {
+      "id": "LAX-Hyatt-Place",
+      "quote_ref": "LAX-Hyatt-Place",
+      "title": "Hyatt Place LAX El Segundo",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 15.0,
+        "display_total": "$15.00",
+        "daily_from": 15.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "South-Bay",
+    "provider_lot_id": "South-Bay",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 14.75,
+    "raw_payload": {
+      "id": "South-Bay",
+      "quote_ref": "South-Bay",
+      "title": "South Bay Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 14.75,
+        "display_total": "$14.75",
+        "daily_from": 14.75
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Embassy-Suites-LAX-South",
+    "provider_lot_id": "Embassy-Suites-LAX-South",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.75,
+    "raw_payload": {
+      "id": "Embassy-Suites-LAX-South",
+      "quote_ref": "Embassy-Suites-LAX-South",
+      "title": "Embassy Suites LAX South",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.75,
+        "display_total": "$6.75",
+        "daily_from": 6.75
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 60,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "LAX-Budget-Parking",
+    "provider_lot_id": "LAX-Budget-Parking",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "LAX-Budget-Parking",
+      "quote_ref": "LAX-Budget-Parking",
+      "title": "Official LAX Budget Lot",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Kilroy-Airport-Center-LAX",
+    "provider_lot_id": "Kilroy-Airport-Center-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.95,
+    "raw_payload": {
+      "id": "Kilroy-Airport-Center-LAX",
+      "quote_ref": "Kilroy-Airport-Center-LAX",
+      "title": "Kilroy Airport Center LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.95,
+        "display_total": "$6.95",
+        "daily_from": 6.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "PCH-Garage",
+    "provider_lot_id": "PCH-Garage",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 5.25,
+    "raw_payload": {
+      "id": "PCH-Garage",
+      "quote_ref": "PCH-Garage",
+      "title": "909 Pacific Coast Hwy Garage",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 5.25,
+        "display_total": "$5.25",
+        "daily_from": 5.25
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Cambria-LAX",
+    "provider_lot_id": "Cambria-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.5,
+    "raw_payload": {
+      "id": "Cambria-LAX",
+      "quote_ref": "Cambria-LAX",
+      "title": "Cambria LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.5,
+        "display_total": "$9.50",
+        "daily_from": 9.5
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Parking-Spot-Sepulveda-LAX",
+    "provider_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 15.56,
+    "raw_payload": {
+      "id": "Parking-Spot-Sepulveda-LAX",
+      "quote_ref": "Parking-Spot-Sepulveda-LAX",
+      "title": "The Parking Spot Sepulveda",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 15.56,
+        "display_total": "$15.56",
+        "daily_from": 15.56
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Parking-Spot-Century-LAX",
+    "provider_lot_id": "Parking-Spot-Century-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 15.56,
+    "raw_payload": {
+      "id": "Parking-Spot-Century-LAX",
+      "quote_ref": "Parking-Spot-Century-LAX",
+      "title": "The Parking Spot Century",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 15.56,
+        "display_total": "$15.56",
+        "daily_from": 15.56
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Hilton-Garden-LAX",
+    "provider_lot_id": "Hilton-Garden-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.99,
+    "raw_payload": {
+      "id": "Hilton-Garden-LAX",
+      "quote_ref": "Hilton-Garden-LAX",
+      "title": "Hilton Garden Inn",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.99,
+        "display_total": "$9.99",
+        "daily_from": 9.99
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "South-Garage-LAX",
+    "provider_lot_id": "South-Garage-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.77,
+    "raw_payload": {
+      "id": "South-Garage-LAX",
+      "quote_ref": "South-Garage-LAX",
+      "title": "South Garage LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.77,
+        "display_total": "$6.77",
+        "daily_from": 6.77
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "Marina-del-Rey-Marriott-LAX",
+    "provider_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "Marina-del-Rey-Marriott-LAX",
+      "quote_ref": "Marina-del-Rey-Marriott-LAX",
+      "title": "Marina del Rey Marriott",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAX-parking-center-Los-Angeles",
+    "provider_lot_id": "LAX-parking-center-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.74,
+    "raw_payload": {
+      "id": "LAX-parking-center-Los-Angeles",
+      "quote_ref": "capq_LAX-parking-center-Los-Angeles",
+      "title": "Vpne Parking Garage",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.74,
+        "display_total": "$7.74",
+        "daily_from": 7.74
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Airpark-LAX-Los-Angeles",
+    "provider_lot_id": "Airpark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.19,
+    "raw_payload": {
+      "id": "Airpark-LAX-Los-Angeles",
+      "quote_ref": "capq_Airpark-LAX-Los-Angeles",
+      "title": "405 Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.19,
+        "display_total": "$6.19",
+        "daily_from": 6.19
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_105-airport-parking-LAX-Los-Angeles",
+    "provider_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.72,
+    "raw_payload": {
+      "id": "105-airport-parking-LAX-Los-Angeles",
+      "quote_ref": "capq_105-airport-parking-LAX-Los-Angeles",
+      "title": "105 Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.72,
+        "display_total": "$6.72",
+        "daily_from": 6.72
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_FOX-auto-parks-LAX-Los-Angeles",
+    "provider_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.0,
+    "raw_payload": {
+      "id": "FOX-auto-parks-LAX-Los-Angeles",
+      "quote_ref": "capq_FOX-auto-parks-LAX-Los-Angeles",
+      "title": "FOX Auto Parks",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.0,
+        "display_total": "$7.00",
+        "daily_from": 7.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Quikpark-LAX-Los-Angeles",
+    "provider_lot_id": "Quikpark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.95,
+    "raw_payload": {
+      "id": "Quikpark-LAX-Los-Angeles",
+      "quote_ref": "capq_Quikpark-LAX-Los-Angeles",
+      "title": "QuikPark LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.95,
+        "display_total": "$11.95",
+        "daily_from": 11.95
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAXpark-LAX-Los-Angeles",
+    "provider_lot_id": "LAXpark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "LAXpark-LAX-Los-Angeles",
+      "quote_ref": "capq_LAXpark-LAX-Los-Angeles",
+      "title": "LAX Park",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Sunrise-LAX-Los-Angeles",
+    "provider_lot_id": "Sunrise-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 19.99,
+    "raw_payload": {
+      "id": "Sunrise-LAX-Los-Angeles",
+      "quote_ref": "capq_Sunrise-LAX-Los-Angeles",
+      "title": "Sunrise LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 19.99,
+        "display_total": "$19.99",
+        "daily_from": 19.99
+      },
+      "lot_type": "valet",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Hyatt-LAX",
+    "provider_lot_id": "Hyatt-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 21.0,
+    "raw_payload": {
+      "id": "Hyatt-LAX",
+      "quote_ref": "capq_Hyatt-LAX",
+      "title": "Hyatt Regency LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 21.0,
+        "display_total": "$21.00",
+        "daily_from": 21.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_WallyPark-LAX-Los-Angeles",
+    "provider_lot_id": "WallyPark-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 14.95,
+    "raw_payload": {
+      "id": "WallyPark-LAX-Los-Angeles",
+      "quote_ref": "capq_WallyPark-LAX-Los-Angeles",
+      "title": "WallyPark Premier Garage",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 14.95,
+        "display_total": "$14.95",
+        "daily_from": 14.95
+      },
+      "lot_type": "valet",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Hilton-LAX-Airport-Los-Angeles",
+    "provider_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.95,
+    "raw_payload": {
+      "id": "Hilton-LAX-Airport-Los-Angeles",
+      "quote_ref": "capq_Hilton-LAX-Airport-Los-Angeles",
+      "title": "Hilton LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.95,
+        "display_total": "$9.95",
+        "daily_from": 9.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Westin-LAX-Los-Angeles",
+    "provider_lot_id": "Westin-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "Westin-LAX-Los-Angeles",
+      "quote_ref": "capq_Westin-LAX-Los-Angeles",
+      "title": "Westin Los Angeles Airport",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": "valet",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_airport-center-LAX-Los-Angeles",
+    "provider_lot_id": "airport-center-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.95,
+    "raw_payload": {
+      "id": "airport-center-LAX-Los-Angeles",
+      "quote_ref": "capq_airport-center-LAX-Los-Angeles",
+      "title": "Airport Center Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.95,
+        "display_total": "$7.95",
+        "daily_from": 7.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Custom-Hotel-LAX",
+    "provider_lot_id": "Custom-Hotel-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 4.0,
+    "raw_payload": {
+      "id": "Custom-Hotel-LAX",
+      "quote_ref": "capq_Custom-Hotel-LAX",
+      "title": "June Hotel Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 4.0,
+        "display_total": "$4.00",
+        "daily_from": 4.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Renaissance-Montura-LAX",
+    "provider_lot_id": "Renaissance-Montura-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.95,
+    "raw_payload": {
+      "id": "Renaissance-Montura-LAX",
+      "quote_ref": "capq_Renaissance-Montura-LAX",
+      "title": "Renaissance LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.95,
+        "display_total": "$7.95",
+        "daily_from": 7.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_park-place-LAX",
+    "provider_lot_id": "park-place-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.99,
+    "raw_payload": {
+      "id": "park-place-LAX",
+      "quote_ref": "capq_park-place-LAX",
+      "title": "The Park at LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.99,
+        "display_total": "$12.99",
+        "daily_from": 12.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Sheraton-LAX-Airport",
+    "provider_lot_id": "Sheraton-LAX-Airport",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 20.0,
+    "raw_payload": {
+      "id": "Sheraton-LAX-Airport",
+      "quote_ref": "capq_Sheraton-LAX-Airport",
+      "title": "Sheraton Gateway",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 20.0,
+        "display_total": "$20.00",
+        "daily_from": 20.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Joes-LAX",
+    "provider_lot_id": "Joes-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.95,
+    "raw_payload": {
+      "id": "Joes-LAX",
+      "quote_ref": "capq_Joes-LAX",
+      "title": "Joe's Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.95,
+        "display_total": "$11.95",
+        "daily_from": 11.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Four-Points-LAX-parking",
+    "provider_lot_id": "Four-Points-LAX-parking",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.75,
+    "raw_payload": {
+      "id": "Four-Points-LAX-parking",
+      "quote_ref": "capq_Four-Points-LAX-parking",
+      "title": "Four Points Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.75,
+        "display_total": "$6.75",
+        "daily_from": 6.75
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Sams-Park-LAX",
+    "provider_lot_id": "Sams-Park-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.99,
+    "raw_payload": {
+      "id": "Sams-Park-LAX",
+      "quote_ref": "capq_Sams-Park-LAX",
+      "title": "Sams Park",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.99,
+        "display_total": "$12.99",
+        "daily_from": 12.99
+      },
+      "lot_type": "valet",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAXParking",
+    "provider_lot_id": "LAXParking",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 20.95,
+    "raw_payload": {
+      "id": "LAXParking",
+      "quote_ref": "capq_LAXParking",
+      "title": "LAXParking.com",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 20.95,
+        "display_total": "$20.95",
+        "daily_from": 20.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_AC-hotel",
+    "provider_lot_id": "AC-hotel",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "AC-hotel",
+      "quote_ref": "capq_AC-hotel",
+      "title": "AC Hotel by Marriott",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Marriott-LAX-Los-Angeles",
+    "provider_lot_id": "Marriott-LAX-Los-Angeles",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.0,
+    "raw_payload": {
+      "id": "Marriott-LAX-Los-Angeles",
+      "quote_ref": "capq_Marriott-LAX-Los-Angeles",
+      "title": "Marriott LAX Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.0,
+        "display_total": "$12.00",
+        "daily_from": 12.0
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAX-Crowne-Plaza",
+    "provider_lot_id": "LAX-Crowne-Plaza",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 12.0,
+    "raw_payload": {
+      "id": "LAX-Crowne-Plaza",
+      "quote_ref": "capq_LAX-Crowne-Plaza",
+      "title": "Sonesta LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 12.0,
+        "display_total": "$12.00",
+        "daily_from": 12.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Park-Air-Express",
+    "provider_lot_id": "Park-Air-Express",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 7.97,
+    "raw_payload": {
+      "id": "Park-Air-Express",
+      "quote_ref": "capq_Park-Air-Express",
+      "title": "Airport Spectrum Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 7.97,
+        "display_total": "$7.97",
+        "daily_from": 7.97
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAX-Parking-Curb-Express",
+    "provider_lot_id": "LAX-Parking-Curb-Express",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 24.99,
+    "raw_payload": {
+      "id": "LAX-Parking-Curb-Express",
+      "quote_ref": "capq_LAX-Parking-Curb-Express",
+      "title": "LAX Parking Curb Express",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 24.99,
+        "display_total": "$24.99",
+        "daily_from": 24.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Top-Spots",
+    "provider_lot_id": "Top-Spots",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 8.95,
+    "raw_payload": {
+      "id": "Top-Spots",
+      "quote_ref": "capq_Top-Spots",
+      "title": "Top Spots in QuikPark",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 8.95,
+        "display_total": "$8.95",
+        "daily_from": 8.95
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LA-self",
+    "provider_lot_id": "LA-self",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 4.99,
+    "raw_payload": {
+      "id": "LA-self",
+      "quote_ref": "capq_LA-self",
+      "title": "UVP LAX Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 4.99,
+        "display_total": "$4.99",
+        "daily_from": 4.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_PrimePark-LAX",
+    "provider_lot_id": "PrimePark-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 8.99,
+    "raw_payload": {
+      "id": "PrimePark-LAX",
+      "quote_ref": "capq_PrimePark-LAX",
+      "title": "PrimePark LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 8.99,
+        "display_total": "$8.99",
+        "daily_from": 8.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAX-Hyatt-Place",
+    "provider_lot_id": "LAX-Hyatt-Place",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 15.0,
+    "raw_payload": {
+      "id": "LAX-Hyatt-Place",
+      "quote_ref": "capq_LAX-Hyatt-Place",
+      "title": "Hyatt Place LAX El Segundo",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 15.0,
+        "display_total": "$15.00",
+        "daily_from": 15.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_South-Bay",
+    "provider_lot_id": "South-Bay",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 14.75,
+    "raw_payload": {
+      "id": "South-Bay",
+      "quote_ref": "capq_South-Bay",
+      "title": "South Bay Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 14.75,
+        "display_total": "$14.75",
+        "daily_from": 14.75
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Embassy-Suites-LAX-South",
+    "provider_lot_id": "Embassy-Suites-LAX-South",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.75,
+    "raw_payload": {
+      "id": "Embassy-Suites-LAX-South",
+      "quote_ref": "capq_Embassy-Suites-LAX-South",
+      "title": "Embassy Suites LAX South",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.75,
+        "display_total": "$6.75",
+        "daily_from": 6.75
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 60,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_LAX-Budget-Parking",
+    "provider_lot_id": "LAX-Budget-Parking",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "LAX-Budget-Parking",
+      "quote_ref": "capq_LAX-Budget-Parking",
+      "title": "Official LAX Budget Lot",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Kilroy-Airport-Center-LAX",
+    "provider_lot_id": "Kilroy-Airport-Center-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.95,
+    "raw_payload": {
+      "id": "Kilroy-Airport-Center-LAX",
+      "quote_ref": "capq_Kilroy-Airport-Center-LAX",
+      "title": "Kilroy Airport Center LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.95,
+        "display_total": "$6.95",
+        "daily_from": 6.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_PCH-Garage",
+    "provider_lot_id": "PCH-Garage",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 5.25,
+    "raw_payload": {
+      "id": "PCH-Garage",
+      "quote_ref": "capq_PCH-Garage",
+      "title": "909 Pacific Coast Hwy Garage",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 5.25,
+        "display_total": "$5.25",
+        "daily_from": 5.25
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Cambria-LAX",
+    "provider_lot_id": "Cambria-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.5,
+    "raw_payload": {
+      "id": "Cambria-LAX",
+      "quote_ref": "capq_Cambria-LAX",
+      "title": "Cambria LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.5,
+        "display_total": "$9.50",
+        "daily_from": 9.5
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Parking-Spot-Sepulveda-LAX",
+    "provider_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 15.56,
+    "raw_payload": {
+      "id": "Parking-Spot-Sepulveda-LAX",
+      "quote_ref": "capq_Parking-Spot-Sepulveda-LAX",
+      "title": "The Parking Spot Sepulveda",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 15.56,
+        "display_total": "$15.56",
+        "daily_from": 15.56
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Parking-Spot-Century-LAX",
+    "provider_lot_id": "Parking-Spot-Century-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 15.56,
+    "raw_payload": {
+      "id": "Parking-Spot-Century-LAX",
+      "quote_ref": "capq_Parking-Spot-Century-LAX",
+      "title": "The Parking Spot Century",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 15.56,
+        "display_total": "$15.56",
+        "daily_from": 15.56
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Hilton-Garden-LAX",
+    "provider_lot_id": "Hilton-Garden-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.99,
+    "raw_payload": {
+      "id": "Hilton-Garden-LAX",
+      "quote_ref": "capq_Hilton-Garden-LAX",
+      "title": "Hilton Garden Inn",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.99,
+        "display_total": "$9.99",
+        "daily_from": 9.99
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_South-Garage-LAX",
+    "provider_lot_id": "South-Garage-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.77,
+    "raw_payload": {
+      "id": "South-Garage-LAX",
+      "quote_ref": "capq_South-Garage-LAX",
+      "title": "South Garage LAX",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.77,
+        "display_total": "$6.77",
+        "daily_from": 6.77
+      },
+      "lot_type": "self",
+      "parking_type": "indoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Marina-del-Rey-Marriott-LAX",
+    "provider_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "airport_code": "LAX",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "Marina-del-Rey-Marriott-LAX",
+      "quote_ref": "capq_Marina-del-Rey-Marriott-LAX",
+      "title": "Marina del Rey Marriott",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Anza-SFO-Airport-Parking",
+    "provider_lot_id": "Anza-SFO-Airport-Parking",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "Anza-SFO-Airport-Parking",
+      "quote_ref": "capq_Anza-SFO-Airport-Parking",
+      "title": "Anza Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 10,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Burlingame-SFO-Airport-Parking",
+    "provider_lot_id": "Burlingame-SFO-Airport-Parking",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.0,
+    "raw_payload": {
+      "id": "Burlingame-SFO-Airport-Parking",
+      "quote_ref": "capq_Burlingame-SFO-Airport-Parking",
+      "title": "Burlingame Airport Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.0,
+        "display_total": "$10.00",
+        "daily_from": 10.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_ParkSFO-Airport-Parking",
+    "provider_lot_id": "ParkSFO-Airport-Parking",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "ParkSFO-Airport-Parking",
+      "quote_ref": "capq_ParkSFO-Airport-Parking",
+      "title": "ParkSFO",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 5,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_CP-SFO",
+    "provider_lot_id": "CP-SFO",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 40.0,
+    "raw_payload": {
+      "id": "CP-SFO",
+      "quote_ref": "capq_CP-SFO",
+      "title": "Crowne Plaza SFO Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 40.0,
+        "display_total": "$40.00",
+        "daily_from": 40.0
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Aloft-SFO",
+    "provider_lot_id": "Aloft-SFO",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.49,
+    "raw_payload": {
+      "id": "Aloft-SFO",
+      "quote_ref": "capq_Aloft-SFO",
+      "title": "Aloft San Francisco Airport",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.49,
+        "display_total": "$11.49",
+        "daily_from": 11.49
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Hotel-SFO",
+    "provider_lot_id": "Hotel-SFO",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 9.99,
+    "raw_payload": {
+      "id": "Hotel-SFO",
+      "quote_ref": "capq_Hotel-SFO",
+      "title": "Travelodge SFO Airport",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 9.99,
+        "display_total": "$9.99",
+        "daily_from": 9.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Hyatt-Regency-SFO",
+    "provider_lot_id": "Hyatt-Regency-SFO",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.49,
+    "raw_payload": {
+      "id": "Hyatt-Regency-SFO",
+      "quote_ref": "capq_Hyatt-Regency-SFO",
+      "title": "Hyatt Regency SFO",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.49,
+        "display_total": "$11.49",
+        "daily_from": 11.49
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 15,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_SFO-Westin",
+    "provider_lot_id": "SFO-Westin",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 11.99,
+    "raw_payload": {
+      "id": "SFO-Westin",
+      "quote_ref": "capq_SFO-Westin",
+      "title": "Westin SFO Parking",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 11.99,
+        "display_total": "$11.99",
+        "daily_from": 11.99
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 20,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_DoubleTree-SFO-Bayfront",
+    "provider_lot_id": "DoubleTree-SFO-Bayfront",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 6.99,
+    "raw_payload": {
+      "id": "DoubleTree-SFO-Bayfront",
+      "quote_ref": "capq_DoubleTree-SFO-Bayfront",
+      "title": "DoubleTree SFO North Bayfront",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 6.99,
+        "display_total": "$6.99",
+        "daily_from": 6.99
+      },
+      "lot_type": "self",
+      "parking_type": "outdoor",
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": "24/7"
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Embassy-Suites-SFO---Oyster-Point",
+    "provider_lot_id": "Embassy-Suites-SFO---Oyster-Point",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "Embassy-Suites-SFO---Oyster-Point",
+      "quote_ref": "capq_Embassy-Suites-SFO---Oyster-Point",
+      "title": "Embassy Suites SFO - Oyster Point",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": false,
+        "frequency_minutes": null,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_SFO-Marriott-Waterfront",
+    "provider_lot_id": "SFO-Marriott-Waterfront",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": 10.95,
+    "raw_payload": {
+      "id": "SFO-Marriott-Waterfront",
+      "quote_ref": "capq_SFO-Marriott-Waterfront",
+      "title": "SFO Marriott Waterfront",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": 10.95,
+        "display_total": "$10.95",
+        "daily_from": 10.95
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
+    }
+  },
+  {
+    "provider": "cheap_airport_parking",
+    "provider_quote_id": "capq_Sonesta-Select-SFO",
+    "provider_lot_id": "Sonesta-Select-SFO",
+    "airport_code": "SFO",
+    "start_utc": "2026-03-28T10:00:00",
+    "end_utc": "2026-03-30T18:00:00",
+    "currency": "USD",
+    "price_total": null,
+    "raw_payload": {
+      "id": "Sonesta-Select-SFO",
+      "quote_ref": "capq_Sonesta-Select-SFO",
+      "title": "Sonesta Select SFO",
+      "address_1": null,
+      "city_name": null,
+      "state_code": null,
+      "zip_code": null,
+      "geo": {
+        "lat": null,
+        "lng": null
+      },
+      "pricing": {
+        "currency": "USD",
+        "total": null,
+        "display_total": null,
+        "daily_from": null
+      },
+      "lot_type": null,
+      "parking_type": null,
+      "airport_shuttle": {
+        "included": true,
+        "frequency_minutes": 30,
+        "hours": null
+      },
+      "reviews": {
+        "rating": null,
+        "count": null
+      },
+      "free_cancellation": null
     }
   }
 ]

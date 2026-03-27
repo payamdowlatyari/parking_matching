@@ -55,7 +55,7 @@
     "left_lot_id": "pw_ord_1",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_3",
-    "score": 0.3749,
+    "score": 0.3131,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -95,7 +95,7 @@
     "left_lot_id": "pw_ord_2",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_1",
-    "score": 0.2022,
+    "score": 0.2093,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -115,7 +115,7 @@
     "left_lot_id": "pw_ord_2",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_3",
-    "score": 0.3485,
+    "score": 0.3691,
     "decision": "no_match",
     "reason": "same city; same state"
   },
@@ -155,7 +155,7 @@
     "left_lot_id": "pw_ord_3",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_1",
-    "score": 0.3131,
+    "score": 0.3519,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -175,9 +175,9 @@
     "left_lot_id": "pw_ord_3",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_3",
-    "score": 0.8467,
-    "decision": "possible_match",
-    "reason": "high address similarity; near-identical geolocation; same city; same state"
+    "score": 0.98,
+    "decision": "match",
+    "reason": "high name similarity; high address similarity; near-identical geolocation; same city; same state"
   },
   {
     "airport_code": "ORD",
@@ -185,9 +185,9 @@
     "left_lot_id": "sh_ord_1",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_1",
-    "score": 0.9556,
-    "decision": "match",
-    "reason": "moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code"
+    "score": 0.8,
+    "decision": "possible_match",
+    "reason": "high address similarity; near-identical geolocation; same city; same state; same postal code"
   },
   {
     "airport_code": "ORD",
@@ -205,7 +205,7 @@
     "left_lot_id": "sh_ord_1",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_3",
-    "score": 0.3398,
+    "score": 0.3208,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -215,7 +215,7 @@
     "left_lot_id": "sh_ord_2",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_1",
-    "score": 0.2022,
+    "score": 0.2093,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -235,7 +235,7 @@
     "left_lot_id": "sh_ord_2",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_3",
-    "score": 0.3485,
+    "score": 0.3691,
     "decision": "no_match",
     "reason": "same city; same state"
   },
@@ -245,7 +245,7 @@
     "left_lot_id": "sh_ord_3",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_1",
-    "score": 0.2056,
+    "score": 0.2708,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -265,7 +265,7 @@
     "left_lot_id": "sh_ord_3",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_ord_3",
-    "score": 0.2962,
+    "score": 0.3153,
     "decision": "no_match",
     "reason": "same state"
   },
@@ -328,6 +328,406 @@
     "score": 0.2888,
     "decision": "no_match",
     "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-parking-center-Los-Angeles",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Airpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Quikpark-LAX-Los-Angeles",
+    "score": 0.0444,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sunrise-LAX-Los-Angeles",
+    "score": 0.2353,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hyatt-LAX",
+    "score": 0.0348,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "WallyPark-LAX-Los-Angeles",
+    "score": 0.0348,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "score": 0.05,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Westin-LAX-Los-Angeles",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "airport-center-LAX-Los-Angeles",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Custom-Hotel-LAX",
+    "score": 0.15,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Renaissance-Montura-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "park-place-LAX",
+    "score": 0.05,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sheraton-LAX-Airport",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Joes-LAX",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Four-Points-LAX-parking",
+    "score": 0.1412,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sams-Park-LAX",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXParking",
+    "score": 0.04,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "AC-hotel",
+    "score": 0.0615,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marriott-LAX-Los-Angeles",
+    "score": 0.0444,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Crowne-Plaza",
+    "score": 0.1882,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Park-Air-Express",
+    "score": 0.1714,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Parking-Curb-Express",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Top-Spots",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LA-self",
+    "score": 0.0615,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PrimePark-LAX",
+    "score": 0.0421,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Hyatt-Place",
+    "score": 0.075,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Bay",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Embassy-Suites-LAX-South",
+    "score": 0.1067,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Budget-Parking",
+    "score": 0.096,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Kilroy-Airport-Center-LAX",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PCH-Garage",
+    "score": 0.0593,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Cambria-LAX",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Century-LAX",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-Garden-LAX",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Garage-LAX",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "score": 0.0552,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
   },
   {
     "airport_code": "LAX",
@@ -392,6 +792,406 @@
   {
     "airport_code": "LAX",
     "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-parking-center-Los-Angeles",
+    "score": 0.0421,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Airpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "score": 0.1655,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Quikpark-LAX-Los-Angeles",
+    "score": 0.1185,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXpark-LAX-Los-Angeles",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sunrise-LAX-Los-Angeles",
+    "score": 0.0923,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hyatt-LAX",
+    "score": 0.125,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "WallyPark-LAX-Los-Angeles",
+    "score": 0.125,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "score": 0.128,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Westin-LAX-Los-Angeles",
+    "score": 0.1455,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "airport-center-LAX-Los-Angeles",
+    "score": 0.0381,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Custom-Hotel-LAX",
+    "score": 0.064,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Renaissance-Montura-LAX",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "park-place-LAX",
+    "score": 0.128,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sheraton-LAX-Airport",
+    "score": 0.1032,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Joes-LAX",
+    "score": 0.04,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Four-Points-LAX-parking",
+    "score": 0.1231,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sams-Park-LAX",
+    "score": 0.0421,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXParking",
+    "score": 0.1379,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "AC-hotel",
+    "score": 0.1371,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marriott-LAX-Los-Angeles",
+    "score": 0.1185,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Crowne-Plaza",
+    "score": 0.0923,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Park-Air-Express",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Parking-Curb-Express",
+    "score": 0.0774,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Top-Spots",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LA-self",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PrimePark-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Hyatt-Place",
+    "score": 0.1366,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Bay",
+    "score": 0.1,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Embassy-Suites-LAX-South",
+    "score": 0.1026,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Budget-Parking",
+    "score": 0.1647,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Kilroy-Airport-Center-LAX",
+    "score": 0.15,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PCH-Garage",
+    "score": 0.2545,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Cambria-LAX",
+    "score": 0.1231,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Century-LAX",
+    "score": 0.1032,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-Garden-LAX",
+    "score": 0.15,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Garage-LAX",
+    "score": 0.0667,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "score": 0.1263,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
     "left_lot_id": "pw_lax_3",
     "right_provider": "spothero",
     "right_lot_id": "sh_lax_1",
@@ -451,6 +1251,406 @@
   },
   {
     "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-parking-center-Los-Angeles",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Airpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Quikpark-LAX-Los-Angeles",
+    "score": 0.0444,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sunrise-LAX-Los-Angeles",
+    "score": 0.0941,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hyatt-LAX",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "WallyPark-LAX-Los-Angeles",
+    "score": 0.1043,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "score": 0.05,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Westin-LAX-Los-Angeles",
+    "score": 0.0667,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "airport-center-LAX-Los-Angeles",
+    "score": 0.4,
+    "decision": "no_match",
+    "reason": "high name similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Custom-Hotel-LAX",
+    "score": 0.15,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Renaissance-Montura-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "park-place-LAX",
+    "score": 0.1,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sheraton-LAX-Airport",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Joes-LAX",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Four-Points-LAX-parking",
+    "score": 0.0941,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sams-Park-LAX",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXParking",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "AC-hotel",
+    "score": 0.1231,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marriott-LAX-Los-Angeles",
+    "score": 0.0444,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Crowne-Plaza",
+    "score": 0.0941,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Park-Air-Express",
+    "score": 0.1714,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Parking-Curb-Express",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Top-Spots",
+    "score": 0.0593,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LA-self",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PrimePark-LAX",
+    "score": 0.0842,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Hyatt-Place",
+    "score": 0.075,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Bay",
+    "score": 0.0533,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Embassy-Suites-LAX-South",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Budget-Parking",
+    "score": 0.064,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Kilroy-Airport-Center-LAX",
+    "score": 0.4,
+    "decision": "no_match",
+    "reason": "high name similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PCH-Garage",
+    "score": 0.0593,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Cambria-LAX",
+    "score": 0.0941,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "score": 0.1,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Century-LAX",
+    "score": 0.1818,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-Garden-LAX",
+    "score": 0.1043,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Garage-LAX",
+    "score": 0.0533,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "parkwhiz",
+    "left_lot_id": "pw_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "score": 0.1103,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
     "left_provider": "spothero",
     "left_lot_id": "sh_lax_1",
     "right_provider": "cheap_airport_parking",
@@ -478,6 +1678,406 @@
     "score": 0.2888,
     "decision": "no_match",
     "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-parking-center-Los-Angeles",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Airpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Quikpark-LAX-Los-Angeles",
+    "score": 0.0444,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sunrise-LAX-Los-Angeles",
+    "score": 0.2353,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hyatt-LAX",
+    "score": 0.0348,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "WallyPark-LAX-Los-Angeles",
+    "score": 0.0348,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "score": 0.05,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Westin-LAX-Los-Angeles",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "airport-center-LAX-Los-Angeles",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Custom-Hotel-LAX",
+    "score": 0.15,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Renaissance-Montura-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "park-place-LAX",
+    "score": 0.05,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sheraton-LAX-Airport",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Joes-LAX",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Four-Points-LAX-parking",
+    "score": 0.1412,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sams-Park-LAX",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXParking",
+    "score": 0.04,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "AC-hotel",
+    "score": 0.0615,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marriott-LAX-Los-Angeles",
+    "score": 0.0444,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Crowne-Plaza",
+    "score": 0.1882,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Park-Air-Express",
+    "score": 0.1714,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Parking-Curb-Express",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Top-Spots",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LA-self",
+    "score": 0.0615,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PrimePark-LAX",
+    "score": 0.0421,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Hyatt-Place",
+    "score": 0.075,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Bay",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Embassy-Suites-LAX-South",
+    "score": 0.1067,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Budget-Parking",
+    "score": 0.096,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Kilroy-Airport-Center-LAX",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PCH-Garage",
+    "score": 0.0593,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Cambria-LAX",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Century-LAX",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-Garden-LAX",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Garage-LAX",
+    "score": 0.16,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_1",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "score": 0.0552,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
   },
   {
     "airport_code": "LAX",
@@ -512,6 +2112,406 @@
   {
     "airport_code": "LAX",
     "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-parking-center-Los-Angeles",
+    "score": 0.0533,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Airpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "score": 0.128,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Quikpark-LAX-Los-Angeles",
+    "score": 0.1391,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXpark-LAX-Los-Angeles",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sunrise-LAX-Los-Angeles",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hyatt-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "WallyPark-LAX-Los-Angeles",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Westin-LAX-Los-Angeles",
+    "score": 0.0828,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "airport-center-LAX-Los-Angeles",
+    "score": 0.0471,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Custom-Hotel-LAX",
+    "score": 0.0762,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Renaissance-Montura-LAX",
+    "score": 0.1538,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "park-place-LAX",
+    "score": 0.0762,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sheraton-LAX-Airport",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Joes-LAX",
+    "score": 0.05,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Four-Points-LAX-parking",
+    "score": 0.1455,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sams-Park-LAX",
+    "score": 0.0533,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXParking",
+    "score": 0.128,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "AC-hotel",
+    "score": 0.1032,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marriott-LAX-Los-Angeles",
+    "score": 0.1391,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Crowne-Plaza",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Park-Air-Express",
+    "score": 0.0842,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Parking-Curb-Express",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Top-Spots",
+    "score": 0.075,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LA-self",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PrimePark-LAX",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Hyatt-Place",
+    "score": 0.1297,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Bay",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Embassy-Suites-LAX-South",
+    "score": 0.0914,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Budget-Parking",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Kilroy-Airport-Center-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PCH-Garage",
+    "score": 0.3111,
+    "decision": "no_match",
+    "reason": "moderate name similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Cambria-LAX",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "score": 0.0828,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Century-LAX",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-Garden-LAX",
+    "score": 0.0857,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Garage-LAX",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_2",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "score": 0.1176,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
     "left_lot_id": "sh_lax_3",
     "right_provider": "cheap_airport_parking",
     "right_lot_id": "cap_lax_1",
@@ -538,5 +2538,405 @@
     "score": 0.23,
     "decision": "no_match",
     "reason": "same state"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-parking-center-Los-Angeles",
+    "score": 0.0533,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Airpark-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "105-airport-parking-LAX-Los-Angeles",
+    "score": 0.0,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "FOX-auto-parks-LAX-Los-Angeles",
+    "score": 0.128,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Quikpark-LAX-Los-Angeles",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXpark-LAX-Los-Angeles",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sunrise-LAX-Los-Angeles",
+    "score": 0.0727,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hyatt-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "WallyPark-LAX-Los-Angeles",
+    "score": 0.0857,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-LAX-Airport-Los-Angeles",
+    "score": 0.2286,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Westin-LAX-Los-Angeles",
+    "score": 0.1103,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "airport-center-LAX-Los-Angeles",
+    "score": 0.0941,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Custom-Hotel-LAX",
+    "score": 0.1143,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Renaissance-Montura-LAX",
+    "score": 0.0615,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "park-place-LAX",
+    "score": 0.1524,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sheraton-LAX-Airport",
+    "score": 0.1185,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Joes-LAX",
+    "score": 0.1,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Four-Points-LAX-parking",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Sams-Park-LAX",
+    "score": 0.0533,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAXParking",
+    "score": 0.128,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "AC-hotel",
+    "score": 0.1032,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marriott-LAX-Los-Angeles",
+    "score": 0.0696,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Crowne-Plaza",
+    "score": 0.1455,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Park-Air-Express",
+    "score": 0.0421,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Parking-Curb-Express",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Top-Spots",
+    "score": 0.075,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LA-self",
+    "score": 0.0889,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PrimePark-LAX",
+    "score": 0.0667,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Hyatt-Place",
+    "score": 0.0865,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Bay",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Embassy-Suites-LAX-South",
+    "score": 0.0686,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "LAX-Budget-Parking",
+    "score": 0.1333,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Kilroy-Airport-Center-LAX",
+    "score": 0.1714,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "PCH-Garage",
+    "score": 0.125,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Cambria-LAX",
+    "score": 0.1091,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Sepulveda-LAX",
+    "score": 0.1103,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Parking-Spot-Century-LAX",
+    "score": 0.1185,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Hilton-Garden-LAX",
+    "score": 0.1714,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "South-Garage-LAX",
+    "score": 0.08,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
+  },
+  {
+    "airport_code": "LAX",
+    "left_provider": "spothero",
+    "left_lot_id": "sh_lax_3",
+    "right_provider": "cheap_airport_parking",
+    "right_lot_id": "Marina-del-Rey-Marriott-LAX",
+    "score": 0.0941,
+    "decision": "no_match",
+    "reason": "weak overall similarity"
   }
 ]

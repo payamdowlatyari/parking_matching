@@ -4,52 +4,292 @@ ORD,parkwhiz,pw_ord_1,spothero,sh_ord_2,0.2022,no_match,same state
 ORD,parkwhiz,pw_ord_1,spothero,sh_ord_3,0.2056,no_match,same state
 ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_2,0.2022,no_match,same state
-ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_3,0.3749,no_match,same state
+ORD,parkwhiz,pw_ord_1,cheap_airport_parking,cap_ord_3,0.3131,no_match,same state
 ORD,parkwhiz,pw_ord_2,spothero,sh_ord_1,0.1604,no_match,same state
 ORD,parkwhiz,pw_ord_2,spothero,sh_ord_2,0.98,match,high name similarity; high address similarity; near-identical geolocation; same city; same state
 ORD,parkwhiz,pw_ord_2,spothero,sh_ord_3,0.2826,no_match,same state
-ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_1,0.2022,no_match,same state
+ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_1,0.2093,no_match,same state
 ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
-ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_3,0.3485,no_match,same city; same state
+ORD,parkwhiz,pw_ord_2,cheap_airport_parking,cap_ord_3,0.3691,no_match,same city; same state
 ORD,parkwhiz,pw_ord_3,spothero,sh_ord_1,0.3208,no_match,same state
 ORD,parkwhiz,pw_ord_3,spothero,sh_ord_2,0.3691,no_match,same city; same state
 ORD,parkwhiz,pw_ord_3,spothero,sh_ord_3,0.3153,no_match,same state
-ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_1,0.3131,no_match,same state
+ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_1,0.3519,no_match,same state
 ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_2,0.3891,no_match,same city; same state; same postal code
-ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_3,0.8467,possible_match,high address similarity; near-identical geolocation; same city; same state
-ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_1,0.9556,match,moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+ORD,parkwhiz,pw_ord_3,cheap_airport_parking,cap_ord_3,0.98,match,high name similarity; high address similarity; near-identical geolocation; same city; same state
+ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_1,0.8,possible_match,high address similarity; near-identical geolocation; same city; same state; same postal code
 ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_2,0.1604,no_match,same state
-ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_3,0.3398,no_match,same state
-ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_1,0.2022,no_match,same state
+ORD,spothero,sh_ord_1,cheap_airport_parking,cap_ord_3,0.3208,no_match,same state
+ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_1,0.2093,no_match,same state
 ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_2,0.98,match,high name similarity; high address similarity; near-identical geolocation; same city; same state
-ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_3,0.3485,no_match,same city; same state
-ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_1,0.2056,no_match,same state
+ORD,spothero,sh_ord_2,cheap_airport_parking,cap_ord_3,0.3691,no_match,same city; same state
+ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_1,0.2708,no_match,same state
 ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_2,0.2826,no_match,same state
-ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_3,0.2962,no_match,same state
+ORD,spothero,sh_ord_3,cheap_airport_parking,cap_ord_3,0.3153,no_match,same state
 LAX,parkwhiz,pw_lax_1,spothero,sh_lax_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_1,spothero,sh_lax_2,0.435,no_match,high address similarity; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_1,spothero,sh_lax_3,0.2766,no_match,same city; same state
 LAX,parkwhiz,pw_lax_1,cheap_airport_parking,cap_lax_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_1,cheap_airport_parking,cap_lax_2,0.4731,no_match,high address similarity; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_1,cheap_airport_parking,cap_lax_3,0.2888,no_match,same state
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAX-parking-center-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Airpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,105-airport-parking-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,FOX-auto-parks-LAX-Los-Angeles,0.08,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Quikpark-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAXpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Sunrise-LAX-Los-Angeles,0.2353,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Hyatt-LAX,0.0348,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,WallyPark-LAX-Los-Angeles,0.0348,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Hilton-LAX-Airport-Los-Angeles,0.05,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,airport-center-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Custom-Hotel-LAX,0.15,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Renaissance-Montura-LAX,0.1143,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,park-place-LAX,0.05,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Sheraton-LAX-Airport,0.1091,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Joes-LAX,0.0727,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Four-Points-LAX-parking,0.1412,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Sams-Park-LAX,0.16,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAXParking,0.04,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,AC-hotel,0.0615,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Marriott-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAX-Crowne-Plaza,0.1882,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Park-Air-Express,0.1714,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAX-Parking-Curb-Express,0.0727,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Top-Spots,0.0889,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LA-self,0.0615,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,PrimePark-LAX,0.0421,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAX-Hyatt-Place,0.075,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,South-Bay,0.16,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Embassy-Suites-LAX-South,0.1067,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,LAX-Budget-Parking,0.096,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Kilroy-Airport-Center-LAX,0.0696,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,PCH-Garage,0.0593,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Cambria-LAX,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Parking-Spot-Sepulveda-LAX,0.1333,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Parking-Spot-Century-LAX,0.1091,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Hilton-Garden-LAX,0.0696,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,South-Garage-LAX,0.16,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_1,cheap_airport_parking,Marina-del-Rey-Marriott-LAX,0.0552,no_match,weak overall similarity
 LAX,parkwhiz,pw_lax_2,spothero,sh_lax_1,0.4731,no_match,high address similarity; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_2,spothero,sh_lax_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_2,spothero,sh_lax_3,0.3202,no_match,same city; same state
 LAX,parkwhiz,pw_lax_2,cheap_airport_parking,cap_lax_1,0.4731,no_match,high address similarity; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_2,cheap_airport_parking,cap_lax_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,parkwhiz,pw_lax_2,cheap_airport_parking,cap_lax_3,0.3193,no_match,same state
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAX-parking-center-Los-Angeles,0.0421,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Airpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,105-airport-parking-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,FOX-auto-parks-LAX-Los-Angeles,0.1655,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Quikpark-LAX-Los-Angeles,0.1185,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAXpark-LAX-Los-Angeles,0.0889,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Sunrise-LAX-Los-Angeles,0.0923,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Hyatt-LAX,0.125,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,WallyPark-LAX-Los-Angeles,0.125,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Hilton-LAX-Airport-Los-Angeles,0.128,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Westin-LAX-Los-Angeles,0.1455,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,airport-center-LAX-Los-Angeles,0.0381,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Custom-Hotel-LAX,0.064,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Renaissance-Montura-LAX,0.1333,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,park-place-LAX,0.128,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Sheraton-LAX-Airport,0.1032,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Joes-LAX,0.04,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Four-Points-LAX-parking,0.1231,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Sams-Park-LAX,0.0421,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAXParking,0.1379,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,AC-hotel,0.1371,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Marriott-LAX-Los-Angeles,0.1185,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAX-Crowne-Plaza,0.0923,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Park-Air-Express,0.0696,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAX-Parking-Curb-Express,0.0774,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Top-Spots,0.0889,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LA-self,0.1091,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,PrimePark-LAX,0.1143,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAX-Hyatt-Place,0.1366,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,South-Bay,0.1,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Embassy-Suites-LAX-South,0.1026,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,LAX-Budget-Parking,0.1647,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Kilroy-Airport-Center-LAX,0.15,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,PCH-Garage,0.2545,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Cambria-LAX,0.1231,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Parking-Spot-Sepulveda-LAX,0.0727,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Parking-Spot-Century-LAX,0.1032,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Hilton-Garden-LAX,0.15,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,South-Garage-LAX,0.0667,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_2,cheap_airport_parking,Marina-del-Rey-Marriott-LAX,0.1263,no_match,weak overall similarity
 LAX,parkwhiz,pw_lax_3,spothero,sh_lax_1,0.2567,no_match,same state
 LAX,parkwhiz,pw_lax_3,spothero,sh_lax_2,0.1704,no_match,same state
 LAX,parkwhiz,pw_lax_3,spothero,sh_lax_3,0.2189,no_match,same state
 LAX,parkwhiz,pw_lax_3,cheap_airport_parking,cap_lax_1,0.2567,no_match,same state
 LAX,parkwhiz,pw_lax_3,cheap_airport_parking,cap_lax_2,0.1614,no_match,same state
 LAX,parkwhiz,pw_lax_3,cheap_airport_parking,cap_lax_3,0.294,no_match,same state
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAX-parking-center-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Airpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,105-airport-parking-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,FOX-auto-parks-LAX-Los-Angeles,0.08,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Quikpark-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAXpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Sunrise-LAX-Los-Angeles,0.0941,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Hyatt-LAX,0.0696,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,WallyPark-LAX-Los-Angeles,0.1043,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Hilton-LAX-Airport-Los-Angeles,0.05,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Westin-LAX-Los-Angeles,0.0667,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,airport-center-LAX-Los-Angeles,0.4,no_match,high name similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Custom-Hotel-LAX,0.15,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Renaissance-Montura-LAX,0.1143,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,park-place-LAX,0.1,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Sheraton-LAX-Airport,0.1091,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Joes-LAX,0.0727,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Four-Points-LAX-parking,0.0941,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Sams-Park-LAX,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAXParking,0.08,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,AC-hotel,0.1231,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Marriott-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAX-Crowne-Plaza,0.0941,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Park-Air-Express,0.1714,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAX-Parking-Curb-Express,0.1091,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Top-Spots,0.0593,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LA-self,0.0,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,PrimePark-LAX,0.0842,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAX-Hyatt-Place,0.075,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,South-Bay,0.0533,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Embassy-Suites-LAX-South,0.08,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,LAX-Budget-Parking,0.064,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Kilroy-Airport-Center-LAX,0.4,no_match,high name similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,PCH-Garage,0.0593,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Cambria-LAX,0.0941,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Parking-Spot-Sepulveda-LAX,0.1,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Parking-Spot-Century-LAX,0.1818,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Hilton-Garden-LAX,0.1043,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,South-Garage-LAX,0.0533,no_match,weak overall similarity
+LAX,parkwhiz,pw_lax_3,cheap_airport_parking,Marina-del-Rey-Marriott-LAX,0.1103,no_match,weak overall similarity
 LAX,spothero,sh_lax_1,cheap_airport_parking,cap_lax_1,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,spothero,sh_lax_1,cheap_airport_parking,cap_lax_2,0.4731,no_match,high address similarity; same city; same state; same postal code
 LAX,spothero,sh_lax_1,cheap_airport_parking,cap_lax_3,0.2888,no_match,same state
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAX-parking-center-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Airpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,105-airport-parking-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,FOX-auto-parks-LAX-Los-Angeles,0.08,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Quikpark-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAXpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Sunrise-LAX-Los-Angeles,0.2353,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Hyatt-LAX,0.0348,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,WallyPark-LAX-Los-Angeles,0.0348,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Hilton-LAX-Airport-Los-Angeles,0.05,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,airport-center-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Custom-Hotel-LAX,0.15,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Renaissance-Montura-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,park-place-LAX,0.05,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Sheraton-LAX-Airport,0.1091,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Joes-LAX,0.0727,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Four-Points-LAX-parking,0.1412,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Sams-Park-LAX,0.16,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAXParking,0.04,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,AC-hotel,0.0615,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Marriott-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAX-Crowne-Plaza,0.1882,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Park-Air-Express,0.1714,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAX-Parking-Curb-Express,0.0727,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Top-Spots,0.0889,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LA-self,0.0615,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,PrimePark-LAX,0.0421,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAX-Hyatt-Place,0.075,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,South-Bay,0.16,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Embassy-Suites-LAX-South,0.1067,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,LAX-Budget-Parking,0.096,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Kilroy-Airport-Center-LAX,0.0696,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,PCH-Garage,0.0593,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Cambria-LAX,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Parking-Spot-Sepulveda-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Parking-Spot-Century-LAX,0.1091,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Hilton-Garden-LAX,0.0696,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,South-Garage-LAX,0.16,no_match,weak overall similarity
+LAX,spothero,sh_lax_1,cheap_airport_parking,Marina-del-Rey-Marriott-LAX,0.0552,no_match,weak overall similarity
 LAX,spothero,sh_lax_2,cheap_airport_parking,cap_lax_1,0.435,no_match,high address similarity; same city; same state; same postal code
 LAX,spothero,sh_lax_2,cheap_airport_parking,cap_lax_2,1.0,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,spothero,sh_lax_2,cheap_airport_parking,cap_lax_3,0.2741,no_match,same state
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAX-parking-center-Los-Angeles,0.0533,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Airpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,105-airport-parking-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,FOX-auto-parks-LAX-Los-Angeles,0.128,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Quikpark-LAX-Los-Angeles,0.1391,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAXpark-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Sunrise-LAX-Los-Angeles,0.1091,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Hyatt-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,WallyPark-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Hilton-LAX-Airport-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Westin-LAX-Los-Angeles,0.0828,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,airport-center-LAX-Los-Angeles,0.0471,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Custom-Hotel-LAX,0.0762,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Renaissance-Montura-LAX,0.1538,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,park-place-LAX,0.0762,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Sheraton-LAX-Airport,0.0889,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Joes-LAX,0.05,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Four-Points-LAX-parking,0.1455,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Sams-Park-LAX,0.0533,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAXParking,0.128,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,AC-hotel,0.1032,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Marriott-LAX-Los-Angeles,0.1391,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAX-Crowne-Plaza,0.1091,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Park-Air-Express,0.0842,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAX-Parking-Curb-Express,0.0889,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Top-Spots,0.075,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LA-self,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,PrimePark-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAX-Hyatt-Place,0.1297,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,South-Bay,0.08,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Embassy-Suites-LAX-South,0.0914,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,LAX-Budget-Parking,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Kilroy-Airport-Center-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,PCH-Garage,0.3111,no_match,moderate name similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Cambria-LAX,0.0727,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Parking-Spot-Sepulveda-LAX,0.0828,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Parking-Spot-Century-LAX,0.0889,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Hilton-Garden-LAX,0.0857,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,South-Garage-LAX,0.08,no_match,weak overall similarity
+LAX,spothero,sh_lax_2,cheap_airport_parking,Marina-del-Rey-Marriott-LAX,0.1176,no_match,weak overall similarity
 LAX,spothero,sh_lax_3,cheap_airport_parking,cap_lax_1,0.2766,no_match,same city; same state
 LAX,spothero,sh_lax_3,cheap_airport_parking,cap_lax_2,0.3202,no_match,same city; same state
 LAX,spothero,sh_lax_3,cheap_airport_parking,cap_lax_3,0.23,no_match,same state
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAX-parking-center-Los-Angeles,0.0533,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Airpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,105-airport-parking-LAX-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,FOX-auto-parks-LAX-Los-Angeles,0.128,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Quikpark-LAX-Los-Angeles,0.0696,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAXpark-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Sunrise-LAX-Los-Angeles,0.0727,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Hyatt-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,WallyPark-LAX-Los-Angeles,0.0857,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Hilton-LAX-Airport-Los-Angeles,0.2286,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Westin-LAX-Los-Angeles,0.1103,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,airport-center-LAX-Los-Angeles,0.0941,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Custom-Hotel-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Renaissance-Montura-LAX,0.0615,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,park-place-LAX,0.1524,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Sheraton-LAX-Airport,0.1185,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Joes-LAX,0.1,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Four-Points-LAX-parking,0.1091,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Sams-Park-LAX,0.0533,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAXParking,0.128,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,AC-hotel,0.1032,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Marriott-LAX-Los-Angeles,0.0696,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAX-Crowne-Plaza,0.1455,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Park-Air-Express,0.0421,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAX-Parking-Curb-Express,0.0889,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Top-Spots,0.075,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LA-self,0.0889,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,PrimePark-LAX,0.0667,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAX-Hyatt-Place,0.0865,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,South-Bay,0.08,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Embassy-Suites-LAX-South,0.0686,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,LAX-Budget-Parking,0.1333,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Kilroy-Airport-Center-LAX,0.1714,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,PCH-Garage,0.125,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Cambria-LAX,0.1091,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Parking-Spot-Sepulveda-LAX,0.1103,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Parking-Spot-Century-LAX,0.1185,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Hilton-Garden-LAX,0.1714,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,South-Garage-LAX,0.08,no_match,weak overall similarity
+LAX,spothero,sh_lax_3,cheap_airport_parking,Marina-del-Rey-Marriott-LAX,0.0941,no_match,weak overall similarity
