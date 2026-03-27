@@ -9,13 +9,12 @@ A data pipeline that aggregates parking availability from multiple providers, no
 - [Overview](#-overview)
 - [Architecture](#%EF%B8%8F-architecture)
 - [Matching Approach](#-matching-approach)
-- [Setup](#%EF%B8%8F-setup)
-- [Usage](#%EF%B8%8F-usage)
-- [Outputs](#-outputs)
+- [Setup, Usage & Outputs](#setup)
 - [Testing](#-testing)
 - [Assumptions & Limitations](#%EF%B8%8F-assumptions--limitations)
 - [API Discovery & Provider Schemas](#-api-discovery--provider-schemas)
 - [Performance, Scalability & Deployment](#-performance-scalability--deployment-strategy)
+- [AI Usage](#-ai-usage)
 - [Summary](#-summary)
 
 ---
@@ -160,7 +159,9 @@ The `reason` field helps explain why two facilities were or were not matched.
 
 ---
 
-## ⚙️ Setup
+## ⚙️ Setup, Usage & Outputs
+
+### Setup
 
 **Prerequisites:**
 
@@ -177,9 +178,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
-## ▶️ Usage
+### Usage
 
 **Run the full pipeline** (fetch → match → export):
 
@@ -206,9 +205,7 @@ python run.py export
 
 All commands accept `--db-path` to specify a custom database file (default: `parking_matching.db`).
 
----
-
-## 📦 Outputs
+### Outputs
 
 **Results:**
 
@@ -512,10 +509,10 @@ This system prioritizes:
 
 ### Future Improvements
 
+- Implement hybrid matching using LLM
 - Add geospatial indexing for faster matching
 - Introduce clustering (multi-provider grouping)
 - Visualize matches on a map
-- Implement hybrid matching using LLM
 
 ### LLM-Assisted Matching
 
@@ -557,7 +554,9 @@ The proposed approach extends the existing pipeline rather than replacing it:
 - Standardizes messy provider inputs
 - Extracts structured fields (e.g., airport codes, address formats)
 
-### AI Usage
+---
+
+## 🔦 AI Usage
 
 AI tools were used selectively to support development of the parking matching pipeline, with a focus on improving code quality, validating matching logic, and refining system design.
 
