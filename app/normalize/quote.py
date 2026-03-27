@@ -35,8 +35,8 @@ def normalize_parking_quote(
     if provider == "spothero":
         return ParkingQuote(
             provider=provider,
-            provider_quote_id=str(raw_record["rate_id"]),
-            provider_lot_id=str(raw_record["facility_id"]),
+            provider_quote_id=str(raw_record["quote_id"]),
+            provider_lot_id=str(raw_record["listing_id"]),
             airport_code=airport_code.upper(),
             start_utc=start_dt,
             end_utc=end_dt,
@@ -45,17 +45,16 @@ def normalize_parking_quote(
             raw_payload=raw_payload,
         )
 
-    if provider == "cheap_airport_parking":
-        pricing = raw_record.get("pricing") or {}
+    if provider == "cheapairportparking":
         return ParkingQuote(
             provider=provider,
-            provider_quote_id=str(raw_record["quote_ref"]),
-            provider_lot_id=str(raw_record["id"]),
+            provider_quote_id=str(raw_record["quote_id"]),
+            provider_lot_id=str(raw_record["listing_id"]),
             airport_code=airport_code.upper(),
             start_utc=start_dt,
             end_utc=end_dt,
-            currency=pricing.get("currency", "USD"),
-            price_total=_to_float(pricing.get("total")),
+            currency=raw_record.get("currency", "USD"),
+            price_total=_to_float(raw_record.get("total_price")),
             raw_payload=raw_payload,
         )
 
