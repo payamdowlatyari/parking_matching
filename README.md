@@ -2,18 +2,20 @@
 
 A data pipeline that aggregates parking availability from multiple providers, normalizes inconsistent schemas, and matches facilities across providers into canonical parking locations.
 
+Now includes a lightweight **FastAPI + Swagger UI** layer for interactive exploration and testing.
+
 ---
 
-## Table of Contents
+## 📁 Table of Contents
 
 - [Overview](#-overview)
 - [Architecture](#%EF%B8%8F-architecture)
 - [Matching Approach](#-matching-approach)
-- [Setup, Usage & Outputs](#setup)
+- [Setup & Usage (CLI/API)](#️-setup--usage-cliapi)
 - [Testing](#-testing)
-- [Assumptions & Limitations](#%EF%B8%8F-assumptions--limitations)
 - [API Discovery & Provider Schemas](#-api-discovery--provider-schemas)
 - [Performance, Scalability & Deployment](#-performance-scalability--deployment-strategy)
+- [Assumptions & Limitations](#-assumptions--limitations)
 - [AI Usage](#-ai-usage)
 - [Summary](#-summary)
 
@@ -21,13 +23,29 @@ A data pipeline that aggregates parking availability from multiple providers, no
 
 ## 🚀 Overview
 
-Parking providers expose inconsistent APIs with no shared identifiers. This pipeline:
+Parking providers expose inconsistent APIs with no shared identifiers.
+
+This pipeline:
 
 1. **Fetches** parking data from multiple providers (ParkWhiz, SpotHero, CheapAirportParking)
 2. **Normalizes** provider-specific payloads into a unified schema
 3. **Stores** normalized data in SQLite
 4. **Matches** equivalent facilities across providers using heuristic scoring
 5. **Exports** deduplicated results to CSV and JSON
+
+This project demonstrates:
+
+- Real-world API integration challenges (inconsistent schemas, missing docs)
+- Data normalization and matching across providers
+- End-to-end pipeline design (fetch → process → store → export)
+- Clean API layer using FastAPI and Swagger UI
+
+This system prioritizes:
+
+- Separation of concerns (clear pipeline stages)
+- Observability (logs, metrics, traceable runs)
+- Resilience (retries, fault isolation)
+- Scalability (parallel and distributed processing)
 
 ---
 
@@ -38,6 +56,7 @@ parking_matching/
 ├── run.py                  # CLI entry point and pipeline orchestration
 ├── requirements.txt
 ├── .env.example
+├── api/                    # FastAPI layer (Swagger UI)
 ├── app/
 │   ├── config.py           # Environment-driven settings
 │   ├── db.py               # SQLite storage layer
@@ -58,6 +77,8 @@ parking_matching/
 ├── data/
 │   ├── raw/                # Raw provider responses (timestamped)
 │   └── output/             # Exported CSV and JSON files
+├── pipeline/
+│   └── service.py          # Shared pipeline wrapper (API + CLI)
 └── tests/
     ├── test_matching.py
     └── test_text_normalization.py
@@ -159,7 +180,7 @@ The `reason` field helps explain why two facilities were or were not matched.
 
 ---
 
-## ⚙️ Setup, Usage & Outputs
+## ⚙️ Setup & Usage (CLI/API)
 
 ### Setup
 
@@ -178,7 +199,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Usage
+### Usage (CLI)
 
 **Run the full pipeline** (fetch → match → export):
 
@@ -243,6 +264,79 @@ Exported matched lots to:
 }
 ```
 
+### Usage (FastAPI + Swagger UI)
+
+**Run the API**
+
+`uvicorn api.main:app --reload`
+
+**Open Swagger UI**
+
+`http://127.0.0.1:8000/docs`
+
+**Main Endpoint**
+
+`POST /pipeline/run`
+
+_Runs the full pipeline (fetch → match → export)_
+
+**Request**
+
+```
+{
+  "airports": ["SFO"],
+  "start": "2026-03-27T12:00:00Z",
+  "end": "2026-03-31T12:00:00Z"
+}
+```
+
+**Response (example)**
+
+```
+{
+  "airports": ["SFO"],
+  "total_lots": 27,
+  "total_quotes": 29,
+  "total_matches": 11,
+  "matches": [
+    {
+      "match_id": "lot_001",
+      "canonical_name": "Hyatt Regency SFO",
+      "listings": [
+        {
+          "provider": "parkwhiz",
+          "price": 13.99
+        },
+        {
+          "provider": "spothero",
+          "price": 14.49
+        }
+      ]
+    }
+  ]
+}
+```
+
+**Example API Call**
+
+```
+curl -X POST http://127.0.0.1:8000/pipeline/run \
+  -H "Content-Type: application/json" \
+  -d '{
+    "airports": ["SFO"],
+    "start": "2026-03-27T12:00:00Z",
+    "end": "2026-03-31T12:00:00Z"
+  }'
+```
+
+**API Endpoints**
+
+- `GET /` → API info
+- `GET /health` → health check
+- `GET /providers` → supported providers
+- `POST /pipeline/run` → run full pipeline
+- `GET /matches` → retrieve stored matches (optional)
+
 ---
 
 ## 🧪 Testing
@@ -265,15 +359,6 @@ pytest -v
 | ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Text normalization | 6 tests | Punctuation removal, whitespace collapsing, abbreviation expansion, weak token removal, postal code cleanup, `None` handling |
 | Matching scoring   | 4 tests | Similar lots → `match`, different lots → `no_match`, missing geo data handling, same-provider pair skipping                  |
-
----
-
-## ⚠️ Assumptions & Limitations
-
-- Matching is heuristic-based, not guaranteed perfect
-- Some facilities may have missing addresses or coordinates
-- Some facilities may represent multiple parking products (valet vs self-park) under one location
-- Matching is tuned to prioritize **precision over recall** — high-confidence matches are reliable while ambiguous cases are surfaced as `possible_match`
 
 ---
 
@@ -498,21 +583,14 @@ The pipeline is built to easily support additional providers and features:
   - Deploy using **AWS services (Step Functions + Lambda)**
   - Use **S3** for storage and **Postgres/DynamoDB** for persistence
 
-### Design Philosophy
-
-This system prioritizes:
-
-- Separation of concerns (clear pipeline stages)
-- Observability (logs, metrics, traceable runs)
-- Resilience (retries, fault isolation)
-- Scalability (parallel and distributed processing)
-
 ### Future Improvements
 
-- Implement hybrid matching using LLM
-- Add geospatial indexing for faster matching
-- Introduce clustering (multi-provider grouping)
-- Visualize matches on a map
+- Async/background job processing for long-running pipelines
+- Caching provider responses
+- Better matching (fuzzy string + geo distance)
+- Hybrid matching using LLM
+- Pagination and filtering in API
+- Frontend dashboard for visualization
 
 ### LLM-Assisted Matching
 
@@ -556,6 +634,16 @@ The proposed approach extends the existing pipeline rather than replacing it:
 
 ---
 
+## 🚧 Assumptions & Limitations
+
+- Matching logic is heuristic-based (can be improved with fuzzy matching or geospatial clustering)
+- Some facilities may have missing addresses or coordinates or may represent multiple parking products (valet vs self-park) under one location
+- SpotHero API may require scraping or reverse-engineering (no public API access)
+- Cheap Airport Parking data extraction is partially heuristic
+- Matching is tuned to prioritize **precision over recall** — high-confidence matches are reliable while ambiguous cases are surfaced as `possible_match`
+
+---
+
 ## 🔦 AI Usage
 
 AI tools were used selectively to support development of the parking matching pipeline, with a focus on improving code quality, validating matching logic, and refining system design.
@@ -576,7 +664,7 @@ AI tools were used as engineering assistants, not as sources of truth. All match
 
 ---
 
-## ✅ Summary
+## 💡 Summary
 
 This project is a data pipeline that aggregates parking listings from multiple providers, normalizes inconsistent schemas, and matches duplicate facilities across sources.
 

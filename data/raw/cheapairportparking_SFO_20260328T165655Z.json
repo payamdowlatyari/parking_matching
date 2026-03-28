@@ -1,9 +1,9 @@
 {
   "provider": "cheapairportparking",
   "airport_code": "SFO",
-  "start_dt": "2026-03-28T10:00:00",
-  "end_dt": "2026-03-30T18:00:00",
-  "fetched_at_utc": "20260327T212200Z",
+  "start_dt": "2026-03-27T12:00:00Z",
+  "end_dt": "2026-03-31T12:00:00Z",
+  "fetched_at_utc": "20260328T165655Z",
   "record_count": 5,
   "records": [
     {
@@ -31,8 +31,8 @@
         "summary_review_text": "204 reviews",
         "summary_price_text": "$13.99"
       },
-      "requested_start_dt": "2026-03-28T10:00:00",
-      "requested_end_dt": "2026-03-30T18:00:00"
+      "requested_start_dt": "2026-03-27T12:00:00Z",
+      "requested_end_dt": "2026-03-31T12:00:00Z"
     },
     {
       "listing_id": "Hotel-SFO",
@@ -59,8 +59,8 @@
         "summary_review_text": "32 reviews",
         "summary_price_text": "$11.99"
       },
-      "requested_start_dt": "2026-03-28T10:00:00",
-      "requested_end_dt": "2026-03-30T18:00:00"
+      "requested_start_dt": "2026-03-27T12:00:00Z",
+      "requested_end_dt": "2026-03-31T12:00:00Z"
     },
     {
       "listing_id": "Aloft-SFO",
@@ -89,8 +89,8 @@
       },
       "hours": "The parking lot and your vehicle is accessible 24/7",
       "arrival_info": "Please turn immediate right as you enter the facility and the Shuttle pick up station will be in the center of Aloft Hotel's west side (next to Freeway 101) parking lot. What our customers say about Aloft San Francisco Airport Anonymous customer - SF Bay Area, CA 02/13/2026 Easy to book. Easy in and out. The car was safe. Will return! Debi Papazian",
-      "requested_start_dt": "2026-03-28T10:00:00",
-      "requested_end_dt": "2026-03-30T18:00:00"
+      "requested_start_dt": "2026-03-27T12:00:00Z",
+      "requested_end_dt": "2026-03-31T12:00:00Z"
     },
     {
       "listing_id": "CP-SFO",
@@ -117,8 +117,8 @@
         "summary_review_text": "57 reviews",
         "summary_price_text": "$45.00"
       },
-      "requested_start_dt": "2026-03-28T10:00:00",
-      "requested_end_dt": "2026-03-30T18:00:00"
+      "requested_start_dt": "2026-03-27T12:00:00Z",
+      "requested_end_dt": "2026-03-31T12:00:00Z"
     },
     {
       "listing_id": "Burlingame-SFO-Airport-Parking",
@@ -145,8 +145,8 @@
         "summary_review_text": "373 reviews",
         "summary_price_text": "$12.00"
       },
-      "requested_start_dt": "2026-03-28T10:00:00",
-      "requested_end_dt": "2026-03-30T18:00:00"
+      "requested_start_dt": "2026-03-27T12:00:00Z",
+      "requested_end_dt": "2026-03-31T12:00:00Z"
     }
   ]
 }

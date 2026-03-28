@@ -1,0 +1,481 @@
+{
+  "provider": "parkwhiz",
+  "airport_code": "SFO",
+  "start_dt": "2026-03-27T12:00:00Z",
+  "end_dt": "2026-03-31T12:00:00Z",
+  "fetched_at_utc": "20260328T165654Z",
+  "record_count": 1,
+  "records": [
+    {
+      "listing_id": "60625",
+      "quote_id": "2dbab5dc-011c-4c60-af0b-02a87e9a2bcf",
+      "location_name": "DoubleTree Burlingame SFO",
+      "address": "835 Airport Blvd.",
+      "city": "Burlingame",
+      "state": "CA",
+      "postal_code": "94010",
+      "lat": 37.591182492000236,
+      "lng": -122.35063725970652,
+      "currency": "USD",
+      "total_price": 59.36,
+      "base_price": 56.0,
+      "is_bookable": true,
+      "parking_type": "Uncovered Self-park",
+      "shuttle": true,
+      "cancellable": false,
+      "cancellation_code": "cancelling_in_progress_booking",
+      "cancellation_message": "No Cancellation: This booking will start immediately",
+      "pickup_instructions": "Upon return to SFO Airport, please proceed to the airport shuttle pickup area.",
+      "dropoff_instructions": "The shuttle runs every 15 minutes between 5AM to 1PM, otherwise every 30 minutes.",
+      "site_url": null,
+      "phone": null,
+      "capacity": null,
+      "hours": null,
+      "operating_hours": null,
+      "non_bookable_rates": null,
+      "raw_source": {
+        "location_id": "60625",
+        "type": "offstreet",
+        "start_time": "2026-03-27T05:00:00.000-07:00",
+        "end_time": "2026-03-31T05:00:00.000-07:00",
+        "min_start": "2026-03-27T05:00:00.000-07:00",
+        "max_end": "2026-03-31T05:00:00.000-07:00",
+        "distance": {
+          "straight_line": {
+            "meters": 4606,
+            "feet": 15111
+          }
+        },
+        "purchase_options": [
+          {
+            "id": "2dbab5dc-011c-4c60-af0b-02a87e9a2bcf",
+            "start_time": "2026-03-27T05:00:00.000-07:00",
+            "end_time": "2026-03-31T05:00:00.000-07:00",
+            "min_start": "2026-03-27T05:00:00.000-07:00",
+            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "base_price": {
+              "USD": "56.00"
+            },
+            "price": {
+              "USD": "59.36"
+            },
+            "display": {
+              "price": "price"
+            },
+            "fees": [
+              {
+                "price": {
+                  "USD": "3.36"
+                },
+                "type": "convenience_fee",
+                "label": "Service Fee",
+                "parent_category": "Service Fee",
+                "description": "This fee helps us run our platform, as well as partner with more locations to provide a better parking experience."
+              }
+            ],
+            "pricing_segments": [
+              {
+                "id": 6679242,
+                "start_time": "2026-03-27T05:00:00.000-07:00",
+                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "event": {},
+                "space_availability": {
+                  "status": "available"
+                },
+                "pricing_type": "TransientPricing"
+              }
+            ],
+            "shuttle": true,
+            "name": "Uncovered Self-park",
+            "space_availability": {
+              "status": "available"
+            },
+            "validation": {
+              "require_license_plate": false,
+              "display": {
+                "scan_code": "required"
+              },
+              "validation_steps": [
+                {
+                  "instructions": "Scan parking pass at the box with the red flashing lights at entry. Hold the QR code about 2 inches away from the reader and the gate will open",
+                  "icon": {
+                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/246121/original/MERCH-01240218-scheidt.png?1518649051"
+                  }
+                },
+                {
+                  "instructions": "Park in any space not marked \"Reserved\"",
+                  "icon": {
+                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77149/original/validation-icons-28.png?1453405541"
+                  }
+                },
+                {
+                  "instructions": "Upon departure, scan parking pass at the box with the flashing lights  and then the gate will open ",
+                  "icon": {
+                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/246121/original/MERCH-01240218-scheidt.png?1518649051"
+                  }
+                }
+              ]
+            },
+            "cancellable_status": {
+              "cancellable_now": false,
+              "code": "cancelling_in_progress_booking",
+              "message": "No Cancellation: This booking will start immediately"
+            },
+            "disclaimers": [
+              "The shuttle runs every 15 minutes between 5AM to 1PM, otherwise every 30 minutes.\r\n\r\nUpon return to SFO Airport, please proceed to the airport shuttle pickup area."
+            ],
+            "amenities": [
+              {
+                "name": "Unobstructed",
+                "key": "unobstructed",
+                "description": "Guaranteed to be unobstructed",
+                "enabled": true,
+                "visible": true
+              },
+              {
+                "name": "Attended",
+                "key": "attended",
+                "description": "Attended",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Covered",
+                "key": "indoor",
+                "description": "Covered",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Security",
+                "key": "security",
+                "description": "Security",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Valet",
+                "key": "valet",
+                "description": "Valet",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Restrooms",
+                "key": "restrooms",
+                "description": "Restrooms",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Reentry Allowed",
+                "key": "reentry",
+                "description": "Reentry allowed",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Accessible",
+                "key": "handicap",
+                "description": "Accessible",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Electric Car Charging",
+                "key": "vehicle_charging",
+                "description": "Electric Car Charging",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Printed Pass",
+                "key": "printed_pass",
+                "description": "Printed pass",
+                "enabled": false,
+                "visible": false
+              }
+            ],
+            "price_advisory": "None",
+            "pickup_instructions": "Upon return to SFO Airport, please proceed to the airport shuttle pickup area.",
+            "dropoff_instructions": "The shuttle runs every 15 minutes between 5AM to 1PM, otherwise every 30 minutes.",
+            "_links": {
+              "site:purchase": {
+                "href": "/find_and_book/?location_id=60625&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+              },
+              "curies": [
+                {
+                  "name": "site",
+                  "href": "https://www.parkwhiz.com/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        "seller_id": 505,
+        "quote_type": "transient",
+        "name": "",
+        "_embedded": {
+          "pw:location": {
+            "id": "60625",
+            "name": "DoubleTree Burlingame SFO",
+            "address1": "835 Airport Blvd.",
+            "city": "Burlingame",
+            "state": "CA",
+            "country": "US",
+            "currency": "USD",
+            "postal_code": "94010",
+            "entrances": [
+              {
+                "coordinates": [
+                  37.591182492000236,
+                  -122.35063725970652
+                ]
+              }
+            ],
+            "photos": [
+              {
+                "position": 1,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/original/Screenshot_81.png?1745332900",
+                    "width": 1000,
+                    "height": 750
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/logo/Screenshot_81.png?1745332900",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/gallery/Screenshot_81.png?1745332900",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/gallery_thumb/Screenshot_81.png?1745332900",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/search_thumb/Screenshot_81.png?1745332900",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/res_ticket/Screenshot_81.png?1745332900",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944318/hub_frontpage/Screenshot_81.png?1745332900",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              },
+              {
+                "position": 2,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/original/Screenshot_82.png?1745332903",
+                    "width": 1000,
+                    "height": 750
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/logo/Screenshot_82.png?1745332903",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/gallery/Screenshot_82.png?1745332903",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/gallery_thumb/Screenshot_82.png?1745332903",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/search_thumb/Screenshot_82.png?1745332903",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/res_ticket/Screenshot_82.png?1745332903",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944324/hub_frontpage/Screenshot_82.png?1745332903",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              },
+              {
+                "position": 3,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/original/Screenshot_83.png?1745332906",
+                    "width": 1000,
+                    "height": 750
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/logo/Screenshot_83.png?1745332906",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/gallery/Screenshot_83.png?1745332906",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/gallery_thumb/Screenshot_83.png?1745332906",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/search_thumb/Screenshot_83.png?1745332906",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/res_ticket/Screenshot_83.png?1745332906",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944330/hub_frontpage/Screenshot_83.png?1745332907",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              },
+              {
+                "position": 4,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/original/Screenshot_84.png?1745332909",
+                    "width": 1000,
+                    "height": 750
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/logo/Screenshot_84.png?1745332909",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/gallery/Screenshot_84.png?1745332910",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/gallery_thumb/Screenshot_84.png?1745332909",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/search_thumb/Screenshot_84.png?1745332909",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/res_ticket/Screenshot_84.png?1745332909",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/944336/hub_frontpage/Screenshot_84.png?1745332910",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              }
+            ],
+            "_links": {
+              "self": {
+                "href": "/locations/60625"
+              },
+              "pw:quotes": {
+                "href": "/quotes?q=location_id:60625&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+              },
+              "pw:reviews": {
+                "href": "/locations/60625/reviews"
+              },
+              "site:purchase": null,
+              "curies": [
+                {
+                  "name": "pw",
+                  "href": "https://api.parkwhiz.com/v4/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          "pw:venue": {
+            "id": 40,
+            "name": "SFO Airport",
+            "address1": "San Francisco CA",
+            "city": "San Francisco",
+            "state": "CA",
+            "postal_code": "94128",
+            "coordinates": [
+              37.61440138961927,
+              -122.39387042820454
+            ],
+            "timezone": "America/Los_Angeles",
+            "description": "<p>If you\u2019re looking for the perfect San Francisco International Airport parking, you\u2019re in luck. ParkWhiz has resources you need for booking and reserving SFO parking.</p>\r\n\r\n<p>San Francisco International Airport (SFO) is the primary commercial airport for those flying into the San Francisco Bay Area. It is the second biggest airport in the state of California (after LAX) and ranks as the 10th busiest in America. More than 37 million passengers pass through San Francisco International every year. Travelers can reach major destinations in North America, Asia, Australia and other Pacific countries by flying with several major domestic and foreign airlines that currently serve the airport.</p>\r\n\r\n<p>The San Francisco Airport Commission currently manages SFO, providing passengers with a number of amenities and services including San Francisco Airport parking. You can find parking at San Francisco Airport in 2 terminal garages for short-term parking and in the facility along South Airport Blvd. for long-term parking. Options include short-term garage, long-term covered, Valet, and Fast (reserved) parking. San Francisco Airport passengers can also park at privately-owned remote locations, such as the Park SFO Outdoor Parking lot on North Access Road.</p>\r\n\r\n<p>Here is a short guide on how to get the San Francisco Airport parking that is best for your trip:</p>\r\n\r\n<p>Compare SFO parking costs at various parking lots and garages. You will need to enter the date and time of your arrival and departure (at the facility) into the bar at the top of this page to calculate parking costs. As soon as you\u2019ve done that, the results for calculated rates will be shown automatically. Compare and select the best option.</p>\r\n\r\n<p>Choose the most convenient SFO parking site that offers the best rates. Just click the \u201cbook now\u201d button for your chosen garage to display all the important information, including phone number, location, facility type, and more.</p>\r\n\r\n<p>Reserve your parking space. After you\u2019ve decided on a garage, don\u2019t forget to place a reservation for your parking. You now have a reserved SFO parking space\u2014way to go!</p>\r\n\r\n<p>Haven't booked a flight yet? Then take a look at the links below to check out parking at other nearby airports.</p>\r\n\r\n<p>Parking at other airports:</p>\r\n<a href=\"https://www.parkwhiz.com/oakland-airport-parking\">Oakland International Airport Parking</a>\r\n\r\n\r\n<a href=\"https://www.parkwhiz.com/seattle-tacoma-international-airport-parking/\"> Seattle\u2013Tacoma International Airport Parking</a>\r\n\r\n\r\n<a href=\"https://www.parkwhiz.com/lax-airport-parking\">Los Angeles International Airport Parking</a>\r\n\r\n<a href=\"https://www.parkwhiz.com/san-diego-airport-parking\">San Diego International Airport Parking</a>",
+            "venue_type": "Airport",
+            "website": "http://www.flysfo.com/",
+            "enhanced_airport": true,
+            "outline": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  -122.39982,
+                  37.615913
+                ],
+                [
+                  -122.3908,
+                  37.625465
+                ],
+                [
+                  -122.37463,
+                  37.620438
+                ],
+                [
+                  -122.3833,
+                  37.606056
+                ],
+                [
+                  -122.39982,
+                  37.615913
+                ]
+              ]
+            },
+            "_links": {
+              "self": {
+                "href": "/venues/40"
+              },
+              "pw:quotes": {
+                "href": "/quotes?q=venue_id:40&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+              },
+              "site:purchase": null,
+              "curies": [
+                {
+                  "name": "pw",
+                  "href": "https://api.parkwhiz.com/v4/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}
