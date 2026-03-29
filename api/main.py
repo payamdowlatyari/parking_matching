@@ -8,6 +8,14 @@ from run import get_providers
 app = FastAPI(
     title="Parking Matching API",
     version="1.0.0",
+    description="API for running parking matching pipeline and retrieving results",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_prefix="/api/v1",
+    contact={
+        "name": "Parking Matching Repository",
+        "url": "https://github.com/payamdowlatyari/parking_matching",
+    },
 )
 
 
@@ -21,7 +29,7 @@ class PipelineRequest(BaseModel):
     db_path: str = "parking_matching.db"
 
 
-@app.get("/")
+@app.get("/", tags=["General"])
 def root():
     return {
         "message": "Parking Matching API",
@@ -29,12 +37,12 @@ def root():
     }
 
 
-@app.get("/health")
+@app.get("/health", tags=["General"])
 def health():
     return {"status": "ok"}
 
 
-@app.get("/matches")
+@app.get("/matches", tags=["General"])
 def get_matches():
     from app.db import Database
     db = Database("parking_matching.db")
@@ -44,12 +52,12 @@ def get_matches():
         db.close()
 
 
-@app.get("/providers")
+@app.get("/providers", tags=["General"])
 def providers():
     return [p.provider_name for p in get_providers()]
 
 
-@app.post("/pipeline/run")
+@app.post("/pipeline/run", tags=["Pipeline"])
 def run_pipeline(payload: PipelineRequest):
     if not payload.airports:
         raise HTTPException(status_code=400, detail="At least one airport required")
