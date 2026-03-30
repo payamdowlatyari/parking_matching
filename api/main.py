@@ -8,6 +8,13 @@ from run import get_providers
 app = FastAPI(
     title="Parking Matching API",
     version="1.0.0",
+    description="API for running parking matching pipeline and retrieving results",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    contact={
+        "name": "Parking Matching Repository",
+        "url": "https://github.com/payamdowlatyari/parking_matching",
+    },
 )
 
 
@@ -21,21 +28,30 @@ class PipelineRequest(BaseModel):
     db_path: str = "parking_matching.db"
 
 
-@app.get("/")
+@app.get("/", tags=["General"])
 def root():
+    """
+    Returns a simple message indicating that the API is functioning correctly.
+    """
     return {
         "message": "Parking Matching API",
         "docs": "/docs",
     }
 
 
-@app.get("/health")
+@app.get("/health", tags=["General"])
 def health():
+    """
+    Returns a simple health check for the API.
+    """
     return {"status": "ok"}
 
 
-@app.get("/matches")
+@app.get("/matches", tags=["General"])
 def get_matches():
+    """
+    Retrieves all stored match results from the database.
+    """
     from app.db import Database
     db = Database("parking_matching.db")
     try:
@@ -44,13 +60,19 @@ def get_matches():
         db.close()
 
 
-@app.get("/providers")
+@app.get("/providers", tags=["General"])
 def providers():
+    """
+    Retrieves a list of supported parking providers.
+    """
     return [p.provider_name for p in get_providers()]
 
 
-@app.post("/pipeline/run")
+@app.post("/pipeline/run", tags=["Pipeline"], response_model=dict)
 def run_pipeline(payload: PipelineRequest):
+    """
+    Runs the full pipeline using the provided parameters.
+    """
     if not payload.airports:
         raise HTTPException(status_code=400, detail="At least one airport required")
 

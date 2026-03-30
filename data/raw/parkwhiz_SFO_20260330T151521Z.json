@@ -1,14 +1,14 @@
 {
   "provider": "parkwhiz",
   "airport_code": "SFO",
-  "start_dt": "2026-03-27T12:00:00Z",
-  "end_dt": "2026-03-31T12:00:00Z",
-  "fetched_at_utc": "20260328T165654Z",
+  "start_dt": "2026-03-30T12:00:00Z",
+  "end_dt": "2026-04-03T12:00:00Z",
+  "fetched_at_utc": "20260330T151521Z",
   "record_count": 1,
   "records": [
     {
       "listing_id": "60625",
-      "quote_id": "2dbab5dc-011c-4c60-af0b-02a87e9a2bcf",
+      "quote_id": "f1d5c4e7-d7e0-4db7-a01d-59cb8d982715",
       "location_name": "DoubleTree Burlingame SFO",
       "address": "835 Airport Blvd.",
       "city": "Burlingame",
@@ -36,10 +36,10 @@
       "raw_source": {
         "location_id": "60625",
         "type": "offstreet",
-        "start_time": "2026-03-27T05:00:00.000-07:00",
-        "end_time": "2026-03-31T05:00:00.000-07:00",
-        "min_start": "2026-03-27T05:00:00.000-07:00",
-        "max_end": "2026-03-31T05:00:00.000-07:00",
+        "start_time": "2026-03-30T05:00:00.000-07:00",
+        "end_time": "2026-04-03T05:00:00.000-07:00",
+        "min_start": "2026-03-30T05:00:00.000-07:00",
+        "max_end": "2026-04-03T05:00:00.000-07:00",
         "distance": {
           "straight_line": {
             "meters": 4606,
@@ -48,11 +48,11 @@
         },
         "purchase_options": [
           {
-            "id": "2dbab5dc-011c-4c60-af0b-02a87e9a2bcf",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "f1d5c4e7-d7e0-4db7-a01d-59cb8d982715",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "56.00"
             },
@@ -76,8 +76,8 @@
             "pricing_segments": [
               {
                 "id": 6679242,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -201,7 +201,7 @@
             "dropoff_instructions": "The shuttle runs every 15 minutes between 5AM to 1PM, otherwise every 30 minutes.",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=60625&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=60625&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -401,7 +401,7 @@
                 "href": "/locations/60625"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:60625&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:60625&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/60625/reviews"
@@ -462,7 +462,7 @@
                 "href": "/venues/40"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:40&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:40&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [

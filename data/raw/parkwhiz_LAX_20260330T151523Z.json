@@ -1,14 +1,482 @@
 {
   "provider": "parkwhiz",
   "airport_code": "LAX",
-  "start_dt": "2026-03-27T12:00:00Z",
-  "end_dt": "2026-03-31T12:00:00Z",
-  "fetched_at_utc": "20260328T165655Z",
+  "start_dt": "2026-03-30T12:00:00Z",
+  "end_dt": "2026-04-03T12:00:00Z",
+  "fetched_at_utc": "20260330T151523Z",
   "record_count": 9,
   "records": [
     {
+      "listing_id": "59931",
+      "quote_id": "7c6cdbb7-1630-44ae-b54e-b9ea35f15777",
+      "location_name": "QuikPark LAX  Garage",
+      "address": "9821 Vicksburg Ave.",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90045",
+      "lat": 33.94632307770008,
+      "lng": -118.39428137987854,
+      "currency": "USD",
+      "total_price": 99.51,
+      "base_price": 79.8,
+      "is_bookable": true,
+      "parking_type": null,
+      "shuttle": null,
+      "cancellable": false,
+      "cancellation_code": "cancelling_in_progress_booking",
+      "cancellation_message": "No Cancellation: This booking will start immediately",
+      "pickup_instructions": null,
+      "dropoff_instructions": "Free shuttle service to and from LAX 24/7.",
+      "site_url": null,
+      "phone": null,
+      "capacity": null,
+      "hours": null,
+      "operating_hours": null,
+      "non_bookable_rates": null,
+      "raw_source": {
+        "location_id": "59931",
+        "type": "offstreet",
+        "start_time": "2026-03-30T05:00:00.000-07:00",
+        "end_time": "2026-04-03T05:00:00.000-07:00",
+        "min_start": "2026-03-30T05:00:00.000-07:00",
+        "max_end": "2026-04-03T05:00:00.000-07:00",
+        "distance": {
+          "straight_line": {
+            "meters": 1415,
+            "feet": 4642
+          }
+        },
+        "purchase_options": [
+          {
+            "id": "7c6cdbb7-1630-44ae-b54e-b9ea35f15777",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
+            "base_price": {
+              "USD": "79.80"
+            },
+            "price": {
+              "USD": "99.51"
+            },
+            "display": {
+              "price": "price"
+            },
+            "fees": [
+              {
+                "price": {
+                  "USD": "19.71"
+                },
+                "type": "convenience_fee",
+                "label": "Service Fee",
+                "parent_category": "Service Fee",
+                "description": "This fee helps us run our platform, as well as partner with more locations to provide a better parking experience."
+              }
+            ],
+            "pricing_segments": [
+              {
+                "id": 6469875,
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
+                "event": {},
+                "space_availability": {
+                  "status": "available"
+                },
+                "pricing_type": "TransientPricing"
+              }
+            ],
+            "space_availability": {
+              "status": "available"
+            },
+            "validation": {
+              "require_license_plate": false,
+              "display": {
+                "scan_code": "required"
+              },
+              "validation_steps": [
+                {
+                  "instructions": "Upon arrival pull a ticket to enter the garage",
+                  "icon": {
+                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77173/original/validation-icons-25.png?1453405554"
+                  }
+                },
+                {
+                  "instructions": "Park on levels 2 and above",
+                  "icon": {
+                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77149/original/validation-icons-28.png?1453405541"
+                  }
+                },
+                {
+                  "instructions": "Upon departure, show online reservation and the ticket to the cashier for validation",
+                  "icon": {
+                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77263/original/validation-icons-14.png?1453405604"
+                  }
+                }
+              ]
+            },
+            "cancellable_status": {
+              "cancellable_now": false,
+              "code": "cancelling_in_progress_booking",
+              "message": "No Cancellation: This booking will start immediately"
+            },
+            "disclaimers": [
+              "\"No in and out privilege\"."
+            ],
+            "amenities": [
+              {
+                "name": "Covered",
+                "key": "indoor",
+                "description": "Covered",
+                "enabled": true,
+                "visible": true
+              },
+              {
+                "name": "Unobstructed",
+                "key": "unobstructed",
+                "description": "Guaranteed to be unobstructed",
+                "enabled": true,
+                "visible": true
+              },
+              {
+                "name": "Attended",
+                "key": "attended",
+                "description": "Attended",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Security",
+                "key": "security",
+                "description": "Security",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Valet",
+                "key": "valet",
+                "description": "Valet",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Restrooms",
+                "key": "restrooms",
+                "description": "Restrooms",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Reentry Allowed",
+                "key": "reentry",
+                "description": "Reentry allowed",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Accessible",
+                "key": "handicap",
+                "description": "Accessible",
+                "enabled": false,
+                "visible": true
+              },
+              {
+                "name": "Electric Car Charging",
+                "key": "vehicle_charging",
+                "description": "Electric Car Charging",
+                "enabled": false,
+                "visible": false
+              },
+              {
+                "name": "Printed Pass",
+                "key": "printed_pass",
+                "description": "Printed pass",
+                "enabled": false,
+                "visible": false
+              }
+            ],
+            "price_advisory": "None",
+            "dropoff_instructions": "Free shuttle service to and from LAX 24/7.",
+            "_links": {
+              "site:purchase": {
+                "href": "/find_and_book/?location_id=59931&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
+              },
+              "curies": [
+                {
+                  "name": "site",
+                  "href": "https://www.parkwhiz.com/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        "seller_id": 505,
+        "quote_type": "transient",
+        "name": "",
+        "_embedded": {
+          "pw:location": {
+            "id": "59931",
+            "name": "QuikPark LAX  Garage",
+            "address1": "9821 Vicksburg Ave.",
+            "city": "Los Angeles",
+            "state": "CA",
+            "country": "US",
+            "currency": "USD",
+            "postal_code": "90045",
+            "entrances": [
+              {
+                "coordinates": [
+                  33.94632307770008,
+                  -118.39428137987854
+                ]
+              }
+            ],
+            "photos": [
+              {
+                "position": 0,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/original/9821_Vicksburg_Ave.png?1740409948",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/logo/9821_Vicksburg_Ave.png?1740409948",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/gallery/9821_Vicksburg_Ave.png?1740409948",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/gallery_thumb/9821_Vicksburg_Ave.png?1740409948",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/search_thumb/9821_Vicksburg_Ave.png?1740409948",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/res_ticket/9821_Vicksburg_Ave.png?1740409948",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932252/hub_frontpage/9821_Vicksburg_Ave.png?1740409949",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              },
+              {
+                "position": 1,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/original/9821_Vicksburg_Ave1.png?1740409945",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/logo/9821_Vicksburg_Ave1.png?1740409945",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/gallery/9821_Vicksburg_Ave1.png?1740409946",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/gallery_thumb/9821_Vicksburg_Ave1.png?1740409945",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/search_thumb/9821_Vicksburg_Ave1.png?1740409945",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/res_ticket/9821_Vicksburg_Ave1.png?1740409946",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932246/hub_frontpage/9821_Vicksburg_Ave1.png?1740409946",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              },
+              {
+                "position": 2,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/original/9821_Vicksburg_Ave2.png?1740409953",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/logo/9821_Vicksburg_Ave2.png?1740409953",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/gallery/9821_Vicksburg_Ave2.png?1740409954",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/gallery_thumb/9821_Vicksburg_Ave2.png?1740409953",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/search_thumb/9821_Vicksburg_Ave2.png?1740409953",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/res_ticket/9821_Vicksburg_Ave2.png?1740409953",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932264/hub_frontpage/9821_Vicksburg_Ave2.png?1740409954",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              },
+              {
+                "position": 3,
+                "sizes": {
+                  "original": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/original/9821_Vicksburg_Ave3.png?1740409950",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "logo": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/logo/9821_Vicksburg_Ave3.png?1740409950",
+                    "width": 133,
+                    "height": 100
+                  },
+                  "gallery": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/gallery/9821_Vicksburg_Ave3.png?1740409951",
+                    "width": 800,
+                    "height": 600
+                  },
+                  "gallery_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/gallery_thumb/9821_Vicksburg_Ave3.png?1740409951",
+                    "width": 100,
+                    "height": 75
+                  },
+                  "search_thumb": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/search_thumb/9821_Vicksburg_Ave3.png?1740409951",
+                    "width": 130,
+                    "height": 130
+                  },
+                  "res_ticket": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/res_ticket/9821_Vicksburg_Ave3.png?1740409951",
+                    "width": 300,
+                    "height": 225
+                  },
+                  "hub_frontpage": {
+                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/932258/hub_frontpage/9821_Vicksburg_Ave3.png?1740409951",
+                    "width": 300,
+                    "height": 300
+                  }
+                }
+              }
+            ],
+            "_links": {
+              "self": {
+                "href": "/locations/59931"
+              },
+              "pw:quotes": {
+                "href": "/quotes?q=location_id:59931&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
+              },
+              "pw:reviews": {
+                "href": "/locations/59931/reviews"
+              },
+              "site:purchase": null,
+              "curies": [
+                {
+                  "name": "pw",
+                  "href": "https://api.parkwhiz.com/v4/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          "pw:venue": {
+            "id": 107,
+            "name": "Rocket Arena",
+            "address1": "1 Center Ct.",
+            "city": "Cleveland",
+            "state": "OH",
+            "postal_code": "44115",
+            "coordinates": [
+              41.49647969999999,
+              -81.6882129
+            ],
+            "timezone": "America/New_York",
+            "description": "<p>No NBA team is the same, due to their skill, their reputation or other feature. No NBA team has exactly the same advantage: some excel at scoring, others focus on defense, while unfortunately for the Cleveland Cavs, some are just good at losing. The Cleveland Cavaliers have been in the latter category for most of their history, and only time will tell if they improve. Either way, finding Cleveland Cavaliers parking spaces at Rocket Arena will likely be a challenge on game day, so it's best to book Cavs parking ahead of time.</p>\r\n\r\n<p>While the Cavs have their issues, the former Quicken Loans Arena is a spacious stadium, with 20,562 seats, the fourth-largest in the NBA. In addition to hosting the Cleveland Cavaliers, the venue's also home to several minor league teams, as well as concerts, wrestling and NCAA basketball games. Past concert guests include Rush, Bruce Springsteen, Diana Ross and the Dixie Chicks. As the Cavs work tirelessly toward winning the NBA Finals, the one constant will be that finding Cavs parking spaces will continue to be difficult, so it is advisable to book your Rocket Arena parking spaces ahead of time with ParkWhiz.</p>\r\n\r\n<p>The Cleveland Cavaliers have a troubled history, including losing streaks, odd trades and eccentric managers. The team had some good times despite these issues, including 18 playoff seasons, three division titles (1976, 2009-'10) and a conference championship. But as a whole, NBA history hasn't been kind to <a href=\"http://www.parkwhiz.com/p/cleveland-parking/\">Cleveland</a>. For example, the Cavs had a key role in the 1989 NBA Playoffs and the legacy of the Chicago Bulls' Michael Jordan, providing a stepping stone for him to showcase his skill. For instance, in the fifth game, Michael Jordan hit \"The Shot\" at the buzzer to send the Cavs home. The Cavs were fortuitous enough to draft Lebron James in 2003, but to this day feel a stinging betrayal due to his move to Miami in 2010 as a free agent. Finding Cleveland Cavaliers parking can be difficult, so booking Cleveland basketball parking spots in advance with ParkWhiz is the best solution.</p>\r\n\r\n<p>ParkWhiz is easy; all you need to do is find the game that you want to see, book your Cleveland Cavs basketball parking spot and print out your ParkWhiz parking pass. Once that's done, you can relax and enjoy the game, rather than trying to find parking at Rocket Arena.</p>\r\n\r\n<p><a href=\"https://www.parkwhiz.com/p/cleveland-parking/\">Cleveland parking</a> at other popular destinations:</p>\r\n\r\n<ul>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | FirstEnergy Stadium\" href=\"https://www.parkwhiz.com/firstenergy-stadium-parking/\">FirstEnergy Stadium</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | Progressive Field\" href=\"https://www.parkwhiz.com/progressive-field-parking/\">Progressive Field</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | House of Blues (Cleveland)\" href=\"https://www.parkwhiz.com/house-of-blues-cleveland-parking/\">House of Blues (Cleveland)</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | Hanna Theatre\" href=\"https://www.parkwhiz.com/hanna-theatre-parking/\">Hanna Theatre</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | Playhouse Square\" href=\"https://www.parkwhiz.com/playhouse-square-parking/\">Playhouse Square</a></li>\r\n</ul>\r\n\r\nPhoto by Chris Metcalf [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons",
+            "venue_type": "Sports",
+            "website": "https://www.rocketarena.com/",
+            "enhanced_airport": false,
+            "outline": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  -81.68934,
+                  41.49566
+                ],
+                [
+                  -81.68934,
+                  41.49746
+                ],
+                [
+                  -81.68694,
+                  41.49746
+                ],
+                [
+                  -81.68694,
+                  41.49566
+                ],
+                [
+                  -81.68934,
+                  41.49566
+                ]
+              ]
+            },
+            "_links": {
+              "self": {
+                "href": "/venues/107"
+              },
+              "pw:quotes": {
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
+              },
+              "site:purchase": null,
+              "curies": [
+                {
+                  "name": "pw",
+                  "href": "https://api.parkwhiz.com/v4/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
       "listing_id": "60204",
-      "quote_id": "2c99b461-9a16-415e-90bf-b727805ba29a",
+      "quote_id": "9590491d-05bc-4a8b-ba61-a63d50ff86ed",
       "location_name": "Sheraton Gateway Parking LAX - Valet",
       "address": "6101 W. Century Blvd.",
       "city": "Los Angeles",
@@ -36,10 +504,10 @@
       "raw_source": {
         "location_id": "60204",
         "type": "offstreet",
-        "start_time": "2026-03-27T05:00:00.000-07:00",
-        "end_time": "2026-03-31T05:00:00.000-07:00",
-        "min_start": "2026-03-27T05:00:00.000-07:00",
-        "max_end": "2026-03-31T05:00:00.000-07:00",
+        "start_time": "2026-03-30T05:00:00.000-07:00",
+        "end_time": "2026-04-03T05:00:00.000-07:00",
+        "min_start": "2026-03-30T05:00:00.000-07:00",
+        "max_end": "2026-04-03T05:00:00.000-07:00",
         "distance": {
           "straight_line": {
             "meters": 1759,
@@ -48,11 +516,11 @@
         },
         "purchase_options": [
           {
-            "id": "2c99b461-9a16-415e-90bf-b727805ba29a",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "9590491d-05bc-4a8b-ba61-a63d50ff86ed",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "100.00"
             },
@@ -76,8 +544,8 @@
             "pricing_segments": [
               {
                 "id": 6695406,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -192,7 +660,7 @@
             "price_advisory": "None",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=60204&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=60204&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -432,7 +900,7 @@
                 "href": "/locations/60204"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:60204&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:60204&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/60204/reviews"
@@ -493,7 +961,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -510,7 +978,7 @@
     },
     {
       "listing_id": "57000",
-      "quote_id": "85446488-a734-4544-a2dc-1729037b2c62",
+      "quote_id": "819af317-1334-4fe8-9e94-73408c67f712",
       "location_name": "105 Airport Parking",
       "address": "1901 E. Walnut Ave.",
       "city": "El Segundo",
@@ -538,10 +1006,10 @@
       "raw_source": {
         "location_id": "57000",
         "type": "offstreet",
-        "start_time": "2026-03-27T05:00:00.000-07:00",
-        "end_time": "2026-03-31T05:00:00.000-07:00",
-        "min_start": "2026-03-27T05:00:00.000-07:00",
-        "max_end": "2026-03-31T05:00:00.000-07:00",
+        "start_time": "2026-03-30T05:00:00.000-07:00",
+        "end_time": "2026-04-03T05:00:00.000-07:00",
+        "min_start": "2026-03-30T05:00:00.000-07:00",
+        "max_end": "2026-04-03T05:00:00.000-07:00",
         "distance": {
           "straight_line": {
             "meters": 1844,
@@ -550,11 +1018,11 @@
         },
         "purchase_options": [
           {
-            "id": "85446488-a734-4544-a2dc-1729037b2c62",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "819af317-1334-4fe8-9e94-73408c67f712",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "40.60"
             },
@@ -578,8 +1046,8 @@
             "pricing_segments": [
               {
                 "id": 5721035,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -701,7 +1169,7 @@
             "dropoff_instructions": "Scan your reservation when exiting the garage. Do not pay at exit! Your reservation is already prepaid.",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=57000&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=57000&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -861,7 +1329,7 @@
                 "href": "/locations/57000"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:57000&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:57000&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/57000/reviews"
@@ -922,7 +1390,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -939,7 +1407,7 @@
     },
     {
       "listing_id": "9299",
-      "quote_id": "d80172cc-1a98-4236-9e93-783f08d3a586",
+      "quote_id": "6a246fe0-cef9-44d3-97aa-e7913257baac",
       "location_name": "Sam\u2019s Parking LAX - Valet",
       "address": "8923 S. Sepulveda Blvd.",
       "city": "Los Angeles",
@@ -967,10 +1435,10 @@
       "raw_source": {
         "location_id": "9299",
         "type": "offstreet",
-        "start_time": "2026-03-27T05:00:00.000-07:00",
-        "end_time": "2026-03-31T05:00:00.000-07:00",
-        "min_start": "2026-03-27T05:00:00.000-07:00",
-        "max_end": "2026-03-31T05:00:00.000-07:00",
+        "start_time": "2026-03-30T05:00:00.000-07:00",
+        "end_time": "2026-04-03T05:00:00.000-07:00",
+        "min_start": "2026-03-30T05:00:00.000-07:00",
+        "max_end": "2026-04-03T05:00:00.000-07:00",
         "distance": {
           "straight_line": {
             "meters": 1859,
@@ -979,11 +1447,11 @@
         },
         "purchase_options": [
           {
-            "id": "d80172cc-1a98-4236-9e93-783f08d3a586",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "6a246fe0-cef9-44d3-97aa-e7913257baac",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "143.80"
             },
@@ -996,8 +1464,8 @@
             "pricing_segments": [
               {
                 "id": 741978,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -1108,10 +1576,10 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "7c62d5a4-2266-4e27-8fb9-774d829b5cc7",
+                    "id": "d6c09841-60f3-42cd-a22d-086fa5aedf75",
                     "name": "Standard",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "0.00"
                     },
@@ -1137,10 +1605,10 @@
                     }
                   },
                   {
-                    "id": "b4264bd6-40e8-491b-aaae-e91fbf038396",
+                    "id": "19281c1d-6ff3-446c-98b0-d1ce2ed5a255",
                     "name": "Oversize",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "4.40"
                     },
@@ -1175,7 +1643,7 @@
             "dropoff_instructions": "A personal valet will ride with you from our location curbside to your departure airline terminal curbside, in the comfort of your own vehicle.",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=9299&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=9299&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -1187,11 +1655,11 @@
             }
           },
           {
-            "id": "440d8ddc-ccba-4073-b5ea-7dc888595d27",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "302f5234-d4fe-4235-973e-3eecb59b9f1e",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "155.80"
             },
@@ -1204,8 +1672,8 @@
             "pricing_segments": [
               {
                 "id": 741977,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -1316,10 +1784,10 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "afc3c21d-7847-4189-821a-a601880ac562",
+                    "id": "e6b302f6-d2ff-4132-b7ad-0dfa5db08cd0",
                     "name": "Standard",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "0.00"
                     },
@@ -1345,10 +1813,10 @@
                     }
                   },
                   {
-                    "id": "71a42a7e-7ae8-4ea4-98a5-ab3dfb789d3f",
+                    "id": "31156643-36a0-4bf0-9ca4-4543283531c6",
                     "name": "Oversize",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "4.40"
                     },
@@ -1383,7 +1851,7 @@
             "dropoff_instructions": "A personal valet will ride with you from our location curbside to your departure airline terminal curbside, in the comfort of your own vehicle.",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=9299&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=9299&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -1543,7 +2011,7 @@
                 "href": "/locations/9299"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:9299&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:9299&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/9299/reviews"
@@ -1604,7 +2072,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -1621,7 +2089,7 @@
     },
     {
       "listing_id": "9216",
-      "quote_id": "d48abac3-07a3-490e-bb73-20638f5d7c7c",
+      "quote_id": "e4b95544-d49e-4d79-8398-78cbf33f546b",
       "location_name": "LAX Parking Curb Express - Valet",
       "address": "8923 S. Sepulveda",
       "city": "Los Angeles",
@@ -1649,10 +2117,10 @@
       "raw_source": {
         "location_id": "9216",
         "type": "offstreet",
-        "start_time": "2026-03-27T05:00:00.000-07:00",
-        "end_time": "2026-03-31T05:00:00.000-07:00",
-        "min_start": "2026-03-27T05:00:00.000-07:00",
-        "max_end": "2026-03-31T05:00:00.000-07:00",
+        "start_time": "2026-03-30T05:00:00.000-07:00",
+        "end_time": "2026-04-03T05:00:00.000-07:00",
+        "min_start": "2026-03-30T05:00:00.000-07:00",
+        "max_end": "2026-04-03T05:00:00.000-07:00",
         "distance": {
           "straight_line": {
             "meters": 1883,
@@ -1661,11 +2129,11 @@
         },
         "purchase_options": [
           {
-            "id": "d48abac3-07a3-490e-bb73-20638f5d7c7c",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "e4b95544-d49e-4d79-8398-78cbf33f546b",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "183.80"
             },
@@ -1678,8 +2146,8 @@
             "pricing_segments": [
               {
                 "id": 747376,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -1790,10 +2258,10 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "56acd1fe-1ff1-486f-b153-8dd2878f615d",
+                    "id": "424a53c0-1410-4665-8e10-57cc26669762",
                     "name": "Standard",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "0.00"
                     },
@@ -1820,10 +2288,10 @@
                     }
                   },
                   {
-                    "id": "0b44893c-39d9-4e6b-a7ee-e31d5b30167c",
+                    "id": "49bcff68-61b2-474a-97e2-55d28a41e244",
                     "name": "Oversize",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "4.40"
                     },
@@ -1857,7 +2325,7 @@
             "dropoff_instructions": "There is no shuttle, instead drive to the location to meet the valet, who will then drop you off at the airport and return to park your car.",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=9216&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=9216&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -1869,11 +2337,11 @@
             }
           },
           {
-            "id": "8a61bf6d-9bcc-4508-be0e-17e65529cd37",
-            "start_time": "2026-03-27T05:00:00.000-07:00",
-            "end_time": "2026-03-31T05:00:00.000-07:00",
-            "min_start": "2026-03-27T05:00:00.000-07:00",
-            "max_end": "2026-03-31T05:00:00.000-07:00",
+            "id": "27333f58-ba0d-43c4-8c4d-9eaca1b2a790",
+            "start_time": "2026-03-30T05:00:00.000-07:00",
+            "end_time": "2026-04-03T05:00:00.000-07:00",
+            "min_start": "2026-03-30T05:00:00.000-07:00",
+            "max_end": "2026-04-03T05:00:00.000-07:00",
             "base_price": {
               "USD": "183.80"
             },
@@ -1886,8 +2354,8 @@
             "pricing_segments": [
               {
                 "id": 747375,
-                "start_time": "2026-03-27T05:00:00.000-07:00",
-                "end_time": "2026-03-31T05:00:00.000-07:00",
+                "start_time": "2026-03-30T05:00:00.000-07:00",
+                "end_time": "2026-04-03T05:00:00.000-07:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -1998,10 +2466,10 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "d94741f2-b931-404b-b628-994d0752b391",
+                    "id": "a90b3e3b-6931-44ad-a61a-6b44ce39213c",
                     "name": "Standard",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "0.00"
                     },
@@ -2028,10 +2496,10 @@
                     }
                   },
                   {
-                    "id": "28f14070-ad25-4b65-8f62-35585c3c55a9",
+                    "id": "94999355-9af3-4300-8651-f689fecf7c54",
                     "name": "Oversize",
-                    "start_time": "2026-03-27T05:00:00.000-07:00",
-                    "end_time": "2026-03-31T05:00:00.000-07:00",
+                    "start_time": "2026-03-30T05:00:00.000-07:00",
+                    "end_time": "2026-04-03T05:00:00.000-07:00",
                     "price": {
                       "USD": "4.40"
                     },
@@ -2065,7 +2533,7 @@
             "dropoff_instructions": "There is no shuttle, instead drive to the location to meet the valet, who will then drop you off at the airport and return to park your car.",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=9216&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=9216&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -2265,7 +2733,7 @@
                 "href": "/locations/9216"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:9216&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:9216&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/9216/reviews"
@@ -2326,7 +2794,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -2343,7 +2811,7 @@
     },
     {
       "listing_id": "63448",
-      "quote_id": "3a9d62ec-7fc0-4732-a025-ce88af1a0eb6",
+      "quote_id": "fb517f2a-88b9-4e3e-834e-6b10f89ca34b",
       "location_name": "Riverview Lot",
       "address": "351 Canal Rd.",
       "city": "Cleveland",
@@ -2371,10 +2839,10 @@
       "raw_source": {
         "location_id": "63448",
         "type": "offstreet",
-        "start_time": "2026-03-27T08:00:00.000-04:00",
-        "end_time": "2026-03-31T08:00:00.000-04:00",
-        "min_start": "2026-03-27T08:00:00.000-04:00",
-        "max_end": "2026-03-31T08:00:00.000-04:00",
+        "start_time": "2026-03-30T08:00:00.000-04:00",
+        "end_time": "2026-04-03T08:00:00.000-04:00",
+        "min_start": "2026-03-30T08:00:00.000-04:00",
+        "max_end": "2026-04-03T08:00:00.000-04:00",
         "distance": {
           "straight_line": {
             "meters": 3316820,
@@ -2383,11 +2851,11 @@
         },
         "purchase_options": [
           {
-            "id": "3a9d62ec-7fc0-4732-a025-ce88af1a0eb6",
-            "start_time": "2026-03-27T08:00:00.000-04:00",
-            "end_time": "2026-03-31T08:00:00.000-04:00",
-            "min_start": "2026-03-27T08:00:00.000-04:00",
-            "max_end": "2026-03-31T08:00:00.000-04:00",
+            "id": "fb517f2a-88b9-4e3e-834e-6b10f89ca34b",
+            "start_time": "2026-03-30T08:00:00.000-04:00",
+            "end_time": "2026-04-03T08:00:00.000-04:00",
+            "min_start": "2026-03-30T08:00:00.000-04:00",
+            "max_end": "2026-04-03T08:00:00.000-04:00",
             "base_price": {
               "USD": "44.00"
             },
@@ -2411,8 +2879,8 @@
             "pricing_segments": [
               {
                 "id": 7295643,
-                "start_time": "2026-03-27T08:00:00.000-04:00",
-                "end_time": "2026-03-31T08:00:00.000-04:00",
+                "start_time": "2026-03-30T08:00:00.000-04:00",
+                "end_time": "2026-04-03T08:00:00.000-04:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -2532,7 +3000,7 @@
             "price_advisory": "None",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=63448&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=63448&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -2692,7 +3160,7 @@
                 "href": "/locations/63448"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:63448&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:63448&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/63448/reviews"
@@ -2753,7 +3221,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -2770,7 +3238,7 @@
     },
     {
       "listing_id": "57299",
-      "quote_id": "edb9b6c1-d41f-4b5d-9b52-fddbf8fadcfa",
+      "quote_id": "a318c3e0-c5bd-4b60-bf47-be648479efd3",
       "location_name": "Public Square Self Park Garage",
       "address": "333 Euclid Ave.",
       "city": "Cleveland",
@@ -2798,10 +3266,10 @@
       "raw_source": {
         "location_id": "57299",
         "type": "offstreet",
-        "start_time": "2026-03-27T08:00:00.000-04:00",
-        "end_time": "2026-03-31T08:00:00.000-04:00",
-        "min_start": "2026-03-27T08:00:00.000-04:00",
-        "max_end": "2026-03-31T08:00:00.000-04:00",
+        "start_time": "2026-03-30T08:00:00.000-04:00",
+        "end_time": "2026-04-03T08:00:00.000-04:00",
+        "min_start": "2026-03-30T08:00:00.000-04:00",
+        "max_end": "2026-04-03T08:00:00.000-04:00",
         "distance": {
           "straight_line": {
             "meters": 3317167,
@@ -2810,11 +3278,11 @@
         },
         "purchase_options": [
           {
-            "id": "edb9b6c1-d41f-4b5d-9b52-fddbf8fadcfa",
-            "start_time": "2026-03-27T08:00:00.000-04:00",
-            "end_time": "2026-03-31T08:00:00.000-04:00",
-            "min_start": "2026-03-27T08:00:00.000-04:00",
-            "max_end": "2026-03-31T08:00:00.000-04:00",
+            "id": "a318c3e0-c5bd-4b60-bf47-be648479efd3",
+            "start_time": "2026-03-30T08:00:00.000-04:00",
+            "end_time": "2026-04-03T08:00:00.000-04:00",
+            "min_start": "2026-03-30T08:00:00.000-04:00",
+            "max_end": "2026-04-03T08:00:00.000-04:00",
             "base_price": {
               "USD": "140.00"
             },
@@ -2838,8 +3306,8 @@
             "pricing_segments": [
               {
                 "id": 5790796,
-                "start_time": "2026-03-27T08:00:00.000-04:00",
-                "end_time": "2026-03-31T08:00:00.000-04:00",
+                "start_time": "2026-03-30T08:00:00.000-04:00",
+                "end_time": "2026-04-03T08:00:00.000-04:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -2959,7 +3427,7 @@
             "price_advisory": "None",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=57299&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=57299&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -3559,7 +4027,7 @@
                 "href": "/locations/57299"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:57299&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:57299&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/57299/reviews"
@@ -3620,434 +4088,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
-              },
-              "site:purchase": null,
-              "curies": [
-                {
-                  "name": "pw",
-                  "href": "https://api.parkwhiz.com/v4/{rel}",
-                  "templated": true
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "listing_id": "54804",
-      "quote_id": "fdcc5155-bcb7-4d8b-84c7-a6a714a49202",
-      "location_name": "777 Rockwell Garage",
-      "address": "777 Rockwell Ave.",
-      "city": "Cleveland",
-      "state": "OH",
-      "postal_code": "44114",
-      "lat": 41.50248571154809,
-      "lng": -81.69025897979736,
-      "currency": "USD",
-      "total_price": 114.48,
-      "base_price": 108.0,
-      "is_bookable": true,
-      "parking_type": null,
-      "shuttle": null,
-      "cancellable": false,
-      "cancellation_code": "cancelling_in_progress_booking",
-      "cancellation_message": "No Cancellation: This booking will start immediately",
-      "pickup_instructions": null,
-      "dropoff_instructions": null,
-      "site_url": null,
-      "phone": null,
-      "capacity": null,
-      "hours": null,
-      "operating_hours": null,
-      "non_bookable_rates": null,
-      "raw_source": {
-        "location_id": "54804",
-        "type": "offstreet",
-        "start_time": "2026-03-27T08:00:00.000-04:00",
-        "end_time": "2026-03-31T08:00:00.000-04:00",
-        "min_start": "2026-03-27T08:00:00.000-04:00",
-        "max_end": "2026-03-31T08:00:00.000-04:00",
-        "distance": {
-          "straight_line": {
-            "meters": 3317209,
-            "feet": 10883233
-          }
-        },
-        "purchase_options": [
-          {
-            "id": "fdcc5155-bcb7-4d8b-84c7-a6a714a49202",
-            "start_time": "2026-03-27T08:00:00.000-04:00",
-            "end_time": "2026-03-31T08:00:00.000-04:00",
-            "min_start": "2026-03-27T08:00:00.000-04:00",
-            "max_end": "2026-03-31T08:00:00.000-04:00",
-            "base_price": {
-              "USD": "108.00"
-            },
-            "price": {
-              "USD": "114.48"
-            },
-            "display": {
-              "price": "price"
-            },
-            "fees": [
-              {
-                "price": {
-                  "USD": "6.48"
-                },
-                "type": "convenience_fee",
-                "label": "Service Fee",
-                "parent_category": "Service Fee",
-                "description": "This fee helps us run our platform, as well as partner with more locations to provide a better parking experience."
-              }
-            ],
-            "pricing_segments": [
-              {
-                "id": 5226517,
-                "start_time": "2026-03-27T08:00:00.000-04:00",
-                "end_time": "2026-03-31T08:00:00.000-04:00",
-                "event": {},
-                "space_availability": {
-                  "status": "available"
-                },
-                "pricing_type": "TransientPricing"
-              }
-            ],
-            "space_availability": {
-              "status": "available"
-            },
-            "validation": {
-              "require_license_plate": false,
-              "display": {
-                "scan_code": "required"
-              },
-              "validation_steps": [
-                {
-                  "instructions": "Pull ticket at gate and park in any spot not marked \"Reserved\"",
-                  "icon": {
-                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77173/original/validation-icons-25.png?1453405554"
-                  }
-                },
-                {
-                  "instructions": "To exit, show attendant parking pass and entry ticket",
-                  "icon": {
-                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77857/original/validation-icons-45.png?1453405928"
-                  }
-                },
-                {
-                  "instructions": "If unattended, press the \"Help\" button on the exit gate",
-                  "icon": {
-                    "path": "https://d2uqqhmijd5j2z.cloudfront.net/files/77197/original/validation-icons-38.png?1453405568"
-                  }
-                }
-              ]
-            },
-            "cancellable_status": {
-              "cancellable_now": false,
-              "code": "cancelling_in_progress_booking",
-              "message": "No Cancellation: This booking will start immediately"
-            },
-            "disclaimers": [
-              ""
-            ],
-            "amenities": [
-              {
-                "name": "Attended",
-                "key": "attended",
-                "description": "Attended",
-                "enabled": true,
-                "visible": true
-              },
-              {
-                "name": "Covered",
-                "key": "indoor",
-                "description": "Covered",
-                "enabled": true,
-                "visible": true
-              },
-              {
-                "name": "Unobstructed",
-                "key": "unobstructed",
-                "description": "Guaranteed to be unobstructed",
-                "enabled": true,
-                "visible": true
-              },
-              {
-                "name": "Security",
-                "key": "security",
-                "description": "Security",
-                "enabled": false,
-                "visible": false
-              },
-              {
-                "name": "Valet",
-                "key": "valet",
-                "description": "Valet",
-                "enabled": false,
-                "visible": false
-              },
-              {
-                "name": "Restrooms",
-                "key": "restrooms",
-                "description": "Restrooms",
-                "enabled": false,
-                "visible": false
-              },
-              {
-                "name": "Reentry Allowed",
-                "key": "reentry",
-                "description": "Reentry allowed",
-                "enabled": false,
-                "visible": true
-              },
-              {
-                "name": "Accessible",
-                "key": "handicap",
-                "description": "Accessible",
-                "enabled": false,
-                "visible": true
-              },
-              {
-                "name": "Electric Car Charging",
-                "key": "vehicle_charging",
-                "description": "Electric Car Charging",
-                "enabled": false,
-                "visible": false
-              },
-              {
-                "name": "Printed Pass",
-                "key": "printed_pass",
-                "description": "Printed pass",
-                "enabled": false,
-                "visible": false
-              }
-            ],
-            "price_advisory": "None",
-            "_links": {
-              "site:purchase": {
-                "href": "/find_and_book/?location_id=54804&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
-              },
-              "curies": [
-                {
-                  "name": "site",
-                  "href": "https://www.parkwhiz.com/{rel}",
-                  "templated": true
-                }
-              ]
-            }
-          }
-        ],
-        "seller_id": 6180,
-        "quote_type": "transient",
-        "name": "",
-        "_embedded": {
-          "pw:location": {
-            "id": "54804",
-            "name": "777 Rockwell Garage",
-            "address1": "777 Rockwell Ave.",
-            "city": "Cleveland",
-            "state": "OH",
-            "country": "US",
-            "currency": "USD",
-            "postal_code": "44114",
-            "entrances": [
-              {
-                "coordinates": [
-                  41.50248571154809,
-                  -81.69025897979736
-                ]
-              }
-            ],
-            "photos": [
-              {
-                "position": 0,
-                "sizes": {
-                  "original": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/original/777_Rockwell_Ave.png?1701345810",
-                    "width": 800,
-                    "height": 600
-                  },
-                  "logo": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/logo/777_Rockwell_Ave.png?1701345810",
-                    "width": 133,
-                    "height": 100
-                  },
-                  "gallery": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/gallery/777_Rockwell_Ave.png?1701345811",
-                    "width": 800,
-                    "height": 600
-                  },
-                  "gallery_thumb": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/gallery_thumb/777_Rockwell_Ave.png?1701345811",
-                    "width": 100,
-                    "height": 75
-                  },
-                  "search_thumb": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/search_thumb/777_Rockwell_Ave.png?1701345811",
-                    "width": 130,
-                    "height": 130
-                  },
-                  "res_ticket": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/res_ticket/777_Rockwell_Ave.png?1701345811",
-                    "width": 300,
-                    "height": 225
-                  },
-                  "hub_frontpage": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845741/hub_frontpage/777_Rockwell_Ave.png?1701345811",
-                    "width": 300,
-                    "height": 300
-                  }
-                }
-              },
-              {
-                "position": 1,
-                "sizes": {
-                  "original": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/original/777_Rockwell_Ave1.png?1701345807",
-                    "width": 800,
-                    "height": 600
-                  },
-                  "logo": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/logo/777_Rockwell_Ave1.png?1701345807",
-                    "width": 133,
-                    "height": 100
-                  },
-                  "gallery": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/gallery/777_Rockwell_Ave1.png?1701345807",
-                    "width": 800,
-                    "height": 600
-                  },
-                  "gallery_thumb": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/gallery_thumb/777_Rockwell_Ave1.png?1701345807",
-                    "width": 100,
-                    "height": 75
-                  },
-                  "search_thumb": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/search_thumb/777_Rockwell_Ave1.png?1701345807",
-                    "width": 130,
-                    "height": 130
-                  },
-                  "res_ticket": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/res_ticket/777_Rockwell_Ave1.png?1701345807",
-                    "width": 300,
-                    "height": 225
-                  },
-                  "hub_frontpage": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845735/hub_frontpage/777_Rockwell_Ave1.png?1701345808",
-                    "width": 300,
-                    "height": 300
-                  }
-                }
-              },
-              {
-                "position": 2,
-                "sizes": {
-                  "original": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/original/atat.jpg?1701345890",
-                    "width": 800,
-                    "height": 600
-                  },
-                  "logo": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/logo/atat.jpg?1701345890",
-                    "width": 133,
-                    "height": 100
-                  },
-                  "gallery": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/gallery/atat.jpg?1701345891",
-                    "width": 800,
-                    "height": 600
-                  },
-                  "gallery_thumb": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/gallery_thumb/atat.jpg?1701345890",
-                    "width": 100,
-                    "height": 75
-                  },
-                  "search_thumb": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/search_thumb/atat.jpg?1701345890",
-                    "width": 130,
-                    "height": 130
-                  },
-                  "res_ticket": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/res_ticket/atat.jpg?1701345891",
-                    "width": 300,
-                    "height": 225
-                  },
-                  "hub_frontpage": {
-                    "URL": "https://d2uqqhmijd5j2z.cloudfront.net/files/845747/hub_frontpage/atat.jpg?1701345891",
-                    "width": 300,
-                    "height": 300
-                  }
-                }
-              }
-            ],
-            "_links": {
-              "self": {
-                "href": "/locations/54804"
-              },
-              "pw:quotes": {
-                "href": "/quotes?q=location_id:54804&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
-              },
-              "pw:reviews": {
-                "href": "/locations/54804/reviews"
-              },
-              "site:purchase": null,
-              "curies": [
-                {
-                  "name": "pw",
-                  "href": "https://api.parkwhiz.com/v4/{rel}",
-                  "templated": true
-                }
-              ]
-            }
-          },
-          "pw:venue": {
-            "id": 107,
-            "name": "Rocket Arena",
-            "address1": "1 Center Ct.",
-            "city": "Cleveland",
-            "state": "OH",
-            "postal_code": "44115",
-            "coordinates": [
-              41.49647969999999,
-              -81.6882129
-            ],
-            "timezone": "America/New_York",
-            "description": "<p>No NBA team is the same, due to their skill, their reputation or other feature. No NBA team has exactly the same advantage: some excel at scoring, others focus on defense, while unfortunately for the Cleveland Cavs, some are just good at losing. The Cleveland Cavaliers have been in the latter category for most of their history, and only time will tell if they improve. Either way, finding Cleveland Cavaliers parking spaces at Rocket Arena will likely be a challenge on game day, so it's best to book Cavs parking ahead of time.</p>\r\n\r\n<p>While the Cavs have their issues, the former Quicken Loans Arena is a spacious stadium, with 20,562 seats, the fourth-largest in the NBA. In addition to hosting the Cleveland Cavaliers, the venue's also home to several minor league teams, as well as concerts, wrestling and NCAA basketball games. Past concert guests include Rush, Bruce Springsteen, Diana Ross and the Dixie Chicks. As the Cavs work tirelessly toward winning the NBA Finals, the one constant will be that finding Cavs parking spaces will continue to be difficult, so it is advisable to book your Rocket Arena parking spaces ahead of time with ParkWhiz.</p>\r\n\r\n<p>The Cleveland Cavaliers have a troubled history, including losing streaks, odd trades and eccentric managers. The team had some good times despite these issues, including 18 playoff seasons, three division titles (1976, 2009-'10) and a conference championship. But as a whole, NBA history hasn't been kind to <a href=\"http://www.parkwhiz.com/p/cleveland-parking/\">Cleveland</a>. For example, the Cavs had a key role in the 1989 NBA Playoffs and the legacy of the Chicago Bulls' Michael Jordan, providing a stepping stone for him to showcase his skill. For instance, in the fifth game, Michael Jordan hit \"The Shot\" at the buzzer to send the Cavs home. The Cavs were fortuitous enough to draft Lebron James in 2003, but to this day feel a stinging betrayal due to his move to Miami in 2010 as a free agent. Finding Cleveland Cavaliers parking can be difficult, so booking Cleveland basketball parking spots in advance with ParkWhiz is the best solution.</p>\r\n\r\n<p>ParkWhiz is easy; all you need to do is find the game that you want to see, book your Cleveland Cavs basketball parking spot and print out your ParkWhiz parking pass. Once that's done, you can relax and enjoy the game, rather than trying to find parking at Rocket Arena.</p>\r\n\r\n<p><a href=\"https://www.parkwhiz.com/p/cleveland-parking/\">Cleveland parking</a> at other popular destinations:</p>\r\n\r\n<ul>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | FirstEnergy Stadium\" href=\"https://www.parkwhiz.com/firstenergy-stadium-parking/\">FirstEnergy Stadium</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | Progressive Field\" href=\"https://www.parkwhiz.com/progressive-field-parking/\">Progressive Field</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | House of Blues (Cleveland)\" href=\"https://www.parkwhiz.com/house-of-blues-cleveland-parking/\">House of Blues (Cleveland)</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | Hanna Theatre\" href=\"https://www.parkwhiz.com/hanna-theatre-parking/\">Hanna Theatre</a></li>\r\n\t<li><a class=\"gaq-trackEvent\" data-label=\"Cleveland | Playhouse Square\" href=\"https://www.parkwhiz.com/playhouse-square-parking/\">Playhouse Square</a></li>\r\n</ul>\r\n\r\nPhoto by Chris Metcalf [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons",
-            "venue_type": "Sports",
-            "website": "https://www.rocketarena.com/",
-            "enhanced_airport": false,
-            "outline": {
-              "type": "Polygon",
-              "coordinates": [
-                [
-                  -81.68934,
-                  41.49566
-                ],
-                [
-                  -81.68934,
-                  41.49746
-                ],
-                [
-                  -81.68694,
-                  41.49746
-                ],
-                [
-                  -81.68694,
-                  41.49566
-                ],
-                [
-                  -81.68934,
-                  41.49566
-                ]
-              ]
-            },
-            "_links": {
-              "self": {
-                "href": "/venues/107"
-              },
-              "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -4064,7 +4105,7 @@
     },
     {
       "listing_id": "59019",
-      "quote_id": "ceb4d88d-fa4b-489e-8534-2a3839406423",
+      "quote_id": "8c93959e-cc6e-4aa1-8bef-93538b9cf43a",
       "location_name": "The Fidelity Hotel Garage - Valet",
       "address": "1940 E. 6th St.",
       "city": "Cleveland",
@@ -4092,10 +4133,10 @@
       "raw_source": {
         "location_id": "59019",
         "type": "offstreet",
-        "start_time": "2026-03-27T08:00:00.000-04:00",
-        "end_time": "2026-03-31T08:00:00.000-04:00",
-        "min_start": "2026-03-27T08:00:00.000-04:00",
-        "max_end": "2026-03-31T08:00:00.000-04:00",
+        "start_time": "2026-03-30T08:00:00.000-04:00",
+        "end_time": "2026-04-03T08:00:00.000-04:00",
+        "min_start": "2026-03-30T08:00:00.000-04:00",
+        "max_end": "2026-04-03T08:00:00.000-04:00",
         "distance": {
           "straight_line": {
             "meters": 3317254,
@@ -4104,11 +4145,11 @@
         },
         "purchase_options": [
           {
-            "id": "ceb4d88d-fa4b-489e-8534-2a3839406423",
-            "start_time": "2026-03-27T08:00:00.000-04:00",
-            "end_time": "2026-03-31T08:00:00.000-04:00",
-            "min_start": "2026-03-27T08:00:00.000-04:00",
-            "max_end": "2026-03-31T08:00:00.000-04:00",
+            "id": "8c93959e-cc6e-4aa1-8bef-93538b9cf43a",
+            "start_time": "2026-03-30T08:00:00.000-04:00",
+            "end_time": "2026-04-03T08:00:00.000-04:00",
+            "min_start": "2026-03-30T08:00:00.000-04:00",
+            "max_end": "2026-04-03T08:00:00.000-04:00",
             "base_price": {
               "USD": "228.00"
             },
@@ -4132,8 +4173,8 @@
             "pricing_segments": [
               {
                 "id": 6176738,
-                "start_time": "2026-03-27T08:00:00.000-04:00",
-                "end_time": "2026-03-31T08:00:00.000-04:00",
+                "start_time": "2026-03-30T08:00:00.000-04:00",
+                "end_time": "2026-04-03T08:00:00.000-04:00",
                 "event": {},
                 "space_availability": {
                   "status": "limited",
@@ -4144,7 +4185,7 @@
             ],
             "space_availability": {
               "status": "limited",
-              "spaces_remaining": 1
+              "spaces_remaining": 3
             },
             "validation": {
               "require_license_plate": false,
@@ -4245,10 +4286,10 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "43f17be9-89e0-4584-968b-d6a037c9ee93",
+                    "id": "03595d5b-e45c-425b-a3a6-378ec38a0db9",
                     "name": "Standard",
-                    "start_time": "2026-03-27T08:00:00.000-04:00",
-                    "end_time": "2026-03-31T08:00:00.000-04:00",
+                    "start_time": "2026-03-30T08:00:00.000-04:00",
+                    "end_time": "2026-04-03T08:00:00.000-04:00",
                     "price": {
                       "USD": "0.00"
                     },
@@ -4273,10 +4314,10 @@
                     }
                   },
                   {
-                    "id": "71f1dc4a-61f8-4483-aacd-9ef6785d8ace",
+                    "id": "5f93d82e-82cb-4c2a-8b96-f68966bcec90",
                     "name": "Oversize",
-                    "start_time": "2026-03-27T08:00:00.000-04:00",
-                    "end_time": "2026-03-31T08:00:00.000-04:00",
+                    "start_time": "2026-03-30T08:00:00.000-04:00",
+                    "end_time": "2026-04-03T08:00:00.000-04:00",
                     "price": {
                       "USD": "80.00"
                     },
@@ -4310,7 +4351,7 @@
             "price_advisory": "None",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=59019&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=59019&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -4470,7 +4511,7 @@
                 "href": "/locations/59019"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:59019&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:59019&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/59019/reviews"
@@ -4531,7 +4572,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [
@@ -4548,7 +4589,7 @@
     },
     {
       "listing_id": "55192",
-      "quote_id": "6fae2c0a-80cb-4424-856b-73223c6e34c3",
+      "quote_id": "b9a6c042-e17e-415d-a8b7-802f8f3e949c",
       "location_name": "Kimpton Schofield - Valet Kiosk",
       "address": "2000 E. 9th St.",
       "city": "Cleveland",
@@ -4576,10 +4617,10 @@
       "raw_source": {
         "location_id": "55192",
         "type": "offstreet",
-        "start_time": "2026-03-27T08:00:00.000-04:00",
-        "end_time": "2026-03-31T08:00:00.000-04:00",
-        "min_start": "2026-03-27T08:00:00.000-04:00",
-        "max_end": "2026-03-31T08:00:00.000-04:00",
+        "start_time": "2026-03-30T08:00:00.000-04:00",
+        "end_time": "2026-04-03T08:00:00.000-04:00",
+        "min_start": "2026-03-30T08:00:00.000-04:00",
+        "max_end": "2026-04-03T08:00:00.000-04:00",
         "distance": {
           "straight_line": {
             "meters": 3317497,
@@ -4588,11 +4629,11 @@
         },
         "purchase_options": [
           {
-            "id": "6fae2c0a-80cb-4424-856b-73223c6e34c3",
-            "start_time": "2026-03-27T08:00:00.000-04:00",
-            "end_time": "2026-03-31T08:00:00.000-04:00",
-            "min_start": "2026-03-27T08:00:00.000-04:00",
-            "max_end": "2026-03-31T08:00:00.000-04:00",
+            "id": "b9a6c042-e17e-415d-a8b7-802f8f3e949c",
+            "start_time": "2026-03-30T08:00:00.000-04:00",
+            "end_time": "2026-04-03T08:00:00.000-04:00",
+            "min_start": "2026-03-30T08:00:00.000-04:00",
+            "max_end": "2026-04-03T08:00:00.000-04:00",
             "base_price": {
               "USD": "200.00"
             },
@@ -4616,8 +4657,8 @@
             "pricing_segments": [
               {
                 "id": 6217014,
-                "start_time": "2026-03-27T08:00:00.000-04:00",
-                "end_time": "2026-03-31T08:00:00.000-04:00",
+                "start_time": "2026-03-30T08:00:00.000-04:00",
+                "end_time": "2026-04-03T08:00:00.000-04:00",
                 "event": {},
                 "space_availability": {
                   "status": "available"
@@ -4740,10 +4781,10 @@
                 "required": true,
                 "options": [
                   {
-                    "id": "ea8d3cef-781f-45f0-83c6-2f870e5f7dd1",
+                    "id": "2330101c-0a31-42fe-bc48-a2598e106442",
                     "name": "Standard",
-                    "start_time": "2026-03-27T08:00:00.000-04:00",
-                    "end_time": "2026-03-31T08:00:00.000-04:00",
+                    "start_time": "2026-03-30T08:00:00.000-04:00",
+                    "end_time": "2026-04-03T08:00:00.000-04:00",
                     "price": {
                       "USD": "0.00"
                     },
@@ -4769,10 +4810,10 @@
                     }
                   },
                   {
-                    "id": "712f5f75-46b8-4d68-92c5-53b7899f0af1",
+                    "id": "ffbe3d7d-d1e5-4920-888d-4b74f6eb0c15",
                     "name": "Oversize",
-                    "start_time": "2026-03-27T08:00:00.000-04:00",
-                    "end_time": "2026-03-31T08:00:00.000-04:00",
+                    "start_time": "2026-03-30T08:00:00.000-04:00",
+                    "end_time": "2026-04-03T08:00:00.000-04:00",
                     "price": {
                       "USD": "360.00"
                     },
@@ -4805,7 +4846,7 @@
             "price_advisory": "None",
             "_links": {
               "site:purchase": {
-                "href": "/find_and_book/?location_id=55192&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/find_and_book/?location_id=55192&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "curies": [
                 {
@@ -5005,7 +5046,7 @@
                 "href": "/locations/55192"
               },
               "pw:quotes": {
-                "href": "/quotes?q=location_id:55192&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=location_id:55192&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "pw:reviews": {
                 "href": "/locations/55192/reviews"
@@ -5066,7 +5107,7 @@
                 "href": "/venues/107"
               },
               "pw:quotes": {
-                "href": "/quotes?q=venue_id:107&start_time=2026-03-27T12:00:00Z&end_time=2026-03-31T12:00:00Z"
+                "href": "/quotes?q=venue_id:107&start_time=2026-03-30T12:00:00Z&end_time=2026-04-03T12:00:00Z"
               },
               "site:purchase": null,
               "curies": [

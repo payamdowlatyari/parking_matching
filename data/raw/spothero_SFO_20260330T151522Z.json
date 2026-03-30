@@ -1,11 +1,755 @@
 {
   "provider": "spothero",
   "airport_code": "SFO",
-  "start_dt": "2026-03-27T12:00:00Z",
-  "end_dt": "2026-03-31T12:00:00Z",
-  "fetched_at_utc": "20260328T165654Z",
-  "record_count": 18,
+  "start_dt": "2026-03-30T12:00:00Z",
+  "end_dt": "2026-04-03T12:00:00Z",
+  "fetched_at_utc": "20260330T151522Z",
+  "record_count": 22,
   "records": [
+    {
+      "listing_id": "107202",
+      "quote_id": "1100157191",
+      "location_name": "The Westin SF Airport - Uncovered Self Park",
+      "address": "1 Old Bayshore Highway",
+      "city": "Millbrae",
+      "state": "CA",
+      "postal_code": "94030",
+      "lat": 37.60332499999999,
+      "lng": -122.37605999999998,
+      "currency": "USD",
+      "total_price": 69.92,
+      "is_bookable": true,
+      "display_price": 69.92,
+      "distance_to_airport_meters": 2385.038912964075,
+      "shuttle": true,
+      "shuttle_type": "scheduled_shuttle",
+      "shuttle_frequency_minutes": 15,
+      "shuttle_frequency_slow_minutes": 20,
+      "shuttle_duration_minutes": 5,
+      "cancellable": true,
+      "review_score": 4.6,
+      "review_count": 243,
+      "inventory_status": true,
+      "available_spaces": 239,
+      "raw_source": {
+        "distance": {
+          "linear_meters": 2385.038912964075
+        },
+        "vehicle": null,
+        "rates": [
+          {
+            "airport": {
+              "tag": null,
+              "comparisons": null,
+              "redemption_type": "self",
+              "parking_pass": {
+                "type": "operator_scan",
+                "display_name": "Operator Scan Print/Mobile"
+              },
+              "amenities": [
+                {
+                  "type": "self_park",
+                  "display_name": "Self Park",
+                  "description": "Users may park their own vehicles at this facility."
+                },
+                {
+                  "type": "paved",
+                  "display_name": "Lot - Uncovered",
+                  "description": "The surface of the facility is solid, such as asphalt or concrete."
+                },
+                {
+                  "type": "shuttle",
+                  "display_name": "Airport Shuttle",
+                  "description": "The facility has a shuttle available to nearby destinations, like an airport."
+                },
+                {
+                  "type": "wheelchair_accessible",
+                  "display_name": "Wheelchair Accessible",
+                  "description": "The facility is wheelchair accessible."
+                }
+              ],
+              "lowest_daily_rate": {
+                "currency_code": "USD",
+                "value": 0
+              }
+            },
+            "quote": {
+              "meta": {
+                "quote_mac": "1100157191",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
+                "partner_id": "",
+                "quote_token": ""
+              },
+              "total_price": {
+                "currency_code": "USD",
+                "value": 6992
+              },
+              "order": [
+                {
+                  "meta": {},
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
+                  "total_price": {
+                    "currency_code": "USD",
+                    "value": 6992
+                  },
+                  "facility_id": "107202",
+                  "rate_id": "1100157191",
+                  "items": [
+                    {
+                      "type": "rental",
+                      "short_description": "$15.23 x 4 days",
+                      "full_description": "",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 6092
+                      }
+                    },
+                    {
+                      "type": "optimization_fee",
+                      "short_description": "Additional Fees",
+                      "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 500
+                      }
+                    },
+                    {
+                      "type": "blanket_fee",
+                      "short_description": "Service Fee",
+                      "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 400
+                      }
+                    }
+                  ]
+                }
+              ],
+              "items": [
+                {
+                  "type": "rental",
+                  "short_description": "$15.23 x 4 days",
+                  "full_description": "",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 6092
+                  }
+                },
+                {
+                  "type": "optimization_fee",
+                  "short_description": "Additional Fees",
+                  "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 500
+                  }
+                },
+                {
+                  "type": "blanket_fee",
+                  "short_description": "Service Fee",
+                  "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 400
+                  }
+                }
+              ],
+              "advertised_price": {
+                "currency_code": "USD",
+                "value": 1523
+              }
+            }
+          }
+        ],
+        "availability": {
+          "unavailable_reasons": [],
+          "available_spaces": 239,
+          "available": true
+        },
+        "facility": {
+          "airport": {
+            "logo": {
+              "id": "206266",
+              "url": "https://res.cloudinary.com/spothero/image/upload/w_200,h_152,q_50,x_100,y_76,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1737643625/reuk5lyywr1wqifzlhjo.png",
+              "alt_text": ""
+            },
+            "redemption_instructions": {
+              "arrival": [
+                {
+                  "id": "110425",
+                  "illustration": {
+                    "id": "4",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636373/fosxlhppgwqxkrs1ijbx.png",
+                    "alt_text": "Pull Ticket"
+                  },
+                  "text": "<p>If your parking pass says to scan it at the gate, please do. Otherwise, take a ticket at the gate to enter then go inside the hotel lobby to validate your reservation with a staff member.</p>"
+                },
+                {
+                  "id": "110426",
+                  "illustration": {
+                    "id": "7",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636122/b2omz3upgcpjn44cyhjb.png",
+                    "alt_text": "Park Where"
+                  },
+                  "text": "<p>Park in any open space not marked as \"Reserved\".</p>"
+                },
+                {
+                  "id": "110427",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "<p>After securing your vehicle &amp; belongings, head to the shuttle pick up area and board the shuttle to&nbsp;San Francisco Airport.&nbsp;</p>"
+                }
+              ],
+              "departure": [
+                {
+                  "id": "110428",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "<p>Upon your return to SFO, board the shuttle in the designated area back to the hotel.&nbsp;</p>\n<p>Pick-ups are at the Departures Level at each terminal (Hotel Courtesy Shuttle Bus Stop). On-call shuttles are available by request between 1:00 AM - 3:30 AM by calling the hotel directly at 650-443-5500 when you are ready for pick up.</p>"
+                },
+                {
+                  "id": "110429",
+                  "illustration": {
+                    "id": "9",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636043/rc6uuzecbw3nfth0hlky.png",
+                    "alt_text": "Pass Check Attendant"
+                  },
+                  "text": "<p>If you scanned your parking reservation to enter, you may scan it again when exiting. If you pulled a ticket to enter, please see a hotel staff member for validation &amp; exit instructions.</p>"
+                },
+                {
+                  "id": "110430",
+                  "illustration": {
+                    "id": "8",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636065/hodnezajkpxuiisu0i4e.png",
+                    "alt_text": "See Ya (Wave)"
+                  },
+                  "text": "<p>Simply leave when you're ready to go!</p>"
+                }
+              ]
+            },
+            "transportation": {
+              "type": "scheduled_shuttle",
+              "contact_phone_number": "+1 650-692-3500",
+              "schedule": {
+                "fast_frequency": 15,
+                "slow_frequency": 20,
+                "duration": 5
+              },
+              "images": [
+                {
+                  "id": "206270",
+                  "url": "https://res.cloudinary.com/spothero/image/upload/w_1208,h_888,q_50,x_604,y_444,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1737644035/hllgmuefdpvwimizfyni.png",
+                  "alt_text": ""
+                }
+              ],
+              "hours_of_operation": {
+                "periods": [],
+                "text": [
+                  "This spot's shuttle operates 24/7."
+                ],
+                "always_open": true
+              }
+            }
+          },
+          "common": {
+            "vehicle_policy": {
+              "oversize_vehicle_policy": null,
+              "dimension_restrictions": null
+            },
+            "clearance_inches": null,
+            "status": "on_sales_allowed",
+            "title": "The Westin SF Airport - Uncovered Self Park",
+            "slug": "1-old-bayshore-hwy-3",
+            "operator_display_name": "Parq Inc/Ocra Parking",
+            "id": "107202",
+            "parent_facility_id": "",
+            "description": "",
+            "barcode_type": "qrcode",
+            "facility_type": "lot",
+            "navigation_tip": "Enter this location at 1 Old Bayshore Hwy. This is the The Westin SF Airport - Uncovered Self Park lot. It is located on the South  side of Old Bayshore Hwy. between E Millbrae Ave. and Cowan Rd.",
+            "images": [
+              {
+                "id": "208863",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_6905,h_5179,q_50,x_3452,y_2589,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1739310441/wxlr603ymcxrla9oaucq.jpg",
+                "alt_text": ""
+              },
+              {
+                "id": "208862",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_8056,h_6048,q_50,x_4028,y_3024,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1739310437/fvnlbp2gxbmhf8njzerd.jpg",
+                "alt_text": ""
+              },
+              {
+                "id": "208864",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_5798,h_4561,q_50,x_2899,y_2280,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1739310447/lqel27ozzf4nqqvuqnvn.jpg",
+                "alt_text": ""
+              },
+              {
+                "id": "251700",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_837,h_471,q_50,x_418,y_235,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1752857248/cyozufy6l54zix0tsfxv.jpg",
+                "alt_text": ""
+              }
+            ],
+            "supported_fee_types": [
+              "blanket_fee",
+              "monthly_fee"
+            ],
+            "parking_types": [],
+            "visual_flags": [],
+            "fees": [],
+            "addresses": [
+              {
+                "id": "129637",
+                "city": "Millbrae",
+                "state": "CA",
+                "street_address": "1 Old Bayshore Highway",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94030",
+                "types": [
+                  "physical"
+                ],
+                "latitude": 37.60332499999999,
+                "longitude": -122.37605999999998
+              },
+              {
+                "id": "129638",
+                "city": "Millbrae",
+                "state": "CA",
+                "street_address": "1 Old Bayshore Highway",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94030",
+                "types": [
+                  "search",
+                  "walking_distance",
+                  "default_vehicle_entrance"
+                ],
+                "latitude": 37.6041,
+                "longitude": -122.37603299999998
+              }
+            ],
+            "restrictions": [
+              "Parkers are welcome to stop inside and visit the on-site Starbucks coffee shop!",
+              "The shuttle runs every 15 minutes from 4:00 AM\u201312:30 AM, and upon request outside these hours."
+            ],
+            "alias_facility_ids": [],
+            "hours_of_operation": {
+              "periods": [],
+              "text": [
+                "This facility is open 24/7."
+              ],
+              "always_open": true
+            },
+            "cancellation": {
+              "allowed_by_customer": true,
+              "allowed_by_spothero_customer_service": true,
+              "minutes": 0
+            },
+            "rating": {
+              "average": 4.6,
+              "count": 243,
+              "one_star_count": 4,
+              "two_star_count": 2,
+              "three_star_count": 1,
+              "four_star_count": 5,
+              "five_star_count": 70
+            },
+            "inventory": {
+              "default_quantity": 250
+            },
+            "operator_id": 21219319,
+            "company_id": 18909,
+            "requirements": {
+              "printout": false,
+              "license_plate": true,
+              "phone_number": true
+            },
+            "oversize_fees_charged_onsite": false,
+            "allow_updating_reservation_after_entry": true,
+            "require_credit_card": true,
+            "is_scan_to_pay": false,
+            "is_part_of_loyalty_program": false,
+            "events": {
+              "allow_reservations_outside_hours_of_operations": false
+            },
+            "reservation_extension_enabled": true
+          }
+        }
+      }
+    },
+    {
+      "listing_id": "104539",
+      "quote_id": "1100157185",
+      "location_name": "Aloft Hotel San Francisco Airport - Uncovered Self Park",
+      "address": "401 East Millbrae Avenue",
+      "city": "Millbrae",
+      "state": "CA",
+      "postal_code": "94030",
+      "lat": 37.602777,
+      "lng": -122.37798499999997,
+      "currency": "USD",
+      "total_price": 65.96,
+      "is_bookable": true,
+      "display_price": 65.96,
+      "distance_to_airport_meters": 2519.423958337456,
+      "shuttle": true,
+      "shuttle_type": "scheduled_shuttle",
+      "shuttle_frequency_minutes": 15,
+      "shuttle_frequency_slow_minutes": 20,
+      "shuttle_duration_minutes": 5,
+      "cancellable": true,
+      "review_score": 4.8,
+      "review_count": 1403,
+      "inventory_status": true,
+      "available_spaces": 398,
+      "raw_source": {
+        "distance": {
+          "linear_meters": 2519.423958337456
+        },
+        "vehicle": null,
+        "rates": [
+          {
+            "airport": {
+              "tag": {
+                "text": "Highly Rated",
+                "sort_order": 0
+              },
+              "comparisons": null,
+              "redemption_type": "self",
+              "parking_pass": {
+                "type": "operator_scan",
+                "display_name": "Operator Scan Print/Mobile"
+              },
+              "amenities": [
+                {
+                  "type": "self_park",
+                  "display_name": "Self Park",
+                  "description": "Users may park their own vehicles at this facility."
+                },
+                {
+                  "type": "paved",
+                  "display_name": "Lot - Uncovered",
+                  "description": "The surface of the facility is solid, such as asphalt or concrete."
+                },
+                {
+                  "type": "shuttle",
+                  "display_name": "Airport Shuttle",
+                  "description": "The facility has a shuttle available to nearby destinations, like an airport."
+                },
+                {
+                  "type": "wheelchair_accessible",
+                  "display_name": "Wheelchair Accessible",
+                  "description": "The facility is wheelchair accessible."
+                }
+              ],
+              "lowest_daily_rate": {
+                "currency_code": "USD",
+                "value": 0
+              }
+            },
+            "quote": {
+              "meta": {
+                "quote_mac": "1100157185",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
+                "partner_id": "",
+                "quote_token": ""
+              },
+              "total_price": {
+                "currency_code": "USD",
+                "value": 6596
+              },
+              "order": [
+                {
+                  "meta": {},
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
+                  "total_price": {
+                    "currency_code": "USD",
+                    "value": 6596
+                  },
+                  "facility_id": "104539",
+                  "rate_id": "1100157185",
+                  "items": [
+                    {
+                      "type": "rental",
+                      "short_description": "$14.24 x 4 days",
+                      "full_description": "",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 5696
+                      }
+                    },
+                    {
+                      "type": "optimization_fee",
+                      "short_description": "Additional Fees",
+                      "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 500
+                      }
+                    },
+                    {
+                      "type": "blanket_fee",
+                      "short_description": "Service Fee",
+                      "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 400
+                      }
+                    }
+                  ]
+                }
+              ],
+              "items": [
+                {
+                  "type": "rental",
+                  "short_description": "$14.24 x 4 days",
+                  "full_description": "",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 5696
+                  }
+                },
+                {
+                  "type": "optimization_fee",
+                  "short_description": "Additional Fees",
+                  "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 500
+                  }
+                },
+                {
+                  "type": "blanket_fee",
+                  "short_description": "Service Fee",
+                  "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 400
+                  }
+                }
+              ],
+              "advertised_price": {
+                "currency_code": "USD",
+                "value": 1424
+              }
+            }
+          }
+        ],
+        "availability": {
+          "unavailable_reasons": [],
+          "available_spaces": 398,
+          "available": true
+        },
+        "facility": {
+          "airport": {
+            "logo": {
+              "id": "206269",
+              "url": "https://res.cloudinary.com/spothero/image/upload/w_158,h_130,q_50,x_79,y_65,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1737643929/jflskbqxfsssgj57nyk3.png",
+              "alt_text": ""
+            },
+            "redemption_instructions": {
+              "arrival": [
+                {
+                  "id": "107848",
+                  "illustration": {
+                    "id": "4",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636373/fosxlhppgwqxkrs1ijbx.png",
+                    "alt_text": "Pull Ticket"
+                  },
+                  "text": "<p>If your parking pass says to scan it at the gate, please do. Otherwise, take a ticket at the gate to enter then go inside the hotel lobby to validate your reservation with a staff member.</p>"
+                },
+                {
+                  "id": "107849",
+                  "illustration": {
+                    "id": "7",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636122/b2omz3upgcpjn44cyhjb.png",
+                    "alt_text": "Park Where"
+                  },
+                  "text": "<p>You may park in any open space not marked as \"Reserved\".&nbsp;</p>"
+                },
+                {
+                  "id": "107850",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "<p>After securing your vehicle &amp; belongings, you may board the shuttle for a 5-minute drive to SFO.</p>"
+                }
+              ],
+              "departure": [
+                {
+                  "id": "107851",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "<p>Pick-ups are at the Departures Level at each terminal (Hotel Courtesy Shuttle Bus Stop). On-call shuttles are available by request between 1:00 AM - 3:30 AM by calling the hotel directly at&nbsp;650-443-5500 when you are ready for pick up.</p>"
+                },
+                {
+                  "id": "107852",
+                  "illustration": {
+                    "id": "6",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636215/egujzas3s3lavcix5mit.png",
+                    "alt_text": "Scan QR"
+                  },
+                  "text": "<p>If you scanned your parking reservation to enter, you may scan it again when exiting. If you pulled a ticket to enter, please see a hotel staff member for validation &amp; exit instructions.</p>"
+                }
+              ]
+            },
+            "transportation": {
+              "type": "scheduled_shuttle",
+              "contact_phone_number": "",
+              "schedule": {
+                "fast_frequency": 15,
+                "slow_frequency": 20,
+                "duration": 5
+              },
+              "images": [],
+              "hours_of_operation": {
+                "periods": [],
+                "text": [
+                  "This spot's shuttle operates 24/7."
+                ],
+                "always_open": true
+              }
+            }
+          },
+          "common": {
+            "vehicle_policy": {
+              "oversize_vehicle_policy": null,
+              "dimension_restrictions": null
+            },
+            "clearance_inches": null,
+            "status": "on_sales_allowed",
+            "title": "Aloft Hotel San Francisco Airport - Uncovered Self Park",
+            "slug": "401-e-millbrae-ave-4",
+            "operator_display_name": "Parq Inc/Ocra Parking",
+            "id": "104539",
+            "parent_facility_id": "",
+            "description": "",
+            "barcode_type": "qrcode",
+            "facility_type": "lot",
+            "navigation_tip": "Enter this location at 401 E Millbrae Ave. This is the entrance address for the Aloft Hotel San Francisco Airport lot, operated by  Parq Inc. It is located on the southeast side of E Millbrae Ave. between Bayshore Hwy. and S McDonnell Rd./Old Bayshore Hwy. You will be parking in the hotel lot.",
+            "images": [
+              {
+                "id": "208159",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_3452,h_2573,q_50,x_1726,y_1286,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1738789926/tewypdf2ocgemisyzty7.jpg",
+                "alt_text": ""
+              },
+              {
+                "id": "208160",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_7002,h_5125,q_50,x_3501,y_2562,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1738789938/vcrvfwezjsyhtvuhtcmy.jpg",
+                "alt_text": ""
+              },
+              {
+                "id": "208161",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_8064,h_5832,q_50,x_4032,y_2916,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1738789938/rqscxo9lf3ppj3efcykp.jpg",
+                "alt_text": ""
+              },
+              {
+                "id": "201181",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_514,h_456,q_50,x_257,y_228,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1732307080/kkppmdkx6kracohiw2ic.png",
+                "alt_text": ""
+              }
+            ],
+            "supported_fee_types": [
+              "blanket_fee",
+              "monthly_fee"
+            ],
+            "parking_types": [],
+            "visual_flags": [],
+            "fees": [],
+            "addresses": [
+              {
+                "id": "127718",
+                "city": "Millbrae",
+                "state": "CA",
+                "street_address": "401 East Millbrae Avenue",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94030",
+                "types": [
+                  "physical"
+                ],
+                "latitude": 37.602777,
+                "longitude": -122.37798499999997
+              },
+              {
+                "id": "127719",
+                "city": "Millbrae",
+                "state": "CA",
+                "street_address": "401 East Millbrae Avenue",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94030",
+                "types": [
+                  "search",
+                  "walking_distance",
+                  "default_vehicle_entrance"
+                ],
+                "latitude": 37.602777,
+                "longitude": -122.37798499999997
+              }
+            ],
+            "restrictions": [
+              "If your parking pass says to scan it at the gate, please do. Otherwise, take a ticket at the gate to enter then go inside the hotel lobby to validate your reservation with a staff member.",
+              "The shuttle runs every 15 minutes from 4:00 AM\u201312:30 AM, and upon request outside these hours."
+            ],
+            "alias_facility_ids": [],
+            "hours_of_operation": {
+              "periods": [],
+              "text": [
+                "This facility is open 24/7."
+              ],
+              "always_open": true
+            },
+            "cancellation": {
+              "allowed_by_customer": true,
+              "allowed_by_spothero_customer_service": true,
+              "minutes": 0
+            },
+            "rating": {
+              "average": 4.8,
+              "count": 1403,
+              "one_star_count": 3,
+              "two_star_count": 1,
+              "three_star_count": 5,
+              "four_star_count": 12,
+              "five_star_count": 176
+            },
+            "inventory": {
+              "default_quantity": 500
+            },
+            "operator_id": 20679884,
+            "company_id": 18909,
+            "requirements": {
+              "printout": false,
+              "license_plate": true,
+              "phone_number": true
+            },
+            "oversize_fees_charged_onsite": false,
+            "allow_updating_reservation_after_entry": true,
+            "require_credit_card": true,
+            "is_scan_to_pay": false,
+            "is_part_of_loyalty_program": false,
+            "events": {
+              "allow_reservations_outside_hours_of_operations": false
+            },
+            "reservation_extension_enabled": true
+          }
+        }
+      }
+    },
     {
       "listing_id": "14932",
       "quote_id": "1100166475",
@@ -81,7 +825,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166475",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -92,8 +836,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 6000
@@ -517,6 +1261,1078 @@
       }
     },
     {
+      "listing_id": "14744",
+      "quote_id": "1100166472",
+      "location_name": "Vagabond Inn Executive - Uncovered Self Park",
+      "address": "1640 Old Bayshore Highway",
+      "city": "Burlingame",
+      "state": "CA",
+      "postal_code": "94010",
+      "lat": 37.600229299999995,
+      "lng": -122.3676494,
+      "currency": "USD",
+      "total_price": 68.08,
+      "is_bookable": true,
+      "display_price": 68.08,
+      "distance_to_airport_meters": 2974.014525972663,
+      "shuttle": true,
+      "shuttle_type": "scheduled_shuttle",
+      "shuttle_frequency_minutes": 45,
+      "shuttle_frequency_slow_minutes": null,
+      "shuttle_duration_minutes": 10,
+      "cancellable": true,
+      "review_score": 4.5,
+      "review_count": 58,
+      "inventory_status": true,
+      "available_spaces": 5,
+      "raw_source": {
+        "distance": {
+          "linear_meters": 2974.014525972663
+        },
+        "vehicle": null,
+        "rates": [
+          {
+            "airport": {
+              "tag": null,
+              "comparisons": null,
+              "redemption_type": "self",
+              "parking_pass": {
+                "type": "license_plate",
+                "display_name": "Monitored by License Plate"
+              },
+              "amenities": [
+                {
+                  "type": "self_park",
+                  "display_name": "Self Park",
+                  "description": "Users may park their own vehicles at this facility."
+                },
+                {
+                  "type": "paved",
+                  "display_name": "Lot - Uncovered",
+                  "description": "The surface of the facility is solid, such as asphalt or concrete."
+                },
+                {
+                  "type": "touchless",
+                  "display_name": "Touchless",
+                  "description": "Entering/exiting the facility does not require touching shared surfaces."
+                },
+                {
+                  "type": "in_out",
+                  "display_name": "In & Out Allowed",
+                  "description": "Users may enter and exit the facility more than one time."
+                },
+                {
+                  "type": "attendant",
+                  "display_name": "On-Site Staff",
+                  "description": "The facility has staff on-site for assistance and questions."
+                },
+                {
+                  "type": "shuttle",
+                  "display_name": "Airport Shuttle",
+                  "description": "The facility has a shuttle available to nearby destinations, like an airport."
+                },
+                {
+                  "type": "wheelchair_accessible",
+                  "display_name": "Wheelchair Accessible",
+                  "description": "The facility is wheelchair accessible."
+                }
+              ],
+              "lowest_daily_rate": {
+                "currency_code": "USD",
+                "value": 0
+              }
+            },
+            "quote": {
+              "meta": {
+                "quote_mac": "1100166472",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
+                "partner_id": "",
+                "quote_token": ""
+              },
+              "total_price": {
+                "currency_code": "USD",
+                "value": 6808
+              },
+              "order": [
+                {
+                  "meta": {},
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
+                  "total_price": {
+                    "currency_code": "USD",
+                    "value": 6808
+                  },
+                  "facility_id": "14744",
+                  "rate_id": "1100166472",
+                  "items": [
+                    {
+                      "type": "rental",
+                      "short_description": "$15.25 x 4 days",
+                      "full_description": "",
+                      "price_breakdown": {
+                        "items": [
+                          {
+                            "type": "rental",
+                            "short_description": "Subtotal",
+                            "full_description": "$17.95 x 4 days",
+                            "price": {
+                              "currency_code": "USD",
+                              "value": 7180
+                            }
+                          },
+                          {
+                            "type": "multiday_discount",
+                            "short_description": "Multi-Day Discount",
+                            "full_description": "This location offers discounted rates for reservations spanning multiple days",
+                            "price": {
+                              "currency_code": "USD",
+                              "value": -1077
+                            }
+                          }
+                        ]
+                      },
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 6103
+                      }
+                    },
+                    {
+                      "type": "blanket_fee",
+                      "short_description": "Service Fee",
+                      "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 400
+                      }
+                    },
+                    {
+                      "type": "reservation_fee",
+                      "short_description": "Facility Fee",
+                      "full_description": "A fee determined by the garage operator to cover additional garage operator costs.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 305
+                      }
+                    }
+                  ]
+                }
+              ],
+              "items": [
+                {
+                  "type": "rental",
+                  "short_description": "$15.25 x 4 days",
+                  "full_description": "",
+                  "price_breakdown": {
+                    "items": [
+                      {
+                        "type": "rental",
+                        "short_description": "Subtotal",
+                        "full_description": "$17.95 x 4 days",
+                        "price": {
+                          "currency_code": "USD",
+                          "value": 7180
+                        }
+                      },
+                      {
+                        "type": "multiday_discount",
+                        "short_description": "Multi-Day Discount",
+                        "full_description": "This location offers discounted rates for reservations spanning multiple days",
+                        "price": {
+                          "currency_code": "USD",
+                          "value": -1077
+                        }
+                      }
+                    ]
+                  },
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 6103
+                  }
+                },
+                {
+                  "type": "blanket_fee",
+                  "short_description": "Service Fee",
+                  "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 400
+                  }
+                },
+                {
+                  "type": "reservation_fee",
+                  "short_description": "Facility Fee",
+                  "full_description": "A fee determined by the garage operator to cover additional garage operator costs.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 305
+                  }
+                }
+              ],
+              "advertised_price": {
+                "currency_code": "USD",
+                "value": 1525,
+                "discounts_value": -269
+              }
+            }
+          }
+        ],
+        "availability": {
+          "unavailable_reasons": [],
+          "available_spaces": 5,
+          "available": true
+        },
+        "facility": {
+          "airport": {
+            "logo": {
+              "id": "78520",
+              "url": "https://res.cloudinary.com/spothero/image/upload/w_960,h_960,q_50,x_480,y_480,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1582843035/pmyiskaccpyvzziykpze.png",
+              "alt_text": "1640 Old Bayshore Highway Parking"
+            },
+            "redemption_instructions": {
+              "arrival": [
+                {
+                  "id": "37013",
+                  "illustration": {
+                    "id": "9",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636043/rc6uuzecbw3nfth0hlky.png",
+                    "alt_text": "Pass Check Attendant"
+                  },
+                  "text": "Guests are required to come into the lobby to check-in, get parking permit, sign waiver and leave keys. Place parking permit on dashboard."
+                },
+                {
+                  "id": "37011",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "Once parked, please head to the hotel entrance to board the shuttle. The shuttle runs every 45 minutes from 4am-12pm and 3pm-11pm. Customers arriving or returning outside of that time must secure their own transportation. Customers may also use the SamsTrans bus #292 for an additional fee."
+                }
+              ],
+              "departure": [
+                {
+                  "id": "37014",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "When you return to SFO,\u00a0please gather your luggage and wait to board the shuttle.\u00a0If returning outside of shuttle availability, take the #292 back to the hotel.\u00a0"
+                },
+                {
+                  "id": "37015",
+                  "illustration": {
+                    "id": "8",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636065/hodnezajkpxuiisu0i4e.png",
+                    "alt_text": "See Ya (Wave)"
+                  },
+                  "text": "You may then pick up your vehicle and go."
+                }
+              ]
+            },
+            "transportation": {
+              "type": "scheduled_shuttle",
+              "contact_phone_number": "+1 650-692-4040",
+              "schedule": {
+                "fast_frequency": 45,
+                "slow_frequency": null,
+                "duration": 10
+              },
+              "images": [
+                {
+                  "id": "188494",
+                  "url": "https://res.cloudinary.com/spothero/image/upload/w_2288,h_1516,q_50,x_1144,y_758,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1724853643/ydzanecnewfvj2iqdlli.png",
+                  "alt_text": ""
+                }
+              ],
+              "hours_of_operation": {
+                "periods": [
+                  {
+                    "day_of_week": "monday",
+                    "hours_type": "open",
+                    "first_day": "Mon",
+                    "last_day": "Mon",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "monday",
+                    "hours_type": "open",
+                    "first_day": "Mon",
+                    "last_day": "Mon",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  },
+                  {
+                    "day_of_week": "tuesday",
+                    "hours_type": "open",
+                    "first_day": "Tue",
+                    "last_day": "Tue",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "tuesday",
+                    "hours_type": "open",
+                    "first_day": "Tue",
+                    "last_day": "Tue",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  },
+                  {
+                    "day_of_week": "wednesday",
+                    "hours_type": "open",
+                    "first_day": "Wed",
+                    "last_day": "Wed",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "wednesday",
+                    "hours_type": "open",
+                    "first_day": "Wed",
+                    "last_day": "Wed",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  },
+                  {
+                    "day_of_week": "thursday",
+                    "hours_type": "open",
+                    "first_day": "Thu",
+                    "last_day": "Thu",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "thursday",
+                    "hours_type": "open",
+                    "first_day": "Thu",
+                    "last_day": "Thu",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  },
+                  {
+                    "day_of_week": "friday",
+                    "hours_type": "open",
+                    "first_day": "Fri",
+                    "last_day": "Fri",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "friday",
+                    "hours_type": "open",
+                    "first_day": "Fri",
+                    "last_day": "Fri",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  },
+                  {
+                    "day_of_week": "saturday",
+                    "hours_type": "open",
+                    "first_day": "Sat",
+                    "last_day": "Sat",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "saturday",
+                    "hours_type": "open",
+                    "first_day": "Sat",
+                    "last_day": "Sat",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  },
+                  {
+                    "day_of_week": "sunday",
+                    "hours_type": "open",
+                    "first_day": "Sun",
+                    "last_day": "Sun",
+                    "start_time": "04:00:00",
+                    "end_time": "12:00:00",
+                    "start_time_secs": 14400,
+                    "end_time_secs": 43200
+                  },
+                  {
+                    "day_of_week": "sunday",
+                    "hours_type": "open",
+                    "first_day": "Sun",
+                    "last_day": "Sun",
+                    "start_time": "15:00:00",
+                    "end_time": "23:00:00",
+                    "start_time_secs": 54000,
+                    "end_time_secs": 82800
+                  }
+                ],
+                "text": [],
+                "always_open": false
+              }
+            }
+          },
+          "common": {
+            "vehicle_policy": {
+              "oversize_vehicle_policy": null,
+              "dimension_restrictions": null
+            },
+            "clearance_inches": null,
+            "status": "on_sales_allowed",
+            "title": "Vagabond Inn Executive - Uncovered Self Park",
+            "slug": "1640-old-bayshore-hwy",
+            "operator_display_name": "Vagabond Inn Exec SFO Parking",
+            "id": "14744",
+            "parent_facility_id": "",
+            "description": "",
+            "barcode_type": "qrcode",
+            "facility_type": "lot",
+            "navigation_tip": "Enter this location at 1640 Old Bayshore Hwy. This is the Vagabond Inn Exec SFO lot. It is located on the northeast side of Old Bayshore Hwy between Hinckley and Stanton Rd.",
+            "images": [
+              {
+                "id": "78551",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_640,h_480,q_50,x_320,y_240,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1582916362/lnhhjxprwp0eboofnvte.jpg",
+                "alt_text": "1640 Old Bayshore Highway Parking"
+              },
+              {
+                "id": "78550",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_640,h_480,q_50,x_320,y_240,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1582916317/zxujxhpdwcpdlgxfm1ux.jpg",
+                "alt_text": "1640 Old Bayshore Highway Parking"
+              },
+              {
+                "id": "78548",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_640,h_480,q_50,x_320,y_240,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1582916316/ln0gtvr3hhqyfsqc2o8r.jpg",
+                "alt_text": "1640 Old Bayshore Highway Parking"
+              }
+            ],
+            "supported_fee_types": [
+              "blanket_fee",
+              "facility_fee",
+              "monthly_fee"
+            ],
+            "parking_types": [],
+            "visual_flags": [],
+            "fees": [
+              {
+                "effective_start": "2023-01-01T00:00:00Z",
+                "effective_end": "",
+                "fee_type": "facility_fee",
+                "rate_type": "percent",
+                "amount": {
+                  "currency_code": "USD",
+                  "value": 0
+                },
+                "per_day": false
+              }
+            ],
+            "addresses": [
+              {
+                "id": "110691",
+                "city": "Burlingame",
+                "state": "CA",
+                "street_address": "1640 Old Bayshore Highway",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94010",
+                "types": [
+                  "search",
+                  "walking_distance",
+                  "default_vehicle_entrance"
+                ],
+                "latitude": 37.600229299999995,
+                "longitude": -122.3676494
+              },
+              {
+                "id": "15479",
+                "city": "Burlingame",
+                "state": "CA",
+                "street_address": "1640 Old Bayshore Highway",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94010",
+                "types": [
+                  "physical"
+                ],
+                "latitude": 37.600258999999994,
+                "longitude": -122.36757999999999
+              }
+            ],
+            "restrictions": [
+              " Please Note: The shuttle runs daily from 4am - 12pm and 3pm - 11pm. For questions about shuttle times, please contact the hotel at 650-692-4040. "
+            ],
+            "alias_facility_ids": [],
+            "hours_of_operation": {
+              "periods": [],
+              "text": [
+                "This facility is open 24/7."
+              ],
+              "always_open": true
+            },
+            "cancellation": {
+              "allowed_by_customer": true,
+              "allowed_by_spothero_customer_service": true,
+              "minutes": 0
+            },
+            "rating": {
+              "average": 4.5,
+              "count": 58,
+              "one_star_count": 3,
+              "two_star_count": 1,
+              "three_star_count": 4,
+              "four_star_count": 7,
+              "five_star_count": 43
+            },
+            "inventory": {
+              "default_quantity": 6
+            },
+            "operator_id": 7121378,
+            "company_id": 2245,
+            "requirements": {
+              "printout": false,
+              "license_plate": true,
+              "phone_number": true
+            },
+            "oversize_fees_charged_onsite": false,
+            "allow_updating_reservation_after_entry": true,
+            "require_credit_card": true,
+            "is_scan_to_pay": false,
+            "is_part_of_loyalty_program": false,
+            "events": {
+              "allow_reservations_outside_hours_of_operations": false
+            },
+            "reservation_extension_enabled": true
+          }
+        }
+      }
+    },
+    {
+      "listing_id": "12275",
+      "quote_id": "1100166434",
+      "location_name": "Best Western Plus Grosvenor Airport - Uncovered Self Park",
+      "address": "380 South Airport Boulevard",
+      "city": "South San Francisco",
+      "state": "CA",
+      "postal_code": "94080",
+      "lat": 37.64328919999999,
+      "lng": -122.4043841,
+      "currency": "USD",
+      "total_price": 52.0,
+      "is_bookable": true,
+      "display_price": 52.0,
+      "distance_to_airport_meters": 2991.169225798612,
+      "shuttle": true,
+      "shuttle_type": "scheduled_shuttle",
+      "shuttle_frequency_minutes": null,
+      "shuttle_frequency_slow_minutes": 45,
+      "shuttle_duration_minutes": 7,
+      "cancellable": true,
+      "review_score": 4.4,
+      "review_count": 191,
+      "inventory_status": true,
+      "available_spaces": 2,
+      "raw_source": {
+        "distance": {
+          "linear_meters": 2991.169225798612
+        },
+        "vehicle": null,
+        "rates": [
+          {
+            "airport": {
+              "tag": null,
+              "comparisons": null,
+              "redemption_type": "self",
+              "parking_pass": {
+                "type": "license_plate",
+                "display_name": "Monitored by License Plate"
+              },
+              "amenities": [
+                {
+                  "type": "self_park",
+                  "display_name": "Self Park",
+                  "description": "Users may park their own vehicles at this facility."
+                },
+                {
+                  "type": "paved",
+                  "display_name": "Lot - Uncovered",
+                  "description": "The surface of the facility is solid, such as asphalt or concrete."
+                },
+                {
+                  "type": "touchless",
+                  "display_name": "Touchless",
+                  "description": "Entering/exiting the facility does not require touching shared surfaces."
+                },
+                {
+                  "type": "attendant",
+                  "display_name": "On-Site Staff",
+                  "description": "The facility has staff on-site for assistance and questions."
+                },
+                {
+                  "type": "shuttle",
+                  "display_name": "Airport Shuttle",
+                  "description": "The facility has a shuttle available to nearby destinations, like an airport."
+                },
+                {
+                  "type": "wheelchair_accessible",
+                  "display_name": "Wheelchair Accessible",
+                  "description": "The facility is wheelchair accessible."
+                }
+              ],
+              "lowest_daily_rate": {
+                "currency_code": "USD",
+                "value": 0
+              }
+            },
+            "quote": {
+              "meta": {
+                "quote_mac": "1100166434",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
+                "partner_id": "",
+                "quote_token": ""
+              },
+              "total_price": {
+                "currency_code": "USD",
+                "value": 5200
+              },
+              "order": [
+                {
+                  "meta": {},
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
+                  "total_price": {
+                    "currency_code": "USD",
+                    "value": 5200
+                  },
+                  "facility_id": "12275",
+                  "rate_id": "1100166434",
+                  "items": [
+                    {
+                      "type": "rental",
+                      "short_description": "$10.75 x 4 days",
+                      "full_description": "",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 4300
+                      }
+                    },
+                    {
+                      "type": "optimization_fee",
+                      "short_description": "Additional Fees",
+                      "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 500
+                      }
+                    },
+                    {
+                      "type": "blanket_fee",
+                      "short_description": "Service Fee",
+                      "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                      "price": {
+                        "currency_code": "USD",
+                        "value": 400
+                      }
+                    }
+                  ]
+                }
+              ],
+              "items": [
+                {
+                  "type": "rental",
+                  "short_description": "$10.75 x 4 days",
+                  "full_description": "",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 4300
+                  }
+                },
+                {
+                  "type": "optimization_fee",
+                  "short_description": "Additional Fees",
+                  "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 500
+                  }
+                },
+                {
+                  "type": "blanket_fee",
+                  "short_description": "Service Fee",
+                  "full_description": "The service fee helps us cover the costs of running our platform and providing services related to your reservation. For more information, visit our FAQs.",
+                  "price": {
+                    "currency_code": "USD",
+                    "value": 400
+                  }
+                }
+              ],
+              "advertised_price": {
+                "currency_code": "USD",
+                "value": 1075
+              }
+            }
+          }
+        ],
+        "availability": {
+          "unavailable_reasons": [],
+          "available_spaces": 2,
+          "available": true
+        },
+        "facility": {
+          "airport": {
+            "logo": {
+              "id": "122551",
+              "url": "https://res.cloudinary.com/spothero/image/upload/w_0,h_0,q_50,x_0,y_0,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1661535997/tnyayvdgy1e0nmkwe1a1.png",
+              "alt_text": "380 South Airport Boulevard Parking"
+            },
+            "redemption_instructions": {
+              "arrival": [
+                {
+                  "id": "30571",
+                  "illustration": {
+                    "id": "9",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636043/rc6uuzecbw3nfth0hlky.png",
+                    "alt_text": "Pass Check Attendant"
+                  },
+                  "text": "Show the front desk associate your SpotHero parking pass and they will show you where to park your vehicle.\u00a0\u00a0"
+                },
+                {
+                  "id": "30572",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "Once you have parked, grab your luggage and head over to the shuttle pick up area. The shuttle runs every 45 minutes daily from 5:10am-10:10am and 5:10pm-11:10pm.\u00a0\u00a0"
+                }
+              ],
+              "departure": [
+                {
+                  "id": "30573",
+                  "illustration": {
+                    "id": "85",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772487/iwg9hyiffmfu3iktf7mt.png",
+                    "alt_text": "Cell Phone"
+                  },
+                  "text": "Once you have arrived back to the airport,\u00a0please gather your luggage and wait in the shuttle pick up area. The shuttle will pick you up in the same area as you were dropped off.\u00a0"
+                },
+                {
+                  "id": "30574",
+                  "illustration": {
+                    "id": "88",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1522772553/oyiwh1r0jt9tr8hugzc1.png",
+                    "alt_text": "Shuttle"
+                  },
+                  "text": "Board the shuttle and they will take you back to your vehicle.\u00a0\u00a0"
+                },
+                {
+                  "id": "30575",
+                  "illustration": {
+                    "id": "8",
+                    "url": "https://res.cloudinary.com/spothero/image/upload/v1408636065/hodnezajkpxuiisu0i4e.png",
+                    "alt_text": "See Ya (Wave)"
+                  },
+                  "text": "Once you are ready to go, you may simply leave!\u00a0"
+                }
+              ]
+            },
+            "transportation": {
+              "type": "scheduled_shuttle",
+              "contact_phone_number": "+1 650-873-3200",
+              "schedule": {
+                "fast_frequency": null,
+                "slow_frequency": 45,
+                "duration": 7
+              },
+              "images": [],
+              "hours_of_operation": {
+                "periods": [
+                  {
+                    "day_of_week": "monday",
+                    "hours_type": "open",
+                    "first_day": "Mon",
+                    "last_day": "Mon",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "monday",
+                    "hours_type": "open",
+                    "first_day": "Mon",
+                    "last_day": "Mon",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  },
+                  {
+                    "day_of_week": "tuesday",
+                    "hours_type": "open",
+                    "first_day": "Tue",
+                    "last_day": "Tue",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "tuesday",
+                    "hours_type": "open",
+                    "first_day": "Tue",
+                    "last_day": "Tue",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  },
+                  {
+                    "day_of_week": "wednesday",
+                    "hours_type": "open",
+                    "first_day": "Wed",
+                    "last_day": "Wed",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "wednesday",
+                    "hours_type": "open",
+                    "first_day": "Wed",
+                    "last_day": "Wed",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  },
+                  {
+                    "day_of_week": "thursday",
+                    "hours_type": "open",
+                    "first_day": "Thu",
+                    "last_day": "Thu",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "thursday",
+                    "hours_type": "open",
+                    "first_day": "Thu",
+                    "last_day": "Thu",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  },
+                  {
+                    "day_of_week": "friday",
+                    "hours_type": "open",
+                    "first_day": "Fri",
+                    "last_day": "Fri",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "friday",
+                    "hours_type": "open",
+                    "first_day": "Fri",
+                    "last_day": "Fri",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  },
+                  {
+                    "day_of_week": "saturday",
+                    "hours_type": "open",
+                    "first_day": "Sat",
+                    "last_day": "Sat",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "saturday",
+                    "hours_type": "open",
+                    "first_day": "Sat",
+                    "last_day": "Sat",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  },
+                  {
+                    "day_of_week": "sunday",
+                    "hours_type": "open",
+                    "first_day": "Sun",
+                    "last_day": "Sun",
+                    "start_time": "05:00:00",
+                    "end_time": "11:45:00",
+                    "start_time_secs": 18000,
+                    "end_time_secs": 42300
+                  },
+                  {
+                    "day_of_week": "sunday",
+                    "hours_type": "open",
+                    "first_day": "Sun",
+                    "last_day": "Sun",
+                    "start_time": "17:00:00",
+                    "end_time": "23:45:00",
+                    "start_time_secs": 61200,
+                    "end_time_secs": 85500
+                  }
+                ],
+                "text": [],
+                "always_open": false
+              }
+            }
+          },
+          "common": {
+            "vehicle_policy": {
+              "oversize_vehicle_policy": null,
+              "dimension_restrictions": null
+            },
+            "clearance_inches": null,
+            "status": "on_sales_allowed",
+            "title": "Best Western Plus Grosvenor Airport - Uncovered Self Park",
+            "slug": "380-s-airport-blvd",
+            "operator_display_name": "Best Western Plus Grosvenor Airport Hotel Parking",
+            "id": "12275",
+            "parent_facility_id": "",
+            "description": "",
+            "barcode_type": "qrcode",
+            "facility_type": "lot",
+            "navigation_tip": "Enter this location at 380 S Airport Blvd. This is the Best Western Plus lot. It is located on the SW side of Airport Blvd. The entrance is marked with a red 'Best Western Plus' sign marked with white lettering.",
+            "images": [
+              {
+                "id": "118980",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_4032,h_3024,q_50,x_2016,y_1512,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1657849667/ypejcohgxnox3ozoiizy.jpg",
+                "alt_text": "380 South Airport Boulevard Parking"
+              },
+              {
+                "id": "118978",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_4032,h_3024,q_50,x_2016,y_1512,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1657849664/tqpijsprgdyhznnk3ljj.jpg",
+                "alt_text": "380 South Airport Boulevard Parking"
+              },
+              {
+                "id": "118979",
+                "url": "https://res.cloudinary.com/spothero/image/upload/w_4032,h_3024,q_50,x_2016,y_1512,c_fill,g_xy_center,f_auto/c_scale,fl_relative,g_south_east,l_logos:spothero,o_27,w_0.25,x_0.05,y_0.05/v1657849664/kbvovvptsl6qdyzbgojz.jpg",
+                "alt_text": "380 South Airport Boulevard Parking"
+              }
+            ],
+            "supported_fee_types": [
+              "blanket_fee",
+              "monthly_fee"
+            ],
+            "parking_types": [],
+            "visual_flags": [],
+            "fees": [],
+            "addresses": [
+              {
+                "id": "108623",
+                "city": "South San Francisco",
+                "state": "CA",
+                "street_address": "380 South Airport Boulevard",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94080",
+                "types": [
+                  "search",
+                  "walking_distance",
+                  "default_vehicle_entrance"
+                ],
+                "latitude": 37.64328919999999,
+                "longitude": -122.4043841
+              },
+              {
+                "id": "13005",
+                "city": "South San Francisco",
+                "state": "CA",
+                "street_address": "380 South Airport Boulevard",
+                "time_zone": "America/Los_Angeles",
+                "country": "US",
+                "postal_code": "94080",
+                "types": [
+                  "physical"
+                ],
+                "latitude": 37.643289,
+                "longitude": -122.404384
+              }
+            ],
+            "restrictions": [
+              "The shuttle service will run every 45 minutes between the hours of 5 am-11:45  am and 5 pm-11:45 pm. PLEASE NOTE: if you arrive outside of these hours, customers will need to secure their own taxi/rideshare to their destination."
+            ],
+            "alias_facility_ids": [],
+            "hours_of_operation": {
+              "periods": [],
+              "text": [
+                "This facility is open 24/7."
+              ],
+              "always_open": true
+            },
+            "cancellation": {
+              "allowed_by_customer": true,
+              "allowed_by_spothero_customer_service": true,
+              "minutes": 0
+            },
+            "rating": {
+              "average": 4.4,
+              "count": 191,
+              "one_star_count": 7,
+              "two_star_count": 3,
+              "three_star_count": 5,
+              "four_star_count": 10,
+              "five_star_count": 74
+            },
+            "inventory": {
+              "default_quantity": 25
+            },
+            "operator_id": 5289165,
+            "company_id": 1480,
+            "requirements": {
+              "printout": false,
+              "license_plate": true,
+              "phone_number": false
+            },
+            "oversize_fees_charged_onsite": false,
+            "allow_updating_reservation_after_entry": true,
+            "require_credit_card": true,
+            "is_scan_to_pay": false,
+            "is_part_of_loyalty_program": false,
+            "events": {
+              "allow_reservations_outside_hours_of_operations": false
+            },
+            "reservation_extension_enabled": true
+          }
+        }
+      }
+    },
+    {
       "listing_id": "11107",
       "quote_id": "1100166874",
       "location_name": "The Shop San Bruno - Uncovered Self Park",
@@ -527,9 +2343,9 @@
       "lat": 37.63333910000001,
       "lng": -122.41170739999997,
       "currency": "USD",
-      "total_price": 54.0,
+      "total_price": 48.0,
       "is_bookable": true,
-      "display_price": 54.0,
+      "display_price": 48.0,
       "distance_to_airport_meters": 3012.5332917958135,
       "shuttle": true,
       "shuttle_type": "taxi",
@@ -591,33 +2407,33 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166874",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
               "total_price": {
                 "currency_code": "USD",
-                "value": 5400
+                "value": 4800
               },
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
-                    "value": 5400
+                    "value": 4800
                   },
                   "facility_id": "11107",
                   "rate_id": "1100166874",
                   "items": [
                     {
                       "type": "rental",
-                      "short_description": "$11.25 x 4 days",
+                      "short_description": "$9.75 x 4 days",
                       "full_description": "",
                       "price": {
                         "currency_code": "USD",
-                        "value": 4500
+                        "value": 3900
                       }
                     },
                     {
@@ -644,11 +2460,11 @@
               "items": [
                 {
                   "type": "rental",
-                  "short_description": "$11.25 x 4 days",
+                  "short_description": "$9.75 x 4 days",
                   "full_description": "",
                   "price": {
                     "currency_code": "USD",
-                    "value": 4500
+                    "value": 3900
                   }
                 },
                 {
@@ -672,7 +2488,7 @@
               ],
               "advertised_price": {
                 "currency_code": "USD",
-                "value": 1125
+                "value": 975
               }
             }
           }
@@ -894,7 +2710,7 @@
       "review_score": 4.2,
       "review_count": 32,
       "inventory_status": true,
-      "available_spaces": 73,
+      "available_spaces": 72,
       "raw_source": {
         "distance": {
           "linear_meters": 3133.3899866004035
@@ -940,7 +2756,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166888",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -951,8 +2767,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 6341
@@ -1028,7 +2844,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 73,
+          "available_spaces": 72,
           "available": true
         },
         "facility": {
@@ -1327,7 +3143,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100159751",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -1338,8 +3154,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 12544
@@ -1722,9 +3538,9 @@
       "shuttle_duration_minutes": null,
       "cancellable": true,
       "review_score": 4.7,
-      "review_count": 250,
+      "review_count": 251,
       "inventory_status": true,
-      "available_spaces": 17,
+      "available_spaces": 23,
       "raw_source": {
         "distance": {
           "linear_meters": 3615.110029080391
@@ -1770,7 +3586,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166433",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -1781,8 +3597,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 4396
@@ -1858,7 +3674,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 17,
+          "available_spaces": 23,
           "available": true
         },
         "facility": {
@@ -2042,12 +3858,12 @@
             },
             "rating": {
               "average": 4.7,
-              "count": 250,
+              "count": 251,
               "one_star_count": 1,
               "two_star_count": 2,
               "three_star_count": 1,
               "four_star_count": 7,
-              "five_star_count": 63
+              "five_star_count": 64
             },
             "inventory": {
               "default_quantity": 50
@@ -2083,9 +3899,9 @@
       "lat": 37.593872999999995,
       "lng": -122.36512599999999,
       "currency": "USD",
-      "total_price": 69.46,
+      "total_price": 65.96,
       "is_bookable": true,
-      "display_price": 69.46,
+      "display_price": 65.96,
       "distance_to_airport_meters": 3714.5198083327937,
       "shuttle": true,
       "shuttle_type": "scheduled_shuttle",
@@ -2094,7 +3910,7 @@
       "shuttle_duration_minutes": 4,
       "cancellable": true,
       "review_score": 4.7,
-      "review_count": 425,
+      "review_count": 426,
       "inventory_status": true,
       "available_spaces": 274,
       "raw_source": {
@@ -2105,10 +3921,7 @@
         "rates": [
           {
             "airport": {
-              "tag": {
-                "text": "Best Value",
-                "sort_order": 0
-              },
+              "tag": null,
               "comparisons": null,
               "redemption_type": "self",
               "parking_pass": {
@@ -2150,33 +3963,33 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100157177",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
               "total_price": {
                 "currency_code": "USD",
-                "value": 6946
+                "value": 6596
               },
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
-                    "value": 6946
+                    "value": 6596
                   },
                   "facility_id": "100312",
                   "rate_id": "1100157177",
                   "items": [
                     {
                       "type": "rental",
-                      "short_description": "$15.11 x 4 days",
+                      "short_description": "$14.24 x 4 days",
                       "full_description": "",
                       "price": {
                         "currency_code": "USD",
-                        "value": 6046
+                        "value": 5696
                       }
                     },
                     {
@@ -2203,11 +4016,11 @@
               "items": [
                 {
                   "type": "rental",
-                  "short_description": "$15.11 x 4 days",
+                  "short_description": "$14.24 x 4 days",
                   "full_description": "",
                   "price": {
                     "currency_code": "USD",
-                    "value": 6046
+                    "value": 5696
                   }
                 },
                 {
@@ -2231,7 +4044,7 @@
               ],
               "advertised_price": {
                 "currency_code": "USD",
-                "value": 1511
+                "value": 1424
               }
             }
           }
@@ -2466,12 +4279,12 @@
             },
             "rating": {
               "average": 4.7,
-              "count": 425,
+              "count": 426,
               "one_star_count": 2,
               "two_star_count": 1,
               "three_star_count": 2,
               "four_star_count": 6,
-              "five_star_count": 64
+              "five_star_count": 65
             },
             "inventory": {
               "default_quantity": 300
@@ -2507,9 +4320,9 @@
       "lat": 37.655403,
       "lng": -122.40091300000002,
       "currency": "USD",
-      "total_price": 54.96,
+      "total_price": 45.96,
       "is_bookable": true,
-      "display_price": 54.96,
+      "display_price": 45.96,
       "distance_to_airport_meters": 3852.2896806221943,
       "shuttle": true,
       "shuttle_type": "scheduled_shuttle",
@@ -2517,10 +4330,10 @@
       "shuttle_frequency_slow_minutes": 50,
       "shuttle_duration_minutes": 8,
       "cancellable": true,
-      "review_score": 4.1,
-      "review_count": 23,
+      "review_score": 4.2,
+      "review_count": 25,
       "inventory_status": true,
-      "available_spaces": 45,
+      "available_spaces": 57,
       "raw_source": {
         "distance": {
           "linear_meters": 3852.2896806221943
@@ -2571,33 +4384,33 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100158446",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
               "total_price": {
                 "currency_code": "USD",
-                "value": 5496
+                "value": 4596
               },
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
-                    "value": 5496
+                    "value": 4596
                   },
                   "facility_id": "133833",
                   "rate_id": "1100158446",
                   "items": [
                     {
                       "type": "rental",
-                      "short_description": "$11.49 x 4 days",
+                      "short_description": "$9.24 x 4 days",
                       "full_description": "",
                       "price": {
                         "currency_code": "USD",
-                        "value": 4596
+                        "value": 3696
                       }
                     },
                     {
@@ -2624,11 +4437,11 @@
               "items": [
                 {
                   "type": "rental",
-                  "short_description": "$11.49 x 4 days",
+                  "short_description": "$9.24 x 4 days",
                   "full_description": "",
                   "price": {
                     "currency_code": "USD",
-                    "value": 4596
+                    "value": 3696
                   }
                 },
                 {
@@ -2652,14 +4465,14 @@
               ],
               "advertised_price": {
                 "currency_code": "USD",
-                "value": 1149
+                "value": 924
               }
             }
           }
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 45,
+          "available_spaces": 57,
           "available": true
         },
         "facility": {
@@ -3003,13 +4816,13 @@
               "minutes": 0
             },
             "rating": {
-              "average": 4.1,
-              "count": 23,
+              "average": 4.2,
+              "count": 25,
               "one_star_count": 2,
               "two_star_count": 3,
               "three_star_count": 0,
               "four_star_count": 4,
-              "five_star_count": 14
+              "five_star_count": 16
             },
             "inventory": {
               "default_quantity": 100
@@ -3045,9 +4858,9 @@
       "lat": 37.592862000000004,
       "lng": -122.36213600000002,
       "currency": "USD",
-      "total_price": 67.26,
+      "total_price": 63.96,
       "is_bookable": true,
-      "display_price": 67.26,
+      "display_price": 63.96,
       "distance_to_airport_meters": 3953.2798476038533,
       "shuttle": true,
       "shuttle_type": "scheduled_shuttle",
@@ -3058,7 +4871,7 @@
       "review_score": 5,
       "review_count": 5,
       "inventory_status": true,
-      "available_spaces": 27,
+      "available_spaces": 29,
       "raw_source": {
         "distance": {
           "linear_meters": 3953.2798476038533
@@ -3109,33 +4922,33 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100162608",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
               "total_price": {
                 "currency_code": "USD",
-                "value": 6726
+                "value": 6396
               },
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
-                    "value": 6726
+                    "value": 6396
                   },
                   "facility_id": "139561",
                   "rate_id": "1100162608",
                   "items": [
                     {
                       "type": "rental",
-                      "short_description": "$13.24 x 4 days",
+                      "short_description": "$12.49 x 4 days",
                       "full_description": "",
                       "price": {
                         "currency_code": "USD",
-                        "value": 5296
+                        "value": 4996
                       }
                     },
                     {
@@ -3144,7 +4957,7 @@
                       "full_description": "A fee determined by the garage operator to cover additional garage operator costs.",
                       "price": {
                         "currency_code": "USD",
-                        "value": 1030
+                        "value": 1000
                       }
                     },
                     {
@@ -3162,11 +4975,11 @@
               "items": [
                 {
                   "type": "rental",
-                  "short_description": "$13.24 x 4 days",
+                  "short_description": "$12.49 x 4 days",
                   "full_description": "",
                   "price": {
                     "currency_code": "USD",
-                    "value": 5296
+                    "value": 4996
                   }
                 },
                 {
@@ -3175,7 +4988,7 @@
                   "full_description": "A fee determined by the garage operator to cover additional garage operator costs.",
                   "price": {
                     "currency_code": "USD",
-                    "value": 1030
+                    "value": 1000
                   }
                 },
                 {
@@ -3190,14 +5003,14 @@
               ],
               "advertised_price": {
                 "currency_code": "USD",
-                "value": 1324
+                "value": 1249
               }
             }
           }
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 27,
+          "available_spaces": 29,
           "available": true
         },
         "facility": {
@@ -3683,9 +5496,9 @@
       "shuttle_duration_minutes": null,
       "cancellable": true,
       "review_score": 4.8,
-      "review_count": 304,
+      "review_count": 308,
       "inventory_status": true,
-      "available_spaces": 112,
+      "available_spaces": 119,
       "raw_source": {
         "distance": {
           "linear_meters": 4068.781375215957
@@ -3731,7 +5544,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100157199",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -3742,8 +5555,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 3300
@@ -3819,7 +5632,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 112,
+          "available_spaces": 119,
           "available": true
         },
         "facility": {
@@ -4019,12 +5832,12 @@
             },
             "rating": {
               "average": 4.8,
-              "count": 304,
+              "count": 308,
               "one_star_count": 0,
               "two_star_count": 0,
               "three_star_count": 4,
               "four_star_count": 3,
-              "five_star_count": 54
+              "five_star_count": 57
             },
             "inventory": {
               "default_quantity": 200
@@ -4129,7 +5942,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166615",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -4140,8 +5953,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 6400
@@ -4444,9 +6257,9 @@
       "lat": 37.590573,
       "lng": -122.351045,
       "currency": "USD",
-      "total_price": 72.98,
+      "total_price": 60.47,
       "is_bookable": true,
-      "display_price": 72.98,
+      "display_price": 60.47,
       "distance_to_airport_meters": 4590.820182494768,
       "shuttle": true,
       "shuttle_type": "scheduled_shuttle",
@@ -4455,9 +6268,9 @@
       "shuttle_duration_minutes": 8,
       "cancellable": true,
       "review_score": 4.7,
-      "review_count": 805,
+      "review_count": 809,
       "inventory_status": true,
-      "available_spaces": 26,
+      "available_spaces": 52,
       "raw_source": {
         "distance": {
           "linear_meters": 4590.820182494768
@@ -4466,10 +6279,7 @@
         "rates": [
           {
             "airport": {
-              "tag": {
-                "text": "Highly Rated",
-                "sort_order": 0
-              },
+              "tag": null,
               "comparisons": null,
               "redemption_type": "self",
               "parking_pass": {
@@ -4516,33 +6326,33 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166627",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
               "total_price": {
                 "currency_code": "USD",
-                "value": 7298
+                "value": 6047
               },
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
-                    "value": 7298
+                    "value": 6047
                   },
                   "facility_id": "113077",
                   "rate_id": "1100166627",
                   "items": [
                     {
                       "type": "rental",
-                      "short_description": "$15.99 x 4 days",
+                      "short_description": "$12.86 x 4 days",
                       "full_description": "",
                       "price": {
                         "currency_code": "USD",
-                        "value": 6396
+                        "value": 5144
                       }
                     },
                     {
@@ -4551,7 +6361,7 @@
                       "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
                       "price": {
                         "currency_code": "USD",
-                        "value": 502
+                        "value": 503
                       }
                     },
                     {
@@ -4569,11 +6379,11 @@
               "items": [
                 {
                   "type": "rental",
-                  "short_description": "$15.99 x 4 days",
+                  "short_description": "$12.86 x 4 days",
                   "full_description": "",
                   "price": {
                     "currency_code": "USD",
-                    "value": 6396
+                    "value": 5144
                   }
                 },
                 {
@@ -4582,7 +6392,7 @@
                   "full_description": "This amount covers fees charged by the facility operator for costs such as airport charges, facility fees, and additional operator expenses, as estimated by SpotHero.",
                   "price": {
                     "currency_code": "USD",
-                    "value": 502
+                    "value": 503
                   }
                 },
                 {
@@ -4597,14 +6407,14 @@
               ],
               "advertised_price": {
                 "currency_code": "USD",
-                "value": 1599
+                "value": 1286
               }
             }
           }
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 26,
+          "available_spaces": 52,
           "available": true
         },
         "facility": {
@@ -4803,12 +6613,12 @@
             },
             "rating": {
               "average": 4.7,
-              "count": 805,
-              "one_star_count": 7,
+              "count": 809,
+              "one_star_count": 6,
               "two_star_count": 3,
-              "three_star_count": 4,
+              "three_star_count": 5,
               "four_star_count": 14,
-              "five_star_count": 148
+              "five_star_count": 141
             },
             "inventory": {
               "default_quantity": 130
@@ -4857,7 +6667,7 @@
       "review_score": 3.5,
       "review_count": 4,
       "inventory_status": true,
-      "available_spaces": 48,
+      "available_spaces": 47,
       "raw_source": {
         "distance": {
           "linear_meters": 4714.123894014039
@@ -4908,7 +6718,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100164577",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -4919,8 +6729,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 5020
@@ -4996,7 +6806,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 48,
+          "available_spaces": 47,
           "available": true
         },
         "facility": {
@@ -5253,7 +7063,7 @@
       "review_score": 4.6,
       "review_count": 16,
       "inventory_status": true,
-      "available_spaces": 25,
+      "available_spaces": 24,
       "raw_source": {
         "distance": {
           "linear_meters": 4768.915287711705
@@ -5294,7 +7104,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166805",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -5305,8 +7115,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 6400
@@ -5382,7 +7192,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 25,
+          "available_spaces": 24,
           "available": true
         },
         "facility": {
@@ -5585,10 +7395,10 @@
       "shuttle_frequency_slow_minutes": 45,
       "shuttle_duration_minutes": 20,
       "cancellable": true,
-      "review_score": 4.4,
-      "review_count": 871,
+      "review_score": 4.5,
+      "review_count": 874,
       "inventory_status": true,
-      "available_spaces": 17,
+      "available_spaces": 22,
       "raw_source": {
         "distance": {
           "linear_meters": 4966.768678340908
@@ -5597,7 +7407,10 @@
         "rates": [
           {
             "airport": {
-              "tag": null,
+              "tag": {
+                "text": "Best Value",
+                "sort_order": 0
+              },
               "comparisons": null,
               "redemption_type": "self",
               "parking_pass": {
@@ -5644,7 +7457,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166804",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -5655,8 +7468,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 5440
@@ -5732,7 +7545,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 17,
+          "available_spaces": 22,
           "available": true
         },
         "facility": {
@@ -5929,13 +7742,13 @@
               "minutes": 0
             },
             "rating": {
-              "average": 4.4,
-              "count": 871,
+              "average": 4.5,
+              "count": 874,
               "one_star_count": 1,
               "two_star_count": 5,
               "three_star_count": 3,
               "four_star_count": 5,
-              "five_star_count": 38
+              "five_star_count": 41
             },
             "inventory": {
               "default_quantity": 75
@@ -6030,7 +7843,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100157172",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -6041,8 +7854,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 4396
@@ -6344,7 +8157,7 @@
       "review_score": 4.7,
       "review_count": 104,
       "inventory_status": true,
-      "available_spaces": 36,
+      "available_spaces": 40,
       "raw_source": {
         "distance": {
           "linear_meters": 7256.18392824165
@@ -6385,7 +8198,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166599",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -6396,8 +8209,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 3400
@@ -6473,7 +8286,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 36,
+          "available_spaces": 40,
           "available": true
         },
         "facility": {
@@ -6643,7 +8456,7 @@
               "one_star_count": 2,
               "two_star_count": 0,
               "three_star_count": 5,
-              "four_star_count": 7,
+              "four_star_count": 6,
               "five_star_count": 71
             },
             "inventory": {
@@ -6739,7 +8552,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166540",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -6750,8 +8563,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 3600
@@ -7038,7 +8851,7 @@
       "review_score": 4.4,
       "review_count": 44,
       "inventory_status": true,
-      "available_spaces": 3,
+      "available_spaces": 2,
       "raw_source": {
         "distance": {
           "linear_meters": 10015.215189351731
@@ -7079,7 +8892,7 @@
             "quote": {
               "meta": {
                 "quote_mac": "1100166890",
-                "quote_valid_until": "2026-03-31T05:00:00-07:00",
+                "quote_valid_until": "2026-04-03T05:00:00-07:00",
                 "partner_id": "",
                 "quote_token": ""
               },
@@ -7090,8 +8903,8 @@
               "order": [
                 {
                   "meta": {},
-                  "starts": "2026-03-27T05:00:00-07:00",
-                  "ends": "2026-03-31T05:00:00-07:00",
+                  "starts": "2026-03-30T05:00:00-07:00",
+                  "ends": "2026-04-03T05:00:00-07:00",
                   "total_price": {
                     "currency_code": "USD",
                     "value": 3596
@@ -7167,7 +8980,7 @@
         ],
         "availability": {
           "unavailable_reasons": [],
-          "available_spaces": 3,
+          "available_spaces": 2,
           "available": true
         },
         "facility": {

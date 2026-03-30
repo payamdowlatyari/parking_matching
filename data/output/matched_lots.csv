@@ -1,803 +1,1155 @@
 airport_code,left_provider,left_lot_id,right_provider,right_lot_id,score,decision,reason
-SFO,parkwhiz,60625,spothero,14932,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,11107,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,31274,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,92981,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,12225,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,100312,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,133833,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,139561,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,110636,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,107715,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,113077,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,141519,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,19394,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,4963,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,95487,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,103741,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,89239,0.0,no_match,weak overall similarity
-SFO,parkwhiz,60625,spothero,38631,0.0,no_match,weak overall similarity
+SFO,parkwhiz,60625,spothero,14932,0.2991,no_match,same state
+SFO,parkwhiz,60625,spothero,11107,0.2687,no_match,same state
+SFO,parkwhiz,60625,spothero,31274,0.5107,no_match,moderate address similarity; same state
+SFO,parkwhiz,60625,spothero,92981,0.3377,no_match,same state
+SFO,parkwhiz,60625,spothero,12225,0.309,no_match,same state
+SFO,parkwhiz,60625,spothero,100312,0.4046,no_match,same city; same state; same postal code
+SFO,parkwhiz,60625,spothero,133833,0.3416,no_match,same state
+SFO,parkwhiz,60625,spothero,139561,0.3363,no_match,same city; same state; same postal code
+SFO,parkwhiz,60625,spothero,110636,0.4103,no_match,same state
+SFO,parkwhiz,60625,spothero,107715,0.3259,no_match,same state
+SFO,parkwhiz,60625,spothero,113077,0.7786,possible_match,high address similarity; near-identical geolocation; same city; same state
+SFO,parkwhiz,60625,spothero,141519,0.3387,no_match,same state
+SFO,parkwhiz,60625,spothero,19394,0.3365,no_match,same state
+SFO,parkwhiz,60625,spothero,4963,0.6951,possible_match,moderate address similarity; same city; same state; same postal code
+SFO,parkwhiz,60625,spothero,95487,0.4288,no_match,same state
+SFO,parkwhiz,60625,spothero,103741,0.4053,no_match,same state
+SFO,parkwhiz,60625,spothero,89239,0.3416,no_match,same state
+SFO,parkwhiz,60625,spothero,38631,0.2944,no_match,same state
 SFO,parkwhiz,60625,cheapairportparking,Hyatt-Regency-SFO,0.1714,no_match,weak overall similarity
 SFO,parkwhiz,60625,cheapairportparking,Hotel-SFO,0.1846,no_match,weak overall similarity
 SFO,parkwhiz,60625,cheapairportparking,Aloft-SFO,0.1091,no_match,weak overall similarity
 SFO,parkwhiz,60625,cheapairportparking,CP-SFO,0.1756,no_match,weak overall similarity
 SFO,parkwhiz,60625,cheapairportparking,Burlingame-SFO-Airport-Parking,0.4,no_match,high name similarity
-SFO,spothero,14932,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,14932,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,14932,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,14932,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,14932,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,11107,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,11107,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,11107,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,11107,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,11107,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,31274,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,31274,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,31274,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,31274,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,31274,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,92981,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,92981,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,92981,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,92981,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,92981,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,12225,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,12225,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,12225,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,12225,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,12225,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,100312,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,100312,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,100312,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,100312,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,100312,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,133833,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,133833,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,133833,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,133833,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,133833,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,139561,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,139561,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,139561,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,139561,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,139561,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,110636,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,110636,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,110636,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,110636,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,110636,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,107715,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,107715,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,107715,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,107715,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,107715,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,113077,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,113077,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,113077,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,113077,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,113077,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,141519,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,141519,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,141519,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,141519,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,141519,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,19394,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,19394,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,19394,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,19394,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,19394,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,4963,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,4963,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,4963,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,4963,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,4963,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,95487,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,95487,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,95487,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,95487,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,95487,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,103741,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,103741,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,103741,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,103741,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,103741,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,89239,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,89239,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,89239,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,89239,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,89239,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-SFO,spothero,38631,cheapairportparking,Hyatt-Regency-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,38631,cheapairportparking,Hotel-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,38631,cheapairportparking,Aloft-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,38631,cheapairportparking,CP-SFO,0.0,no_match,weak overall similarity
-SFO,spothero,38631,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,13026,0.0,no_match,weak overall similarity
+SFO,parkwhiz,60625,spothero,107202,0.275,no_match,same state
+SFO,parkwhiz,60625,spothero,104539,0.23,no_match,same state
+SFO,parkwhiz,60625,spothero,134955,0.0,no_match,weak overall similarity
+SFO,parkwhiz,60625,spothero,14744,0.3447,no_match,same city; same state; same postal code
+SFO,parkwhiz,60625,spothero,12275,0.4275,no_match,moderate address similarity; same state
+SFO,parkwhiz,60625,spothero,13757,0.0,no_match,weak overall similarity
+SFO,spothero,14932,cheapairportparking,Hyatt-Regency-SFO,0.1026,no_match,weak overall similarity
+SFO,spothero,14932,cheapairportparking,Hotel-SFO,0.1333,no_match,weak overall similarity
+SFO,spothero,14932,cheapairportparking,Aloft-SFO,0.1366,no_match,weak overall similarity
+SFO,spothero,14932,cheapairportparking,CP-SFO,0.0842,no_match,weak overall similarity
+SFO,spothero,14932,cheapairportparking,Burlingame-SFO-Airport-Parking,0.075,no_match,weak overall similarity
+SFO,spothero,11107,cheapairportparking,Hyatt-Regency-SFO,0.1067,no_match,weak overall similarity
+SFO,spothero,11107,cheapairportparking,Hotel-SFO,0.1333,no_match,weak overall similarity
+SFO,spothero,11107,cheapairportparking,Aloft-SFO,0.1702,no_match,weak overall similarity
+SFO,spothero,11107,cheapairportparking,CP-SFO,0.1273,no_match,weak overall similarity
+SFO,spothero,11107,cheapairportparking,Burlingame-SFO-Airport-Parking,0.1053,no_match,weak overall similarity
+SFO,spothero,31274,cheapairportparking,Hyatt-Regency-SFO,0.2146,no_match,weak overall similarity
+SFO,spothero,31274,cheapairportparking,Hotel-SFO,0.4,no_match,high name similarity
+SFO,spothero,31274,cheapairportparking,Aloft-SFO,0.1302,no_match,weak overall similarity
+SFO,spothero,31274,cheapairportparking,CP-SFO,0.16,no_match,weak overall similarity
+SFO,spothero,31274,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0941,no_match,weak overall similarity
+SFO,spothero,92981,cheapairportparking,Hyatt-Regency-SFO,0.1778,no_match,weak overall similarity
+SFO,spothero,92981,cheapairportparking,Hotel-SFO,0.1697,no_match,weak overall similarity
+SFO,spothero,92981,cheapairportparking,Aloft-SFO,0.1474,no_match,weak overall similarity
+SFO,spothero,92981,cheapairportparking,CP-SFO,0.16,no_match,weak overall similarity
+SFO,spothero,92981,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0828,no_match,weak overall similarity
+SFO,spothero,12225,cheapairportparking,Hyatt-Regency-SFO,0.1692,no_match,weak overall similarity
+SFO,spothero,12225,cheapairportparking,Hotel-SFO,0.1633,no_match,weak overall similarity
+SFO,spothero,12225,cheapairportparking,Aloft-SFO,0.1333,no_match,weak overall similarity
+SFO,spothero,12225,cheapairportparking,CP-SFO,0.1412,no_match,weak overall similarity
+SFO,spothero,12225,cheapairportparking,Burlingame-SFO-Airport-Parking,0.1067,no_match,weak overall similarity
+SFO,spothero,100312,cheapairportparking,Hyatt-Regency-SFO,0.4,no_match,high name similarity
+SFO,spothero,100312,cheapairportparking,Hotel-SFO,0.1846,no_match,weak overall similarity
+SFO,spothero,100312,cheapairportparking,Aloft-SFO,0.1455,no_match,weak overall similarity
+SFO,spothero,100312,cheapairportparking,CP-SFO,0.1756,no_match,weak overall similarity
+SFO,spothero,100312,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0686,no_match,weak overall similarity
+SFO,spothero,133833,cheapairportparking,Hyatt-Regency-SFO,0.1026,no_match,weak overall similarity
+SFO,spothero,133833,cheapairportparking,Hotel-SFO,0.1067,no_match,weak overall similarity
+SFO,spothero,133833,cheapairportparking,Aloft-SFO,0.325,no_match,moderate name similarity
+SFO,spothero,133833,cheapairportparking,CP-SFO,0.1039,no_match,weak overall similarity
+SFO,spothero,133833,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0789,no_match,weak overall similarity
+SFO,spothero,139561,cheapairportparking,Hyatt-Regency-SFO,0.097,no_match,weak overall similarity
+SFO,spothero,139561,cheapairportparking,Hotel-SFO,0.1016,no_match,weak overall similarity
+SFO,spothero,139561,cheapairportparking,Aloft-SFO,0.325,no_match,moderate name similarity
+SFO,spothero,139561,cheapairportparking,CP-SFO,0.1108,no_match,weak overall similarity
+SFO,spothero,139561,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0814,no_match,weak overall similarity
+SFO,spothero,110636,cheapairportparking,Hyatt-Regency-SFO,0.1561,no_match,weak overall similarity
+SFO,spothero,110636,cheapairportparking,Hotel-SFO,0.1684,no_match,weak overall similarity
+SFO,spothero,110636,cheapairportparking,Aloft-SFO,0.1116,no_match,weak overall similarity
+SFO,spothero,110636,cheapairportparking,CP-SFO,0.2,no_match,weak overall similarity
+SFO,spothero,110636,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0706,no_match,weak overall similarity
+SFO,spothero,107715,cheapairportparking,Hyatt-Regency-SFO,0.1049,no_match,weak overall similarity
+SFO,spothero,107715,cheapairportparking,Hotel-SFO,0.1241,no_match,weak overall similarity
+SFO,spothero,107715,cheapairportparking,Aloft-SFO,0.325,no_match,moderate name similarity
+SFO,spothero,107715,cheapairportparking,CP-SFO,0.12,no_match,weak overall similarity
+SFO,spothero,107715,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0889,no_match,weak overall similarity
+SFO,spothero,113077,cheapairportparking,Hyatt-Regency-SFO,0.1311,no_match,weak overall similarity
+SFO,spothero,113077,cheapairportparking,Hotel-SFO,0.1103,no_match,weak overall similarity
+SFO,spothero,113077,cheapairportparking,Aloft-SFO,0.325,no_match,moderate name similarity
+SFO,spothero,113077,cheapairportparking,CP-SFO,0.0933,no_match,weak overall similarity
+SFO,spothero,113077,cheapairportparking,Burlingame-SFO-Airport-Parking,0.1037,no_match,weak overall similarity
+SFO,spothero,141519,cheapairportparking,Hyatt-Regency-SFO,0.1114,no_match,weak overall similarity
+SFO,spothero,141519,cheapairportparking,Hotel-SFO,0.1158,no_match,weak overall similarity
+SFO,spothero,141519,cheapairportparking,Aloft-SFO,0.325,no_match,moderate name similarity
+SFO,spothero,141519,cheapairportparking,CP-SFO,0.1026,no_match,weak overall similarity
+SFO,spothero,141519,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0556,no_match,weak overall similarity
+SFO,spothero,19394,cheapairportparking,Hyatt-Regency-SFO,0.1073,no_match,weak overall similarity
+SFO,spothero,19394,cheapairportparking,Hotel-SFO,0.1114,no_match,weak overall similarity
+SFO,spothero,19394,cheapairportparking,Aloft-SFO,0.325,no_match,moderate name similarity
+SFO,spothero,19394,cheapairportparking,CP-SFO,0.1086,no_match,weak overall similarity
+SFO,spothero,19394,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0533,no_match,weak overall similarity
+SFO,spothero,4963,cheapairportparking,Hyatt-Regency-SFO,0.1297,no_match,weak overall similarity
+SFO,spothero,4963,cheapairportparking,Hotel-SFO,0.1176,no_match,weak overall similarity
+SFO,spothero,4963,cheapairportparking,Aloft-SFO,0.1026,no_match,weak overall similarity
+SFO,spothero,4963,cheapairportparking,CP-SFO,0.1111,no_match,weak overall similarity
+SFO,spothero,4963,cheapairportparking,Burlingame-SFO-Airport-Parking,0.4,no_match,high name similarity
+SFO,spothero,95487,cheapairportparking,Hyatt-Regency-SFO,0.1714,no_match,weak overall similarity
+SFO,spothero,95487,cheapairportparking,Hotel-SFO,0.1412,no_match,weak overall similarity
+SFO,spothero,95487,cheapairportparking,Aloft-SFO,0.1379,no_match,weak overall similarity
+SFO,spothero,95487,cheapairportparking,CP-SFO,0.1309,no_match,weak overall similarity
+SFO,spothero,95487,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0816,no_match,weak overall similarity
+SFO,spothero,103741,cheapairportparking,Hyatt-Regency-SFO,0.1627,no_match,weak overall similarity
+SFO,spothero,103741,cheapairportparking,Hotel-SFO,0.1412,no_match,weak overall similarity
+SFO,spothero,103741,cheapairportparking,Aloft-SFO,0.1574,no_match,weak overall similarity
+SFO,spothero,103741,cheapairportparking,CP-SFO,0.1263,no_match,weak overall similarity
+SFO,spothero,103741,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0769,no_match,weak overall similarity
+SFO,spothero,89239,cheapairportparking,Hyatt-Regency-SFO,0.1674,no_match,weak overall similarity
+SFO,spothero,89239,cheapairportparking,Hotel-SFO,0.18,no_match,weak overall similarity
+SFO,spothero,89239,cheapairportparking,Aloft-SFO,0.1422,no_match,weak overall similarity
+SFO,spothero,89239,cheapairportparking,CP-SFO,0.1524,no_match,weak overall similarity
+SFO,spothero,89239,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0889,no_match,weak overall similarity
+SFO,spothero,38631,cheapairportparking,Hyatt-Regency-SFO,0.1091,no_match,weak overall similarity
+SFO,spothero,38631,cheapairportparking,Hotel-SFO,0.0976,no_match,weak overall similarity
+SFO,spothero,38631,cheapairportparking,Aloft-SFO,0.1391,no_match,weak overall similarity
+SFO,spothero,38631,cheapairportparking,CP-SFO,0.1116,no_match,weak overall similarity
+SFO,spothero,38631,cheapairportparking,Burlingame-SFO-Airport-Parking,0.0865,no_match,weak overall similarity
+SFO,cheapairportparking,Hyatt-Regency-SFO,spothero,107202,0.12,no_match,weak overall similarity
+SFO,cheapairportparking,Hyatt-Regency-SFO,spothero,104539,0.1385,no_match,weak overall similarity
+SFO,cheapairportparking,Hyatt-Regency-SFO,spothero,134955,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Hyatt-Regency-SFO,spothero,14744,0.098,no_match,weak overall similarity
+SFO,cheapairportparking,Hyatt-Regency-SFO,spothero,12275,0.1185,no_match,weak overall similarity
+SFO,cheapairportparking,Hyatt-Regency-SFO,spothero,13757,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Hotel-SFO,spothero,107202,0.173,no_match,weak overall similarity
+SFO,cheapairportparking,Hotel-SFO,spothero,104539,0.1306,no_match,weak overall similarity
+SFO,cheapairportparking,Hotel-SFO,spothero,134955,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Hotel-SFO,spothero,14744,0.1043,no_match,weak overall similarity
+SFO,cheapairportparking,Hotel-SFO,spothero,12275,0.1412,no_match,weak overall similarity
+SFO,cheapairportparking,Hotel-SFO,spothero,13757,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Aloft-SFO,spothero,107202,0.1714,no_match,weak overall similarity
+SFO,cheapairportparking,Aloft-SFO,spothero,104539,0.4,no_match,high name similarity
+SFO,cheapairportparking,Aloft-SFO,spothero,134955,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Aloft-SFO,spothero,14744,0.1255,no_match,weak overall similarity
+SFO,cheapairportparking,Aloft-SFO,spothero,12275,0.1429,no_match,weak overall similarity
+SFO,cheapairportparking,Aloft-SFO,spothero,13757,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,CP-SFO,spothero,107202,0.1026,no_match,weak overall similarity
+SFO,cheapairportparking,CP-SFO,spothero,104539,0.1098,no_match,weak overall similarity
+SFO,cheapairportparking,CP-SFO,spothero,134955,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,CP-SFO,spothero,14744,0.1167,no_match,weak overall similarity
+SFO,cheapairportparking,CP-SFO,spothero,12275,0.1208,no_match,weak overall similarity
+SFO,cheapairportparking,CP-SFO,spothero,13757,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Burlingame-SFO-Airport-Parking,spothero,107202,0.097,no_match,weak overall similarity
+SFO,cheapairportparking,Burlingame-SFO-Airport-Parking,spothero,104539,0.0711,no_match,weak overall similarity
+SFO,cheapairportparking,Burlingame-SFO-Airport-Parking,spothero,134955,0.0,no_match,weak overall similarity
+SFO,cheapairportparking,Burlingame-SFO-Airport-Parking,spothero,14744,0.0952,no_match,weak overall similarity
+SFO,cheapairportparking,Burlingame-SFO-Airport-Parking,spothero,12275,0.0851,no_match,weak overall similarity
+SFO,cheapairportparking,Burlingame-SFO-Airport-Parking,spothero,13757,0.0,no_match,weak overall similarity
+LAX,parkwhiz,60204,spothero,4712,0.5653,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,7105,0.7452,possible_match,moderate address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,15185,0.6221,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,109011,0.987,match,high name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,4396,0.4467,no_match,nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,117003,0.4509,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,123678,0.4462,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,12983,0.4922,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,12985,0.5445,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,12984,0.4868,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,112582,0.6561,possible_match,high address similarity; nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,3222,0.5656,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,3333,0.399,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,3330,0.3555,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,112581,0.2996,no_match,same state
+LAX,parkwhiz,60204,spothero,114693,0.2331,no_match,same state
+LAX,parkwhiz,60204,spothero,7099,0.4012,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,7138,0.3555,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,3332,0.4002,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,131127,0.4688,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,104599,0.5321,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,132416,0.4732,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,15931,0.4256,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,16397,0.3696,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,13257,0.3356,no_match,same state
+LAX,parkwhiz,60204,spothero,89187,0.2405,no_match,same state
+LAX,parkwhiz,60204,spothero,16398,0.4218,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,113110,0.1938,no_match,same state
+LAX,parkwhiz,60204,spothero,89952,0.3116,no_match,same state
+LAX,parkwhiz,60204,spothero,108975,0.3057,no_match,same state
+LAX,parkwhiz,60204,spothero,89221,0.35,no_match,same state
+LAX,parkwhiz,60204,spothero,89353,0.3791,no_match,same state
+LAX,parkwhiz,60204,spothero,120273,0.291,no_match,same state
+LAX,parkwhiz,60204,spothero,13026,0.4308,no_match,same city; same state; same postal code
 LAX,parkwhiz,60204,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,60204,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,60204,spothero,13025,0.4274,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,4236,0.4807,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,4235,0.4236,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,7210,0.4724,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,97008,0.2508,no_match,same state
+LAX,parkwhiz,60204,spothero,103770,0.3961,no_match,same state
+LAX,parkwhiz,60204,spothero,92286,0.3625,no_match,same state
+LAX,parkwhiz,60204,spothero,134788,0.2795,no_match,same state
+LAX,parkwhiz,60204,spothero,4348,0.3237,no_match,same state
+LAX,parkwhiz,60204,spothero,124965,0.4195,no_match,same city; same state
+LAX,parkwhiz,60204,spothero,88636,0.3498,no_match,same city; same state
 LAX,parkwhiz,60204,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
 LAX,parkwhiz,60204,cheapairportparking,Westin-LAX-Los-Angeles,0.1455,no_match,weak overall similarity
 LAX,parkwhiz,60204,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
 LAX,parkwhiz,60204,cheapairportparking,Marriott-LAX-Los-Angeles,0.1684,no_match,weak overall similarity
 LAX,parkwhiz,60204,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,60204,spothero,14934,0.578,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,89120,0.6717,possible_match,high address similarity; nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,4105,0.5726,no_match,high address similarity; nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,3310,0.5172,no_match,same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,107005,0.4658,no_match,nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,3219,0.5888,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,140376,0.5279,no_match,moderate address similarity; same city; same state; same postal code
+LAX,parkwhiz,60204,spothero,95586,0.2314,no_match,same state
+LAX,parkwhiz,60204,spothero,31238,0.3082,no_match,same state
+LAX,parkwhiz,60204,cheapairportparking,Joes-LAX,0.0774,no_match,weak overall similarity
+LAX,parkwhiz,60204,cheapairportparking,Hilton-Garden-LAX,0.1674,no_match,weak overall similarity
+LAX,parkwhiz,57000,spothero,4712,0.1321,no_match,same state
+LAX,parkwhiz,57000,spothero,7105,0.1449,no_match,same state
+LAX,parkwhiz,57000,spothero,15185,0.1321,no_match,same state
+LAX,parkwhiz,57000,spothero,109011,0.1704,no_match,same state
+LAX,parkwhiz,57000,spothero,4396,0.1471,no_match,same state
+LAX,parkwhiz,57000,spothero,117003,0.162,no_match,same state
+LAX,parkwhiz,57000,spothero,123678,0.1596,no_match,same state
+LAX,parkwhiz,57000,spothero,12983,0.1577,no_match,same state
+LAX,parkwhiz,57000,spothero,12985,0.1577,no_match,same state
+LAX,parkwhiz,57000,spothero,12984,0.1577,no_match,same state
+LAX,parkwhiz,57000,spothero,112582,0.1577,no_match,same state
+LAX,parkwhiz,57000,spothero,3222,0.13,no_match,same state
+LAX,parkwhiz,57000,spothero,3333,0.1324,no_match,same state
+LAX,parkwhiz,57000,spothero,3330,0.225,no_match,same state
+LAX,parkwhiz,57000,spothero,112581,0.1977,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,114693,0.1913,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,7099,0.225,no_match,same state
+LAX,parkwhiz,57000,spothero,7138,0.225,no_match,same state
+LAX,parkwhiz,57000,spothero,3332,0.1324,no_match,same state
+LAX,parkwhiz,57000,spothero,131127,0.1665,no_match,same state
+LAX,parkwhiz,57000,spothero,104599,0.1449,no_match,same state
+LAX,parkwhiz,57000,spothero,132416,0.1449,no_match,same state
+LAX,parkwhiz,57000,spothero,15931,0.1377,no_match,same state
+LAX,parkwhiz,57000,spothero,16397,0.1377,no_match,same state
+LAX,parkwhiz,57000,spothero,13257,0.3,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,89187,0.2769,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,16398,0.1377,no_match,same state
+LAX,parkwhiz,57000,spothero,113110,0.4078,no_match,near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,89952,0.3933,no_match,nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,108975,0.3467,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,89221,0.1594,no_match,same state
+LAX,parkwhiz,57000,spothero,89353,0.1594,no_match,same state
+LAX,parkwhiz,57000,spothero,120273,0.2737,no_match,same state
+LAX,parkwhiz,57000,spothero,13026,0.162,no_match,same state
 LAX,parkwhiz,57000,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57000,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,57000,spothero,13025,0.162,no_match,same state
+LAX,parkwhiz,57000,spothero,4236,0.1391,no_match,same state
+LAX,parkwhiz,57000,spothero,4235,0.138,no_match,same state
+LAX,parkwhiz,57000,spothero,7210,0.15,no_match,same state
+LAX,parkwhiz,57000,spothero,97008,0.2424,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,103770,0.22,no_match,same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,92286,0.1367,no_match,same state
+LAX,parkwhiz,57000,spothero,134788,0.2202,no_match,same state
+LAX,parkwhiz,57000,spothero,4348,0.1405,no_match,same state
+LAX,parkwhiz,57000,spothero,124965,0.1586,no_match,same state
+LAX,parkwhiz,57000,spothero,88636,0.2419,no_match,same state
 LAX,parkwhiz,57000,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
 LAX,parkwhiz,57000,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
 LAX,parkwhiz,57000,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
 LAX,parkwhiz,57000,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
 LAX,parkwhiz,57000,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,57000,spothero,14934,0.1321,no_match,same state
+LAX,parkwhiz,57000,spothero,89120,0.1577,no_match,same state
+LAX,parkwhiz,57000,spothero,4105,0.1577,no_match,same state
+LAX,parkwhiz,57000,spothero,3310,0.13,no_match,same state
+LAX,parkwhiz,57000,spothero,107005,0.1324,no_match,same state
+LAX,parkwhiz,57000,spothero,3219,0.1449,no_match,same state
+LAX,parkwhiz,57000,spothero,140376,0.1449,no_match,same state
+LAX,parkwhiz,57000,spothero,95586,0.9512,match,high name similarity; moderate address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,57000,spothero,31238,0.2209,no_match,same state
+LAX,parkwhiz,57000,cheapairportparking,Joes-LAX,0.0,no_match,weak overall similarity
+LAX,parkwhiz,57000,cheapairportparking,Hilton-Garden-LAX,0.0,no_match,weak overall similarity
+LAX,parkwhiz,9299,spothero,4712,0.4413,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,7105,0.5698,no_match,moderate name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,15185,0.5698,no_match,moderate name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,109011,0.5585,no_match,moderate name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,4396,0.2594,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,117003,0.3823,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,123678,0.3768,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,12983,0.3564,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,12985,0.4585,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,12984,0.3611,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,112582,0.4117,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,3222,0.575,no_match,moderate name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,3333,0.5638,no_match,high name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,3330,0.3377,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,112581,0.2907,no_match,same state
+LAX,parkwhiz,9299,spothero,114693,0.2005,no_match,same state
+LAX,parkwhiz,9299,spothero,7099,0.5043,no_match,moderate name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,7138,0.368,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,3332,0.5638,no_match,high name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,131127,0.3678,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,104599,0.4315,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,132416,0.3639,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,15931,0.42,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,16397,0.3636,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,13257,0.3675,no_match,same state
+LAX,parkwhiz,9299,spothero,89187,0.2089,no_match,same state
+LAX,parkwhiz,9299,spothero,16398,0.4295,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,113110,0.2159,no_match,same state
+LAX,parkwhiz,9299,spothero,89952,0.3137,no_match,same state
+LAX,parkwhiz,9299,spothero,108975,0.2891,no_match,same state
+LAX,parkwhiz,9299,spothero,89221,0.3924,no_match,same state
+LAX,parkwhiz,9299,spothero,89353,0.3621,no_match,same state
+LAX,parkwhiz,9299,spothero,120273,0.2802,no_match,same state
+LAX,parkwhiz,9299,spothero,13026,0.6488,no_match,moderate address similarity; near-identical geolocation; same city; same state; same postal code
 LAX,parkwhiz,9299,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9299,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,9299,spothero,13025,0.5904,no_match,moderate address similarity; nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,4236,0.876,match,moderate name similarity; high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,4235,0.788,possible_match,high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,7210,0.8679,match,moderate name similarity; moderate address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,97008,0.2475,no_match,same state
+LAX,parkwhiz,9299,spothero,103770,0.3947,no_match,same state
+LAX,parkwhiz,9299,spothero,92286,0.3388,no_match,same state
+LAX,parkwhiz,9299,spothero,134788,0.2516,no_match,same state
+LAX,parkwhiz,9299,spothero,4348,0.2982,no_match,same state
+LAX,parkwhiz,9299,spothero,124965,0.435,no_match,same city; same state
+LAX,parkwhiz,9299,spothero,88636,0.3133,no_match,same city; same state
 LAX,parkwhiz,9299,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
 LAX,parkwhiz,9299,cheapairportparking,Westin-LAX-Los-Angeles,0.1697,no_match,weak overall similarity
 LAX,parkwhiz,9299,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
 LAX,parkwhiz,9299,cheapairportparking,Marriott-LAX-Los-Angeles,0.2074,no_match,weak overall similarity
 LAX,parkwhiz,9299,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.192,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,9299,spothero,14934,0.4259,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,89120,0.4585,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,4105,0.3728,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,3310,0.4205,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,107005,0.3137,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,3219,0.5585,no_match,moderate name similarity; same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,140376,0.4127,no_match,same city; same state; same postal code
+LAX,parkwhiz,9299,spothero,95586,0.2325,no_match,same state
+LAX,parkwhiz,9299,spothero,31238,0.2576,no_match,same state
+LAX,parkwhiz,9299,cheapairportparking,Joes-LAX,0.1333,no_match,weak overall similarity
+LAX,parkwhiz,9299,cheapairportparking,Hilton-Garden-LAX,0.1,no_match,weak overall similarity
+LAX,parkwhiz,9216,spothero,4712,0.3793,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,7105,0.416,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,15185,0.416,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,109011,0.402,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,4396,0.3306,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,117003,0.3196,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,123678,0.3149,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,12983,0.3126,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,12985,0.4005,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,12984,0.3437,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,112582,0.3475,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,3222,0.4789,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,3333,0.4382,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,3330,0.3574,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,112581,0.3121,no_match,same state
+LAX,parkwhiz,9216,spothero,114693,0.2788,no_match,same state
+LAX,parkwhiz,9216,spothero,7099,0.4323,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,7138,0.4039,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,3332,0.4329,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,131127,0.298,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,104599,0.3698,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,132416,0.3203,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,15931,0.42,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,16397,0.3765,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,13257,0.3776,no_match,same state
+LAX,parkwhiz,9216,spothero,89187,0.2041,no_match,same state
+LAX,parkwhiz,9216,spothero,16398,0.4159,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,113110,0.2405,no_match,same state
+LAX,parkwhiz,9216,spothero,89952,0.287,no_match,same state
+LAX,parkwhiz,9216,spothero,108975,0.2956,no_match,same state
+LAX,parkwhiz,9216,spothero,89221,0.3321,no_match,same state
+LAX,parkwhiz,9216,spothero,89353,0.336,no_match,same state
+LAX,parkwhiz,9216,spothero,120273,0.2163,no_match,same state
+LAX,parkwhiz,9216,spothero,13026,0.5739,no_match,nearby geolocation; same city; same state; same postal code
 LAX,parkwhiz,9216,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,9216,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,9216,spothero,13025,0.586,no_match,nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,4236,0.916,match,high name similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,4235,0.8235,possible_match,high address similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,7210,0.916,match,high name similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,97008,0.2595,no_match,same state
+LAX,parkwhiz,9216,spothero,103770,0.3185,no_match,same state
+LAX,parkwhiz,9216,spothero,92286,0.3376,no_match,same state
+LAX,parkwhiz,9216,spothero,134788,0.282,no_match,same state
+LAX,parkwhiz,9216,spothero,4348,0.2592,no_match,same state
+LAX,parkwhiz,9216,spothero,124965,0.3607,no_match,same city; same state
+LAX,parkwhiz,9216,spothero,88636,0.3147,no_match,same city; same state
 LAX,parkwhiz,9216,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
 LAX,parkwhiz,9216,cheapairportparking,Westin-LAX-Los-Angeles,0.16,no_match,weak overall similarity
 LAX,parkwhiz,9216,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1647,no_match,weak overall similarity
 LAX,parkwhiz,9216,cheapairportparking,Marriott-LAX-Los-Angeles,0.1647,no_match,weak overall similarity
 LAX,parkwhiz,9216,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,9216,spothero,14934,0.3671,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,89120,0.333,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,4105,0.3069,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,3310,0.4459,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,107005,0.3878,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,3219,0.4306,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,140376,0.3361,no_match,same city; same state; same postal code
+LAX,parkwhiz,9216,spothero,95586,0.2347,no_match,same state
+LAX,parkwhiz,9216,spothero,31238,0.291,no_match,same state
+LAX,parkwhiz,9216,cheapairportparking,Joes-LAX,0.0593,no_match,weak overall similarity
+LAX,parkwhiz,9216,cheapairportparking,Hilton-Garden-LAX,0.1026,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,4712,0.1835,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,7105,0.1843,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,15185,0.2034,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,109011,0.1673,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,4396,0.2425,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,117003,0.2457,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,123678,0.2379,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,12983,0.1808,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,12985,0.2109,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,12984,0.209,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,112582,0.1902,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,3222,0.1909,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,3333,0.1988,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,3330,0.2049,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,112581,0.269,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,114693,0.2233,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,7099,0.2155,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,7138,0.2146,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,3332,0.1661,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,131127,0.1848,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,104599,0.2022,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,132416,0.2446,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,15931,0.214,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,16397,0.2121,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,13257,0.2343,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,89187,0.2381,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,16398,0.1798,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,113110,0.2256,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,89952,0.2103,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,108975,0.2206,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,89221,0.2119,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,89353,0.2196,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,120273,0.2533,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,13026,0.1707,no_match,weak overall similarity
 LAX,parkwhiz,63448,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,63448,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,13025,0.1961,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,4236,0.1909,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,4235,0.2515,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,7210,0.1818,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,97008,0.1939,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,103770,0.2523,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,92286,0.2,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,134788,0.2397,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,4348,0.2182,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,124965,0.2441,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,88636,0.1883,no_match,weak overall similarity
 LAX,parkwhiz,63448,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
 LAX,parkwhiz,63448,cheapairportparking,Westin-LAX-Los-Angeles,0.0889,no_match,weak overall similarity
 LAX,parkwhiz,63448,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0762,no_match,weak overall similarity
 LAX,parkwhiz,63448,cheapairportparking,Marriott-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
 LAX,parkwhiz,63448,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0421,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,14934,0.1646,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,89120,0.1989,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,4105,0.2333,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,3310,0.2053,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,107005,0.1618,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,3219,0.2186,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,140376,0.1372,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,95586,0.2735,no_match,weak overall similarity
+LAX,parkwhiz,63448,spothero,31238,0.2547,no_match,weak overall similarity
+LAX,parkwhiz,63448,cheapairportparking,Joes-LAX,0.0571,no_match,weak overall similarity
+LAX,parkwhiz,63448,cheapairportparking,Hilton-Garden-LAX,0.0923,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,4712,0.1924,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,7105,0.2155,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,15185,0.1976,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,109011,0.1827,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,4396,0.1975,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,117003,0.2066,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,123678,0.222,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,12983,0.1976,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,12985,0.2071,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,12984,0.2036,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,112582,0.2199,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,3222,0.1923,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,3333,0.2151,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,3330,0.2545,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,112581,0.2117,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,114693,0.1639,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,7099,0.2455,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,7138,0.2574,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,3332,0.2034,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,131127,0.2282,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,104599,0.1869,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,132416,0.1955,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,15931,0.1783,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,16397,0.1964,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,13257,0.2745,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,89187,0.2054,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,16398,0.1867,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,113110,0.1714,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,89952,0.2868,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,108975,0.2632,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,89221,0.1649,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,89353,0.1827,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,120273,0.1875,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,13026,0.2327,no_match,weak overall similarity
 LAX,parkwhiz,57299,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,57299,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,13025,0.2252,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,4236,0.2356,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,4235,0.2662,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,7210,0.2098,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,97008,0.1835,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,103770,0.2269,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,92286,0.2048,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,134788,0.2667,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,4348,0.1474,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,124965,0.2283,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,88636,0.2467,no_match,weak overall similarity
 LAX,parkwhiz,57299,cheapairportparking,South-Garage-LAX,0.1455,no_match,weak overall similarity
 LAX,parkwhiz,57299,cheapairportparking,Westin-LAX-Los-Angeles,0.1032,no_match,weak overall similarity
 LAX,parkwhiz,57299,cheapairportparking,Quikpark-LAX-Los-Angeles,0.192,no_match,weak overall similarity
 LAX,parkwhiz,57299,cheapairportparking,Marriott-LAX-Los-Angeles,0.128,no_match,weak overall similarity
 LAX,parkwhiz,57299,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1043,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,14934,0.1775,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,89120,0.2155,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,4105,0.1878,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,3310,0.1875,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,107005,0.2244,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,3219,0.1819,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,140376,0.1843,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,95586,0.2565,no_match,weak overall similarity
+LAX,parkwhiz,57299,spothero,31238,0.2742,no_match,weak overall similarity
+LAX,parkwhiz,57299,cheapairportparking,Joes-LAX,0.0889,no_match,weak overall similarity
+LAX,parkwhiz,57299,cheapairportparking,Hilton-Garden-LAX,0.08,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,4712,0.2054,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,7105,0.2069,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,15185,0.2087,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,109011,0.1932,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,4396,0.1823,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,117003,0.2055,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,123678,0.1989,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,12983,0.2043,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,12985,0.2126,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,12984,0.2063,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,112582,0.1953,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,3222,0.1583,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,3333,0.1746,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,3330,0.2944,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,112581,0.1828,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,114693,0.177,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,7099,0.2697,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,7138,0.2822,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,3332,0.1959,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,131127,0.1739,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,104599,0.1749,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,132416,0.1818,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,15931,0.1742,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,16397,0.1678,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,13257,0.2328,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,89187,0.1909,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,16398,0.161,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,113110,0.1571,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,89952,0.2392,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,108975,0.1985,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,89221,0.1907,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,89353,0.162,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,120273,0.1883,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,13026,0.1524,no_match,weak overall similarity
 LAX,parkwhiz,54804,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,54804,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,13025,0.1489,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,4236,0.1592,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,4235,0.1746,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,7210,0.1798,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,97008,0.129,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,103770,0.1682,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,92286,0.1646,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,134788,0.2602,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,4348,0.1465,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,124965,0.1889,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,88636,0.2556,no_match,weak overall similarity
 LAX,parkwhiz,54804,cheapairportparking,South-Garage-LAX,0.0762,no_match,weak overall similarity
 LAX,parkwhiz,54804,cheapairportparking,Westin-LAX-Los-Angeles,0.1067,no_match,weak overall similarity
 LAX,parkwhiz,54804,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1,no_match,weak overall similarity
 LAX,parkwhiz,54804,cheapairportparking,Marriott-LAX-Los-Angeles,0.1,no_match,weak overall similarity
 LAX,parkwhiz,54804,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0727,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,14934,0.2096,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,89120,0.2069,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,4105,0.2003,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,3310,0.1707,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,107005,0.165,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,3219,0.1932,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,140376,0.1798,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,95586,0.2483,no_match,weak overall similarity
+LAX,parkwhiz,54804,spothero,31238,0.2402,no_match,weak overall similarity
+LAX,parkwhiz,54804,cheapairportparking,Joes-LAX,0.0941,no_match,weak overall similarity
+LAX,parkwhiz,54804,cheapairportparking,Hilton-Garden-LAX,0.0828,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,4712,0.2227,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,7105,0.2973,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,15185,0.3469,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,109011,0.3742,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,4396,0.3474,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,117003,0.2294,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,123678,0.2244,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,12983,0.2884,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,12985,0.3461,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,12984,0.3091,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,112582,0.2513,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,3222,0.3591,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,3333,0.4142,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,3330,0.2243,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,112581,0.1921,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,114693,0.2539,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,7099,0.2464,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,7138,0.2181,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,3332,0.3925,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,131127,0.2469,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,104599,0.2966,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,132416,0.2579,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,15931,0.2463,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,16397,0.2,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,13257,0.3027,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,89187,0.2244,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,16398,0.2559,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,113110,0.2168,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,89952,0.2767,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,108975,0.2714,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,89221,0.2143,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,89353,0.2509,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,120273,0.1914,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,13026,0.2882,no_match,weak overall similarity
 LAX,parkwhiz,59019,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,59019,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,13025,0.2909,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,4236,0.2747,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,4235,0.3188,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,7210,0.2545,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,97008,0.235,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,103770,0.221,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,92286,0.2509,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,134788,0.229,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,4348,0.2824,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,124965,0.2556,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,88636,0.215,no_match,weak overall similarity
 LAX,parkwhiz,59019,cheapairportparking,South-Garage-LAX,0.1212,no_match,weak overall similarity
 LAX,parkwhiz,59019,cheapairportparking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
 LAX,parkwhiz,59019,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0667,no_match,weak overall similarity
 LAX,parkwhiz,59019,cheapairportparking,Marriott-LAX-Los-Angeles,0.1111,no_match,weak overall similarity
 LAX,parkwhiz,59019,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1412,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,4712,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,7105,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,15185,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,109011,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,4396,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,117003,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,123678,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,12983,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,12985,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,12984,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,112582,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,3222,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,3333,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,3330,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,112581,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,114693,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,7099,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,7138,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,3332,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,131127,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,104599,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,132416,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,15931,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,16397,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,13257,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,89187,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,16398,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,113110,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,89952,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,108975,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,89221,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,89353,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,120273,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,13026,0.0,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,14934,0.2715,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,89120,0.2503,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,4105,0.2172,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,3310,0.2888,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,107005,0.2962,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,3219,0.3061,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,140376,0.2322,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,95586,0.2114,no_match,weak overall similarity
+LAX,parkwhiz,59019,spothero,31238,0.2384,no_match,weak overall similarity
+LAX,parkwhiz,59019,cheapairportparking,Joes-LAX,0.0828,no_match,weak overall similarity
+LAX,parkwhiz,59019,cheapairportparking,Hilton-Garden-LAX,0.1366,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,4712,0.2261,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,7105,0.3091,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,15185,0.2859,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,109011,0.2781,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,4396,0.3327,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,117003,0.2021,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,123678,0.198,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,12983,0.2361,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,12985,0.2854,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,12984,0.2298,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,112582,0.2135,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,3222,0.2702,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,3333,0.4273,no_match,moderate address similarity
+LAX,parkwhiz,55192,spothero,3330,0.2267,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,112581,0.2117,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,114693,0.2396,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,7099,0.2473,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,7138,0.2076,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,3332,0.3942,no_match,moderate address similarity
+LAX,parkwhiz,55192,spothero,131127,0.2107,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,104599,0.2482,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,132416,0.2561,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,15931,0.2836,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,16397,0.2176,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,13257,0.286,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,89187,0.2137,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,16398,0.2524,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,113110,0.2091,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,89952,0.2363,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,108975,0.2049,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,89221,0.2191,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,89353,0.2241,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,120273,0.2,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,13026,0.2375,no_match,weak overall similarity
 LAX,parkwhiz,55192,spothero,140869,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,13025,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,4236,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,4235,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,7210,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,97008,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,103770,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,92286,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,134788,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,4348,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,124965,0.0,no_match,weak overall similarity
-LAX,parkwhiz,55192,spothero,88636,0.0,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,13025,0.2185,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,4236,0.2624,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,4235,0.2833,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,7210,0.2551,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,97008,0.2155,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,103770,0.212,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,92286,0.2503,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,134788,0.219,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,4348,0.2433,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,124965,0.2405,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,88636,0.2027,no_match,weak overall similarity
 LAX,parkwhiz,55192,cheapairportparking,South-Garage-LAX,0.0842,no_match,weak overall similarity
 LAX,parkwhiz,55192,cheapairportparking,Westin-LAX-Los-Angeles,0.1191,no_match,weak overall similarity
 LAX,parkwhiz,55192,cheapairportparking,Quikpark-LAX-Los-Angeles,0.078,no_match,weak overall similarity
 LAX,parkwhiz,55192,cheapairportparking,Marriott-LAX-Los-Angeles,0.078,no_match,weak overall similarity
 LAX,parkwhiz,55192,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1436,no_match,weak overall similarity
-LAX,spothero,4712,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,4712,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4712,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4712,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4712,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7105,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,7105,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7105,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7105,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7105,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15185,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,15185,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15185,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15185,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15185,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,109011,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,109011,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,109011,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,109011,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,109011,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4396,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,4396,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4396,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4396,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4396,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,117003,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,117003,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,117003,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,117003,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,117003,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,123678,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,123678,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,123678,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,123678,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,123678,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12983,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,12983,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12983,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12983,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12983,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12985,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,12985,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12985,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12985,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12985,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12984,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,12984,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12984,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12984,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,12984,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112582,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,112582,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112582,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112582,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112582,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3222,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,3222,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3222,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3222,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3222,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3333,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,3333,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3333,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3333,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3333,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3330,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,3330,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3330,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3330,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3330,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112581,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,112581,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112581,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112581,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,112581,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,114693,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,114693,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,114693,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,114693,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,114693,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7099,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,7099,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7099,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7099,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7099,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7138,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,7138,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7138,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7138,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7138,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3332,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,3332,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3332,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3332,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,3332,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,131127,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,131127,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,131127,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,131127,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,131127,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,104599,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,104599,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,104599,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,104599,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,104599,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,132416,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,132416,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,132416,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,132416,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,132416,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15931,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,15931,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15931,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15931,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,15931,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16397,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,16397,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16397,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16397,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16397,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13257,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,13257,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13257,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13257,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13257,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89187,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,89187,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89187,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89187,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89187,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16398,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,16398,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16398,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16398,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,16398,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,113110,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,113110,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,113110,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,113110,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,113110,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89952,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,89952,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89952,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89952,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89952,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,108975,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,108975,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,108975,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,108975,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,108975,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89221,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,89221,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89221,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89221,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89221,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89353,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,89353,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89353,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89353,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,89353,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,120273,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,120273,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,120273,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,120273,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,120273,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13026,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,13026,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13026,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13026,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13026,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,14934,0.2264,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,89120,0.224,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,4105,0.2097,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,3310,0.2318,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,107005,0.3506,no_match,moderate address similarity
+LAX,parkwhiz,55192,spothero,3219,0.2888,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,140376,0.2484,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,95586,0.22,no_match,weak overall similarity
+LAX,parkwhiz,55192,spothero,31238,0.2131,no_match,weak overall similarity
+LAX,parkwhiz,55192,cheapairportparking,Joes-LAX,0.0706,no_match,weak overall similarity
+LAX,parkwhiz,55192,cheapairportparking,Hilton-Garden-LAX,0.1043,no_match,weak overall similarity
+LAX,spothero,4712,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,4712,cheapairportparking,Westin-LAX-Los-Angeles,0.1474,no_match,weak overall similarity
+LAX,spothero,4712,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,4712,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,4712,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,4712,parkwhiz,59931,0.3475,no_match,same city; same state; same postal code
+LAX,spothero,4712,cheapairportparking,Joes-LAX,0.128,no_match,weak overall similarity
+LAX,spothero,4712,cheapairportparking,Hilton-Garden-LAX,0.1081,no_match,weak overall similarity
+LAX,spothero,7105,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,7105,cheapairportparking,Westin-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7105,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7105,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7105,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,7105,parkwhiz,59931,0.4325,no_match,same city; same state; same postal code
+LAX,spothero,7105,cheapairportparking,Joes-LAX,0.075,no_match,weak overall similarity
+LAX,spothero,7105,cheapairportparking,Hilton-Garden-LAX,0.1091,no_match,weak overall similarity
+LAX,spothero,15185,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,15185,cheapairportparking,Westin-LAX-Los-Angeles,0.1231,no_match,weak overall similarity
+LAX,spothero,15185,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,15185,cheapairportparking,Marriott-LAX-Los-Angeles,0.4,no_match,high name similarity
+LAX,spothero,15185,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,15185,parkwhiz,59931,0.36,no_match,same city; same state; same postal code
+LAX,spothero,15185,cheapairportparking,Joes-LAX,0.0615,no_match,weak overall similarity
+LAX,spothero,15185,cheapairportparking,Hilton-Garden-LAX,0.0941,no_match,weak overall similarity
+LAX,spothero,109011,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,109011,cheapairportparking,Westin-LAX-Los-Angeles,0.12,no_match,weak overall similarity
+LAX,spothero,109011,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,109011,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,109011,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,109011,parkwhiz,59931,0.48,no_match,nearby geolocation; same city; same state; same postal code
+LAX,spothero,109011,cheapairportparking,Joes-LAX,0.0681,no_match,weak overall similarity
+LAX,spothero,109011,cheapairportparking,Hilton-Garden-LAX,0.1492,no_match,weak overall similarity
+LAX,spothero,4396,cheapairportparking,South-Garage-LAX,0.0696,no_match,weak overall similarity
+LAX,spothero,4396,cheapairportparking,Westin-LAX-Los-Angeles,0.125,no_match,weak overall similarity
+LAX,spothero,4396,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0615,no_match,weak overall similarity
+LAX,spothero,4396,cheapairportparking,Marriott-LAX-Los-Angeles,0.0615,no_match,weak overall similarity
+LAX,spothero,4396,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0667,no_match,weak overall similarity
+LAX,spothero,4396,parkwhiz,59931,0.3215,no_match,same city; same state; same postal code
+LAX,spothero,4396,cheapairportparking,Joes-LAX,0.0842,no_match,weak overall similarity
+LAX,spothero,4396,cheapairportparking,Hilton-Garden-LAX,0.1032,no_match,weak overall similarity
+LAX,spothero,117003,cheapairportparking,South-Garage-LAX,0.1032,no_match,weak overall similarity
+LAX,spothero,117003,cheapairportparking,Westin-LAX-Los-Angeles,0.1,no_match,weak overall similarity
+LAX,spothero,117003,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0941,no_match,weak overall similarity
+LAX,spothero,117003,cheapairportparking,Marriott-LAX-Los-Angeles,0.0941,no_match,weak overall similarity
+LAX,spothero,117003,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.075,no_match,weak overall similarity
+LAX,spothero,117003,parkwhiz,59931,0.2918,no_match,same city; same state; same postal code
+LAX,spothero,117003,cheapairportparking,Joes-LAX,0.0889,no_match,weak overall similarity
+LAX,spothero,117003,cheapairportparking,Hilton-Garden-LAX,0.1026,no_match,weak overall similarity
+LAX,spothero,123678,cheapairportparking,South-Garage-LAX,0.097,no_match,weak overall similarity
+LAX,spothero,123678,cheapairportparking,Westin-LAX-Los-Angeles,0.0952,no_match,weak overall similarity
+LAX,spothero,123678,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1111,no_match,weak overall similarity
+LAX,spothero,123678,cheapairportparking,Marriott-LAX-Los-Angeles,0.0889,no_match,weak overall similarity
+LAX,spothero,123678,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0706,no_match,weak overall similarity
+LAX,spothero,123678,parkwhiz,59931,0.3088,no_match,same city; same state; same postal code
+LAX,spothero,123678,cheapairportparking,Joes-LAX,0.0828,no_match,weak overall similarity
+LAX,spothero,123678,cheapairportparking,Hilton-Garden-LAX,0.0976,no_match,weak overall similarity
+LAX,spothero,12983,cheapairportparking,South-Garage-LAX,0.093,no_match,weak overall similarity
+LAX,spothero,12983,cheapairportparking,Westin-LAX-Los-Angeles,0.1077,no_match,weak overall similarity
+LAX,spothero,12983,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0522,no_match,weak overall similarity
+LAX,spothero,12983,cheapairportparking,Marriott-LAX-Los-Angeles,0.087,no_match,weak overall similarity
+LAX,spothero,12983,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0545,no_match,weak overall similarity
+LAX,spothero,12983,parkwhiz,59931,0.2522,no_match,same city; same state; same postal code
+LAX,spothero,12983,cheapairportparking,Joes-LAX,0.0615,no_match,weak overall similarity
+LAX,spothero,12983,cheapairportparking,Hilton-Garden-LAX,0.1098,no_match,weak overall similarity
+LAX,spothero,12985,cheapairportparking,South-Garage-LAX,0.1026,no_match,weak overall similarity
+LAX,spothero,12985,cheapairportparking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,12985,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0571,no_match,weak overall similarity
+LAX,spothero,12985,cheapairportparking,Marriott-LAX-Los-Angeles,0.0952,no_match,weak overall similarity
+LAX,spothero,12985,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.08,no_match,weak overall similarity
+LAX,spothero,12985,parkwhiz,59931,0.2571,no_match,same city; same state; same postal code
+LAX,spothero,12985,cheapairportparking,Joes-LAX,0.0914,no_match,weak overall similarity
+LAX,spothero,12985,cheapairportparking,Hilton-Garden-LAX,0.1021,no_match,weak overall similarity
+LAX,spothero,12984,cheapairportparking,South-Garage-LAX,0.1212,no_match,weak overall similarity
+LAX,spothero,12984,cheapairportparking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,12984,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0444,no_match,weak overall similarity
+LAX,spothero,12984,cheapairportparking,Marriott-LAX-Los-Angeles,0.1111,no_match,weak overall similarity
+LAX,spothero,12984,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0706,no_match,weak overall similarity
+LAX,spothero,12984,parkwhiz,59931,0.2444,no_match,same city; same state; same postal code
+LAX,spothero,12984,cheapairportparking,Joes-LAX,0.1103,no_match,weak overall similarity
+LAX,spothero,12984,cheapairportparking,Hilton-Garden-LAX,0.0976,no_match,weak overall similarity
+LAX,spothero,112582,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,112582,cheapairportparking,Westin-LAX-Los-Angeles,0.096,no_match,weak overall similarity
+LAX,spothero,112582,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,112582,cheapairportparking,Marriott-LAX-Los-Angeles,0.4,no_match,high name similarity
+LAX,spothero,112582,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,112582,parkwhiz,59931,0.53,no_match,near-identical geolocation; same city; same state; same postal code
+LAX,spothero,112582,cheapairportparking,Joes-LAX,0.0432,no_match,weak overall similarity
+LAX,spothero,112582,cheapairportparking,Hilton-Garden-LAX,0.1306,no_match,weak overall similarity
+LAX,spothero,3222,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,3222,cheapairportparking,Westin-LAX-Los-Angeles,0.1208,no_match,weak overall similarity
+LAX,spothero,3222,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3222,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3222,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,3222,parkwhiz,59931,0.3716,no_match,same city; same state; same postal code
+LAX,spothero,3222,cheapairportparking,Joes-LAX,0.08,no_match,weak overall similarity
+LAX,spothero,3222,cheapairportparking,Hilton-Garden-LAX,0.1231,no_match,weak overall similarity
+LAX,spothero,3333,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,3333,cheapairportparking,Westin-LAX-Los-Angeles,0.1231,no_match,weak overall similarity
+LAX,spothero,3333,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3333,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3333,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,3333,parkwhiz,59931,0.3457,no_match,same city; same state; same postal code
+LAX,spothero,3333,cheapairportparking,Joes-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,3333,cheapairportparking,Hilton-Garden-LAX,0.1098,no_match,weak overall similarity
+LAX,spothero,3330,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,3330,cheapairportparking,Westin-LAX-Los-Angeles,0.0982,no_match,weak overall similarity
+LAX,spothero,3330,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3330,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3330,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,3330,parkwhiz,59931,0.4063,no_match,same city; same state; same postal code
+LAX,spothero,3330,cheapairportparking,Joes-LAX,0.0545,no_match,weak overall similarity
+LAX,spothero,3330,cheapairportparking,Hilton-Garden-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,112581,cheapairportparking,South-Garage-LAX,0.4,no_match,high name similarity
+LAX,spothero,112581,cheapairportparking,Westin-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,112581,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,112581,cheapairportparking,Marriott-LAX-Los-Angeles,0.1931,no_match,weak overall similarity
+LAX,spothero,112581,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,112581,parkwhiz,59931,0.2991,no_match,same state
+LAX,spothero,112581,cheapairportparking,Joes-LAX,0.1455,no_match,weak overall similarity
+LAX,spothero,112581,cheapairportparking,Hilton-Garden-LAX,0.1176,no_match,weak overall similarity
+LAX,spothero,114693,cheapairportparking,South-Garage-LAX,0.0533,no_match,weak overall similarity
+LAX,spothero,114693,cheapairportparking,Westin-LAX-Los-Angeles,0.1231,no_match,weak overall similarity
+LAX,spothero,114693,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0727,no_match,weak overall similarity
+LAX,spothero,114693,cheapairportparking,Marriott-LAX-Los-Angeles,0.097,no_match,weak overall similarity
+LAX,spothero,114693,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1032,no_match,weak overall similarity
+LAX,spothero,114693,parkwhiz,59931,0.1793,no_match,same state
+LAX,spothero,114693,cheapairportparking,Joes-LAX,0.0923,no_match,weak overall similarity
+LAX,spothero,114693,cheapairportparking,Hilton-Garden-LAX,0.1263,no_match,weak overall similarity
+LAX,spothero,7099,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,7099,cheapairportparking,Westin-LAX-Los-Angeles,0.1057,no_match,weak overall similarity
+LAX,spothero,7099,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7099,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7099,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,7099,parkwhiz,59931,0.4063,no_match,same city; same state; same postal code
+LAX,spothero,7099,cheapairportparking,Joes-LAX,0.06,no_match,weak overall similarity
+LAX,spothero,7099,cheapairportparking,Hilton-Garden-LAX,0.1077,no_match,weak overall similarity
+LAX,spothero,7138,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,7138,cheapairportparking,Westin-LAX-Los-Angeles,0.1191,no_match,weak overall similarity
+LAX,spothero,7138,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1756,no_match,weak overall similarity
+LAX,spothero,7138,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7138,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,7138,parkwhiz,59931,0.422,no_match,same city; same state; same postal code
+LAX,spothero,7138,cheapairportparking,Joes-LAX,0.0706,no_match,weak overall similarity
+LAX,spothero,7138,cheapairportparking,Hilton-Garden-LAX,0.1043,no_match,weak overall similarity
+LAX,spothero,3332,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,3332,cheapairportparking,Westin-LAX-Los-Angeles,0.144,no_match,weak overall similarity
+LAX,spothero,3332,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3332,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,3332,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,3332,parkwhiz,59931,0.3457,no_match,same city; same state; same postal code
+LAX,spothero,3332,cheapairportparking,Joes-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,3332,cheapairportparking,Hilton-Garden-LAX,0.098,no_match,weak overall similarity
+LAX,spothero,131127,cheapairportparking,South-Garage-LAX,0.0744,no_match,weak overall similarity
+LAX,spothero,131127,cheapairportparking,Westin-LAX-Los-Angeles,0.0923,no_match,weak overall similarity
+LAX,spothero,131127,cheapairportparking,Quikpark-LAX-Los-Angeles,0.087,no_match,weak overall similarity
+LAX,spothero,131127,cheapairportparking,Marriott-LAX-Los-Angeles,0.087,no_match,weak overall similarity
+LAX,spothero,131127,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0727,no_match,weak overall similarity
+LAX,spothero,131127,parkwhiz,59931,0.2745,no_match,same city; same state; same postal code
+LAX,spothero,131127,cheapairportparking,Joes-LAX,0.0615,no_match,weak overall similarity
+LAX,spothero,131127,cheapairportparking,Hilton-Garden-LAX,0.1255,no_match,weak overall similarity
+LAX,spothero,104599,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,104599,cheapairportparking,Westin-LAX-Los-Angeles,0.22,no_match,weak overall similarity
+LAX,spothero,104599,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,104599,cheapairportparking,Marriott-LAX-Los-Angeles,0.1647,no_match,weak overall similarity
+LAX,spothero,104599,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,104599,parkwhiz,59931,0.3475,no_match,same city; same state; same postal code
+LAX,spothero,104599,cheapairportparking,Joes-LAX,0.1185,no_match,weak overall similarity
+LAX,spothero,104599,cheapairportparking,Hilton-Garden-LAX,0.1641,no_match,weak overall similarity
+LAX,spothero,132416,cheapairportparking,South-Garage-LAX,0.0571,no_match,weak overall similarity
+LAX,spothero,132416,cheapairportparking,Westin-LAX-Los-Angeles,0.1081,no_match,weak overall similarity
+LAX,spothero,132416,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0774,no_match,weak overall similarity
+LAX,spothero,132416,cheapairportparking,Marriott-LAX-Los-Angeles,0.0774,no_match,weak overall similarity
+LAX,spothero,132416,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0828,no_match,weak overall similarity
+LAX,spothero,132416,parkwhiz,59931,0.2774,no_match,same city; same state; same postal code
+LAX,spothero,132416,cheapairportparking,Joes-LAX,0.0667,no_match,weak overall similarity
+LAX,spothero,132416,cheapairportparking,Hilton-Garden-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,15931,cheapairportparking,South-Garage-LAX,0.1231,no_match,weak overall similarity
+LAX,spothero,15931,cheapairportparking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,15931,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,15931,cheapairportparking,Marriott-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,15931,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1,no_match,weak overall similarity
+LAX,spothero,15931,parkwhiz,59931,0.3233,no_match,same city; same state; same postal code
+LAX,spothero,15931,cheapairportparking,Joes-LAX,0.0686,no_match,weak overall similarity
+LAX,spothero,15931,cheapairportparking,Hilton-Garden-LAX,0.1021,no_match,weak overall similarity
+LAX,spothero,16397,cheapairportparking,South-Garage-LAX,0.1212,no_match,weak overall similarity
+LAX,spothero,16397,cheapairportparking,Westin-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,16397,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1556,no_match,weak overall similarity
+LAX,spothero,16397,cheapairportparking,Marriott-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,16397,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0941,no_match,weak overall similarity
+LAX,spothero,16397,parkwhiz,59931,0.3456,no_match,same city; same state; same postal code
+LAX,spothero,16397,cheapairportparking,Joes-LAX,0.0828,no_match,weak overall similarity
+LAX,spothero,16397,cheapairportparking,Hilton-Garden-LAX,0.0976,no_match,weak overall similarity
+LAX,spothero,13257,cheapairportparking,South-Garage-LAX,0.0941,no_match,weak overall similarity
+LAX,spothero,13257,cheapairportparking,Westin-LAX-Los-Angeles,0.1488,no_match,weak overall similarity
+LAX,spothero,13257,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0865,no_match,weak overall similarity
+LAX,spothero,13257,cheapairportparking,Marriott-LAX-Los-Angeles,0.32,no_match,moderate name similarity
+LAX,spothero,13257,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0914,no_match,weak overall similarity
+LAX,spothero,13257,parkwhiz,59931,0.27,no_match,same state
+LAX,spothero,13257,cheapairportparking,Joes-LAX,0.08,no_match,weak overall similarity
+LAX,spothero,13257,cheapairportparking,Hilton-Garden-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,89187,cheapairportparking,South-Garage-LAX,0.0762,no_match,weak overall similarity
+LAX,spothero,89187,cheapairportparking,Westin-LAX-Los-Angeles,0.08,no_match,weak overall similarity
+LAX,spothero,89187,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1,no_match,weak overall similarity
+LAX,spothero,89187,cheapairportparking,Marriott-LAX-Los-Angeles,0.0667,no_match,weak overall similarity
+LAX,spothero,89187,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0364,no_match,weak overall similarity
+LAX,spothero,89187,parkwhiz,59931,0.2157,no_match,same state
+LAX,spothero,89187,cheapairportparking,Joes-LAX,0.0941,no_match,weak overall similarity
+LAX,spothero,89187,cheapairportparking,Hilton-Garden-LAX,0.0552,no_match,weak overall similarity
+LAX,spothero,16398,cheapairportparking,South-Garage-LAX,0.1111,no_match,weak overall similarity
+LAX,spothero,16398,cheapairportparking,Westin-LAX-Los-Angeles,0.1244,no_match,weak overall similarity
+LAX,spothero,16398,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1641,no_match,weak overall similarity
+LAX,spothero,16398,cheapairportparking,Marriott-LAX-Los-Angeles,0.1231,no_match,weak overall similarity
+LAX,spothero,16398,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1081,no_match,weak overall similarity
+LAX,spothero,16398,parkwhiz,59931,0.3541,no_match,same city; same state; same postal code
+LAX,spothero,16398,cheapairportparking,Joes-LAX,0.075,no_match,weak overall similarity
+LAX,spothero,16398,cheapairportparking,Hilton-Garden-LAX,0.1091,no_match,weak overall similarity
+LAX,spothero,113110,cheapairportparking,South-Garage-LAX,0.1,no_match,weak overall similarity
+LAX,spothero,113110,cheapairportparking,Westin-LAX-Los-Angeles,0.0727,no_match,weak overall similarity
+LAX,spothero,113110,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0593,no_match,weak overall similarity
+LAX,spothero,113110,cheapairportparking,Marriott-LAX-Los-Angeles,0.0593,no_match,weak overall similarity
+LAX,spothero,113110,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.064,no_match,weak overall similarity
+LAX,spothero,113110,parkwhiz,59931,0.1936,no_match,same state
+LAX,spothero,113110,cheapairportparking,Joes-LAX,0.12,no_match,weak overall similarity
+LAX,spothero,113110,cheapairportparking,Hilton-Garden-LAX,0.1,no_match,weak overall similarity
+LAX,spothero,89952,cheapairportparking,South-Garage-LAX,0.4,no_match,high name similarity
+LAX,spothero,89952,cheapairportparking,Westin-LAX-Los-Angeles,0.1167,no_match,weak overall similarity
+LAX,spothero,89952,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,89952,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,89952,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,89952,parkwhiz,59931,0.3335,no_match,same state
+LAX,spothero,89952,cheapairportparking,Joes-LAX,0.0686,no_match,weak overall similarity
+LAX,spothero,89952,cheapairportparking,Hilton-Garden-LAX,0.1191,no_match,weak overall similarity
+LAX,spothero,108975,cheapairportparking,South-Garage-LAX,0.4,no_match,high name similarity
+LAX,spothero,108975,cheapairportparking,Westin-LAX-Los-Angeles,0.144,no_match,weak overall similarity
+LAX,spothero,108975,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,108975,cheapairportparking,Marriott-LAX-Los-Angeles,0.1636,no_match,weak overall similarity
+LAX,spothero,108975,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,108975,parkwhiz,59931,0.3335,no_match,same state
+LAX,spothero,108975,cheapairportparking,Joes-LAX,0.0865,no_match,weak overall similarity
+LAX,spothero,108975,cheapairportparking,Hilton-Garden-LAX,0.1306,no_match,weak overall similarity
+LAX,spothero,89221,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,89221,cheapairportparking,Westin-LAX-Los-Angeles,0.1556,no_match,weak overall similarity
+LAX,spothero,89221,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,89221,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,89221,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,89221,parkwhiz,59931,0.3054,no_match,same state
+LAX,spothero,89221,cheapairportparking,Joes-LAX,0.1391,no_match,weak overall similarity
+LAX,spothero,89221,cheapairportparking,Hilton-Garden-LAX,0.1371,no_match,weak overall similarity
+LAX,spothero,89353,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,89353,cheapairportparking,Westin-LAX-Los-Angeles,0.1362,no_match,weak overall similarity
+LAX,spothero,89353,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,89353,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,89353,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,89353,parkwhiz,59931,0.3054,no_match,same state
+LAX,spothero,89353,cheapairportparking,Joes-LAX,0.0706,no_match,weak overall similarity
+LAX,spothero,89353,cheapairportparking,Hilton-Garden-LAX,0.1391,no_match,weak overall similarity
+LAX,spothero,120273,cheapairportparking,South-Garage-LAX,0.08,no_match,weak overall similarity
+LAX,spothero,120273,cheapairportparking,Westin-LAX-Los-Angeles,0.0828,no_match,weak overall similarity
+LAX,spothero,120273,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0696,no_match,weak overall similarity
+LAX,spothero,120273,cheapairportparking,Marriott-LAX-Los-Angeles,0.0696,no_match,weak overall similarity
+LAX,spothero,120273,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0381,no_match,weak overall similarity
+LAX,spothero,120273,parkwhiz,59931,0.2149,no_match,same state
+LAX,spothero,120273,cheapairportparking,Joes-LAX,0.1,no_match,weak overall similarity
+LAX,spothero,120273,cheapairportparking,Hilton-Garden-LAX,0.0571,no_match,weak overall similarity
+LAX,spothero,13026,cheapairportparking,South-Garage-LAX,0.1244,no_match,weak overall similarity
+LAX,spothero,13026,cheapairportparking,Westin-LAX-Los-Angeles,0.1185,no_match,weak overall similarity
+LAX,spothero,13026,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0833,no_match,weak overall similarity
+LAX,spothero,13026,cheapairportparking,Marriott-LAX-Los-Angeles,0.1,no_match,weak overall similarity
+LAX,spothero,13026,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.087,no_match,weak overall similarity
+LAX,spothero,13026,parkwhiz,59931,0.301,no_match,same city; same state; same postal code
+LAX,spothero,13026,cheapairportparking,Joes-LAX,0.078,no_match,weak overall similarity
+LAX,spothero,13026,cheapairportparking,Hilton-Garden-LAX,0.0906,no_match,weak overall similarity
 LAX,spothero,140869,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
 LAX,spothero,140869,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
 LAX,spothero,140869,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
 LAX,spothero,140869,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
 LAX,spothero,140869,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13025,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,13025,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13025,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13025,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,13025,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4236,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,4236,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4236,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4236,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4236,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4235,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,4235,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4235,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4235,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4235,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7210,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,7210,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7210,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7210,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,7210,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,97008,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,97008,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,97008,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,97008,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,97008,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,103770,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,103770,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,103770,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,103770,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,103770,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,92286,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,92286,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,92286,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,92286,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,92286,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,134788,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,134788,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,134788,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,134788,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,134788,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4348,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,4348,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4348,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4348,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,4348,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,124965,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,124965,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,124965,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,124965,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,124965,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,88636,cheapairportparking,South-Garage-LAX,0.0,no_match,weak overall similarity
-LAX,spothero,88636,cheapairportparking,Westin-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,88636,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,88636,cheapairportparking,Marriott-LAX-Los-Angeles,0.0,no_match,weak overall similarity
-LAX,spothero,88636,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0,no_match,weak overall similarity
+LAX,spothero,140869,parkwhiz,59931,0.0,no_match,weak overall similarity
+LAX,spothero,140869,cheapairportparking,Joes-LAX,0.0,no_match,weak overall similarity
+LAX,spothero,140869,cheapairportparking,Hilton-Garden-LAX,0.0,no_match,weak overall similarity
+LAX,spothero,13025,cheapairportparking,South-Garage-LAX,0.16,no_match,weak overall similarity
+LAX,spothero,13025,cheapairportparking,Westin-LAX-Los-Angeles,0.1273,no_match,weak overall similarity
+LAX,spothero,13025,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0842,no_match,weak overall similarity
+LAX,spothero,13025,cheapairportparking,Marriott-LAX-Los-Angeles,0.1263,no_match,weak overall similarity
+LAX,spothero,13025,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0889,no_match,weak overall similarity
+LAX,spothero,13025,parkwhiz,59931,0.3019,no_match,same city; same state; same postal code
+LAX,spothero,13025,cheapairportparking,Joes-LAX,0.1032,no_match,weak overall similarity
+LAX,spothero,13025,cheapairportparking,Hilton-Garden-LAX,0.1116,no_match,weak overall similarity
+LAX,spothero,4236,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,4236,cheapairportparking,Westin-LAX-Los-Angeles,0.122,no_match,weak overall similarity
+LAX,spothero,4236,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,4236,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,4236,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,4236,parkwhiz,59931,0.38,no_match,same city; same state; same postal code
+LAX,spothero,4236,cheapairportparking,Joes-LAX,0.0522,no_match,weak overall similarity
+LAX,spothero,4236,cheapairportparking,Hilton-Garden-LAX,0.0966,no_match,weak overall similarity
+LAX,spothero,4235,cheapairportparking,South-Garage-LAX,0.0727,no_match,weak overall similarity
+LAX,spothero,4235,cheapairportparking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,4235,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0667,no_match,weak overall similarity
+LAX,spothero,4235,cheapairportparking,Marriott-LAX-Los-Angeles,0.0889,no_match,weak overall similarity
+LAX,spothero,4235,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0941,no_match,weak overall similarity
+LAX,spothero,4235,parkwhiz,59931,0.2843,no_match,same city; same state; same postal code
+LAX,spothero,4235,cheapairportparking,Joes-LAX,0.0828,no_match,weak overall similarity
+LAX,spothero,4235,cheapairportparking,Hilton-Garden-LAX,0.1366,no_match,weak overall similarity
+LAX,spothero,7210,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,7210,cheapairportparking,Westin-LAX-Los-Angeles,0.1123,no_match,weak overall similarity
+LAX,spothero,7210,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7210,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,7210,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,7210,parkwhiz,59931,0.3894,no_match,same city; same state; same postal code
+LAX,spothero,7210,cheapairportparking,Joes-LAX,0.0727,no_match,weak overall similarity
+LAX,spothero,7210,cheapairportparking,Hilton-Garden-LAX,0.0857,no_match,weak overall similarity
+LAX,spothero,97008,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,97008,cheapairportparking,Westin-LAX-Los-Angeles,0.125,no_match,weak overall similarity
+LAX,spothero,97008,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,97008,cheapairportparking,Marriott-LAX-Los-Angeles,0.4,no_match,high name similarity
+LAX,spothero,97008,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,97008,parkwhiz,59931,0.2708,no_match,same state
+LAX,spothero,97008,cheapairportparking,Joes-LAX,0.0471,no_match,weak overall similarity
+LAX,spothero,97008,cheapairportparking,Hilton-Garden-LAX,0.1397,no_match,weak overall similarity
+LAX,spothero,103770,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,103770,cheapairportparking,Westin-LAX-Los-Angeles,0.1026,no_match,weak overall similarity
+LAX,spothero,103770,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1697,no_match,weak overall similarity
+LAX,spothero,103770,cheapairportparking,Marriott-LAX-Los-Angeles,0.1939,no_match,weak overall similarity
+LAX,spothero,103770,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,103770,parkwhiz,59931,0.278,no_match,same state
+LAX,spothero,103770,cheapairportparking,Joes-LAX,0.0615,no_match,weak overall similarity
+LAX,spothero,103770,cheapairportparking,Hilton-Garden-LAX,0.1263,no_match,weak overall similarity
+LAX,spothero,92286,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,92286,cheapairportparking,Westin-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,92286,cheapairportparking,Quikpark-LAX-Los-Angeles,0.1655,no_match,weak overall similarity
+LAX,spothero,92286,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,92286,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,92286,parkwhiz,59931,0.2738,no_match,same state
+LAX,spothero,92286,cheapairportparking,Joes-LAX,0.1091,no_match,weak overall similarity
+LAX,spothero,92286,cheapairportparking,Hilton-Garden-LAX,0.0941,no_match,weak overall similarity
+LAX,spothero,134788,cheapairportparking,South-Garage-LAX,0.0821,no_match,weak overall similarity
+LAX,spothero,134788,cheapairportparking,Westin-LAX-Los-Angeles,0.1333,no_match,weak overall similarity
+LAX,spothero,134788,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0762,no_match,weak overall similarity
+LAX,spothero,134788,cheapairportparking,Marriott-LAX-Los-Angeles,0.1143,no_match,weak overall similarity
+LAX,spothero,134788,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.08,no_match,weak overall similarity
+LAX,spothero,134788,parkwhiz,59931,0.2633,no_match,same state
+LAX,spothero,134788,cheapairportparking,Joes-LAX,0.0914,no_match,weak overall similarity
+LAX,spothero,134788,cheapairportparking,Hilton-Garden-LAX,0.1362,no_match,weak overall similarity
+LAX,spothero,4348,cheapairportparking,South-Garage-LAX,0.087,no_match,weak overall similarity
+LAX,spothero,4348,cheapairportparking,Westin-LAX-Los-Angeles,0.1164,no_match,weak overall similarity
+LAX,spothero,4348,cheapairportparking,Quikpark-LAX-Los-Angeles,0.0816,no_match,weak overall similarity
+LAX,spothero,4348,cheapairportparking,Marriott-LAX-Los-Angeles,0.32,no_match,moderate name similarity
+LAX,spothero,4348,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.0681,no_match,weak overall similarity
+LAX,spothero,4348,parkwhiz,59931,0.1886,no_match,same state
+LAX,spothero,4348,cheapairportparking,Joes-LAX,0.0571,no_match,weak overall similarity
+LAX,spothero,4348,cheapairportparking,Hilton-Garden-LAX,0.1185,no_match,weak overall similarity
+LAX,spothero,124965,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,124965,cheapairportparking,Westin-LAX-Los-Angeles,0.1116,no_match,weak overall similarity
+LAX,spothero,124965,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,124965,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,124965,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,124965,parkwhiz,59931,0.3656,no_match,same city; same state
+LAX,spothero,124965,cheapairportparking,Joes-LAX,0.08,no_match,weak overall similarity
+LAX,spothero,124965,cheapairportparking,Hilton-Garden-LAX,0.1143,no_match,weak overall similarity
+LAX,spothero,88636,cheapairportparking,South-Garage-LAX,0.2,no_match,weak overall similarity
+LAX,spothero,88636,cheapairportparking,Westin-LAX-Los-Angeles,0.1158,no_match,weak overall similarity
+LAX,spothero,88636,cheapairportparking,Quikpark-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,88636,cheapairportparking,Marriott-LAX-Los-Angeles,0.16,no_match,weak overall similarity
+LAX,spothero,88636,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,0.1846,no_match,weak overall similarity
+LAX,spothero,88636,parkwhiz,59931,0.3935,no_match,same city; same state
+LAX,spothero,88636,cheapairportparking,Joes-LAX,0.0508,no_match,weak overall similarity
+LAX,spothero,88636,cheapairportparking,Hilton-Garden-LAX,0.0853,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,parkwhiz,59931,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,14934,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,89120,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,4105,0.0727,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,3310,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,107005,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,3219,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,140376,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,95586,0.08,no_match,weak overall similarity
+LAX,cheapairportparking,South-Garage-LAX,spothero,31238,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,parkwhiz,59931,0.08,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,14934,0.1091,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,89120,0.1244,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,4105,0.1548,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,3310,0.1362,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,107005,0.1263,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,3219,0.2095,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,140376,0.3034,no_match,moderate name similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,95586,0.0828,no_match,weak overall similarity
+LAX,cheapairportparking,Westin-LAX-Los-Angeles,spothero,31238,0.1026,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,parkwhiz,59931,0.4,no_match,high name similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,14934,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,89120,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,4105,0.032,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,3310,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,107005,0.4,no_match,high name similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,3219,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,140376,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,95586,0.0696,no_match,weak overall similarity
+LAX,cheapairportparking,Quikpark-LAX-Los-Angeles,spothero,31238,0.2182,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,parkwhiz,59931,0.2,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,14934,0.4,no_match,high name similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,89120,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,4105,0.064,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,3310,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,107005,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,3219,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,140376,0.16,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,95586,0.0696,no_match,weak overall similarity
+LAX,cheapairportparking,Marriott-LAX-Los-Angeles,spothero,31238,0.1939,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,parkwhiz,59931,0.1846,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,14934,0.1846,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,89120,0.1846,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,4105,0.0696,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,3310,0.1846,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,107005,0.1846,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,3219,0.1846,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,140376,0.4,no_match,high name similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,95586,0.0381,no_match,weak overall similarity
+LAX,cheapairportparking,Hilton-LAX-Airport-Los-Angeles,spothero,31238,0.1846,no_match,weak overall similarity
+LAX,parkwhiz,59931,spothero,14934,0.36,no_match,same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,89120,0.48,no_match,nearby geolocation; same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,4105,0.402,no_match,near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,3310,0.3716,no_match,same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,107005,0.77,possible_match,high name similarity; near-identical geolocation; same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,3219,0.3475,no_match,same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,140376,0.36,no_match,same city; same state; same postal code
+LAX,parkwhiz,59931,spothero,95586,0.2632,no_match,same state
+LAX,parkwhiz,59931,spothero,31238,0.3948,no_match,same state
+LAX,parkwhiz,59931,cheapairportparking,Joes-LAX,0.0471,no_match,weak overall similarity
+LAX,parkwhiz,59931,cheapairportparking,Hilton-Garden-LAX,0.0828,no_match,weak overall similarity
+LAX,spothero,14934,cheapairportparking,Joes-LAX,0.0774,no_match,weak overall similarity
+LAX,spothero,14934,cheapairportparking,Hilton-Garden-LAX,0.1302,no_match,weak overall similarity
+LAX,spothero,89120,cheapairportparking,Joes-LAX,0.4,no_match,high name similarity
+LAX,spothero,89120,cheapairportparking,Hilton-Garden-LAX,0.1273,no_match,weak overall similarity
+LAX,spothero,4105,cheapairportparking,Joes-LAX,0.4,no_match,high name similarity
+LAX,spothero,4105,cheapairportparking,Hilton-Garden-LAX,0.1333,no_match,weak overall similarity
+LAX,spothero,3310,cheapairportparking,Joes-LAX,0.0941,no_match,weak overall similarity
+LAX,spothero,3310,cheapairportparking,Hilton-Garden-LAX,0.1391,no_match,weak overall similarity
+LAX,spothero,107005,cheapairportparking,Joes-LAX,0.096,no_match,weak overall similarity
+LAX,spothero,107005,cheapairportparking,Hilton-Garden-LAX,0.1297,no_match,weak overall similarity
+LAX,spothero,3219,cheapairportparking,Joes-LAX,0.1103,no_match,weak overall similarity
+LAX,spothero,3219,cheapairportparking,Hilton-Garden-LAX,0.1561,no_match,weak overall similarity
+LAX,spothero,140376,cheapairportparking,Joes-LAX,0.0696,no_match,weak overall similarity
+LAX,spothero,140376,cheapairportparking,Hilton-Garden-LAX,0.4,no_match,high name similarity
+LAX,spothero,95586,cheapairportparking,Joes-LAX,0.1,no_match,weak overall similarity
+LAX,spothero,95586,cheapairportparking,Hilton-Garden-LAX,0.0571,no_match,weak overall similarity
+LAX,spothero,31238,cheapairportparking,Joes-LAX,0.0615,no_match,weak overall similarity
+LAX,spothero,31238,cheapairportparking,Hilton-Garden-LAX,0.1263,no_match,weak overall similarity
