@@ -11,7 +11,6 @@ app = FastAPI(
     description="API for running parking matching pipeline and retrieving results",
     docs_url="/docs",
     redoc_url="/redoc",
-    openapi_prefix="/api/v1",
     contact={
         "name": "Parking Matching Repository",
         "url": "https://github.com/payamdowlatyari/parking_matching",
@@ -31,6 +30,9 @@ class PipelineRequest(BaseModel):
 
 @app.get("/", tags=["General"])
 def root():
+    """
+    Returns a simple message indicating that the API is functioning correctly.
+    """
     return {
         "message": "Parking Matching API",
         "docs": "/docs",
@@ -39,11 +41,17 @@ def root():
 
 @app.get("/health", tags=["General"])
 def health():
+    """
+    Returns a simple health check for the API.
+    """
     return {"status": "ok"}
 
 
 @app.get("/matches", tags=["General"])
 def get_matches():
+    """
+    Retrieves all stored match results from the database.
+    """
     from app.db import Database
     db = Database("parking_matching.db")
     try:
@@ -54,11 +62,17 @@ def get_matches():
 
 @app.get("/providers", tags=["General"])
 def providers():
+    """
+    Retrieves a list of supported parking providers.
+    """
     return [p.provider_name for p in get_providers()]
 
 
-@app.post("/pipeline/run", tags=["Pipeline"])
+@app.post("/pipeline/run", tags=["Pipeline"], response_model=dict)
 def run_pipeline(payload: PipelineRequest):
+    """
+    Runs the full pipeline using the provided parameters.
+    """
     if not payload.airports:
         raise HTTPException(status_code=400, detail="At least one airport required")
 
